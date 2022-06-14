@@ -1,1 +1,859 @@
-Hello World
+
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0MH53RK3Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-B0MH53RK3Y');
+  </script>
+  <style type="text/css">
+    #clustrmaps-widget-v2 {
+      float: right;
+      display: none!important;
+    }
+    img {
+      border: solid 1px #bad0c6!important;
+      padding: 3px;
+      border-radius: 10px;
+      margin: 5px;
+    }
+    img.profile {
+      /*border: None!important;*/
+    }
+    .btnDemo {
+      color: #fafff7;
+      background: #ff005b;
+      border: solid 1px black;
+      border-radius: 8px;
+      padding: 1px;
+      text-align: center;
+      display: block;
+      margin: auto;
+      width: 40%;
+      font-size: small;
+    }
+    .btnDemo a {
+      color: white;
+    }
+
+/*    .thumbnail {
+      display: none;
+    }
+
+    .abstract {
+      display: none;
+    }
+*/
+    /*@media screen and (min-width: 320px) {
+          img{
+                display:none !important;
+       }
+     }*/
+
+    @media screen and (max-width: 768px) {
+          img  {
+                display:none !important;
+       }
+       img.profile {
+        display: inline!important;
+        border: solid 1px #bad0c6!important;
+        padding: 3px;
+        border-radius: 10px;
+        margin: 5px;
+       }
+       .thumbnail {
+        display: none!important;
+       }
+     }
+
+
+  </style>
+  <title>Thai Le</title>
+  
+  <meta name="author" content="Jon Barron">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3HHJM4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Thai Le</name></br>
+                <img class="profile" style="width:24%;max-width:40%;" alt="profile photo" src="images/profile3.jpg" class="hoverZoomLink">
+              </p>
+              <p>Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. My research interest lies in Data Science and Machine Learning with a focus on Natural Language Processing.
+              <p>
+                <span style="color: red;"><i>I am looking for highly motivated research interns, master and Ph.D. students to do research in security & privacy for NLP applications.</i></span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
+              </p>
+              <p style="text-align:center">
+                Email Contact: <i>qle [at] olemiss [dot] edu</i>
+                <!-- <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar</a> -->
+                 <!-- &nbsp/&nbsp -->
+                <!-- <a href="https://github.com/lethaiq">GitHub</a> -->
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="100%" valign="middle">
+            <heading>News</heading><span> (From 2022)</span>
+            <ul>
+              <li>Accepted tenure-track faculty position at University of Mississippi</li>
+              <li>Receive the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
+              <li>Two papers on adversarial texts are accepted at ACL'22</li>
+              <li>One paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
+              <li>One paper on Explainable RL is accepted at AAMAS'22.</li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+
+
+  <!--       <p style="text-align:center">s
+          <a href="#sec_press">Press Mentions</a> &nbsp/&nbsp
+          <a href="#sec_publication">Publication</a> &nbsp/&nbsp
+          <a href="#sec_awards">Awards/Grants</a> &nbsp/&nbsp
+          <a href="#sec_teaching">Teaching</a>
+        </p> -->
+
+
+    <table id="sec_press" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="100%" valign="middle">
+            <heading>Press Mentions</heading>
+
+            <ul>
+              <li>
+                <a href="https://www.ericsson.com/en/blog/2021/6/technology-trends-2021-here-to-stay">
+                Five top technology trends from 2021 that are here to stay</a> (Ericsson Blog, June 2021)
+              </li>
+              <li>
+                <a href="https://news.psu.edu/story/664795/2021/07/28/research/honeypot-security-technique-can-also-stop-attacks-natural-language">Honeypot security technique can also stop attacks in natural language processing</a> (PSU News, July 2021)
+              </li>
+              <li>
+                <a href="https://www.ericsson.com/en/blog/2021/6/technology-trends-2021-here-to-stay">Five top technology trends from 2021 that are here to stay</a> (Ericsson Group, June 2021)
+              </li>
+              <li>
+                <a href="https://www.fastcompany.com/90649160/you-wont-read-this-life-changing-study-about-clickbait-headlines">You won't read this life-changing study about clickbait headlines</a> (FastCompany Press, June 2021)
+              </li>
+              <li>
+                <a href="https://news.psu.edu/story/661780/2021/06/18/research/clickbait-headlines-might-not-lure-readers-much-may-confuse-ai">Clickbait headlines might not lure readers as much, may confuse AI</a> (PSU News, June 2021)
+              </li>
+              <li>
+                <a href="https://news.psu.edu/story/646731/2021/02/05/research/researchers-test-detection-methods-ai-generated-content">Researchers test detection methods for AI-generated content</a> (PSU News, Feb 2021)
+              </li>
+              <li>
+                <a href="https://www.defenseone.com/technology/2020/11/meet-ai-s-defeating-automated-fact-checkers/169840/">Meet the AI That’s Defeating Automated Fact Checkers</a> (Defense One, November 2020)
+              </li>
+              <li>
+                <a href="https://eandt.theiet.org/content/articles/2020/11/fake-news-detectors-tricked-with-malicious-user-content/">Fake news detectors tricked with malicious user content</a> (E&T News, November 2020)
+              </li>
+              <li>
+                <a href="https://news.psu.edu/story/636864/2020/10/30/research/tricking-fake-news-detectors-malicious-user-comments">Tricking fake news detectors with malicious user comments</a> (PSU News, November 2020)
+              </li>
+              <li>
+                <a href="https://www.icds.psu.edu/featured-researchers-maria-molina-and-thai-le/">Featured Researchers: Maria Molina and Thai Le</a> (ICDS News, Februrary 2019)
+              </li>
+              <li>
+                <a href="https://onezero.medium.com/why-its-so-hard-to-automate-clickbait-away-6c5750b2039a">Why It’s so Hard to Automate ‘Clickbait’ Away</a> (One Zero, September 2019)
+              </li>
+              <li>
+                <a href="https://www.sciencedaily.com/releases/2019/08/190828143102.htm">Clickbait secrets exposed! Humans and AI team up to improve clickbait detection</a> (ScienceDaily, August 2019)
+              </li>
+            </ul>
+          </td>
+        </tr>
+        </table>
+
+
+        <table id="sec_publication" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>Research</heading>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+                <h3>Privacy in NLP</h3>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv22Z.png" alt="Arxiv22Z" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2203.07618.pdf" id="Arxiv22Z">
+                <papertitle>Do Language Models Plagiarize?</papertitle>
+              </a>
+              <!-- <a href="https://github.com/lethaiq/shield-defend-adversarial-texts">[code]</a> -->
+              <br>
+              Jooyoung Lee, <b>Thai Le</b>, Jinghui Chen, Dongwon Lee
+              </br>
+              <i><b>(Under Review)</b>, 2022</i>
+              <br>
+              <p class="abstract"> We investigate the privacy risks of large language models's over-memorization behaviors in the context of plagiarism, both on pre-trained and fine-tuned models. Specifically, we analyze three different types of plagiarism, namely verbatism, paraphrase and idea plagiarism. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Security (Secured and Resilient ML)</h3>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv21A.png" alt="Arxiv21A" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2011.08908.pdf" id="Arxiv21A">
+                <papertitle>SHIELD: Defending Textual Neural Networks against Multiple Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher</papertitle>
+              </a>
+              <a href="https://github.com/lethaiq/shield-defend-adversarial-texts">[code]</a>
+              <br>
+              <b>Thai Le</b>, Noseong Park, Dongwon Lee
+              <br>
+              <i><b>Annual Meeting of the Association for Computational Linguistics (ACL) </b>, 2022</i>
+              <br>
+              <p class="abstract"> We propose HIELD algorithm that transforms a textual NN model into a stochastic ensemble of multi-expert predictors by upgrading and re-training its last layer only. Whenever an adversary try to fool the model, SHIELD confuses the attacker by automatically utilizing different subsets of predictors that are specialized in different sets of features, classes and instances.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv21C.png" alt="Arxiv21B" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2203.10346.pdf" id="Arxiv21C">
+                <papertitle>Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense</papertitle>
+              </a>
+              <a href="https://github.com/lethaiq/perturbations-in-the-wild">[code]</a>
+              </br>
+              <b>Thai Le</b>, Jooyoung Lee, Kevin Yen, Yifan Hu, Dongwon Lee
+              <br>
+              <i><b>Annual Meeting of the Association for Computational Linguistics (ACL) </b>, 2022 (Findings)</i>
+              <br>
+              <p class="abstract">We proposes a novel algorithm, ANTHRO, that inductively extracts over 600K human-written text perturbations in the wild and leverages them for realistic adversarial attack and defense. Unlike existing character-based attacks which often deductively hypothesize a set of manipulation strategies, our work is grounded on actual observations from real-world texts.</p>
+            </td>
+          </tr>
+
+           <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv21B.png" alt="Arxiv21B" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2110.10655" id="Arxiv21B">
+                <papertitle>Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning.</papertitle>
+              </a>
+              <a href="https://github.com/lethaiq/Adversarial_SocialBots_WWW22">[code]</a>
+              <br>
+              <b>Thai Le</b>, Long-Thanh Tran, Dongwon Lee
+              <br>
+              <i><b>The Web Conference (WWW)</b>, 2022</i>
+              <br>
+              <p class="abstract">The adversarial nature of these socialbots has not yet been studied. This begs a question ``can adversaries, controlling socialbots, exploit AI techniques to their advantage?" To this question, we successfully demonstrate that indeed it is possible for adversaries to exploit computational learning mechanism such as reinforcement learning (RL) to maximize the influence of socialbots while avoiding being detected. </p>
+            </td>
+          </tr>
+
+            <tr>
+              <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/ACL21.png" alt="ACL21" width="160" height="130" style="border-style: none">
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://aclanthology.org/2021.acl-long.296.pdf" id="ACL21">
+                  <papertitle>A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Trigger’s Adversarial Attacks.</papertitle>
+                </a>
+                <a href="https://github.com/lethaiq/ACL2021-DARCY-HoneypotDefenseNLP">[code]</a>
+                <br>
+                <b>Thai Le</b>, Noseong Park, Dongwon Lee
+                <br>
+                <i><b>Annual Meeting of the Association for Computational Linguistics (ACL) </b>, 2021</i>
+                <br>
+                <p class="abstract">This work borrows the "honeypot" concept from the cybersecurity community and propose DARCY, a novel honeypot-based defense frame-work  against UniTrigger attack. DARCY greedily searches and injects multiple trapdoors into an neural network model to "bait and catch"  potential attacks.</p>
+              </td>
+            </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ICDM20.png" alt="ICDM20" width="160" height="130" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq" id="ICDM20">
+                <papertitle>MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Suhang Wang, Dongwon Lee
+              <br>
+              <i><b>IEEE International Conference on Data Mining (ICDM)</b>, 2020</i>
+              <br>
+              <p class="abstract"> This work (i) proposes a novel attack scenario against fake news detectors, in which adversaries can post malicious comments toward news articles to mislead SOTA fake news detectors, and (ii) develops Malcom, an end-to-end adversarial comment generation framework to achieve such an attack.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv22A.png" alt="Arxiv22A" width="160" height="120" style="border-style: none">
+              <!-- <span class="btnDemo"><a href="http://104.248.15.243/">Demo Link</a></span> -->
+            </td>
+            <td width="75%" valign="middle">
+              <a href="#" id="Arxiv22A">
+                <papertitle>CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild</papertitle>
+              </a>
+              <!-- </br> -->
+              </br>
+              <i><b>(Under Review)</b>, 2022</i>
+              <br>
+              <p class="abstract"> There is no available framework that explores and utilizes these human-written perturbation patterns online. Therefore, we introduce an interactive system called CrypText, which is a collection of tools for users to extract and interact with human-written perturbations. Specifically, CrypText helps look up, perturb, and normalize (i.e., de-perturb) texts. CrypText also provides an interactive interface to monitor and analyze text perturbations online.</p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Explainable AI</h3>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/KDD20.png" alt="KDD20" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066" id="KDD20">
+                <papertitle>GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Model’s Prediction</papertitle>
+              </a>
+              <a href="https://github.com/lethaiq/GRACE_KDD20">[code]</a>
+              <br>
+              <b>Thai Le</b>, Suhang Wang, Dongwon Lee
+              <br>
+              <i><b>ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD)</b>, 2020</i>
+              <br>
+              <p class="abstract">This work borrows two notable ideas (i.e., "explanation by intervention" from causality and "explanation are contrastive" from philosophy) and propose a novel solution, named as GRACE, that better explains neural network models' predictions for tabular datasets. In particular, given a model's prediction as label X, GRACE intervenes and generates a minimally-modified contrastive sample to be classified as Y, with an intuitive textual explanation, answering the question of "Why X rather than Y?</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv21D.png" alt="KDD20" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="" id="Arxiv21D">
+                <papertitle>CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</papertitle>
+              </a>
+              <!-- <br> -->
+              <!-- <b>Thai Le</b>, Suhang Wang, Dongwon Lee -->
+              <br>
+              <i>Joe McCalmon, <b>Thai Le</b>, Sarra Alqahtani and Dongwon Lee</i>
+              <br>
+              <i><b>International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</b>, 2022</i>
+              <br>
+              <p class="abstract">This work proposes a novel approach that summarizes an agent's policy in the form of a directed graph with natural language descriptions. A decision tree based clustering method is utilized to abstract the state space of the task into fewer, condensed states which makes the policy graphs more digestible to end-users. This abstraction allows the users to control the size of the policy graph to achieve their desired balance between comprehensibility and accuracy. In addition, we develop a heuristic optimization method to find the most explainable graph policy and present it to the users. Finally, we use the user-defined predicates to enrich the abstract states with semantic meaning. </p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Learning under Uncertainty</h3>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/PKDD21.png" alt="PKDD21" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf" id="PKDD21">
+                <papertitle>CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching</papertitle>
+              </a>
+              <br>
+              Tianyi Xie, <b>Thai Le</b>, Dongwon Lee
+              <br>
+              <i><b>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD)</b>, 2021</i>
+              <br>
+              <p class="abstract">This work develops CHECKER to exploit: (1) the weak supervision framework to generate many noisy-but-useful labels, and (2) the co-teaching framework to learn robustly using such noisy labels to detect clickbait thumbnails on video-streaming websites.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ASONAM19.png" alt="ASONAM19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://dl.acm.org/doi/10.1145/3341161.3342875" id="ASONAM19">
+                <papertitle>5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Kai Shu, Maria Molina, Dongwon Lee, Shyam Sundar, Huan Liu
+              <br>
+              <i><b>IEEE/ACM Int’l Conf. on Social Networks Analysis and Mining (ASONAM)</b>, 2019</i>
+              <br>
+              <p class="abstract">This works investigates how to exploit human and computer generative models to generate synthetic clickbaits as additional training data to train better ML clickbait detectors. we observe an improvement in accuracy, up to 8.5% in AUC, even for top-ranked clickbait detectors from Clickbait Challenge 2017. </p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Neural Text: Generation, (Reverse) Turing Test and Authorship Attribution</h3>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/EMNLP21.png" alt="EMNLP21" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://aclanthology.org/2021.findings-emnlp.172.pdf" id="EMNLP21">
+                <papertitle>TURINGBENCH: A Benchmark Environment for Turing Test in the Age of Neural Text Generation</papertitle>
+              </a>
+              <br>
+              Adaku Uchendu, Zeyu Ma, <b>Thai Le</b>, Rui Zhang and Dongwon Lee
+              <br>
+              <i><b>Findings of Empirical Methods in Natural Language Processing (EMNLP)</b>, 2021</i>
+              <br>
+              <p class="abstract">While there are many legitimate applications of generative language models, there is also a rising need to distinguish machine-generated texts from human-written ones (e.g., fake news detection). In this work, we present the TURINGBENCH benchmark environment which comprises datasets to evaluate both Turing test and authorship attribution on neural texts. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/EMNLP20.png" alt="EMNLP20" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://aclanthology.org/2020.emnlp-main.673" id="EMNLP20">
+                <papertitle>Authorship Attribution for Neural Text Generation</papertitle>
+              </a>
+              <br>
+              Adaku Uchendu, <b>Thai Le</b>, Kai Shu, Dongwon Lee
+              <br>
+              <i><b>Conference on Empirical Methods in Natural Language Processing (EMNLP)</b>, 2020</i>
+              <br>
+              <p class="abstract">This paper investigates 8 large language models with two problems (i) Turing Test: differentiate between human and machine-generated texts and (ii) Authorship Attribution: differntiate texts generated among different generative models.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ICDM18.png" alt="ICDM18" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://ieeexplore.ieee.org/document/8594871" id="ICDM18">
+                <papertitle>Deep headline generation for clickbait detection</papertitle>
+              </a>
+              <br>
+              Shu Kai, Suhang Wang, <b>Thai Le</b>, Dongwon Lee, Huan Liu
+              <br>
+              <i><b>IEEE International Conference on Data Mining (ICDM)</b>, 2018</i>
+              <br>
+              <p class="abstract">This work proposes to generate synthetic headlines with specific styles and explore their utilities to help improve clickbait detection. In particular, we propose to generate stylized headlines from original documents with style transfer</p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Computational Misinformation</h3>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/CHI20.png" alt="CHI20" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445753" id="CHI20">
+                <papertitle>”Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read.</papertitle>
+              </a>
+              <br>
+              Maria Molina, S. Shyam Sundar, Md Main Uddin Rony, Naeemul Hassan, <b>Thai Le</b>, Dongwon
+              <br>
+              <i><em><b>ACM Conference on Human Factors in Computing Systems (CHI)</b></em>, 2021</i>
+              <br>
+              <p class="abstract">This work carries out three user-studies to investigate why users do not reliably click more often on headlines classified as clickbait by automated classifiers.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/AEJMC19.png" alt="CR21" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://doi.org/10.1177/00936502211073398" id="CR21">
+                <papertitle>Reading, Commentingand Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement</papertitle>
+              </a>
+              <br>
+              Maria Molina, Jinping Wang, S. Shyam Sundar, <b>Thai Le</b>, Carlina DiRusso. 
+              <br>
+              <i><em><b>CommunicationResearch.</b></i>
+              <br>
+              <p class="abstract">Do social media users read, comment, and share false news more than real news? Does it matter if the story is written by a bot and whether it is endorsed by many others? We conducted a selective-exposure experiment (N = 171) to answer these questions.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ABS19.png" alt="ABS19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://journals.sagepub.com/doi/full/10.1177/0002764219878224" id="ABS19">
+                <papertitle>”Fake News” is Not Simply False Information: A Concept Explication and Taxonomy of Online Content</papertitle>
+              </a>
+              <br>
+              Maria Molina, Shyam Sundar, <b>Thai Le</b>, Dongwon Lee
+              <br>
+              <i><em><b>American Behavioral Scientist</b></em>, 2019</i>
+              <br>
+              <p class="abstract">This work conducts an explication of “fake news” that, as a concept, has ballooned to include more than simply false information, with partisans weaponizing it to cast aspersions on the veracity of claims made by those who are politically opposed to them.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/AEJMC19.png" alt="AEJMC19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="" id="AEJMC19">
+                <papertitle>Effects of Bandwagon Cues and Automated Journalism on Reading, Commenting and Sharing of Real vs. False Information Online</papertitle>
+              </a>
+              <br>
+              <p><b>Best Paper Award</b></p>
+              Maria Molina, Jinping Wang, <b>Thai Le</b>, DiRusso, Carlina, Sundar, S. Shyam
+              <br>
+              <i><em><b>Conference of the Association for Education in Journalism and Mass Communication (AEJMC)</b></em>, 2019</i>
+              <br>
+              <p class="abstract">Do social media users read, comment, and share false news more than real news? Does it matter if the story is written by a bot, and whether it is endorsed by many others? We conducted a selective-exposure experiment (N = 171) to answer these questions.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Websci19.png" alt="Websci19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://dl.acm.org/doi/10.1145/3292522.3326055" id="Websci19">
+                <papertitle>How Gullible Are You? Predicting Susceptibility to Fake News</papertitle>
+              </a>
+              <br>
+              Jia Shen, Robert Cowell, Aditi Gupta, <b>Thai Le</b>, Amulya Yadav, Dongwon Lee
+              <br>
+              <i><em><b>International ACM Web Science Conference (WebSci)</b></em>, 2019</i>
+              <br>
+              <p class="abstract">This work hypothesizes that some social users are more gullible to fake news than others, and accordingly investigate on the susceptibility of users to fake news–i.e., how to identify susceptible users, what are their characteristics, and if one can build a predictionmodel</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/Arxiv17B.png" alt="Arxiv17" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/1710.01977" id="Arxiv17">
+                <papertitle>Machine Learning Based Detection of Clickbait Posts in Social Media</papertitle>
+              </a>
+              <br>
+              Xinyue Cao, <b>Thai Le</b>, Jason(Jiasheng) Zhang
+              <br>
+              <i><em><b>Arxiv</b></em>, 2017</i>
+              <br>
+              <p class="abstract">This work attempts to build an effective computational model to detect clickbaits on Twitter as part of the <a href="https://webis.de/events/clickbait-challenge/">Clickbait Challenge 2017</a></p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Others</h3>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/KDD21.png" alt="KDD21" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://deepai.org/publication/large-scale-data-driven-airline-market-influence-maximization" id="KDD21">
+                <papertitle>Large-Scale Data-Driven Airline Market Influence Maximization</papertitle>
+              </a>
+              <br>
+              Duanshun Li, Jing Liu, Jinsung Jeon, Seoyoung Hong, <b>Thai Le</b>, Noseong Park, Dongwon Lee
+              <br>
+              <i><em><b>ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD)</b></em>, 2021</i>
+              <br>
+              <p class="abstract">This work presents a prediction-driven optimization framework to maximize the market influence in the US domestic air passenger transportation market by adjusting flight frequencies</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ICDM19.png" alt="ICDM19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://ieeexplore.ieee.org/document/8955535?signout=success" id="ICDM19">
+                <papertitle>PathFinder: Graph-based Itemset Embedding for Learning Course Recommendation and Beyond</papertitle>
+              </a>
+              <br>
+              Jason (Jiasheng) Zhang, <b>Thai Le</b>, Yiming Liao, Dongwon Lee
+              <br>
+              <i><em><b>IEEE International Conference on Data Mining (ICDM)</b></em>, 2019, Demo Paper</i>
+              <br>
+              <p class="abstract">This paper demonstrates a tool that captures and visualizes rich latent relationships among courses as a graph, mines students’ past course performance data, and recommends pathways or top-k courses most helpful to a given student, using an itemset embedding based learning model.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="thumbnail" style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/SPWLAALS19.png" alt="SPWLAALS19" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941" id="SPWLAALS19">
+                <papertitle>A Machine Learning Framework for Automating Well Log Depth Matching</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Lin Liang, Timon Zimmermann, Smaine Zeroug, Denis Helio
+              <br>
+              <i><em><b>Journal of Petrophysics</b></em>, 2019</i>
+              <br>
+              <p class="abstract">This work develops a machine learing model and statistical metrics for depth matching well logs acquired from multiple logging passes in a single well.</p>
+            </td>
+          </tr>
+
+        </tbody></table>
+<!-- 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle;text-align:center">
+              <h3>Before Ph.D.</h3>
+            </td>
+          </tr>
+        </tbody></table> -->
+
+<!-- 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ANNM16.png" alt="ANNM16" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-319-28495-8_16" id="ANNM16">
+                <papertitle>Application of Artificial Neural Network in Social Media Data Analysis: A Case of Lodging Business in Philadelphia</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Phillip Pardo, William Claster.
+              <br>
+              <i><em><b>Artificial Neural Network Modelling</b></em>, 2016</i>
+              <br>
+              <p>This paper proposes self-organizing-map and a neural network model to analyze and predict hotel occupancy in Philadelphia using social media data.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ICACT16.png" alt="ICACT16" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://ieeexplore.ieee.org/document/7423607" id="ICACT16">
+                <papertitle>An innovative tour recommendation system for tourists in Japan.</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Davar Pishva
+              <br>
+              <i><em><b>Advanced Communication Technology (ICACT)</b></em>, 2016</i>
+              <p> The paper proposes a greedy-search algorithm to optimize touring plans which are composed of various points of interest (POI) and take travelers’preferences and context such as weather, travel time, espenses, etc. into account.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ICACT15.png" alt="ICACT15" width="160" height="120" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://ieeexplore.ieee.org/document/7224841" id="ICACT15">
+                <papertitle>Application of Web Scraping and Google API service to optimize convenience stores’ distribution.</papertitle>
+              </a>
+              <br>
+              <b>Thai Le</b>, Davar Pishva
+              <br>
+              <i><em><b>Advanced Communication Technology (ICACT)</b></em>, 2015</i>
+              <p>This work models and optimizes the problem of vehical routing schemes for over 54,000 retail stores throughout Japan. The work takes into account different factors such as geographical locations of brick stores, warehouses, garbage dumpsites and gas stations.</p>
+            </td>
+          </tr>
+
+		</tbody></table> -->
+<!-- 
+		<table id="sec_awards" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="100%" valign="middle">
+            <heading>Honors/Awards/Fellowships</heading>
+
+            <ul>
+              <li>
+                2022 AAMAS 2022 Scholarship
+              </li>
+              <li>
+                2022 IST Ph.D. Student Award for Research Excellence, College of IST, PSU
+              </li>
+              <li>
+                2021 Postdoc-NeT-AI Fellowship (Funded by Germany Federal Ministry of Education and Research)
+              </li>
+              <li>
+                2021 CIKM Student Registration Award (Online)
+              </li>
+              <li>
+                2020 ICDM Student Travel Award (Funded by NSF and ICDM)
+              </li>
+              <li>
+                2019 IST Student Travel Award, PSU
+              </li>
+              <li>
+                2018 Nittany AI Challenge, Top-5 winning teams out of 73 teams
+              </li>
+              <li>
+                2017 NVIDIA GPU Grant
+              </li>
+              <li>
+                2016 Applied Mathematics Merit-based Departmental Scholarship, IIT
+              </li>
+              <li>
+                2015 Outstanding Undergraduate Thesis Award, Ritsumeikan Asia Pacific University
+              </li>
+              <li>
+                2011-2015 Full-tuition Scholarship, Ritsumeikan Asia Pacific University
+              </li>
+            </ul>
+
+          </td>
+        </tr>
+        </table> -->
+
+<!-- 
+    <table id="sec_teaching" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tr>
+          <td width="100%" valign="middle">
+            <heading>Teaching</heading>
+
+        <ul>
+
+          <li>
+            <p>
+            REU@PSU 2021 - Google Colab Session - Instructor<br>
+            Course Materials: <a href="https://www.oreilly.com/library/view/learning-spark/9781449359034/">Introduction to Google Colab</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+            REU@PSU 2021 - Adversarial Attack for NLP Session - Instructor<br>
+            Course Materials: <a href="https://www.oreilly.com/library/view/learning-spark/9781449359034/">Introduction to Adversarial Attacks for NLP</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+            IST210 - Database Organization - Teaching Assistant<br>
+            </p>
+          </li>
+          
+          <li>
+            <p>
+              Programming I & II (Object Oriented Programming) - Teaching Assistant
+            </p>
+          </li>
+
+        </ul>
+
+          </td>
+        </tr>
+        </table>
+ -->
+
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          	
+            <tr>
+              <td style="padding:0px">
+                <br><hr width=80%>
+                <p style="text-align:right;font-size:small;">
+                  Last updated on 06/11/2022
+                  <br>
+                  <a href="https://jonbarron.info/">This guy makes a nice webpage</a>
+                </p>
+                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=169&t=tt&d=fexKVTAAxoJv1jiuQdnT8AhEKc-2gH5N4mjov9w99u0&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+
+</body>
+
+</html>
