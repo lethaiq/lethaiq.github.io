@@ -66,6 +66,13 @@
        }
      }*/
 
+    .tool {
+      display: block;
+      float: left;
+      margin: 20px;
+      text-align: center;
+    }
+
     @media screen and (max-width: 768px) {
         img  {
               display:none !important;
@@ -73,6 +80,11 @@
        
        .tool{
         display: inline!important;
+        width: 100%;
+       }
+
+       .tool img {
+/*        display: none!important;*/
        }
 
        img.profile {
@@ -215,25 +227,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
          <table id="sec_publication" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading>Tools</heading>
+                <heading>Resources: Tools and Datasets</heading>
               </td>
             </tr>
         </tbody>
       </table>
-
+<!-- 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
-          <tr>
-            <td class="tool" style="padding:20px;width:25%;vertical-align:middle">
+          <tr> -->
+            <div class="tool" >
               <a  href="https://lethaiq.github.io/anthro"><img class="tool" src="images/Arxiv22A.png" alt="Arxiv22A" width="160" height="120" style="display: block; width: 150px; margin: 0px; padding: 0px; border-style: none; text-align: center;">
               </br><span style="text-align: center; font-weight: bold;">Perturbations in the Wild</span></a>
               </br>
-              <a style="margin-left: 30px; text-align: center; font-weight: bold;" href="https://youtu.be/8WT3G8xjIoI">(Demo Video)</a>
-            </td>
-          </tr>
+              <a style="text-align: center; font-weight: bold;" href="https://youtu.be/8WT3G8xjIoI">(Demo Video)</a>
+            </div>
+
+            <div class="tool">
+              <a  href="https://huggingface.co/datasets/yiran223/toxic-detection-testset-perturbations"><img class="tool" src="images/Arxiv23C.png" alt="Arxiv23C" width="160" height="120" style="display: block; width: 150px; margin: 0px; padding: 0px; border-style: none; text-align: center;">
+              </br><span style="text-align: center; font-weight: bold;">NoisyHate Benchmark <br>for Hate Speech Detection</span></a>
+              </br>
+            </div>
+          <!-- </tr>
         </tbody>
       </table>
-
+ -->
 
         <table id="sec_publication" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
