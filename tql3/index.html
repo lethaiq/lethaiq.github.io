@@ -123,6 +123,52 @@
       border: solid grey 0.5px;
       margin-right: 5px;
      }
+
+     .news {
+      font-size: small;
+     }
+
+     .news a {
+      font-size: small!important;
+     }
+
+     .collapsible {
+      background-color: #d4c3c3;
+      color: #981b1e;
+      cursor: pointer;
+      padding: 2px;
+      width: 100%;
+      border: 1px #bdabab solid;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #b2b0b0;
+      color: black;
+    }
+
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+    }
+
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+
   </style>
   <title>Thai Le</title>
   
@@ -160,32 +206,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </tr>
         </tbody></table>
 
+   <!--      <button class="collapsible">Publications</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Software and Datasets</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Teaching</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
+
         <div class="nav" style="text-align: center;">
           <a href="./publications.html">Publications</a>
+          <a href="./teachings.html">Teachings</a>
           <a href="./softwares_datasets.html">Softwares and Datasets</a>
         </div>
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tr>
           <td width="100%" valign="middle">
             <heading>News</heading><span> (From 2022)</span>
-            <ul>
-              <li>03/2023 - Congrats mentee Jason Zijao (will be PhD at UMD) and Eric Xing (will be PhD at WUSTL) on PhD admissions.
-              <li>03/2023 - Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations - is available</li>
-              <li>2023 - One paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
+            <ul class="news">
+              <li>07/2023 - Paper on Explaining RL agents via policy-graph+NLP+counterfactual abstractions is accepted to AAMAS Journal
+              <li>06/2023 - Preprint of <a href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> - fooling AI explanations on text classifiers is available.
+              <li>05/2023 - Congrats mentee Jason Zijao (will be PhD at UMD) and Eric Xing (will be PhD at WashU) on PhD admissions.
+              <li>03/2023 - Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
+              <li>2023 - Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
               <li>2023 - Preprint on <i>Unattributable Authorship Text</i> is available</li>
+              <div style="text-align: center;">-----</div>
               <li>2022 - Tutorial <i><a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></i> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchenda</a>.</li>
-              <li>2022 - One survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
-              <li>2022 - One demo paper on perturbations in the wild is accepted at ICDM'23</li>
+              <li>2022 - Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
+              <li>2022 - Demo paper on perturbations in the wild is accepted at ICDM'23</li>
               <li>2022 - PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
               <li>2022 - Accepted tenure-track faculty position at University of Mississippi</li>
               <li>2022 - Receive the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
               <li>2022 - Two papers on adversarial texts are accepted at ACL'22</li>
-              <li>2022 - One paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
-              <li>2022 - One paper on Explainable RL is accepted at AAMAS'22.</li>
+              <li>2022 - Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
+              <li>2022 - Paper on Explainable RL is accepted at AAMAS'22.</li>
+              <li>2022 - Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
+
             </ul>
           </td>
         </tr>
-        </table> -->
+        </table>
 
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -206,5 +272,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </table>
 
 </body>
+
+<script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
 
 </html>
