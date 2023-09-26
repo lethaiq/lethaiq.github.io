@@ -3,6 +3,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B0MH53RK3Y"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,6 +17,33 @@
       float: right;
       display: none!important;
     }
+    body *:not(i,name) {
+      font-family: "Roboto",sans-serif!important;
+/*      font-weight: 300;*/
+      font-size: 0.7rem;
+      line-height: 1.3!important;
+    }
+    
+    ul.publications * {
+/*      font-family: "Roboto",sans-serif;*/
+/*      font-weight: 300;*/
+/*      font-size: 1rem;*/
+    }
+
+    ul.publications {
+      list-style: none
+    }
+
+    ul.publications li {
+      display: block;
+      margin-bottom: 10px!important;
+    }
+
+    ul.teachings li {
+      display: block;
+      margin-bottom: 10px!important;
+    }
+
     img {
       border: solid 1px #bad0c6!important;
       padding: 3px;
@@ -57,7 +85,7 @@
       color: #e5e5e5;
       width: 100%!important;
       display: block;
-      padding: 12px;
+/*      padding: 12px;*/
       margin: 0px!important;
     }
 
@@ -125,13 +153,13 @@
       margin-right: 5px;
      }
 
-     .news {
+   /*  .news {
       font-size: small;
      }
 
      .news a {
       font-size: small!important;
-     }
+     }*/
 
      .collapsible {
       background-color: #d4c3c3;
@@ -145,10 +173,10 @@
       font-size: 15px;
     }
 
-    .active, .collapsible:hover {
+   /* .active, .collapsible:hover {
       background-color: #b2b0b0;
       color: black;
-    }
+    }*/
 
     .collapsible:after {
       content: '\002B';
@@ -169,6 +197,96 @@
       transition: max-height 0.2s ease-out;
       background-color: #f1f1f1;
     }
+    papertitle {
+    /*  font-weight: 700;
+      font-size: small;*/
+      font-style: initial;
+      text-decoration: underline;
+    }
+    author {
+      display: block;
+      font-size: smaller;
+      padding-left: 10px;
+    }
+    venue {
+      display: block;
+      font-size: smaller;
+      padding-left: 10px;
+    }
+    tag {
+      font-weight: 600;
+      font-size: smaller;
+      padding: 1px 2px 1px 2px;
+      border-radius: 3px;
+      margin: 2px;
+      font-family: monospace;
+      display: inline-block;
+    }
+    tag.llm {
+      background: #f14040;
+      color: white;
+    }
+    tag.xai {
+      background: blue;
+      color: white;
+    }
+    tag.robust {
+      background: green;
+      color: white;
+    }
+    tag.sns {
+      background: purple;
+      color: white;
+    }
+    tag.human {
+      background: black;
+      color: white;
+    }
+    tag.noisy {
+      background: brown;
+      color: white;
+    }
+    tag.fakenews {
+      background: orange;
+      color: white;
+    }
+    tag.textgen {
+      background: grey;
+      color: white;
+    }
+    tag.graph {
+      background: #3ee2da;
+      color: white;
+    }
+    tag.signal {
+      background: #a18bd2;
+      color: white;
+    }
+    papertitle a {
+      color: black!important;
+    }
+
+    tag.privacy {
+      background: grey;
+      color: white;
+    }
+    ul.publications{
+      margin: 10px;
+      padding: 0px;
+    }
+
+    .tab-pane {
+      margin-top: 20px;
+    }
+
+    .info {
+      display: block;
+      margin: 10px;
+    }
+
+    .nav-link {
+      color: #981b1e!important;
+    }
 
   </style>
   <title>Thai Le</title>
@@ -186,53 +304,35 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Thai Le</name>
-                <p style="text-align:center">
-                  <i>thaile [at] olemiss [dot] edu |</i>
-                  <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar |</a>
-                  <a href="https://github.com/lethaiq">GitHub</a>
-              </p>
-              <p>Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. My research interest lies in Data Science and Machine Learning with a focus on Natural Language Processing.
-              <p>
-                <span style="color: #981b1e;"><b>I am looking for highly motivated research interns, master and Ph.D. students to do research in security & privacy for NLP applications.</b></span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
 
-   <!--      <button class="collapsible">Publications</button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible">Software and Datasets</button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible">Teaching</button>
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div> -->
+    <div class="info">
+        <p style="text-align:center">
+          <name>Thai Le</name>
+          <p style="text-align:center">
+            <i>thaile [at] olemiss [dot] edu |</i>
+            <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar |</a>
+            <a href="https://github.com/lethaiq">GitHub</a>
+          </p>
+        <p>
+          Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <i>I am interested in making AI and Machine Learning models more robust, safe and explainable to the users!</i>
+          <span style="">I am looking for highly motivated research interns, master and Ph.D. students to do research in security and explainability for Natural Language Processing models.</span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
+      </p>
+    </div>
 
-        <div class="nav" style="text-align: center;">
-          <a href="./publications.html">Publications</a>
-          <a href="./teachings.html">Teachings</a>
-          <a href="./softwares_datasets.html">Softwares and Datasets</a>
-        </div>
-
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr>
-          <td width="100%" valign="middle">
-            <heading>News</heading><span> (From 2022)</span>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
+            <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
+              <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
               <li>08/2023 - <i class="fa-solid fa-book-open"></i> <em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em> accepted to AAAI HCOMP 2024</li>
-              <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Trang and Tuc Nguyen</li>
+              <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
               <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i> Lab members Sijan and Chris successfully defended their Master theses. Congratulations!</li>
               <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
               <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Members: AAAI'24
@@ -243,8 +343,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
-              <div style="text-align: center;">-----</div>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <i><a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></i> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchenda</a>.</li>
+              <div style="text-align: left;">-----</div>
+              <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchenda</a>.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
               <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
@@ -254,32 +354,213 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
               <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <ul class="publications">
+              <li>
+                <papertitle><a href="">Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="human">Human</tag></tags>
+                <author>Adaku Uchendu, Jooyoung Lee, Hua Shen, Thai Le, Ting-Hao Huang and Dongwon Lee</author>
+                <venue>11th AAAI Conference on Human Computation and Crowdsourcing (HCOMP'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="http://links.springernature.com/f/a/3qN2h-ssi8wB547B5Z062Q~~/AABE5gA~/RgRmtmeuP0RcaHR0cHM6Ly90cmVidWNoZXQucHVibGljLnNwcmluZ2VybmF0dXJlLmFwcC9nZXRfY29udGVudC80YTEzNWNjMy01NGUwLTRkN2ItODk2MC1mZTQ5Y2Y4ZDUwN2JXA3NwY0IKZNOu4tNk0lnXf1IQYWxxYWh0YXNAd2Z1LmVkdVgEAAAHLQ~~">A Policy-Graph Approach to Explain Reinforcement Learning Agents: A Novel Policy-Graph Approach with Natural Language and Counterfactual Abstractions for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <author>Tongtong Liu, Joe McCalmon, Thai Le, Md Asifur Rahman, Dongwon Lee, Sarra Alqahtani</author>
+                <venue>Autonomous Agents and Multi-Agent Systems Journal (AAMASJ'23)</venue>
+              </li>
+
+              <li>
+                <papertitle>Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts</papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchenda, Thai Le, Dongwon Lee</author>
+                <venue>The ACM Web Conference (WWW'23, Tutorial)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2203.07618.pdf">Do Language Models Plagiarize?</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Jooyoung Lee, Thai Le, Jinghui Chen, Dongwon Lee</author>
+                <venue>The ACM Web Conference (WWW'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2210.10488.pdf">Attribution and Obfuscation of Neural Text Authorship: A Data Mining Perspective</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchenda, Thai Le, Dongwon Lee</author>
+                <venue>SIGKDD Explorations, Vol. 25, 2023</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2301.06494.pdf">CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <author>Thai Le, Ye Yiran, Yifan Hu, Dongwon Lee</author>
+                <venue>IEEE International Conference on Data Mining (ICDM'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2011.08908.pdf">SHIELD: Defending Textual Neural Networks against Multiple Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <author>Thai Le, Noseong Park, Dongwon Lee</author>
+                <venue>Annual Meeting of the Association for Computational Linguistics (ACL'22)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2203.10346.pdf">Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <author>Thai Le, Jooyoung Lee, Kevin Yen, Yifan Hu, Dongwon Lee</author>
+                <venue>Annual Meeting of the Association for Computational Linguistics (ACL'22, Findings)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <author>Joe McCalmon, Thai Le, Sarra Alqahtani and Dongwon Lee</author>
+                <venue>International Conference on Autonomous Agents and Multiagent Systems (AAMAS'22)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2110.10655">Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="sns">Social Media</tag></tags>
+                <author>Thai Le, Long-Thanh Tran, Dongwon Lee</author>
+                <venue>The ACM Web Conference (WWW'22)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://aclanthology.org/2021.acl-long.296.pdf">A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Trigger’s Adversarial Attacks</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <author>Thai Le, Noseong Park, Dongwon Lee</author>
+                <venue>Annual Meeting of the Association for Computational Linguistics (ACL'21)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://aclanthology.org/2021.findings-emnlp.172.pdf">TURINGBENCH: A Benchmark Environment for Turing Test in the Age of Neural Text Generation</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchendu, Zeyu Ma, Thai Le, Rui Zhang and Dongwon Lee</author>
+                <venue>Empirical Methods in Natural Language Processing (EMNLP'21, Findings)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching</a></papertitle><tags><tag class="noisy">Weak Supervision</tag></tags>
+                <author>Tianyi Xie, Thai Le, Dongwon Lee</author>
+                <venue>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD'21)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445753">”Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                <author>Maria Molina, S. Shyam Sundar, Md Main Uddin Rony, Naeemul Hassan, Thai Le, Dongwon</author>
+                <venue>ACM Conference on Human Factors in Computing Systems (CHI'21)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://deepai.org/publication/large-scale-data-driven-airline-market-influence-maximization">Large-Scale Data-Driven Airline Market Influence Maximization</a></papertitle>
+                <author>Duanshun Li, Jing Liu, Jinsung Jeon, Seoyoung Hong, Thai Le, Noseong Park, Dongwon Lee</author>
+                <venue>ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD'21)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <author>Thai Le, Suhang Wang, Dongwon Lee</author>
+                <venue>IEEE International Conference on Data Mining (ICDM'20)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Model’s Prediction</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <author>Thai Le, Suhang Wang, Dongwon Lee</author>
+                <venue>ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD'20)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://aclanthology.org/2020.emnlp-main.673">Authorship Attribution for Neural Text Generation</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchendu, Thai Le, Kai Shu, Dongwon Lee</author>
+                <venue>Conference on Empirical Methods in Natural Language Processing (EMNLP'20)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://dl.acm.org/doi/10.1145/3341161.3342875">5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="llm">Neural Text</tag></tags>
+                <author>Thai Le, Kai Shu, Maria Molina, Dongwon Lee, Shyam Sundar, Huan Liu</author>
+                <venue>IEEE/ACM Int’l Conf. on Social Networks Analysis and Mining (ASONAM'19)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://doi.org/10.1177/00936502211073398">Reading, Commentingand Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="fakenews">Fake News</tag><tag class="human">Human</tag></tags>
+                <author>Maria Molina, Jinping Wang, S. Shyam Sundar, Thai Le, Carlina DiRusso</author>
+                <venue>Communication Research, 2019</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://journals.sagepub.com/doi/full/10.1177/0002764219878224">”Fake News” is Not Simply False Information: A Concept Explication and Taxonomy of Online Content</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                <author>Maria Molina, Shyam Sundar, Thai Le, Dongwon Lee</author>
+                <venue>American Behavioral Scientist, 2019</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://dl.acm.org/doi/10.1145/3292522.3326055">How Gullible Are You? Predicting Susceptibility to Fake News</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                <author>Jia Shen, Robert Cowell, Aditi Gupta, Thai Le, Amulya Yadav, Dongwon Lee</author>
+                <venue>International ACM Web Science Conference (WebSci'19)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://ieeexplore.ieee.org/document/8955535?signout=success">PathFinder: Graph-based Itemset Embedding for Learning Course Recommendation and Beyond</a></papertitle><tags><tag class="graph">Graph</tag></tags>
+                <author>Jason (Jiasheng) Zhang, Thai Le, Yiming Liao, Dongwon Lee</author>
+                <venue>IEEE International Conference on Data Mining (ICDM'19, Demo)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941">A Machine Learning Framework for Automating Well Log Depth Matching</a></papertitle><tags><tag class="signal">Signal Processing</tag></tags>
+                <author>Thai Le, Lin Liang, Timon Zimmermann, Smaine Zeroug, Denis Helio</author>
+                <venue>Journal of Petrophysics, 2019</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="https://ieeexplore.ieee.org/document/8594871">Deep headline generation for clickbait detection</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Shu Kai, Suhang Wang, Thai Le, Dongwon Lee, Huan Liu</author>
+                <venue>IEEE International Conference on Data Mining (ICDM'18)</venue>
+              </li>
 
             </ul>
-          </td>
-        </tr>
-        </table>
+          </div>
 
+          <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
+            <ul class="publications">
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2309.12934">TopRoBERTa: Topology-Aware Authorship Attribution of Deepfake Texts</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchenda, Thai Le, Dongwon Lee</author>
+              </li>
 
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          	
-            <tr>
-              <td style="padding:0px">
-                <br><hr width=80%>
-                <p style="text-align:right;font-size:xx-small;">
-                  Last updated on 05/05/2023 | 
-                  <a style="font-size: xx-small;" href="https://jonbarron.info/">This guy makes a nice webpage</a>
-                </p>
-                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg&cl=ffffff&w=a"></script>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <author>Yiran Ye, Thai Le, Dongwon Lee</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <author>Christopher Burger, Lingwei Chen, Thai Le</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
+                <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/1710.01977">Machine Learning Based Detection of Clickbait Posts in Social Media</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                <author>Xinyue Cao, Thai Le, Jason (Jiasheng) Zhang, Dongwon Lee</author>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <ul class="teachings">
+              <li>
+                <coursetitle>CSCI 343: Fundamentals of Data Science</coursetitle>
+                <author>University of Mississippi</author>
+              </li>
+
+                <li>
+                <coursetitle>CSCI 517: Natural Language Processing</coursetitle>
+                <author>University of Mississippi</author>
+              </li>
+            </ul>
+          </div>
+
+        </div>
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script type="text/javascript">
     var coll = document.getElementsByClassName("collapsible");
     var i;
