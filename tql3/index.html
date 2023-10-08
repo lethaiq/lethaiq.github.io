@@ -276,6 +276,11 @@
     .tab-pane {
       margin-top: 20px;
     }
+/*
+    .tab-pane ul {
+      margin: 10px;
+      padding: 0px;
+    }*/
 
     .info {
       display: block;
@@ -284,6 +289,10 @@
 
     .nav-link {
       color: #981b1e!important;
+    }
+
+    venue {
+      font-style: italic;
     }
 
   </style>
@@ -318,12 +327,16 @@
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
             <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
+            <button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button>
+            <button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach</button>
             <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
+              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br>Jason (UMD, preventing privacy leakage in texts on social media), </br>Nafis (PSU, written v.s. spoken neural texts) and </br>Chris (Ole Miss, fooling XAI explanations)!</li>
+              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'23</li>
               <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
               <li>08/2023 - <i class="fa-solid fa-book-open"></i> <em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em> accepted to AAAI HCOMP 2024</li>
               <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
@@ -344,7 +357,7 @@
               <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
               <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le Accepted tenure-track faculty position at University of Mississippi</li>
               <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le Received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Two papers on adversarial texts are accepted at ACL'22</li>
+              <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
               <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
@@ -353,6 +366,31 @@
 
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <ul class="publications">
+
+              <li>
+                <papertitle><a href="#">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <author>Christopher Burger, Lingwei Chen, Thai Le</author>
+                <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="#">MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Dominik Macko, Robert Moro, Adaku Uchendu, Jason S Lucas, Michiharu Yamashita, Matúš Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova</author>
+                <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="#">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
+                <author>Ziyao Wang, Thai Le, Dongwon Lee</author>
+                <venue>Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
+              </li>
+
+              <li>
+                <papertitle><a href="#">HANSEN: Human and AI Spoken Text Benchmark for Authorship Analysis</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Nafis Irtiza Tripto, Adaku Uchendu, Thai Le, Mattia Setzu, Fosca Giannotti, Dongwon Lee</author>
+                <venue>Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
+              </li>
+
               <li>
                 <papertitle><a href="https://arxiv.org/abs/2304.01002">Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="human">Human</tag></tags>
                 <author>Adaku Uchendu, Jooyoung Lee, Hua Shen, Thai Le, Ting-Hao Huang and Dongwon Lee</author>
@@ -518,21 +556,52 @@
                 <author>Yiran Ye, Thai Le, Dongwon Lee</author>
               </li>
 
-              <li>
+<!--               <li>
                 <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
-              </li>
-
+              </li> -->
+<!-- 
               <li>
                 <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
                 <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
-              </li>
+              </li> -->
 
               <li>
                 <papertitle><a href="https://arxiv.org/abs/1710.01977">Machine Learning Based Detection of Clickbait Posts in Social Media</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
                 <author>Xinyue Cao, Thai Le, Jason (Jiasheng) Zhang, Dongwon Lee</author>
               </li>
 
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="nav-software" role="tabpanel" aria-labelledby="nav-software-tab">
+            <ul class="software">
+              <li>
+                <coursetitle><a  href="https://lethaiq.github.io/anthro">CrypText Prototype</a>: Discover text perturbations in the wild</coursetitle><a href="https://youtu.be/8WT3G8xjIoI"> [<i class="fa-solid fa-video"></i>Video] </a><a  href="https://lethaiq.github.io/anthro">[<i class="fa-solid fa-arrow-up-right-from-square"></i>Demo]</a>
+              </li>
+
+              <li>
+                <coursetitle><a href="https://huggingface.co/datasets/yiran223/toxic-detection-testset-perturbations">NoisyHate Dataset</a>: Benchmarking offensive text classifiers with real-life human-written (and not machine-generated) perturbations</coursetitle><a href="https://huggingface.co/datasets/NoisyHate/Noisy_Hate_Data"> [<i class="fa-solid fa-cloud-arrow-down"></i>Dataset] </a>
+              </li>
+
+              <li>
+                <coursetitle><a href="https://huggingface.co/datasets/turingbench/TuringBench">TuringBench Dataset</a>: Detecting machine-generated from human-written texts</coursetitle><a href="https://huggingface.co/datasets/turingbench/TuringBench"> [<i class="fa-solid fa-cloud-arrow-down"></i>Dataset] </a>
+              </li>
+
+              <li>
+                <coursetitle><a href="https://ieeexplore.ieee.org/document/8955535?signout=success">PathFinder</a>: Graph-based Itemset Embedding for Learning Course Recommendation and Beyond</coursetitle>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="nav-outreach" role="tabpanel" aria-labelledby="nav-outreach-tab">
+            <ul class="outreach" style="list-style: none;">
+              <li>
+                <coursetitle><a href="https://tinyurl.com/DeepfakeTeaser">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
+                <author>Team: Adaku Uchenda (MIT Lincoln Lab), Saranya Venkatraman (PSU), Dongwon Lee (PSU), Thai Le (UM)</author>
+                <author>Venues: Web Conference 2022 (Austin, TX), NSF Summit 2023 (Berkeley, CA), NAACL 2023 (Mexico)</author>
+              </li>
             </ul>
           </div>
 
@@ -543,12 +612,19 @@
                 <author>University of Mississippi</author>
               </li>
 
-                <li>
+              <li>
                 <coursetitle>CSCI 517: Natural Language Processing</coursetitle>
+                <author>University of Mississippi</author>
+              </li>
+
+              <li>
+                <coursetitle>ENG 697: Trustworthy Machine Learning</coursetitle>
                 <author>University of Mississippi</author>
               </li>
             </ul>
           </div>
+
+
 
         </div>
 
