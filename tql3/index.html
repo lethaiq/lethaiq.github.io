@@ -11,6 +11,13 @@
     gtag('config', 'G-B0MH53RK3Y');
   </script>
   <style type="text/css">
+    body {
+      width: 75%;
+      margin: auto;
+      border-radius: 6px;
+      border: 1px grey solid;
+      margin-top: 15px;
+    }
     #clustrmaps-widget-v2 {
       float: right;
       display: none!important;
@@ -117,6 +124,11 @@
     }
 
     @media screen and (max-width: 768px) {
+      body {
+        width: 100%!important;
+        margin-top: 5px;
+        border: none;
+      }
         img  {
               display:none !important;
        }
@@ -184,9 +196,9 @@
       margin-left: 5px;
     }
 
-    .active:after {
+    /*.active:after {
       content: "\2212";
-    }
+    }*/
 
     .content {
       padding: 0 18px;
@@ -317,7 +329,7 @@
             <a href="https://github.com/lethaiq">GitHub</a>
           </p>
         <p>
-          Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <i>I am interested in making AI and Machine Learning models more robust, safe and explainable to the users!</i>
+          Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <i>I am interested in making AI and Machine Learning models, especially in Natural Language Processing (NLP) domain, more robust, safe and explainable to the users!</i>
           <span style="">I am looking for highly motivated research interns, master and Ph.D. students to do research in security and explainability for Natural Language Processing models.</span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
       </p>
     </div>
@@ -365,28 +377,34 @@
           </div>
 
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <ul class="publications">
+            <ol class="publications">
+              <strong>For full publications please refer to <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar</a></strong></br></br>
+              <li>
+                <papertitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Catch Me If You GPT: Tutorial on Deepfake Texts</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Adaku Uchendu, Saranya Venkatraman, Thai Le, Dongwon Lee</author>
+                <venue>Annual Conf. of the North American Chapter of the Asso. for Comp. Linguistics. June 2024 (NAACL'24, Tutorial)</venue>
+              </li>
 
               <li>
-                <papertitle><a href="#">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
                 <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
               </li>
 
               <li>
-                <papertitle><a href="#">MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2310.13606.pdf">MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
                 <author>Dominik Macko, Robert Moro, Adaku Uchendu, Jason S Lucas, Michiharu Yamashita, Matúš Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova</author>
                 <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
               </li>
 
               <li>
-                <papertitle><a href="#">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
                 <author>Ziyao Wang, Thai Le, Dongwon Lee</author>
                 <venue>Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
               </li>
 
               <li>
-                <papertitle><a href="#">HANSEN: Human and AI Spoken Text Benchmark for Authorship Analysis</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2310.16746.pdf">HANSEN: Human and AI Spoken Text Benchmark for Authorship Analysis</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
                 <author>Nafis Irtiza Tripto, Adaku Uchendu, Thai Le, Mattia Setzu, Fosca Giannotti, Dongwon Lee</author>
                 <venue>Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
               </li>
@@ -440,7 +458,7 @@
               </li>
 
               <li>
-                <papertitle><a href="">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <papertitle><a href="https://par.nsf.gov/servlets/purl/10393053">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
                 <author>Joe McCalmon, Thai Le, Sarra Alqahtani and Dongwon Lee</author>
                 <venue>International Conference on Autonomous Agents and Multiagent Systems (AAMAS'22)</venue>
               </li>
@@ -541,7 +559,7 @@
                 <venue>IEEE International Conference on Data Mining (ICDM'18)</venue>
               </li>
 
-            </ul>
+            </ol>
           </div>
 
           <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
@@ -577,7 +595,7 @@
           <div class="tab-pane fade" id="nav-software" role="tabpanel" aria-labelledby="nav-software-tab">
             <ul class="software">
               <li>
-                <coursetitle><a  href="https://lethaiq.github.io/anthro">CrypText Prototype</a>: Discover text perturbations in the wild</coursetitle><a href="https://youtu.be/8WT3G8xjIoI"> [<i class="fa-solid fa-video"></i>Video] </a><a  href="https://lethaiq.github.io/anthro">[<i class="fa-solid fa-arrow-up-right-from-square"></i>Demo]</a>
+                <coursetitle><a  href="https://lethaiq.github.io/anthro">CrypText Prototype</a>: Discover text perturbations in the wild - first and largest collection of human-written perturbations online in English</coursetitle><a href="https://youtu.be/8WT3G8xjIoI"> [<i class="fa-solid fa-video"></i>Video] </a><a  href="https://lethaiq.github.io/anthro">[<i class="fa-solid fa-arrow-up-right-from-square"></i>Demo]</a>
               </li>
 
               <li>
@@ -598,9 +616,9 @@
           <div class="tab-pane fade" id="nav-outreach" role="tabpanel" aria-labelledby="nav-outreach-tab">
             <ul class="outreach" style="list-style: none;">
               <li>
-                <coursetitle><a href="https://tinyurl.com/DeepfakeTeaser">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
+                <coursetitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
                 <author>Team: Adaku Uchendu (MIT Lincoln Lab), Saranya Venkatraman (PSU), Dongwon Lee (PSU), Thai Le (UM)</author>
-                <author>Venues: Web Conference 2022 (Austin, TX), NSF Summit 2023 (Berkeley, CA), NAACL 2023 (Mexico)</author>
+                <author>Venues: Web Conference 2022 (Austin, TX), NSF Summit 2023 (Berkeley, CA), NAACL 2024 (Mexico)</author>
               </li>
             </ul>
           </div>
@@ -624,10 +642,7 @@
             </ul>
           </div>
 
-
-
         </div>
-
   
 
 </body>
