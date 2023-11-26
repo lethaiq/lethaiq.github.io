@@ -24,6 +24,7 @@
       border: 1px grey solid;
       margin-top: 15px;
       margin-bottom: 15px;
+      box-shadow: 6px 5px 5px whitesmoke;
     }
     #clustrmaps-widget-v2 {
       float: right;
@@ -34,6 +35,7 @@
 /*      font-weight: 300;*/
       font-size: 0.7rem;
       line-height: 1.3!important;
+/*      box-shadow: 6px 5px 5px whitesmoke;*/
     }
     
     ul.publications * {
@@ -97,8 +99,8 @@
       color: #e5e5e5;
       width: 100%!important;
       display: block;
-/*      padding: 12px;*/
-      margin: 0px!important;
+/*      border-radius: 5px;*/
+      margin: 0px 0px -5px 0px!important;
     }
 
     ul li:not(:last-child) {
@@ -304,7 +306,6 @@
 
     .info {
       display: block;
-      margin: 10px;
     }
 
     .nav-link {
@@ -320,6 +321,16 @@
       height: 50px;
     }*/
 
+    .introbox {
+      display: block;
+      border-radius: 5px;
+      width: 80%;
+      text-align: justify;
+      margin: -5px auto 20px auto;
+      border: 1px dotted;
+      padding: 7px;
+    }
+
   </style>
 
     <!-- Demo styles -->
@@ -333,15 +344,15 @@
       width: 100%;
       height: 90px;
       padding: 5px;
-      margin-top: -15px;
-      margin-bottom: -15px;
+      margin-top: -10px;
+      margin-bottom: 0px;
 /*      background-color: grey;*/
     }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+/*      background: #fff;*/
       display: flex;
       justify-content: center;
       align-items: center;
@@ -353,7 +364,7 @@
     }
 
     .swiper-slide img:hover, .swiper-slide img:focus {
-      transform: scale(1.1);
+      transform: scale(1.3);
     }
 
     .swiper-slide img {
@@ -383,85 +394,85 @@
           <name>Thai Le</name>
           <p style="text-align:center">
             <i>leqthai.vn [at] gmail [dot] com OR thaile [at] olemiss [dot] edu</i></br>
-            <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en"><u><i class="fa-solid fa-book-open"></i>Google Scholar</u> |</a>
-            <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i>GitHub</u></a>
+            <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en"><u><i class="fa-solid fa-book-open"></i> Google Scholar</u> |</a>
+            <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
           </p>
-        <p>
+        <p class="introbox">
           Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and explainability of these technologies, ensuring that the society can harness their power with confidence and clarity.</b>
-          <span style="">I am looking for highly motivated students to do research in responsble AI for NLP models.</span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
+          <span style="font-style: italic;">I am looking for highly motivated students to do research in responsble AI for NLP models.</span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
         </p>
 
         <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/ICWSM24.png" alt="ICWSM24" style="border-style: none" />
+                <img src="images/ICWSM24.png" alt="ICWSM24" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/hcomp23.png" alt="HCOMP23" style="border-style: none" />
+                <img src="images/hcomp23.png" alt="HCOMP23" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/reprint23A.png" alt="KDD20" style="border-style: none" />
+                <img src="images/reprint23A.png" alt="KDD20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv22Z.png" alt="Arxiv22Z" style="border-style: none" />
+                <img src="images/Arxiv22Z.png" alt="Arxiv22Z" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv22X.png" alt="Arxiv22X" style="border-style: none" />
+                <img src="images/Arxiv22X.png" alt="Arxiv22X" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv22A.png" alt="Arxiv22A" style="border-style: none" />
+                <img src="images/Arxiv22A.png" alt="Arxiv22A" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv21A.png" alt="Arxiv21A" style="border-style: none" />
+                <img src="images/Arxiv21A.png" alt="Arxiv21A" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv21C.png" alt="Arxiv21B" style="border-style: none" />
+                <img src="images/Arxiv21C.png" alt="Arxiv21B" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Arxiv21D.png" alt="KDD20" style="border-style: none">
+                <img src="images/Arxiv21D.png" alt="KDD20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
                 <img src="images/ACL21.png" alt="ACL21" tyle="border-style: none">
               </div>
               <div class="swiper-slide">
-                <img src="images/EMNLP21.png" alt="EMNLP21" style="border-style: none"/>
+                <img src="images/EMNLP21.png" alt="EMNLP21" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/PKDD21.png" alt="PKDD21" style="border-style: none"/>
+                <img src="images/PKDD21.png" alt="PKDD21" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/CHI20.png" alt="CHI20" style="border-style: none"/>
+                <img src="images/CHI20.png" alt="CHI20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/KDD21.png" alt="KDD21" style="border-style: none"/>
+                <img src="images/KDD21.png" alt="KDD21" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/ICDM20.png" alt="ICDM20" style="border-style: none"/>
+                <img src="images/ICDM20.png" alt="ICDM20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/KDD20.png" alt="KDD20" style="border-style: none"/>
+                <img src="images/KDD20.png" alt="KDD20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/EMNLP20.png" alt="EMNLP20" style="border-style: none"/>
+                <img src="images/EMNLP20.png" alt="EMNLP20" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/ASONAM19.png" alt="ASONAM19" style="border-style: none"/>
+                <img src="images/ASONAM19.png" alt="ASONAM19" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/ABS19.png" alt="ABS19" style="border-style: none"/>
+                <img src="images/ABS19.png" alt="ABS19" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/Websci19.png" alt="Websci19" style="border-style: none"/>
+                <img src="images/Websci19.png" alt="Websci19" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/ICDM19.png" alt="ICDM19" style="border-style: none"/>
+                <img src="images/ICDM19.png" alt="ICDM19" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/SPWLAALS19.png" alt="SPWLAALS19" style="border-style: none"/>
+                <img src="images/SPWLAALS19.png" alt="SPWLAALS19" style="border-style: none" loading="lazy"/>
               </div>
               <div class="swiper-slide">
-                <img src="images/ICDM18.png" alt="ICDM18" style="border-style: none"/>
+                <img src="images/ICDM18.png" alt="ICDM18" style="border-style: none" loading="lazy"/>
               </div>
             </div>
             <div class="swiper-pagination"></div>
