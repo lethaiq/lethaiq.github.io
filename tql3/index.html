@@ -48,14 +48,19 @@
       list-style: none
     }
 
+    ul.news li{
+      display: block;
+      margin-bottom: 4px!important;
+    }
+
     ul.publications li {
       display: block;
-      margin-bottom: 10px!important;
+      margin-bottom: 12px!important;
     }
 
     ul.teachings li {
       display: block;
-      margin-bottom: 10px!important;
+      margin-bottom: 12px!important;
     }
 
     img {
@@ -331,6 +336,10 @@
       padding: 7px;
     }
 
+    #nav-tab button {
+      text-decoration: underline;
+    }
+
   </style>
 
     <!-- Demo styles -->
@@ -405,6 +414,9 @@
         <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/arxiv24A.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
+              </div>
               <div class="swiper-slide">
                 <img src="images/ICWSM24.png" alt="ICWSM24" style="border-style: none" loading="lazy"/>
               </div>
@@ -481,7 +493,7 @@
     </div>
 
         <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
             <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
@@ -493,14 +505,18 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
-              <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to Eric (PhD at UMD) and Saranya (PhD at PSU)!
+              <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br>
+                "Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?"
+              <li>01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
+              <div style="text-align: left;">-----</div>
+              <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to Eric (PhD at UMD) and Saranya (PhD at PSU)!
               <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
               <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
-              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially Wooyong (PSU)!
+              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially Wooyong (PSU)!
               <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br>Jason (UMD, preventing privacy leakage in texts on social media), </br>Nafis (PSU, written v.s. spoken neural texts) and </br>Chris (Ole Miss, fooling XAI explanations)!</li>
               <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
               <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
-              <li>08/2023 - <i class="fa-solid fa-book-open"></i> <em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em> accepted to AAAI HCOMP 2023</li>
+              <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
               <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
               <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i> Lab members Sijan and Chris successfully defended their Master theses. Congratulations!</li>
               <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
@@ -535,12 +551,12 @@
                 <venue>Tthe American Academy of Advertising's Annual Conference (AAA'24)</venue>
               </li> -->
               <li>
-                <papertitle><a href="#">ALISON: Fast and Effective Stylometric Authorship Obfuscation</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Fast and Effective Stylometric Authorship Obfuscation</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
                 <author>Eric Xin, Saranya Venkatraman, Thai Le, Dongwon Lee</author>
                 <venue>Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI'24)</venue>
               </li>
               <li>
-                <papertitle><a href="#">The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit</a></papertitle><tags><tag class="sns">Social Media</tag></tags>
+                <papertitle><a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit</a></papertitle><tags><tag class="sns">Social Media</tag></tags>
                 <author>Wooyong Jung, Nishant Asati, Lucy Phuong Doan, Thai Le, Aiping Xiong, Dongwon Lee</author>
                 <venue>The International AAAI Conference on Web and Social Media (AAAI-ICWSM'24)</venue>
               </li>
@@ -556,9 +572,10 @@
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack </a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
                 <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
+
               </li>
 
               <li>
@@ -735,7 +752,11 @@
           <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
             <ul class="publications">
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2309.12934">TopRoBERTa: Topology-Aware Authorship Attribution of Deepfake Texts</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <author>Nafis Irtiza Tripto, Saranya Venkatraman, Dominik Macko, Robert Moro, Ivan Srba, Adaku Uchendu, Thai Le, Dongwon Lee</author>
+              </li>
+              <li>
+                <papertitle><a href="https://arxiv.org/abs/2309.12934">TopRoBERTa: Topology-Aware Authorship Attribution of Deepfake Texts</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
                 <author>Adaku Uchendu, Thai Le, Dongwon Lee</author>
               </li>
 
