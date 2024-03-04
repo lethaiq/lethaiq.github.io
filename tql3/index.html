@@ -7,7 +7,6 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -304,6 +303,10 @@
       padding: 0px;
     }
 
+    ul.teachings li coursetitle{
+      color: #981b1e!important;;
+    }
+
     .tab-pane {
       margin-top: 20px;
     }
@@ -333,11 +336,13 @@
     .introbox {
       display: block;
       border-radius: 5px;
-      width: 80%;
+      width: 90%;
       text-align: justify;
-      margin: -5px auto 20px auto;
+      margin: 0px auto 20px auto;
+/*      margin: auto;*/
       border: 1px dotted;
       padding: 7px;
+/*      float: right;*/
     }
 
     #nav-tab button {
@@ -388,19 +393,80 @@
       border-radius: 5px;
 
     }
+
+    .tag_content {
+/*      margin-top: -40px!important;*/
+/*      margin-bottom: -20px!important;*/
+/*      float: left;*/
+      display: block;
+/*      margin-left: 10px;*/
+/*      border: 1px dotted grey;*/
+/*      border-radius: 5px;*/
+/*      padding: 5px;*/
+    }
+
+    .tag_content_label {
+      text-align: center;
+      font-weight: 500;
+      display: block;
+      color: "#0eddae"!important
+    }
   </style>
 
   <title>Thai Le</title>
   
   <meta name="author" content="Jon Barron">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+  <script async data-id="101439971" src="http://static.getclicky.com/js"></script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101439971ns.gif" /></p></noscript>
+  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
+
+  <!-- # TAG CLOUD -->
+  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+  <style type="text/css">
+    .tagcloud {
+      font-family: 'Poppins', sans-serif;  
+      font-size: 20px;
+      font-weight: 650;
+      margin: auto;
+    }
+    .tagcloud--item:hover {
+      color: #36454F;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var myTags = [
+          ["POLLICE", "poliice", "PooLice", "pOlicE", "pollce", "policeee", "poliice", "Pooolice", "policce", "POLLICE", "PO-LICE", "pollice", "po0lice", "poo-lice", "pOlice", "pooolice", "poliice", "po-lice", "po0lice", "Pol-ice", "PO-lice", "policie", "pooolice", "Po-Lice", "Pooolice", "po0lice", "pOlicE", "POlice", "POLLICE", "pOlicE", "pooLice", "PoliCE", "poo-lice", "PolIcE", "PolIcE", "poLICE", "PO-lice", "POLLICE", "pollce", "pOLice", "PoLiCe", "PolIcE", "pOlicE", "pooolice", "poLICE", "Pooolice", "Po-Lice", "pooLice", "polce", "pollce"],
+          ["amzzon", "amazzon", "ammazon", "AMAZN", "AMZN", "Amazn", "Amazn", "amazn", "amazonn", "amzn", "amz0n", "amzn", "amazn", "Amzn", "AMAZON", "AMAZONN", "amzzon", "Amaazon", "AMZON", "AMAAZON", "AMZN", "Amaazon", "AMAZONNN", "Amaazon", "amazoon", "AmZN", "AMAZONNN", "Amazn", "amZn", "AMZN", "Amazon", "Amzon", "Amazon", "Amazon", "AMMAZON", "amazzon", "AMMAZON", "AMAZN", "Amzon", "AMAZONNN", "Amazn", "amazn", "AMMAZON", "AMAZONNN", "amazonn", "AMazon", "AMAZON", "amz0n", "amazoon", "amz0n"],
+          ["Republican\u00b4s", "Republlicns", "republiCAN'S", "republican`s", "Republlicns", "Republicanns", "Repbublicans", "repubLIEcans", "REPUBLICAN's", "Republcans", "RepublIcans", "REPUBLICANs", "Republican;s", "Republicans\u2019s", "Republiicans", "Republicans's", "rePUBICans", "Republikcans", "Republican\u2019s", "REPUBLICAN\u2019S", "Republlicans", "REPUBLLICANS", "rePublicans", "REPUBLICAN's", "Republicans's", "Republican\"s", "republICANS", "Repubicans", "Republcans", "RepublicaNs", "rEPUBLICANS", "Repubicans", "republicanss", "republican's", "republicans\u2019s", "Republican's", "REPUBLICAN\u2019S", "Republican's", "republican's", "RePublicans", "Repubicans", "rePUBICans", "REPUBLLICANS", "Republicans", "republican`s", "Repubwicans", "Republiican's", "Repbublicans", "REPUBLICAN's", "republicns"],
+          ["DEMOCR-rats", "Demo-cRATS", "DEMOCR-rats", "DemocRAAT\u2019s", "democRATTS", "dEMOCRATS", "DemoCRATS", "Democrat\u2019\u2019s", "democRats", "Democratss", "Democrats\u2019s", "DEMOCRATs", "DemocRAATS", "DemocRAT's", "DemocRAATs", "DeMoCraTs", "DeMoCraTs", "Demo-crats", "Demo-cRATs", "DemocRATs", "DemOcraTss", "democrRATS", "democ-RATs", "democrat's", "demmocrats", "Democrat,s", "DEMOCRAT'S", "demo-crats", "Demo-cRATS", "Democrat's", "demoocRATS", "democcrats", "DemocRAAT\u2019s", "Demo0crats", "DEMOcrats", "DEMocRATS", "democRATS", "demoocrats", "Democratts", "DemocrRATS", "DemOCrAts", "democrat,s", "demcrats", "democrAts", "democRATs", "DemocraAts", "Democxrats", "demoocRATS", "DEMocrats", "DEMOCrats"]
+        ]
+
+      myTags = myTags[Math.floor(Math.random() * myTags.length)];
+      var tagCloud = TagCloud('.tag_content', myTags,{
+          radius: 90,
+          maxSpeed: 'fast',
+          initSpeed: 'slow',
+          direction: 10,
+          height:500,
+          keep: true
+        }); 
+
+      var colors = ['#0eddae'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      document.querySelector('.tag_content').style.color = random_color;
+    });
+  </script>
+  <!-- # TAG CLOUD -->
+
 </head>
 
-<script async data-id="101439971" src="//static.getclicky.com/js"></script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101439971ns.gif" /></p></noscript>
 
 <body>
     <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
@@ -414,13 +480,17 @@
             <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
           </p>
         <p class="introbox">
-          Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and explainability of these technologies, ensuring that the society can harness their power with confidence and clarity.</b>
-          <span style="font-style: italic;">I am looking for highly motivated students to do research in responsble AI for NLP models.</span> Ole Miss also has a competitive four-year award <a href="https://cs.olemiss.edu/fnc-founders-graduate-fellowship/">FCN Founders Graduate Fellowship</a> for Ph.D. applicants.
+          Welcome! I am an Assistant Professor of the <a href="https://cs.olemiss.edu/">Computer and Information Science</a> department at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a>. My doctorate advisor was <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and explainability of these technologies in both <i>social and cybersecurity</i> contexts, ensuring that the society and netizen can harness their power with confidence and clarity.</b><span style="font-style: italic;"> I always look for highly motivated students to do research in responsble AI for NLP models. If you are interested, please email me your C.V. titled [Research Intern]</span>
         </p>
-
         <!-- Swiper -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/arxiv24C.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/arxiv24B.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
+              </div>
               <div class="swiper-slide">
                 <img src="images/arxiv24A.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
               </div>
@@ -512,6 +582,7 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
+              <h4>From 2024</h4>
               <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.11469"><i>A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</i></a> is available</br>
                 We estimate adversarial robustness of transformer text classifiers without the need to generate adversarial examples, saving 30x-193x runtime
               <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</i></a> is available</br>
@@ -522,7 +593,10 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br>
                 "Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?"
               <li>01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
-              <div style="text-align: left;">-----</div>
+
+              <!-- <div style="text-align: left;">-----</div> -->
+              </br>
+              <h4>From 2023</h4>
               <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to Eric (PhD at UMD) and Saranya (PhD at PSU)!
               <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
               <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
@@ -542,18 +616,26 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
-              <div style="text-align: left;">-----</div>
+              
+
+              <!-- <div style="text-align: left;">-----</div> -->
+                </br>
+              <h4>From 2022</h4>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
               <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
               <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le Accepted tenure-track faculty position at University of Mississippi</li>
-              <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le Received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
+              <li>2022 - <i class="fa-solid fa-ribbon"></i> <strong>Dr. Le Received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</strong></li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
               <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
             </ul>
+
+           <!--  <p class="tag_content"></p>
+            <span class="tag_content_label"><a href="http://137.184.247.33:8000/">Text Perturbations in the Wild (ACL'22, ICDE'23)</a></span>
+ -->
           </div>
 
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -565,7 +647,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
                 <venue>Tthe American Academy of Advertising's Annual Conference (AAA'24)</venue>
               </li> -->
               <li>
-                <papertitle><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Fast and Effective Stylometric Authorship Obfuscation</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Fast and Effective Stylometric Authorship Obfuscation</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Eric Xin, Saranya Venkatraman, Thai Le, Dongwon Lee</author>
                 <venue>Thirty-Eighth AAAI Conference on Artificial Intelligence (AAAI'24)</venue>
               </li>
@@ -586,7 +668,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack </a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack </a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
                 <venue>The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
 
@@ -599,7 +681,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Security</tag><tag class="privacy">Privacy</tag></tags>
                 <author>Ziyao Wang, Thai Le, Dongwon Lee</author>
                 <venue>Findings of The 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP'23)</venue>
               </li>
@@ -617,7 +699,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">A Policy-Graph Approach to Explain Reinforcement Learning Agents: A Novel Policy-Graph Approach with Natural Language and Counterfactual Abstractions for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <papertitle><a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">A Policy-Graph Approach to Explain Reinforcement Learning Agents: A Novel Policy-Graph Approach with Natural Language and Counterfactual Abstractions for Explaining Reinforcement Learning Agents</a></papertitle><tags></tags>
                 <author>Tongtong Liu, Joe McCalmon, Thai Le, Md Asifur Rahman, Dongwon Lee, Sarra Alqahtani</author>
                 <venue>Autonomous Agents and Multi-Agent Systems Journal (AAMASJ'23)</venue>
               </li>
@@ -641,37 +723,37 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2301.06494.pdf">CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2301.06494.pdf">CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Thai Le, Ye Yiran, Yifan Hu, Dongwon Lee</author>
-                <venue>IEEE International Conference on Data Mining (ICDM'23)</venue>
+                <venue>IEEE International Conference on Data Engineering (ICDE'23)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2011.08908.pdf">SHIELD: Defending Textual Neural Networks against Multiple Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2011.08908.pdf">SHIELD: Defending Textual Neural Networks against Multiple Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Thai Le, Noseong Park, Dongwon Lee</author>
                 <venue>Annual Meeting of the Association for Computational Linguistics (ACL'22)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2203.10346.pdf">Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2203.10346.pdf">Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Thai Le, Jooyoung Lee, Kevin Yen, Yifan Hu, Dongwon Lee</author>
                 <venue>Annual Meeting of the Association for Computational Linguistics (ACL'22, Findings)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://par.nsf.gov/servlets/purl/10393053">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <papertitle><a href="https://par.nsf.gov/servlets/purl/10393053">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
                 <author>Joe McCalmon, Thai Le, Sarra Alqahtani and Dongwon Lee</author>
                 <venue>International Conference on Autonomous Agents and Multiagent Systems (AAMAS'22)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2110.10655">Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="sns">Social Media</tag></tags>
+                <papertitle><a href="https://arxiv.org/abs/2110.10655">Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning</a></papertitle><tags><tag class="robust">Security</tag><tag class="sns">Social Media</tag></tags>
                 <author>Thai Le, Long-Thanh Tran, Dongwon Lee</author>
                 <venue>The ACM Web Conference (WWW'22)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://aclanthology.org/2021.acl-long.296.pdf">A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Trigger’s Adversarial Attacks</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://aclanthology.org/2021.acl-long.296.pdf">A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Trigger’s Adversarial Attacks</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Thai Le, Noseong Park, Dongwon Lee</author>
                 <venue>Annual Meeting of the Association for Computational Linguistics (ACL'21)</venue>
               </li>
@@ -701,13 +783,13 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <papertitle><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="robust">Security</tag><tag class="llm">Neural Text</tag></tags>
                 <author>Thai Le, Suhang Wang, Dongwon Lee</author>
                 <venue>IEEE International Conference on Data Mining (ICDM'20)</venue>
               </li>
 
               <li>
-                <papertitle><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Model’s Prediction</a></papertitle><tags><tag class="xai">XAI</tag></tags>
+                <papertitle><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Model’s Prediction</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
                 <author>Thai Le, Suhang Wang, Dongwon Lee</author>
                 <venue>ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD'20)</venue>
               </li>
@@ -766,19 +848,19 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
           <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
             <ol class="publications">
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2402.11469">A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/abs/2402.11469">A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Dang Cao Cuong, Dung D. Le, Thai Le</author>
               </li>
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2402.10639">Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning </a></papertitle>
+                <papertitle><a href="https://arxiv.org/abs/2402.10639">Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning </a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Tuc Van Nguyen, Thai Le</author>
               </li>
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf"> Marrying Adapters and Mixup to Efficiently Enhance the Adversarial Robustness of Pre-Trained Language Models for Text Classification</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf"> Marrying Adapters and Mixup to Efficiently Enhance the Adversarial Robustness of Pre-Trained Language Models for Text Classification</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Tuc Van Nguyen, Thai Le</author>
               </li>
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="llm">Neural Text</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</a></papertitle><tags><tag class="robust">Security</tag><tag class="llm">Neural Text</tag></tags>
                 <author>Nafis Irtiza Tripto, Saranya Venkatraman, Dominik Macko, Robert Moro, Ivan Srba, Adaku Uchendu, Thai Le, Dongwon Lee</author>
               </li>
               <li>
@@ -787,17 +869,17 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Yiran Ye, Thai Le, Dongwon Lee</author>
               </li>
 
 <!--               <li>
-                <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">XAI</tag><tag class="robust">Adversarial</tag></tags>
+                <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
               </li> -->
 <!-- 
               <li>
-                <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Adversarial</tag><tag class="privacy">Privacy</tag></tags>
+                <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Security</tag><tag class="privacy">Privacy</tag></tags>
                 <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
               </li> -->
 
@@ -835,7 +917,13 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               <li>
                 <coursetitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
                 <author>Team: Adaku Uchendu (MIT Lincoln Lab), Saranya Venkatraman (PSU), Dongwon Lee (PSU), Thai Le (UM)</author>
-                <author>Venues: Web Conference 2022 (Austin, TX), NSF Summit 2023 (Berkeley, CA), NAACL 2024 (Mexico)</author>
+                <author>Venues (Conference/Location): 
+                  <ul>
+                    <li>Web Conference 2022 (Austin, TX)</li>
+                      <li>NSF Summit 2023 (Berkeley, CA)</li>
+                        <li>NAACL 2024 (Mexico)</li>
+                  </ul>
+                </author>
               </li>
             </ul>
           </div>
@@ -844,17 +932,17 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
             <ul class="teachings">
               <li>
                 <coursetitle>CSCI 343: Fundamentals of Data Science</coursetitle>
-                <author>University of Mississippi</author>
+                <author>University of Mississippi (FA22, SP23, FA23, SP24)</author>
               </li>
 
               <li>
                 <coursetitle>CSCI 517: Natural Language Processing</coursetitle>
-                <author>University of Mississippi</author>
+                <author>University of Mississippi (SP23)</author>
               </li>
 
               <li>
-                <coursetitle>ENG 697: Trustworthy Machine Learning</coursetitle>
-                <author>University of Mississippi</author>
+                <coursetitle>ENG 691/CSCI492: Trustworthy Machine Learning</coursetitle>
+                <author>University of Mississippi (SP24)</author>
               </li>
             </ul>
           </div>
