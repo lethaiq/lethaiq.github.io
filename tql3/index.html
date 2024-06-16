@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -17,7 +16,7 @@
   </script>
   <style type="text/css">
     body {
-      width: 60%;
+      width: 65%;
       margin: auto;
       border-radius: 6px;
       border: 1px grey solid;
@@ -36,7 +35,7 @@
       line-height: 1.3!important;
 /*      box-shadow: 6px 5px 5px whitesmoke;*/
     }
-    
+
     ul.publications * {
 /*      font-family: "Roboto",sans-serif;*/
 /*      font-weight: 300;*/
@@ -150,7 +149,7 @@
         img  {
 /*          display:none !important;*/
        }
-       
+
        .tool{
         display: inline!important;
         width: 100%;
@@ -349,6 +348,18 @@
       text-decoration: underline;
     }
 
+    h3 {
+        /* font-size: medium!important; */
+        font-weight: bold;
+        color: #981b1e !important;
+    }
+
+    .arkai_page {
+        display: block;
+        margin-left: 20px;
+    }
+
+
   </style>
 
     <!-- Demo styles -->
@@ -411,10 +422,38 @@
       display: block;
       color: "#0eddae"!important
     }
+
+    .highlight {
+        background-color:  "#0eddae"!important;
+        color: #981b1e !important;
+        font-weight: bolder;
+    }
+
+    ul.research li {
+        margin-bottom: -5px;
+    }
+
+    ul.research li a {
+        font-size: smaller;
+    }
+
+    div.photos img {
+        width: 40%;
+        text-align: center;
+    }
+
+    div.photos {
+        text-align: center;
+    }
+
+    div.photos .caption {
+        display: block;
+        font-style: italic;
+    }
   </style>
 
   <title>Thai Le</title>
-  
+
   <meta name="author" content="Jon Barron">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script
@@ -430,7 +469,7 @@
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
   <style type="text/css">
     .tagcloud {
-      font-family: 'Poppins', sans-serif;  
+      font-family: 'Poppins', sans-serif;
       font-size: 20px;
       font-weight: 650;
       margin: auto;
@@ -456,7 +495,7 @@
           direction: 10,
           height:500,
           keep: true
-        }); 
+        });
 
       var colors = ['#0eddae'];
       var random_color = colors[Math.floor(Math.random() * colors.length)];
@@ -475,14 +514,15 @@
         <p style="text-align:center">
           <name>Thai Le</name>
           <p style="text-align:center">
-            <i>leqthai.vn [at] gmail [dot] com</i></br>
+            <i>tle [at] iu [dot] edu</i></br>
             <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en"><u><i class="fa-solid fa-book-open"></i> Google Scholar</u> |</a>
             <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
           </p>
         <p class="introbox">
-          Welcome! I am an incoming Assistant Professor of the <a href="https://luddy.iupui.edu/departments/cs/index.html">Computer Science@Luddy at Indiana University at Bloomington (IUB)</a> from Fall 2024. I have been an Assistant Professor at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the supervision of <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am an ex-Amazonian at <a href="https://www.amazon.com/Alexa-Privacy-Hub/b?ie=UTF8&node=19149155011">Alexa Privacy</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>. <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and explainability of these technologies in both <i>social and cybersecurity</i> contexts, ensuring that the society and netizen can harness their power with confidence and clarity.</b><span style="font-style: italic;"> 
+          Welcome! I am an incoming Assistant Professor of the <a href="https://luddy.iupui.edu/departments/cs/index.html">Computer Science@Luddy at Indiana University (IUB)</a> from Fall 2024. I was an Assistant Professor at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
+          <!-- <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and transparency of these technologies in both <i>social and cybersecurity</i> contexts, ensuring that the society and netizen can harness their power with confidence and clarity.</b><span style="font-style: italic;"> -->
 
-          </br></br>I am looking for highly motivated students to do research in responsble AI for NLP models. If you are interested, please email me your C.V. titled [Research Intern]</span>
+          </br><i>I am looking for highly motivated students to do research in responsble AI for NLP models. If you are interested, please email me your C.V. titled [Research Intern]</i></span>
         </p>
         <!-- Swiper -->
           <div class="swiper mySwiper">
@@ -573,7 +613,8 @@
 
         <nav>
           <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
+            <button class="nav-link active" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button>
+            <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
             <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
             <button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button>
@@ -582,12 +623,17 @@
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="tab-pane fade show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
-              <h4>From 2024</h4>
-              <li>05/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACL 2024! Congratulations to Nafis (PSU), Cuong (FPT - first acceptance as a fresh bachelor graduate), and Tuc (Ole Miss - first acceptance as a PhD student)</li>
-              <li>05/2024 - Dr. Le is joining <a href="https://luddy.iupui.edu/departments/cs/index.html">CS@Luddy</a> at Indiana University as an assistant professor from Fall 2024.</li>
-              <li>04/2024 - <i class="fa-solid fa-champagne-glasses"></i> Chris passed his prospectus. Congratulations!</li>
+              <h4><strong>From 2024</strong></h4>
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACL 2024! Congratulations to our collaborators and (very hard-working) students, especially:</br>
+                  <strong>Nafis</strong> (Penn State), </br>
+                  <strong>Cuong</strong> (FPT - first acceptance as a fresh bachelor graduate), and </br>
+                  <strong>Tuc</strong> (Ole Miss - first acceptance as a PhD student)</li>
+              <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee <strong>Jun</strong> (Oxford High School) was awarded <a href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd place (SPECIAL AWARD by NSA)</a> at ISEF 2024</a>. Congratulations!
+              <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong> accepted a research-based MSc program at Wake Forest University with a full-ride scholarship. Congratulations!</li>
+              <!-- <li>05/2024 - Dr. Le is joining <a href="https://luddy.iupui.edu/departments/cs/index.html">CS@Luddy</a> at Indiana University as an assistant professor from Fall 2024.</li> -->
+              <li>04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong> passed his doctorate prospectus. Congratulations!</li>
               <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks</i></a> is accepted to AIED 2024</br>
                 Carrying out a user study of ~120 participants, we found <i>no strong evidence</i> that writing product and writing process were significantly impacted by Google Smart Compose.</br>
                 Congrats on our first collaborative project at Ole Miss with Writing and Rhetoric and Psychology Department! <a href="https://news.olemiss.edu/writing-and-rhetoric-faculty-examines-ai-opportunities-challenges/">Read more</a> about how my collaborators are addressing AI in higher-ed.
@@ -607,18 +653,18 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
 
               <!-- <div style="text-align: left;">-----</div> -->
               </br>
-              <h4>From 2023</h4>
-              <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i> Rishabh successfully defended his Master thesis. Congratulations!</li>
-              <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to Eric (PhD at UMD) and Saranya (PhD at PSU)!
+              <h4><strong>From 2023</strong></h4>
+              <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong> successfully defended his Master thesis. Congratulations!</li>
+              <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to <strong>Eric</strong> (PhD at UMD) and <strong>Saranya</strong> (PhD at PSU)!
               <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
               <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
-              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially Wooyong (PSU)!
-              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br>Jason (UMD, preventing privacy leakage in texts on social media), </br>Nafis (PSU, written v.s. spoken neural texts) and </br>Chris (Ole Miss, fooling XAI explanations)!</li>
+              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially <strong>Wooyong</strong> (Penn State)!
+              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br></li><strong>Jason</strong> (UMD, preventing privacy leakage in texts on social media), </br><strong>Nafis</strong> (Penn State, written v.s. spoken neural texts) and </br><strong>Chris</strong> (Ole Miss, fooling XAI explanations)!</li>
               <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
               <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
               <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
               <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
-              <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i> Lab members Sijan and Chris successfully defended their Master theses. Congratulations!</li>
+              <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and <strong>Chri</strong>s successfully defended their Master theses. Congratulations!</li>
               <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
               <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24
               <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at REU@PSU. Happy to see old/new faces at Penn State!</li>
@@ -628,11 +674,11 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
               <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
-              
+
 
               <!-- <div style="text-align: left;">-----</div> -->
                 </br>
-              <h4>From 2022</h4>
+              <h4><strong>From 2022</strong></h4>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
               <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
@@ -797,7 +843,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               </li>
 
               <li>
-                <papertitle><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching</a></papertitle><tags><tag class="noisy">Weak Supervision</tag></tags>
+                <papertitle><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching</a></papertitle><tags><tag class="noisy">Weak an</tag></tags>
                 <author>Tianyi Xie, Thai Le, Dongwon Lee</author>
                 <venue>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD'21)</venue>
               </li>
@@ -899,7 +945,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
                 <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
                 <author>Christopher Burger, Lingwei Chen, Thai Le</author>
               </li> -->
-<!-- 
+<!--
               <li>
                 <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Security</tag><tag class="privacy">Privacy</tag></tags>
                 <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
@@ -939,7 +985,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
               <li>
                 <coursetitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
                 <author>Team: Adaku Uchendu (MIT Lincoln Lab), Saranya Venkatraman (PSU), Dongwon Lee (PSU), Thai Le (UM)</author>
-                <author>Venues (Conference/Location): 
+                <author>Venues (Conference/Location):
                   <ul>
                     <li>Web Conference 2022 (Austin, TX)</li>
                       <li>NSF Summit 2023 (Berkeley, CA)</li>
@@ -969,8 +1015,161 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
             </ul>
           </div>
 
+
+          <div class="tab-pane fade active show" id="nav-arkai" role="tabpanel" aria-labelledby="nav-arkai-tab">
+            <div class="arkai_page">
+                <h3>welcome!</h3>
+                <!-- <span>Welcome to <span class="highlight">ARKAI</span> Lab <i>( <u>A</u>ccountable, <u>R</u>esilient, and <u>K</u>ind <u>AI</u>)</i>! -->
+                    Our reseach lab is on a mission to enhance the robustness, safety, and transparency of AI-related technologies in various sociotechnical contexts, ensuring that the society and netizen can harness their power with confidence and clarity.
+                    </i> We hope deliver the much needed responsible and ethical development and use of AI, and to also encourage AI applications that nurture humans and the society.</span>
+                    <!-- </i> We hope to associate AI with <i>kindness</i> as not to humanize AI, but to emphasize the much needed responsible and ethical development and use of AI, and to also encourage AI applications that nurture humans and the society.</span> -->
+                <br>
+                <!-- Please check out the <a>news</a> sction for latest updates! -->
+                <!-- <br> -->
+                <br>
+
+                <h3>research interests (selective from 2020)</h3>
+                <ul class="research">
+                    <li><h4><strong>security/privacy/safety/robustness of NLP models:</strong>
+                        <a href="https://aclanthology.org/2021.acl-long.296.pdf">ACL'21</a>,
+                        <a href="https://arxiv.org/pdf/2011.08908.pdf">ACL'22a</a>,
+                        <a href="https://arxiv.org/pdf/2203.10346.pdf">ACL'22b</a>,
+                        <a href="https://arxiv.org/pdf/2211.09717.pdf">EMNLP'23c</a>,
+                        <a href="https://arxiv.org/pdf/2301.06494.pdf">ICDE'23</a>,
+                        <a href="https://pike.psu.edu/publications/aaai24.pdf">AAAI'24</a>,
+                        <a href="https://arxiv.org/abs/2402.11469">ACL'24b</a>,
+                        <a href="https://arxiv.org/abs/2402.10639">ACL'24c</a>
+                        </h4></li>
+                    <li><h4><strong>large language models and neural texts:</strong>
+                        <a href="https://aclanthology.org/2020.emnlp-main.673">EMNLP'20</a>,
+                        <a href="https://aclanthology.org/2021.findings-emnlp.172.pdf">EMNLP'21</a>,
+                        <a href="https://arxiv.org/pdf/2310.13606.pdf">EMNLP'23b</a>,
+                        <a href="https://arxiv.org/pdf/2310.16746.pdf">EMNLP'23d</a>,
+                        <a href="https://arxiv.org/abs/2304.01002">HCOMP'23</a>,
+                        <a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">WWW'23a</a>,
+                        <a href="https://arxiv.org/pdf/2203.07618.pdf">WWW'23b</a>,
+                        <a href="https://arxiv.org/pdf/2210.10488.pdf">SIGKDD Explorations'23</a>,
+                        <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">NAACL'24</a>,
+                        <a href="https://arxiv.org/pdf/2311.08374.pdf">ACL'24a</a>
+                        </h4></li>
+                    <li><h4><strong>explainable AI (XAI):</strong>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">KDD'20</a>,
+                        <a href="https://par.nsf.gov/servlets/purl/10393053">AAMAS'22</a>,
+                        <a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">AAMASJ'23</a>,
+                        <a href="https://arxiv.org/pdf/2305.12351.pdf">EMNLP'23a</a>
+                        </h4></li>
+                    <li><h4><strong>NLP applications (online fakes, education, social media):</strong>
+                        <a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">ICDM'20</a>,
+                        <a href="https://arxiv.org/abs/2110.10655">WWW'22</a>,
+                        <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">AAAI-ICWSM'24</a>,
+                        <a href="./pdfs/AEID24.pdf">AIED'24</a>
+                    </h4></li>
+                </ul>
+
+                <h3>people</h3>
+                    <ul class="outreach">
+                        <oi>---Current---</oi>
+                        <li>
+                            <coursetitle><a href="#">Tuc Nguyen</a><coursetitle>
+                            <span class="student_tag">PhD Student (@Indiana University)</span>
+                        </li>
+
+                        <li>
+                            <coursetitle><a href="">Cuong Nguyen</a></coursetitle>
+                            <span class="student_tag">Research Intern (@FPT Software AI Center)</span>
+                        </li>
+
+                        <li>
+                            <coursetitle><a href="">Paulina Eguibar</a></coursetitle>
+                            <span class="student_tag">CS Undergraduate Research Intern (@Ole Miss)</span>
+                        </li>
+                        <oi><br>---Alumni---</oi>
+                        <li>
+                            <coursetitle><a href="#">Chris Burger</a><coursetitle>
+                            <span class="student_tag">CS PhD (→Instructional Assistant Professor in CS @Ole Miss from Fall 2024)</span>
+                            <author>Doctorate Thesis: <i>Explainable AI for Neural Text Classification Models: Robustness and
+                            Knowledge Locality</i></author>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Rishabh Shrestha</a><coursetitle>
+                            <span class="student_tag">CS MSc (→ Intern @St. Jude → Software Engineer @Central Service Association, MS)</span>
+                            <author>MSc Thesis: <i>EarthsciBERT: Pre-trained Language Model for Information Retrieval in Earth Science</i></author>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Sijan Shrestha</a><coursetitle>
+                            <span class="student_tag">CS MSc (→ Application Analyst @Institute of Child Nutrition)</span>
+                            <author>MSc Thesis: <i>The Effects of Google Smart Compose In Open-ended Writings</i></author>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Lisette Kamper-Hinson</a><coursetitle>
+                            <span class="student_tag">CS Undergraudate Student (→ Intern @NASA → MSc @Wake Forest University)</span>
+                        </li>
+                        <oi><br>---Mentees and Research Interns (past and current)---</oi>
+                        <li>
+                            <coursetitle><a href="#">James Michael</a><coursetitle>
+                            <span class="student_tag">(PhD@Ole Miss)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Cara Yin</a><coursetitle>
+                            <span class="student_tag">(PhD@Ole Miss)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Hoang Tran</a><coursetitle>
+                            <span class="student_tag">(PhD@Ole Miss)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Jun Jang</a><coursetitle>
+                            <span class="student_tag">(Oxford High School → ISEF - 3rd place awarded by NSA)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Henry Harrison</a><coursetitle>
+                            <span class="student_tag">(Mississippi School for Mathematics and Science)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Eric Xing</a><coursetitle>
+                            <span class="student_tag">(Western Kentucky U. → WashU)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Ziyao Wang</a><coursetitle>
+                            <span class="student_tag">(Wuhan University, China → UMD)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Jayesh Khandelwal</a><coursetitle>
+                            <span class="student_tag">(IIT Jodhpur, India → NYU)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Yiran Ye </a><coursetitle>
+                            <span class="student_tag">(MS@Penn State → Software Engineer @Minitab, PA )</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Adaku Uchendu</a><coursetitle>
+                            <span class="student_tag">(Phd@Penn State → Lab Technical Staff @MIT Lincoln Laboratory)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Joe McCalmon</a><coursetitle>
+                            <span class="student_tag">(CS Undergraduate @Wake Forest U. → Startup)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Tianyi Xie</a><coursetitle>
+                            <span class="student_tag">(Shanghai Jia Tong University, China → UCLA)</span>
+                        </li>
+                        <li>
+                            <coursetitle><a href="#">Xinyue Cao</a><coursetitle>
+                            <span class="student_tag">(Intern @Penn State → CMU)</span>
+                        </li>
+
+                    </ul>
+
+                <h3>photos</h3>
+                    <div class="photos">
+                        <img src="./images/arkai_lab_22.jpg" alt="ARKAI Lab - Ole Miss - 2022"/>
+                        <span class="caption"></span>Lab picnic at Ole Miss - 2022 (Sardis Lake, MS)</span>"
+                    </div>
+            </div>
+          </div>
+
         </div>
-  
+
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -986,7 +1185,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
           content.style.maxHeight = null;
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
-        } 
+        }
       });
     }
 
