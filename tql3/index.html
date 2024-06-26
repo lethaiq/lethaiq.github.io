@@ -16,7 +16,7 @@
   </script>
   <style type="text/css">
     body {
-      width: 65%;
+      width: 55%;
       margin: auto;
       border-radius: 6px;
       border: 1px grey solid;
@@ -44,6 +44,11 @@
 
     ul.publications {
 /*      list-style: none*/
+    }
+
+    ul {
+        margin-left: -17px;
+        margin-right: 2px;
     }
 
     ul.news li{
@@ -450,6 +455,20 @@
         display: block;
         font-style: italic;
     }
+
+    div#previous_news {
+        display: none;
+    }
+
+    #show_previous_news {
+        border: 2px solid;
+        background-color: #f4dfe0;
+        border-radius: 4px;
+        padding: 2px 4px 2px 4px;
+        font-style: italic;
+        border-color: #a28080;
+    }
+
   </style>
 
   <title>Thai Le</title>
@@ -461,8 +480,8 @@
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <script async data-id="101439971" src="http://static.getclicky.com/js"></script>
-  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101439971ns.gif" /></p></noscript>
+  <!-- <script async data-id="101439971" src="http://static.getclicky.com/js"></script> -->
+  <!-- <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101439971ns.gif" /></p></noscript> -->
   <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
 
   <!-- # TAG CLOUD -->
@@ -500,6 +519,7 @@
       var colors = ['#0eddae'];
       var random_color = colors[Math.floor(Math.random() * colors.length)];
       document.querySelector('.tag_content').style.color = random_color;
+
     });
   </script>
   <!-- # TAG CLOUD -->
@@ -509,7 +529,13 @@
 
 <body>
     <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
-
+    <script>
+      $(document).ready(function(){
+        $("#show_previous_news").on('click', function(){
+          $("#previous_news").fadeToggle();
+        });
+      });
+    </script>
     <div class="info">
         <p style="text-align:center">
           <name>Thai Le</name>
@@ -519,10 +545,8 @@
             <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
           </p>
         <p class="introbox">
-          Welcome! I am an incoming Assistant Professor of the <a href="https://luddy.iupui.edu/departments/cs/index.html">Computer Science@Luddy at Indiana University (IUB)</a> from Fall 2024. I was an Assistant Professor at <a href="https://olemiss.edu/">University of Mississippi (Ole Miss)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="http://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
+          Welcome! I am an Assistant Professor of the <a href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (IUB)</a>. I was an Assistant Professor at University of Mississippi (Ole Miss). I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="https://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
           <!-- <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and transparency of these technologies in both <i>social and cybersecurity</i> contexts, ensuring that the society and netizen can harness their power with confidence and clarity.</b><span style="font-style: italic;"> -->
-
-          </br><i>I am looking for highly motivated students to do research in responsble AI for NLP models. If you are interested, please email me your C.V. titled [Research Intern]</i></span>
         </p>
         <!-- Swiper -->
           <div class="swiper mySwiper">
@@ -613,8 +637,8 @@
 
         <nav>
           <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button>
-            <button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
+            <button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
             <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
             <button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button>
@@ -623,72 +647,94 @@
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
-              <h4><strong>From 2024</strong></h4>
-              <li>06/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACL 2024! Congratulations to our collaborators and (very hard-working) students, especially:</br>
-                  <strong>Nafis</strong> (Penn State), </br>
-                  <strong>Cuong</strong> (FPT - first acceptance as a fresh bachelor graduate), and </br>
-                  <strong>Tuc</strong> (Ole Miss - first acceptance as a PhD student)</li>
+              <li><span style="display:block; text-align:  center; color: blue;"><i>I am looking for highly motivated students to do research in responsble/security/XAI for NLP models. If you are interested, please send me your C.V.</i></span></li>
+
+              </br>
+              <!-- <h4><strong>From 2024</strong></h4> -->
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> We delivered our <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf">Deepfake Text Detection and Obfuscation</a> at NAACL 2024 (Mexico City) with Penn State, MIT Lincoln Lab and GPT-Zero</li>
+
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2401.10111.pdf"><i>Adapters Mixup</i></a> is available</br>
+              We use mixup with adapters to fine-tune pre-trained language models to enhance their adversarial robustness with <i>unknown</i> future attacks.
+
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15940v1"><i>Beyond Individual Facts for GPT Models</i></a> is available</br>
+              We investigate knowledge locality of GPT models for not one but a group of conceptually related facts.
+
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.16288v1"><i>PlagBench</i></a> is available</br>
+              We collect data and benchmark LLM's dual behaviors: (1) plagarism generation via summarization and (2) plagarism detection.
+
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15839"><i>XAI Similarity Metrics</i></a> is available</br>
+              We investigate a variety of similarity measures designed for text-based adversarial attacks on Explainable AI.
+
+              <li>06/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACL 2024! Congratulations to our collaborators and very hard-working students, especially:</br>
+                  <strong>Nafis</strong> (Penn State - <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a>), </br>
+                  <strong>Cuong</strong> (FPT - first acceptance as a fresh bachelor graduate - <a href="https://arxiv.org/abs/2402.11469"><i>Searching for the Correlation between Training Data and Adversarial Robustness</i></a>), and </br>
+                  <strong>Tuc</strong> (Ole Miss - first acceptance as a PhD student - <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions</i></a>)</li>
+
               <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee <strong>Jun</strong> (Oxford High School) was awarded <a href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd place (SPECIAL AWARD by NSA)</a> at ISEF 2024</a>. Congratulations!
               <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong> accepted a research-based MSc program at Wake Forest University with a full-ride scholarship. Congratulations!</li>
               <!-- <li>05/2024 - Dr. Le is joining <a href="https://luddy.iupui.edu/departments/cs/index.html">CS@Luddy</a> at Indiana University as an assistant professor from Fall 2024.</li> -->
               <li>04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong> passed his doctorate prospectus. Congratulations!</li>
               <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks</i></a> is accepted to AIED 2024</br>
-                Carrying out a user study of ~120 participants, we found <i>no strong evidence</i> that writing product and writing process were significantly impacted by Google Smart Compose.</br>
-                Congrats on our first collaborative project at Ole Miss with Writing and Rhetoric and Psychology Department! <a href="https://news.olemiss.edu/writing-and-rhetoric-faculty-examines-ai-opportunities-challenges/">Read more</a> about how my collaborators are addressing AI in higher-ed.
+                <!-- Carrying out a user study of ~120 participants, we found <i>no strong evidence</i> that writing product and writing process were significantly impacted by Google Smart Compose.</br> -->
+                <!-- Congrats on our first collaborative project at Ole Miss with Writing and Rhetoric and Psychology Department! <a href="https://news.olemiss.edu/writing-and-rhetoric-faculty-examines-ai-opportunities-challenges/">Read more</a> about how my collaborators are addressing AI in higher-ed. -->
               <!-- <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACMSE 2024 (oldest, annual conference of ACM)</br>
                 Congrats to Cara (Ole Miss) - <i>"Benchmarking Machine Learning Techniques for Bankruptcy Prediction under Benign and Adversarial Behaviors"</i></br>
                 Congrats to Avinder (Ole Miss) - <i>"Toshakhana: A Multi-dimensional Panjabi Corpus in Gurmukhi Script"</i> -->
-              <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.11469"><i>A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</i></a> is available</br>
-                We estimate adversarial robustness of transformer text classifiers without the need to generate adversarial examples, saving 30x-193x runtime
-              <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</i></a> is available</br>
-                We analyze the weight signs conflicts when mixing multiple domain-specific adapters, yielding critical correlation between weight sign conficts and their mixtures' in-domain generalizability
-              <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/pdf/2401.10111.pdf"><i>Marrying Adapters and Mixup to Efficiently Enhance the Adversarial
-Robustness of Pre-Trained Language Models for Text Classification</i></a> is available</br>
-              We use mixup with adapters to fine-tune pre-trained language models to enhance their adversarial robustness
-              <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br>
-                "Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?"
+              <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.11469"><i>A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</i></a> is available</br> -->
+                <!-- We estimate adversarial robustness of transformer text classifiers without the need to generate adversarial examples, saving 30x-193x runtime -->
+              <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</i></a> is available</br> -->
+                <!-- We show critical understanding regarding the correlation between weight sign conficts and their mixtures' in-domain generalizability -->
+              <!-- <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br> -->
+                <!-- We investigate RQ ``Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?'' -->
               <li>01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
 
               <!-- <div style="text-align: left;">-----</div> -->
               </br>
-              <h4><strong>From 2023</strong></h4>
-              <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong> successfully defended his Master thesis. Congratulations!</li>
-              <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to <strong>Eric</strong> (PhD at UMD) and <strong>Saranya</strong> (PhD at PSU)!
-              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
-              <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
-              <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially <strong>Wooyong</strong> (Penn State)!
-              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br></li><strong>Jason</strong> (UMD, preventing privacy leakage in texts on social media), </br><strong>Nafis</strong> (Penn State, written v.s. spoken neural texts) and </br><strong>Chris</strong> (Ole Miss, fooling XAI explanations)!</li>
-              <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
-              <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
-              <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
-              <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
-              <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and <strong>Chri</strong>s successfully defended their Master theses. Congratulations!</li>
-              <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
-              <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24
-              <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at REU@PSU. Happy to see old/new faces at Penn State!</li>
-              <li>07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents via policy-graph+NLP+counterfactual abstractions is accepted to AAMAS Journal
-              <li>06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> - fooling AI explanations on text classifiers is available.
-              <li>05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee Jason Zijao (PhD at UMD), Eric Xing (PhD at WashU), Jayesh Khandelwal (MS at NYU) on graduate admissions.
-              <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
-              <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
-              <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
 
-
-              <!-- <div style="text-align: left;">-----</div> -->
+              <button id="show_previous_news">Toggle Past News</button>
+              <div id="previous_news">
                 </br>
-              <h4><strong>From 2022</strong></h4>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://tinyurl.com/DeepfakeTeaser">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
-              <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
-              <li>2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi</li>
-              <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
-              <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
-              <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
+                <h4><strong>From 2023</strong></h4>
+                <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong> successfully defended his Master thesis. Congratulations!</li>
+                <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to <strong>Eric</strong> (PhD at UMD) and <strong>Saranya</strong> (PhD at PSU)!
+                <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
+                <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
+                <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially <strong>Wooyong</strong> (Penn State)!
+                <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br></li><strong>Jason</strong> (UMD, preventing privacy leakage in texts on social media), </br><strong>Nafis</strong> (Penn State, written v.s. spoken neural texts) and </br><strong>Chris</strong> (Ole Miss, fooling XAI explanations)!</li>
+                <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
+                <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
+                <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
+                <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
+                <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and <strong>Chri</strong>s successfully defended their Master theses. Congratulations!</li>
+                <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
+                <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24
+                <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at REU@PSU. Happy to see old/new faces at Penn State!</li>
+                <li>07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents via policy-graph+NLP+counterfactual abstractions is accepted to AAMAS Journal
+                <li>06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> - fooling AI explanations on text classifiers is available.
+                <li>05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee Jason Zijao (PhD at UMD), Eric Xing (PhD at WashU), Jayesh Khandelwal (MS at NYU) on graduate admissions.
+                <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
+                <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
+                <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
+
+
+                <!-- <div style="text-align: left;">-----</div> -->
+                    </br>
+                <h4><strong>From 2022</strong></h4>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
+                <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
+                <li>2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi</li>
+                <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
+                <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
+                <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
+
+              </div>
+
             </ul>
 
            <!--  <p class="tag_content"></p>
@@ -927,8 +973,23 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
             <ol class="publications">
 
               <li>
-                <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf"> Marrying Adapters and Mixup to Efficiently Enhance the Adversarial Robustness of Pre-Trained Language Models for Text Classification</a></papertitle><tags><tag class="robust">Security</tag></tags>
+                <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf">Adapters Mixup: Mixing Parameter-Efficient Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text Classifiers</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Tuc Van Nguyen, Thai Le</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2406.15940v1">Beyond Individual Facts: Investigating Categorical Knowledge Locality of Taxonomy and Meronomy Concepts in GPT Models</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                <author>Christopher Burger, Yifan Hu, Thai Le</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                <author>Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</author>
+              </li>
+
+              <li>
+                <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate Stability Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                <author>Christopher Burger, Charles Walter, Thai Le</author>
               </li>
 
               <li>
@@ -983,7 +1044,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
           <div class="tab-pane fade" id="nav-outreach" role="tabpanel" aria-labelledby="nav-outreach-tab">
             <ul class="outreach">
               <li>
-                <coursetitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
+                <coursetitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf">Tutorial: ``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a></coursetitle>
                 <author>Team: Adaku Uchendu (MIT Lincoln Lab), Saranya Venkatraman (PSU), Dongwon Lee (PSU), Thai Le (UM)</author>
                 <author>Venues (Conference/Location):
                   <ul>
@@ -998,6 +1059,11 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
 
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
             <ul class="teachings">
+              <li>
+                  <coursetitle>Natural Language Processing</coursetitle>
+                  <author>Indiana University (FA24)</author>
+              </li>
+
               <li>
                 <coursetitle>CSCI 343: Fundamentals of Data Science</coursetitle>
                 <author>University of Mississippi (FA22, SP23, FA23, SP24)</author>
@@ -1016,7 +1082,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
           </div>
 
 
-          <div class="tab-pane fade active show" id="nav-arkai" role="tabpanel" aria-labelledby="nav-arkai-tab">
+          <div class="tab-pane fade show" id="nav-arkai" role="tabpanel" aria-labelledby="nav-arkai-tab">
             <div class="arkai_page">
                 <h3>welcome!</h3>
                 <!-- <span>Welcome to <span class="highlight">ARKAI</span> Lab <i>( <u>A</u>ccountable, <u>R</u>esilient, and <u>K</u>ind <u>AI</u>)</i>! -->
@@ -1088,7 +1154,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
                             <coursetitle><a href="#">Chris Burger</a><coursetitle>
                             <span class="student_tag">CS PhD (→Instructional Assistant Professor in CS @Ole Miss from Fall 2024)</span>
                             <author>Doctorate Thesis: <i>Explainable AI for Neural Text Classification Models: Robustness and
-                            Knowledge Locality</i></author>
+                            Knowledge Locality (TBD)</i></author>
                         </li>
                         <li>
                             <coursetitle><a href="#">Rishabh Shrestha</a><coursetitle>
@@ -1163,7 +1229,7 @@ Robustness of Pre-Trained Language Models for Text Classification</i></a> is ava
                 <h3>photos</h3>
                     <div class="photos">
                         <img src="./images/arkai_lab_22.jpg" alt="ARKAI Lab - Ole Miss - 2022"/>
-                        <span class="caption"></span>Lab picnic at Ole Miss - 2022 (Sardis Lake, MS)</span>"
+                        <span class="caption"></span>Lab picnic at Ole Miss - 2022 (Sardis Lake, MS)</span>
                     </div>
             </div>
           </div>
