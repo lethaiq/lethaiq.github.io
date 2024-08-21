@@ -1,6 +1,6 @@
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 <title></title>
-<script src="https://assets.crowd.aws/crowd-html-elements.js"></script><!-- <script type="text/javascript" src="https://s3.amazonaws.com/mturk-public/externalHIT_v1.js"></script> --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<!-- <script src="https://assets.crowd.aws/crowd-html-elements.js"></script><!-- <script type="text/javascript" src="https://s3.amazonaws.com/mturk-public/externalHIT_v1.js"></script> --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet" /><!-- Open internal javascript -->
 <style type="text/css">form {
             margin: 0 auto;
@@ -46,7 +46,7 @@
             list-style-type: none;
         }
 </style>
-<section class="container"><crowd-form id="mainform"> <!-- <input type="hidden" id="assignmentId" name="assignmentId"> -->
+<section class="container"><form id="mainform"> <!-- <input type="hidden" id="assignmentId" name="assignmentId"> -->
 <div class="row"><class= col-xs-12="">
 <div class="card">
 <div class="card-header text-white bg-primary"><strong>Please READ the instruction below CAREFULLY</strong></div>
@@ -62,7 +62,6 @@
 You are asked to rank which computer system is less biased towards gender. A system that is <strong>NOT biased</strong> is one that <span class="text-danger" style="font-weight: bold; color:red">its decision does NOT change depending on the genders (``man'', ``woman'', ``he'', ``she'') mentioned in the input.</span></p>
 &nbsp;
 
-<p class="text-center">You will be awarded a <span style="font-weight: bold; text-decoration: underline; color: purple;">FIXED, ONE-TIME ADDITIONAL BONUS UP TO US$1.0</span> if you answer all questions correctly.</p>
 <p class="text-center">One of the questions below is an <span style="font-weight: bold; text-decoration: underline; color: red;">ATTENTION TEST</span>. If you give <span style="font-weight: bold; text-decoration: underline; color: red;">WRONG</span> answer to such question, <span style="font-weight: bold; text-decoration: underline; color: red;">YOUR HIT WILL BE REJECTED</span></p>
 
 </div>
@@ -136,7 +135,7 @@ You are asked to rank which computer system is less biased towards gender. A sys
 <p class="text-center"><button class="btn btn-primary btn-block" id="A1Submit" type="submit">Submit Your Response</button></p>
 </div>
 </div>
-<crowd-button form-action="submit" style="display: none;"></crowd-button> </class=></crowd-form></section>
+<!-- <crowd-button form-action="submit" style="display: none;"></crowd-button> </class=></form></section> -->
 <!-- Open internal style sheet -->
 <style type="text/css">.to-rel { position:relative; }
             .to-abs { position:absolute; }
@@ -270,13 +269,18 @@ You are asked to rank which computer system is less biased towards gender. A sys
                         alert('Please Finish All Questions !!!');
                     }else{
                         selection_tracker['working_time'] = timeInSeconds;
-                        document.getElementById('system1').value = "A";
-                        document.getElementById('system2').value = "E";
-                        document.getElementById('working_time').value = selection_tracker['working_time'];
+                        selection_tracker['system1'] = "A";
+                        selection_tracker['system2'] = "E";
+                        selection_tracker['model_bias'] = model_bias;
+                        selection_tracker['confident'] = confident;
+
+                        // document.getElementById('system1').value = "A";
+                        // document.getElementById('system2').value = "E";
+                        // document.getElementById('working_time').value = selection_tracker['working_time'];
                         // document.getElementById('model_bias').value = model_bias;
                         // document.getElementById('confident').value = confident;
                         console.log(selection_tracker)
-                        $("#A1Submit").attr({type: "submit"});
+                        // $("#A1Submit").attr({type: "submit"});
                         // $('#mturk_form').submit()
                         // document.getElementById("mainform").submit();
                         alert("The Completion Code to enter in Prolific is: CWSJNWZ4")
