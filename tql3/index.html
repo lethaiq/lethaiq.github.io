@@ -247,7 +247,7 @@
     }
     tag {
       font-weight: 600;
-      font-size: smaller;
+      font-size: 0.5rem!important;
       padding: 1px 2px 1px 2px;
       border-radius: 3px;
       margin: 2px;
@@ -257,6 +257,10 @@
     tag.llm {
       background: #f14040;
       color: white;
+    }
+    tag.survey {
+        background: pink;
+        color: black;
     }
     tag.xai {
       background: blue;
@@ -644,7 +648,7 @@
               <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
             <button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
-            <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button>
+            <!-- <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button> -->
             <button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button>
             <button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach</button>
             <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button>
@@ -757,6 +761,39 @@
                 <author>Marie Ozanne, Maria Molina, Thai Le</author>
                 <venue>Tthe American Academy of Advertising's Annual Conference (AAA'24)</venue>
               </li> -->
+
+              <h3>Pre-prints</h3>
+              <li>
+                  <papertitle><a href="https://arxiv.org/abs/2411.10298">Unveiling Topological Structures in Text: A Comprehensive Survey of Topological Data Analysis Applications in NLP</a></papertitle><tags><tag class="survey">Survey</tag></tags>
+                  <author>Adaku Uchendu, Thai Le</author>
+              </li>
+
+              <li>
+                  <papertitle><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Generating “No Matter What” Alterfactual Examples for Explaining Black-Box Text Classification Models</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
+                  <author>Tuc Van Nguyen, James Michels, Hua Shen, Thai Le</author>
+              </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/pdf/2406.15940v1">Beyond Individual Facts: Investigating Categorical Knowledge Locality of Taxonomy and Meronomy Concepts in GPT Models</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                  <author>Christopher Burger, Yifan Hu, Thai Le</author>
+                </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
+                  <author>Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</author>
+                </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate Stability Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                  <author>Christopher Burger, Charles Walter, Thai Le</author>
+                </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
+                  <author>Yiran Ye, Thai Le, Dongwon Lee</author>
+                </li>
+
+                <h3>Peer-reviewed</h3>
               <li>
                 <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf">Adapters Mixup: Mixing Parameter-Efficient Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text Classifiers</a></papertitle><tags><tag class="robust">Security</tag></tags>
                 <author>Tuc Van Nguyen, Thai Le</author>
@@ -987,7 +1024,7 @@
 
             </ol>
           </div>
-
+<!--
           <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
             <ol class="publications">
             <li>
@@ -1025,13 +1062,13 @@
                 <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
               </li> -->
 
-              <li>
+              <!-- <li>
                 <papertitle><a href="https://arxiv.org/abs/1710.01977">Machine Learning Based Detection of Clickbait Posts in Social Media</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
                 <author>Xinyue Cao, Thai Le, Jason (Jiasheng) Zhang, Dongwon Lee</author>
               </li>
 
             </ul>
-          </div>
+          </div> -->
 
           <div class="tab-pane fade" id="nav-software" role="tabpanel" aria-labelledby="nav-software-tab">
             <ul class="software">
