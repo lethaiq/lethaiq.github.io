@@ -176,14 +176,14 @@
        }
      }
 
-     .nav a {
+     /* .nav a {
       padding: 4px 8px 4px 8px;
       background: #ece2e2;
       color: #981b1e;
       border-radius: 4px;
       border: solid grey 0.5px;
       margin-right: 5px;
-     }
+     } */
 
    /*  .news {
       font-size: small;
@@ -554,10 +554,9 @@
           </p>
         <p class="introbox">
           Welcome! I am an Assistant Professor of the <a href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (Bloomington)</a>. I was an Assistant Professor at University of Mississippi (Ole Miss). I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="https://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
-          <!-- <b>I am on a mission to advance the field of AI and Machine Learning, specifically in the domain of Natural Language Processing (NLP). My goal is to enhance the robustness, safety, and transparency of these technologies in both <i>social and cybersecurity</i> contexts, ensuring that the society and netizen can harness their power with confidence and clarity.</b><span style="font-style: italic;"> -->
         </p>
-        <!-- Swiper -->
-          <div class="swiper mySwiper">
+
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="images/arxiv24C.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
@@ -639,21 +638,22 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-          </div>
-
+        </div>
     </div>
 
+
         <nav>
-          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button>
-            <button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button>
-            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button>
-            <!-- <button class="nav-link" id="nav-preprint-tab" data-bs-toggle="tab" data-bs-target="#nav-preprint" type="button" role="tab" aria-controls="nav-preprint" aria-selected="false">preprint</button> -->
-            <button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button>
-            <button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach</button>
-            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button>
-          </div>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <a href="index.html"><button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">news</button></a>
+            <a href="group.html"><button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">research lab</button></a>
+            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button></a>
+            <a href="dataset.html"><button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button></a>
+            <a href="outreach.html"><button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach</button></a>
+            <a href="teaching.html"><button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button></a>
+        </div>
         </nav>
+
+
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <ul class="news">
@@ -753,17 +753,11 @@
 
            <!--  <p class="tag_content"></p>
             <span class="tag_content_label"><a href="http://137.184.247.33:8000/">Text Perturbations in the Wild (ACL'22, ICDE'23)</a></span>
- -->
-          </div>
+ -->      </div>
 
           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
             <ol class="publications">
               <strong>For full publications please refer to <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar</a></strong></br></br>
-<!--               <li>
-                <papertitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="human">Human</tag></tags>
-                <author>Marie Ozanne, Maria Molina, Thai Le</author>
-                <venue>Tthe American Academy of Advertising's Annual Conference (AAA'24)</venue>
-              </li> -->
 
               <h3>Pre-prints</h3>
               <li>
@@ -1034,51 +1028,6 @@
 
             </ol>
           </div>
-<!--
-          <div class="tab-pane fade" id="nav-preprint" role="tabpanel" aria-labelledby="nav-preprint-tab">
-            <ol class="publications">
-            <li>
-                <papertitle><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Generating “No Matter What” Alterfactual Examples for Explaining Black-Box Text Classification Models</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
-                <author>Tuc Van Nguyen, James Michels, Hua Shen, Thai Le</author>
-            </li>
-
-              <li>
-                <papertitle><a href="https://arxiv.org/pdf/2406.15940v1">Beyond Individual Facts: Investigating Categorical Knowledge Locality of Taxonomy and Meronomy Concepts in GPT Models</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
-                <author>Christopher Burger, Yifan Hu, Thai Le</author>
-              </li>
-
-              <li>
-                <papertitle><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
-                <author>Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</author>
-              </li>
-
-              <li>
-                <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate Stability Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
-                <author>Christopher Burger, Charles Walter, Thai Le</author>
-              </li>
-
-              <li>
-                <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
-                <author>Yiran Ye, Thai Le, Dongwon Lee</author>
-              </li>
-
-<!--               <li>
-                <papertitle><a href="https://arxiv.org/abs/2305.12351">"Are Your Explanations Reliable?" Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
-                <author>Christopher Burger, Lingwei Chen, Thai Le</author>
-              </li> -->
-<!--
-              <li>
-                <papertitle><a href="https://arxiv.org/abs/2211.09717">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></papertitle><tags><tag class="robust">Security</tag><tag class="privacy">Privacy</tag></tags>
-                <author>Jason Ziyao, Thai Le, Dongwon Lee</author>
-              </li> -->
-
-              <!-- <li>
-                <papertitle><a href="https://arxiv.org/abs/1710.01977">Machine Learning Based Detection of Clickbait Posts in Social Media</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
-                <author>Xinyue Cao, Thai Le, Jason (Jiasheng) Zhang, Dongwon Lee</author>
-              </li>
-
-            </ul>
-          </div> -->
 
           <div class="tab-pane fade" id="nav-software" role="tabpanel" aria-labelledby="nav-software-tab">
             <ul class="software">
@@ -1140,7 +1089,6 @@
               </li>
             </ul>
           </div>
-
 
           <div class="tab-pane fade show" id="nav-arkai" role="tabpanel" aria-labelledby="nav-arkai-tab">
             <div class="arkai_page">
