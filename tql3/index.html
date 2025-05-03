@@ -116,7 +116,7 @@
       color: #e5e5e5;
       width: 100%!important;
       display: block;
-/*      border-radius: 5px;*/
+     border-radius: 5px 5px 0px 0px;
       margin: 0px 0px -5px 0px!important;
     }
 
@@ -489,6 +489,23 @@
     ul.news {
         /* text-align: center; */
     }
+
+    div.projects {
+        width: 90%;
+        margin: auto;
+    }
+
+    div.demo img {
+      width: 100px;
+    }
+
+    div.projects ul {
+      padding: 0px;
+    }
+    /* div.demo {
+      text-align: center;
+    }
+     */
   </style>
 
   <title>Thai Le</title>
@@ -658,7 +675,7 @@
         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             <a href="index.html"><button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ARKAI Lab</button></a>
             <a href="group.html"><button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">people</button></a>
-            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button></a>
+            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">research</button></a>
             <a href="dataset.html"><button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button></a>
             <a href="outreach.html"><button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach & service</button></a>
             <a href="teaching.html"><button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button></a>
@@ -666,7 +683,6 @@
         </nav>
 
         <div class="tab-content" id="nav-tabContent">
-
             <div class="intro">
                 <h3>welcome!</h3>
                 <span>Welcome to <strong><span class="highlight">ARKAI</span> Research Lab <i>(<u>A</u>ccountable, <u>R</u>esilient, and <u>K</u>ind <u>AI</u>)</strong></i>.
@@ -680,11 +696,24 @@
 
                 <br>
                 <br>
+
+
+                <h3>try out our demo!</h3>
+                <div class="demo">
+                  <a href="https://lethaiq.github.io/turingsecho/">
+                    <img src="http://149.165.175.35/file=/tmp/gradio/1d13d57ceb95606c2ead46c375b1acab6214ea2baaf66f854bdc063202fbe2f3/turings-echo-logo.webp"/>
+                  </a>
+                </div>
                 <br>
 
-                <h3>research contributions</h3>
+                <h3>research projects</h3>
+                <div class="projects">
                 <ul class="research">
-                    <li><h4><strong>security/privacy/safety/robustness of NLP models:</strong>
+                    <li><h4><strong>How can we keep AI systems safe from security and privacy threats?</strong>
+                        <span class="desc">
+This research focuses on protecting AI models from being tricked or manipulated. It explores ways to prevent attacks that exploit weaknesses, ensuring AI makes reliable and secure decisions.
+                        </span>
+                        [
                         <a href="https://aclanthology.org/2021.acl-long.296.pdf">ACL'21</a>,
                         <a href="https://arxiv.org/pdf/2011.08908.pdf">ACL'22a</a>,
                         <a href="https://arxiv.org/pdf/2203.10346.pdf">ACL'22b</a>,
@@ -692,10 +721,15 @@
                         <a href="https://arxiv.org/pdf/2301.06494.pdf">ICDE'23</a>,
                         <a href="https://pike.psu.edu/publications/aaai24.pdf">AAAI'24</a>,
                         <a href="https://arxiv.org/abs/2402.11469">ACL'24b</a>,
-                        <a href="https://arxiv.org/abs/2402.10639">ACL'24c</a>
+                        <a href="https://arxiv.org/abs/2402.10639">ACL'24c</a>,
                         <a href="https://arxiv.org/pdf/2401.10111.pdf">EMNLP'24</a>
+                        ]
                         </h4></li>
-                    <li><h4><strong>large language models and neural texts:</strong>
+                    <li><h4><strong>How to improve and detect AI-generated artifacts?</strong>
+                        <span class="desc">
+This research focuses on improving AI’s ability to generate natural, meaningful language and speech while also developing methods to detect AI-written and spoken content, ensuring authenticity and preventing misuse.
+                        </span>
+                        [
                         <a href="https://aclanthology.org/2020.emnlp-main.673">EMNLP'20</a>,
                         <a href="https://aclanthology.org/2021.findings-emnlp.172.pdf">EMNLP'21</a>,
                         <a href="https://arxiv.org/pdf/2310.13606.pdf">EMNLP'23b</a>,
@@ -707,26 +741,40 @@
                         <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">NAACL'24</a>,
                         <a href="https://arxiv.org/pdf/2311.08374.pdf">ACL'24a</a>,
                         <a href="https://arxiv.org/abs/2309.12934">ECAI'24</a>,
-                        <a href="https://arxiv.org/abs/2406.16288">NAACL'25</a>
-
+                        <a href="#">NAACL'25</a>,
+                        <a href="https://arxiv.org/abs/2406.16288">INTERSPEECH'25</a>
+                        ]
                         </h4></li>
-                    <li><h4><strong>explainable AI (XAI):</strong>
+                    <li><h4><strong>How to explain AI's decisions to end-users in an easy-to-understand and secure way?</strong>
+                        <span class="desc">
+                            This research explores making AI decisions more transparent while addressing vulnerabilities in explanations. It aims to ensure AI insights are trustworthy, resistant to manipulation, and easy for end users to understand, contributing to safer and more reliable AI systems.
+                        </span>
+                        [
                         <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">KDD'20</a>,
                         <a href="https://par.nsf.gov/servlets/purl/10393053">AAMAS'22</a>,
                         <a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">AAMASJ'23</a>,
                         <a href="https://arxiv.org/pdf/2305.12351.pdf">EMNLP'23a</a>,
                         <a href="https://arxiv.org/abs/2408.10528">AAAI'25</a>,
                         <a href="#">AAMAS'25</a>
+                        ]
                         <!-- <a href="#">arXiv'24</a> -->
                         </h4></li>
-                    <li><h4><strong>NLP applications (online fakes, education, social media):</strong>
+                    <li><h4><strong>How to effectively apply NLP to solve pressing social and science problems?</strong>
+                        <span class="desc">
+                            We applies our developed methodology in various critical NLP applications including detecting online fakes, hatespeech, enhancing education, analyzing social media and recently biology.
+                        </span>
+                        [
                         <a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">ICDM'20</a>,
                         <a href="https://dl.acm.org/doi/pdf/10.1145/3411764.3445753">CHI'21</a>,
                         <a href="https://arxiv.org/abs/2110.10655">WWW'22</a>,
                         <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">AAAI-ICWSM'24</a>,
-                        <a href="./pdfs/AEID24.pdf">AIED'24</a>
+                        <a href="./pdfs/AEID24.pdf">AIED'24</a>,
+                        <a href="./pdfs/AEID24.pdf">JCIM'25</a>,
+                        <a href="./pdfs/ICWSM25.pdf">ICWSM'25</a>
+                        ]
                     </h4></li>
                 </ul>
+            </div>
 
             </div>
 
@@ -734,7 +782,11 @@
             <!-- <br> -->
             <ul class="news">
                 <h3>recent news</h3>
-                <li>01/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2406.16288"><i>PlagBench: Duality of LLMs in Plagiarism Generation and Detection</i></a> is accepted to <span class="conf">NAACL 2025</span>!</li>
+                <li>05/2025 - <i class="fa-solid fa-gamepad"></i> <a href="https://lethaiq.github.io/turingsecho/"><i>Turing's Echo: Can you fool deepfake voice detectors better than AI?</i></a> is accepted to <span class="conf">Interspeech 2025</span>! Please try out our game demo!</li>
+                <li>04/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to Sam who is soon graduating his MS degree in Data Science!</li>
+                <li>04/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to research intern Cuong Nguyen who just accepted a PhD position at Virginia Tech from Fall 2025!</li>
+                <li>04/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2303.10430"><i>NoisyHate: Benchmarking Hatespeech Detection with Natural Perturbations</i></a> is accepted to <span class="conf">ICWSM 2025</span>!</li>
+                <li>02/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2406.16288"><i>PlagBench: Duality of LLMs in Plagiarism Generation and Detection</i></a> is accepted to <span class="conf">NAACL 2025</span>!</li>
                 <li>01/2025 - <i class="fa-solid fa-book-open"></i> <a href="http://arxiv.org/abs/2412.19311"><i>Safety-Aware Explainable Reinforcement Learning</i></a> is accepted to <span class="conf">AAMAS 2025</span>!</li>
                 <li>01/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2408.10528"><i>"No Matter What" Alterfactual Examples</i></a> is accepted to <span class="conf">AAAI 2025</span>!</li>
                 <li>01/2025 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>

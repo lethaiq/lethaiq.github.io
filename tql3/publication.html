@@ -111,7 +111,7 @@
       color: #e5e5e5;
       width: 100%!important;
       display: block;
-/*      border-radius: 5px;*/
+     border-radius: 5px 5px 0px 0px;
       margin: 0px 0px -5px 0px!important;
     }
 
@@ -258,6 +258,10 @@
       background: #f14040;
       color: white;
     }
+    tag.app {
+        background: pink;
+        color: black;
+    }
     tag.survey {
         background: pink;
         color: black;
@@ -361,6 +365,7 @@
         /* font-size: medium!important; */
         font-weight: bold;
         color: #981b1e !important;
+        <!-- text-align: center; -->
     }
 
     .arkai_page {
@@ -475,6 +480,12 @@
 
     span.conf {
         font-weight: bold;
+    }
+
+    span.desc {
+        text-align: justify;
+        display: block;
+        margin-right: 30px;
     }
 
   </style>
@@ -645,7 +656,7 @@
         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             <a href="index.html"><button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ARKAI Lab</button></a>
             <a href="group.html"><button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">people</button></a>
-            <a href="publication.html"><button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publication</button></a>
+            <a href="publication.html"><button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">research</button></a>
             <a href="dataset.html"><button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button></a>
             <a href="outreach.html"><button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach & service</button></a>
             <a href="teaching.html"><button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button></a>
@@ -656,49 +667,56 @@
         <div class="tab-content" id="nav-tabContent">
 
             <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-              <ol class="publications">
-                <strong>For full publications please refer to <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar</a></strong></br></br>
 
-                <h3>Pre-prints</h3>
-                <li>
-                    <papertitle><a href="https://arxiv.org/abs/2411.10298">Unveiling Topological Structures in Text: A Comprehensive Survey of Topological Data Analysis Applications in NLP</a></papertitle><tags><tag class="survey">Survey</tag></tags>
-                    <author>Adaku Uchendu, Thai Le</author>
-                </li>
 
-                  <li>
-                    <papertitle><a href="https://arxiv.org/pdf/2406.15940v1">Beyond Individual Facts: Investigating Categorical Knowledge Locality of Taxonomy and Meronomy Concepts in GPT Models</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
-                    <author>Christopher Burger, Yifan Hu, Thai Le</author>
-                  </li>
 
-                  <li>
-                    <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate Stability Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
-                    <author>Christopher Burger, Charles Walter, Thai Le</author>
-                  </li>
-
-                  <li>
-                    <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
-                    <author>Yiran Ye, Thai Le, Dongwon Lee</author>
-                  </li>
-              </ol>
               <ol>
-                  <h3>Peer-reviewed</h3>
+                  <strong>For full publications please refer to <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en">Google Scholar</a></strong></br></br>
+
+                  <h3>journal</h3>
                   <li>
+                      <papertitle><a href="https://arxiv.org/abs/2409.13057">Natural Language Processing Methods for the Study of Protein-Ligand Interactions</a></papertitle><tags><tag class="survey">Survey</tag></tags>
+                      <author>James Michels, Ramya Bandarupalli, Amin Ahangar Akbari, Thai Le, Hong Xiao, Jing Li, Erik F. Y. Hom</author>
+                      <venue>Journal of Chemical Information and Modeling (2025)</venue>
+                  </li>
+
+                  <li>
+                    <papertitle><a href="https://journals.sagepub.com/doi/full/10.1177/0002764219878224">”Fake News” is Not Simply False Information: A Concept Explication and Taxonomy of Online Content</a></papertitle><tags><tag class="sns">Social Media</tag></tags>
+                    <author>Maria Molina, Shyam Sundar, Thai Le, Dongwon Lee</author>
+                    <venue>American Behavioral Scientist (2019)</venue>
+                  </li>
+
+              </ol>
+
+              <ol>
+                <h3>conference</h3>
+                <li>
+                  <papertitle><a href="#">Turing's Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification</a></papertitle><tags><tag class="robust">Security</tag></tags>
+                  <author>Binh Quoc, Thai Le</author>
+                  <venue>26th Conference of the International Speech Communication Association (INTERSPEECH 2025, Demo)</venue>
+                </li>
+                <li>
+                  <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
+                  <author>Yiran Ye, Thai Le, Dongwon Lee</author>
+                  <venue>International AAAI Conference on Web and Social Media (ICWSM 2025, Dataset)</venue>
+                </li>
+                <li>
                     <papertitle><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection</a></papertitle><tags><tag class="llm">Neural Text</tag></tags>
                     <author>Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</author>
                     <venue>Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)</venue>
-                  </li>
+                </li>
 
-                  <li>
-                      <papertitle><a href="http://arxiv.org/abs/2412.19311">xSRL: Safety-Aware Explainable RL - Safety as a Product of Explainability</a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
-                      <author>Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani</author>
-                      <venue>The 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)</venue>
-                  </li>
+                <li>
+                    <papertitle><a href="http://arxiv.org/abs/2412.19311">xSRL: Safety-Aware Explainable RL - Safety as a Product of Explainability</a></papertitle><tags><tag class="xai">Explainable AI</tag><tag class="robust">Security</tag></tags>
+                    <author>Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani</author>
+                    <venue>The 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)</venue>
+                </li>
 
-                  <li>
-                      <papertitle><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Generating “No Matter What” Alterfactual Examples for Explaining Black-Box Text Classification Models</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
-                      <author>Tuc Van Nguyen, James Michels, Hua Shen, Thai Le</author>
-                      <venue>Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)</venue>
-                  </li>
+                <li>
+                    <papertitle><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Generating “No Matter What” Alterfactual Examples for Explaining Black-Box Text Classification Models</a></papertitle><tags><tag class="xai">Explainable AI</tag></tags>
+                    <author>Tuc Van Nguyen, James Michels, Hua Shen, Thai Le</author>
+                    <venue>Thirty-Ninth AAAI Conference on Artificial Intelligence (AAAI 2025)</venue>
+                </li>
 
                 <li>
                   <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf">Adapters Mixup: Mixing Parameter-Efficient Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text Classifiers</a></papertitle><tags><tag class="robust">Security</tag></tags>
@@ -857,7 +875,7 @@
                 </li>
 
                 <li>
-                  <papertitle><a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445753">”Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                  <papertitle><a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445753">”Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read</a></papertitle><tags><tag class="sns">Social Media</tag></tags>
                   <author>Maria Molina, S. Shyam Sundar, Md Main Uddin Rony, Naeemul Hassan, Thai Le, Dongwon</author>
                   <venue>ACM Conference on Human Factors in Computing Systems (CHI'21)</venue>
                 </li>
@@ -869,7 +887,7 @@
                 </li>
 
                 <li>
-                  <papertitle><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="robust">Security</tag><tag class="llm">Neural Text</tag></tags>
+                  <papertitle><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="robust">Security</tag><tag class="llm">Neural Text</tag></tags>
                   <author>Thai Le, Suhang Wang, Dongwon Lee</author>
                   <venue>IEEE International Conference on Data Mining (ICDM'20)</venue>
                 </li>
@@ -887,25 +905,19 @@
                 </li>
 
                 <li>
-                  <papertitle><a href="https://dl.acm.org/doi/10.1145/3341161.3342875">5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines</a></papertitle><tags><tag class="fakenews">Fake News</tag><tag class="llm">Neural Text</tag></tags>
+                  <papertitle><a href="https://dl.acm.org/doi/10.1145/3341161.3342875">5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="llm">Neural Text</tag></tags>
                   <author>Thai Le, Kai Shu, Maria Molina, Dongwon Lee, Shyam Sundar, Huan Liu</author>
                   <venue>IEEE/ACM Int’l Conf. on Social Networks Analysis and Mining (ASONAM'19)</venue>
                 </li>
 
                 <li>
-                  <papertitle><a href="https://doi.org/10.1177/00936502211073398">Reading, Commentingand Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="fakenews">Fake News</tag><tag class="human">Human</tag></tags>
+                  <papertitle><a href="https://doi.org/10.1177/00936502211073398">Reading, Commentingand Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement</a></papertitle><tags><tag class="sns">Social Media</tag><tag class="sns">Social Media</tag><tag class="human">Human</tag></tags>
                   <author>Maria Molina, Jinping Wang, S. Shyam Sundar, Thai Le, Carlina DiRusso</author>
                   <venue>Communication Research, 2019</venue>
                 </li>
 
                 <li>
-                  <papertitle><a href="https://journals.sagepub.com/doi/full/10.1177/0002764219878224">”Fake News” is Not Simply False Information: A Concept Explication and Taxonomy of Online Content</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
-                  <author>Maria Molina, Shyam Sundar, Thai Le, Dongwon Lee</author>
-                  <venue>American Behavioral Scientist, 2019</venue>
-                </li>
-
-                <li>
-                  <papertitle><a href="https://dl.acm.org/doi/10.1145/3292522.3326055">How Gullible Are You? Predicting Susceptibility to Fake News</a></papertitle><tags><tag class="fakenews">Fake News</tag></tags>
+                  <papertitle><a href="https://dl.acm.org/doi/10.1145/3292522.3326055">How Gullible Are You? Predicting Susceptibility to Fake News</a></papertitle><tags><tag class="sns">Social Media</tag></tags>
                   <author>Jia Shen, Robert Cowell, Aditi Gupta, Thai Le, Amulya Yadav, Dongwon Lee</author>
                   <venue>International ACM Web Science Conference (WebSci'19)</venue>
                 </li>
@@ -929,6 +941,34 @@
                 </li>
 
               </ol>
+
+
+              <ol class="publications">
+
+
+              <h3>pre-prints</h3>
+              <li>
+                  <papertitle><a href="https://arxiv.org/abs/2411.10298">Unveiling Topological Structures in Text: A Comprehensive Survey of Topological Data Analysis Applications in NLP</a></papertitle><tags><tag class="survey">Survey</tag></tags>
+                  <author>Adaku Uchendu, Thai Le</author>
+              </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/pdf/2406.15940v1">Beyond Individual Facts: Investigating Categorical Knowledge Locality of Taxonomy and Meronomy Concepts in GPT Models</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                  <author>Christopher Burger, Yifan Hu, Thai Le</author>
+                </li>
+
+                <li>
+                  <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate Stability Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle><tags><tag class="llm">Neural Text</tag><tag class="xai">Explainable AI</tag></tags>
+                  <author>Christopher Burger, Charles Walter, Thai Le</author>
+                </li>
+
+                <!-- <li>
+                  <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></papertitle><tags><tag class="robust">Security</tag></tags>
+                  <author>Yiran Ye, Thai Le, Dongwon Lee</author>
+                </li> -->
+            </ol>
+
+
             </div>
 
         </div>
