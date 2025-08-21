@@ -15,7 +15,7 @@
     gtag('config', 'G-B0MH53RK3Y');
   </script>
   <style type="text/css">
-    div.intro {
+    div.intro, div.news, div.demo {
         margin-left: 15px;
         margin-top:10px
     }
@@ -497,11 +497,12 @@
 
     div.demo img {
       width: 100px;
+      height: 90px;
     }
 
     div.demo a{
         display: block;
-        width: 120px;
+        width: 130px;
         float: left;
         text-align: center;
         margin-bottom: 10px;
@@ -514,6 +515,11 @@
 
     div.projects ul {
       padding: 0px;
+    }
+
+    span.clear-float{
+      clear: both;
+      display: block;
     }
     /* div.demo {
       text-align: center;
@@ -595,10 +601,10 @@
             <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
           </p>
         <p class="introbox">
-          Welcome! I am an Assistant Professor of the <a href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (Bloomington)</a>. I was an Assistant Professor at University of Mississippi (Ole Miss). I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="https://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
+          Welcome! I am an Assistant Professor of the <a href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (Bloomington)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="https://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at Alexa Privacy and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
         </p>
 
-        <div class="swiper mySwiper">
+        <!-- <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="images/arxiv24C.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
@@ -680,7 +686,7 @@
               </div>
             </div>
             <div class="swiper-pagination"></div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -688,7 +694,8 @@
         <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
             <a href="index.html"><button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ARKAI Lab</button></a>
             <a href="group.html"><button class="nav-link" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">people</button></a>
-            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">research</button></a>
+            <a href="research.html"><button class="nav-link" id="nav-research-tab" data-bs-toggle="tab" data-bs-target="#nav-research" type="button" role="tab" aria-controls="nav-research" aria-selected="false">research</button></a>
+            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publications</button></a>
             <a href="dataset.html"><button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button></a>
             <a href="outreach.html"><button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach & service</button></a>
             <a href="teaching.html"><button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button></a>
@@ -702,222 +709,139 @@
                     Our reseach lab is on a mission to enhance the robustness, safety, and transparency of AI-related technologies in various sociotechnical contexts, ensuring that the society and netizen can harness their power with confidence and clarity.
                     <!-- </i> We hope deliver the much needed responsible and ethical development and use of AI, and to also encourage AI applications that nurture humans and the society.</span> -->
                     </i> We hope to associate AI with <i>kindness</i> as not to humanize AI, but to emphasize the much needed responsible and ethical development and use of AI, and to also encourage AI applications that nurture humans and the society.</span>
-                <!-- <br> -->
-                <!-- Please check out the <a>news</a> sction for latest updates! -->
-                <!-- <br> -->
-                <!-- <span style="color: blue;"><i>I am looking for students to do research in responsble/security/XAI for NLP models. If interested, please send me your C.V.</i></span> -->
-
-                <br>
-                <br>
-
-
-                <h3>try out our demo!</h3>
-                <div class="demo">
-                  <a href="https://lethaiq.github.io/turingsecho/">
-                    <img src="images/turings-echo-logo.webp"/>
-                    <span>Linguistic Sensitivity of Deepfake Voice Detectors</span>
-                  </a>
-
-                  <a href="https://lethaiq.github.io/attack-web-llm-agent/">
-                    <img src="images/attack-web-agent-logo.png"/>
-                    <span>Attacking LLM-enabled Web Autonomous Agents</span>
-                  </a>
-
-                </div>
-                <br>
-
-                <h3 style="clear:both">research projects</h3>
-                <div class="projects">
-                <ul class="research">
-                    <li><h4><strong>How can we keep AI systems safe from security and privacy threats?</strong>
-                        <span class="desc">
-This research focuses on protecting AI models from being tricked or manipulated. It explores ways to prevent attacks that exploit weaknesses, ensuring AI makes reliable and secure decisions.
-                        </span>
-                        [
-                        <a href="https://aclanthology.org/2021.acl-long.296.pdf">ACL'21</a>,
-                        <a href="https://arxiv.org/pdf/2011.08908.pdf">ACL'22a</a>,
-                        <a href="https://arxiv.org/pdf/2203.10346.pdf">ACL'22b</a>,
-                        <a href="https://arxiv.org/pdf/2211.09717.pdf">EMNLP'23c</a>,
-                        <a href="https://arxiv.org/pdf/2301.06494.pdf">ICDE'23</a>,
-                        <a href="https://pike.psu.edu/publications/aaai24.pdf">AAAI'24</a>,
-                        <a href="https://arxiv.org/abs/2402.11469">ACL'24b</a>,
-                        <a href="https://arxiv.org/abs/2402.10639">ACL'24c</a>,
-                        <a href="https://arxiv.org/pdf/2401.10111.pdf">EMNLP'24</a>
-                        ]
-                        </h4></li>
-                    <li><h4><strong>How to improve and detect AI-generated artifacts?</strong>
-                        <span class="desc">
-This research focuses on improving AI’s ability to generate natural, meaningful language and speech while also developing methods to detect AI-written and spoken content, ensuring authenticity and preventing misuse.
-                        </span>
-                        [
-                        <a href="https://aclanthology.org/2020.emnlp-main.673">EMNLP'20</a>,
-                        <a href="https://aclanthology.org/2021.findings-emnlp.172.pdf">EMNLP'21</a>,
-                        <a href="https://arxiv.org/pdf/2310.13606.pdf">EMNLP'23b</a>,
-                        <a href="https://arxiv.org/pdf/2310.16746.pdf">EMNLP'23d</a>,
-                        <a href="https://arxiv.org/abs/2304.01002">HCOMP'23</a>,
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">WWW'23a</a>,
-                        <a href="https://arxiv.org/pdf/2203.07618.pdf">WWW'23b</a>,
-                        <a href="https://arxiv.org/pdf/2210.10488.pdf">SIGKDD Explorations'23</a>,
-                        <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">NAACL'24</a>,
-                        <a href="https://arxiv.org/pdf/2311.08374.pdf">ACL'24a</a>,
-                        <a href="https://arxiv.org/abs/2309.12934">ECAI'24</a>,
-                        <a href="#">NAACL'25</a>,
-                        <a href="https://arxiv.org/abs/2406.16288">INTERSPEECH'25</a>
-                        ]
-                        </h4></li>
-                    <li><h4><strong>How to explain AI's decisions to end-users in an easy-to-understand and secure way?</strong>
-                        <span class="desc">
-                            This research explores making AI decisions more transparent while addressing vulnerabilities in explanations. It aims to ensure AI insights are trustworthy, resistant to manipulation, and easy for end users to understand, contributing to safer and more reliable AI systems.
-                        </span>
-                        [
-                        <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">KDD'20</a>,
-                        <a href="https://par.nsf.gov/servlets/purl/10393053">AAMAS'22</a>,
-                        <a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">AAMASJ'23</a>,
-                        <a href="https://arxiv.org/pdf/2305.12351.pdf">EMNLP'23a</a>,
-                        <a href="https://arxiv.org/abs/2408.10528">AAAI'25</a>,
-                        <a href="#">AAMAS'25</a>
-                        ]
-                        <!-- <a href="#">arXiv'24</a> -->
-                        </h4></li>
-                    <li><h4><strong>How to effectively apply NLP to solve pressing social and science problems?</strong>
-                        <span class="desc">
-                            We applies our developed methodology in various critical NLP applications including detecting online fakes, hatespeech, enhancing education, analyzing social media and recently biology.
-                        </span>
-                        [
-                        <a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">ICDM'20</a>,
-                        <a href="https://dl.acm.org/doi/pdf/10.1145/3411764.3445753">CHI'21</a>,
-                        <a href="https://arxiv.org/abs/2110.10655">WWW'22</a>,
-                        <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">AAAI-ICWSM'24</a>,
-                        <a href="./pdfs/AEID24.pdf">AIED'24</a>,
-                        <a href="./pdfs/AEID24.pdf">JCIM'25</a>,
-                        <a href="./pdfs/ICWSM25.pdf">ICWSM'25</a>
-                        ]
-                    </h4></li>
-                </ul>
             </div>
 
+            <div class="demo">
+              <h3>recent works and demo</h3>
+              <a href="https://lethaiq.github.io/turingsecho/">
+                <img src="images/turings-echo-logo.webp"/>
+                <span>Compete with AI in Fooling Deepfake Voice Detectors</span>
+              </a>
+              <a href="https://lethaiq.github.io/linguistic-sensitivity-deepfake-voice/">
+                <img src="images/emnlp25linguisticaudio.png"/>
+                <span>Linguistic Sensitivity of Deepfake Voice Detectors</span>
+              </a>
+              <a href="https://lethaiq.github.io/attack-web-llm-agent/">
+                <img src="images/attack-web-agent-logo.png"/>
+                <span>Attacking LLM-enabled Web Autonomous Agents</span>
+              </a>
             </div>
+            <span class="clear-float"></span>
 
-            <br>
-            <!-- <br> -->
-            <ul class="news">
+            <div class="news">
+              <h3>lab updates</h3>
+              <!-- <h4><strong>From 2025</strong></h4> -->
+              <ul class="news">
+                  <li>08/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2505.14195"><i>Triple Roles of LLMs in Authorship Privacy: Obfuscation, Mimicking and Verification</i></a> is accepted to <span class="conf">EMNLP 2025</span></li>
+                  <li>08/2025 - <i class="fa-solid fa-book-open"></i> <a href="./pdfs/arxiv25b.pdf"><i>What You Read Isn't What You Hear: Linguistic Sensitivity of Deepfake Speech Detectors</i></a> is accepted to <span class="conf">EMNLP 2025</span></li>
+                  <li>08/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="./pdfs/arxiv25c.pdf"><i>Finding Hidden Harry Porter - Knowledge Leakage in LLMs Unlearning Algorithms</i></a> is accepted to <span class="conf">EMNLP 2025 Findings</span></li>
 
-
-              <br>
-              <button id="show_previous_news">Show News</button>
-              <div id="previous_news">
-                  </br>
-                  <!-- <h4>recent news</h4> -->
-                  <h4><strong>From 2025</strong></h4>
                   <li>07/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://lethaiq.github.io/attack-web-llm-agent"><i>Manipulating LLM Web Agents with
                   Indirect Prompt Injection Attack via HTML Accessibility Tree</i></a> demo is available!
 
                   <li>05/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to Tuc who is awarded the CS Graduate Research Award 2025!</li>
                   <li>05/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to Sam who graduated his MS degree in Data Science and joining Advanced Space in Colorado!</li>
-                  <li>05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="./pdfs/arxiv25c.pdf"><i>Finding Hidden Harry Porter - Knowledge Leakage in LLMs Unlearning Algorithms</i></a> is available!</li>
-                  <li>05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="./pdfs/arxiv25b.pdf"><i>What You Read Isn't What You Hear: Linguistic Sensitivity of Deepfake Speech Detectors</i></a> is available!</li>
                   <li>05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="https://arxiv.org/abs/2505.16888"><i>Can LLMs be Weaponized for Information Manipulation?</i></a> is available!</li>
-                  <li>05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="https://arxiv.org/abs/2505.14195"><i>Triple Roles of LLMs in Authorship Privacy: Obfuscation, Mimicking and Verification</i></a> is available!</li>
                   <li>05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a href="./pdfs/arxiv25d.pdf"><i>Explainable Falsification for Safe Reinforcement Learning</i></a> is available!</li>
                   <li>05/2025 - <i class="fa-solid fa-gamepad"></i> <a href="https://lethaiq.github.io/turingsecho/"><i>Turing's Echo: Can you fool deepfake voice detectors better than AI?</i></a> is accepted to <span class="conf">INTERSPEECH 2025</span>! Please try out our game demo!</li>
-
                   <li>04/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to research intern Cuong Nguyen who just accepted a PhD position at Virginia Tech from Fall 2025!</li>
                   <li>04/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2303.10430"><i>NoisyHate: Benchmarking Hatespeech Detection with Natural Perturbations</i></a> is accepted to <span class="conf">ICWSM 2025</span>!</li>
                   <li>02/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2406.16288"><i>PlagBench: Duality of LLMs in Plagiarism Generation and Detection</i></a> is accepted to <span class="conf">NAACL 2025</span>!</li>
                   <li>01/2025 - <i class="fa-solid fa-book-open"></i> <a href="http://arxiv.org/abs/2412.19311"><i>Safety-Aware Explainable Reinforcement Learning</i></a> is accepted to <span class="conf">AAMAS 2025</span>!</li>
                   <li>01/2025 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2408.10528"><i>"No Matter What" Alterfactual Examples</i></a> is accepted to <span class="conf">AAAI 2025</span>!</li>
                   <li>01/2025 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
+              </ul>
+
+              <ul class="news">
+
+                
+                <button id="show_previous_news">Show Old News</button>
+                <div id="previous_news">
+                  <br>                    
+                  <h4><strong>From 2024</strong></h4>
+
+                  <li>11/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2411.10298"><i>Survey of TDA Methods for NLP</i></a> is released!</li>
+
+                  <li>09/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2401.10111.pdf"><i>Adapters Mixup</i></a> is accepted to <strong>EMNLP 2024</strong>!</br>
+                  We use mixup with adapters to fine-tune pre-trained language models to enhance their adversarial robustness with <i>unknown</i> future attacks.
+
+                  <li>07/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2309.12934"><i>Deepfake Text Detection with Topological Analysis</i></a> is accepted to <span class="conf">ECAI 2024</span>!</li>
+
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> We delivered our <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf"><i>Deepfake Text Detection and Obfuscation</i></a> at <span class="conf">NAACL 2024</span> (Mexico City) with Penn State, MIT Lincoln Lab and GPT-Zero</li>
+
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15940v1"><i>Beyond Individual Facts for GPT Models</i></a> is available</br>
+                  We investigate knowledge locality of GPT models for not one but a group of conceptually related facts.
+
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.16288v1"><i>PlagBench</i></a> is available.</br>
+                  We collect data and benchmark LLM's dual behaviors: (1) plagarism generation via summarization and (2) plagarism detection.
+
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15839"><i>XAI Similarity Metrics</i></a> is available.</br>
+                  We investigate a variety of similarity measures designed for text-based adversarial attacks on Explainable AI.
+
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> (<strong>Nafis</strong>, Penn State) is accepted to <span class="conf">ACL 2024</span>
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2402.11469"><i>Searching for the Correlation between Training Data and Adversarial Robustness</i></a> (<strong>Cuong</strong>, FPT) is accepted to <span class="conf">ACL 2024</span>
+                  <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions</i></a> (<strong>Tuc</strong>, IUB) is accepted to <span class="conf">ACL 2024</span>
+
+                  <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee <strong>Jun</strong> (Oxford High School) was awarded <a href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd place (SPECIAL AWARD by NSA)</a> at ISEF 2024</a>. Congratulations!
+                  <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong> accepted a research-based MSc program at Wake Forest University with a full-ride scholarship. Congratulations!</li>
+                  <!-- <li>05/2024 - Dr. Le is joining <a href="https://luddy.iupui.edu/departments/cs/index.html">CS@Luddy</a> at Indiana University as an assistant professor from Fall 2024.</li> -->
+                  <li>04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong> passed his doctorate prospectus. Congratulations!</li>
+                  <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks</i></a> is accepted to AIED 2024</br>
+                  <!-- Carrying out a user study of ~120 participants, we found <i>no strong evidence</i> that writing product and writing process were significantly impacted by Google Smart Compose.</br> -->
+                  <!-- Congrats on our first collaborative project at Ole Miss with Writing and Rhetoric and Psychology Department! <a href="https://news.olemiss.edu/writing-and-rhetoric-faculty-examines-ai-opportunities-challenges/">Read more</a> about how my collaborators are addressing AI in higher-ed. -->
+                  <!-- <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACMSE 2024 (oldest, annual conference of ACM)</br>
+                  Congrats to Cara (Ole Miss) - <i>"Benchmarking Machine Learning Techniques for Bankruptcy Prediction under Benign and Adversarial Behaviors"</i></br>
+                  Congrats to Avinder (Ole Miss) - <i>"Toshakhana: A Multi-dimensional Panjabi Corpus in Gurmukhi Script"</i> -->
+                  <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.11469"><i>A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</i></a> is available</br> -->
+                  <!-- We estimate adversarial robustness of transformer text classifiers without the need to generate adversarial examples, saving 30x-193x runtime -->
+                  <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</i></a> is available</br> -->
+                  <!-- We show critical understanding regarding the correlation between weight sign conficts and their mixtures' in-domain generalizability -->
+                  <!-- <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br> -->
+                  <!-- We investigate RQ ``Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?'' -->
+                  <li>01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
+
+                  <!-- <div style="text-align: left;">-----</div> -->
+                  </br>
+
+                  <h4><strong>From 2023</strong></h4>
+                  <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong> successfully defended his Master thesis. Congratulations!</li>
+                  <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to <strong>Eric</strong> (PhD at UMD) and <strong>Saranya</strong> (PhD at PSU)!
+                  <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
+                  <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
+                  <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially <strong>Wooyong</strong> (Penn State)!
+                  <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br></li><strong>Jason</strong> (UMD, preventing privacy leakage in texts on social media), </br><strong>Nafis</strong> (Penn State, written v.s. spoken neural texts) and </br><strong>Chris</strong> (Ole Miss, fooling XAI explanations)!</li>
+                  <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
+                  <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
+                  <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
+                  <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
+                  <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and <strong>Chri</strong>s successfully defended their Master theses. Congratulations!</li>
+                  <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
+                  <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24
+                  <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at REU@PSU. Happy to see old/new faces at Penn State!</li>
+                  <li>07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents via policy-graph+NLP+counterfactual abstractions is accepted to AAMAS Journal
+                  <li>06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> - fooling AI explanations on text classifiers is available.
+                  <li>05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee Jason Zijao (PhD at UMD), Eric Xing (PhD at WashU), Jayesh Khandelwal (MS at NYU) on graduate admissions.
+                  <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
+                  <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
+                  <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
 
 
-                </br>
-                <h4><strong>From 2024</strong></h4>
+                  <!-- <div style="text-align: left;">-----</div> -->
+                      </br>
+                  <h4><strong>From 2022</strong></h4>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
+                  <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
+                  <li>2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi</li>
+                  <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
+                  <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
+                  <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
 
-                <li>11/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2411.10298"><i>Survey of TDA Methods for NLP</i></a> is released!</li>
-
-                <li>09/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2401.10111.pdf"><i>Adapters Mixup</i></a> is accepted to <strong>EMNLP 2024</strong>!</br>
-                We use mixup with adapters to fine-tune pre-trained language models to enhance their adversarial robustness with <i>unknown</i> future attacks.
-
-                <li>07/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2309.12934"><i>Deepfake Text Detection with Topological Analysis</i></a> is accepted to <span class="conf">ECAI 2024</span>!</li>
-
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> We delivered our <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf"><i>Deepfake Text Detection and Obfuscation</i></a> at <span class="conf">NAACL 2024</span> (Mexico City) with Penn State, MIT Lincoln Lab and GPT-Zero</li>
-
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15940v1"><i>Beyond Individual Facts for GPT Models</i></a> is available</br>
-                We investigate knowledge locality of GPT models for not one but a group of conceptually related facts.
-
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.16288v1"><i>PlagBench</i></a> is available.</br>
-                We collect data and benchmark LLM's dual behaviors: (1) plagarism generation via summarization and (2) plagarism detection.
-
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/pdf/2406.15839"><i>XAI Similarity Metrics</i></a> is available.</br>
-                We investigate a variety of similarity measures designed for text-based adversarial attacks on Explainable AI.
-
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> (<strong>Nafis</strong>, Penn State) is accepted to <span class="conf">ACL 2024</span>
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2402.11469"><i>Searching for the Correlation between Training Data and Adversarial Robustness</i></a> (<strong>Cuong</strong>, FPT) is accepted to <span class="conf">ACL 2024</span>
-                <li>06/2024 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions</i></a> (<strong>Tuc</strong>, IUB) is accepted to <span class="conf">ACL 2024</span>
-
-                <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee <strong>Jun</strong> (Oxford High School) was awarded <a href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd place (SPECIAL AWARD by NSA)</a> at ISEF 2024</a>. Congratulations!
-                <li>05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong> accepted a research-based MSc program at Wake Forest University with a full-ride scholarship. Congratulations!</li>
-                <!-- <li>05/2024 - Dr. Le is joining <a href="https://luddy.iupui.edu/departments/cs/index.html">CS@Luddy</a> at Indiana University as an assistant professor from Fall 2024.</li> -->
-                <li>04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong> passed his doctorate prospectus. Congratulations!</li>
-                <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks</i></a> is accepted to AIED 2024</br>
-                <!-- Carrying out a user study of ~120 participants, we found <i>no strong evidence</i> that writing product and writing process were significantly impacted by Google Smart Compose.</br> -->
-                <!-- Congrats on our first collaborative project at Ole Miss with Writing and Rhetoric and Psychology Department! <a href="https://news.olemiss.edu/writing-and-rhetoric-faculty-examines-ai-opportunities-challenges/">Read more</a> about how my collaborators are addressing AI in higher-ed. -->
-                <!-- <li>03/2024 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to ACMSE 2024 (oldest, annual conference of ACM)</br>
-                Congrats to Cara (Ole Miss) - <i>"Benchmarking Machine Learning Techniques for Bankruptcy Prediction under Benign and Adversarial Behaviors"</i></br>
-                Congrats to Avinder (Ole Miss) - <i>"Toshakhana: A Multi-dimensional Panjabi Corpus in Gurmukhi Script"</i> -->
-                <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.11469"><i>A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models</i></a> is available</br> -->
-                <!-- We estimate adversarial robustness of transformer text classifiers without the need to generate adversarial examples, saving 30x-193x runtime -->
-                <!-- <li>02/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</i></a> is available</br> -->
-                <!-- We show critical understanding regarding the correlation between weight sign conficts and their mixtures' in-domain generalizability -->
-                <!-- <li>01/2024 - <i class="fa-solid fa-book-open"></i> Pre-print <a href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</i></a> is available. </br> -->
-                <!-- We investigate RQ ``Does a text retain its original authorship when it undergoes numerous paraphrasing iterations?'' -->
-                <li>01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</li>
-
-                <!-- <div style="text-align: left;">-----</div> -->
-                </br>
-
-                <h4><strong>From 2023</strong></h4>
-                <li>12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong> successfully defended his Master thesis. Congratulations!</li>
-                <li>12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship Obfuscation</i></a> accepted to AAAI'24 </br> This paper proposed a simple, fast and effective algorithm to hide or mask true authorships from texts, even ChatGPT generated ones</br> Congratulations to <strong>Eric</strong> (PhD at UMD) and <strong>Saranya</strong> (PhD at PSU)!
-                <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms''</i> accepted to AAA'24. </br>This is a collaborative effort with Maria (Michigan State University) and Marie (Cornell University). </br> We designed a user-interface to evaluate the effects of AI moderation disclosure on brand affinity.
-                <li>11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review (EACL'24)</li>
-                <li>11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24, FINALLY! </br>This paper analyzes why some people frequently joined both <a href="https://www.reddit.com/r/toastme/">r/ToastMe</a> and <a href="https://www.reddit.com/r/RoastMe">r/RoastMe</a> subreddits at the same time.<br> Congratulations to the team, especially <strong>Wooyong</strong> (Penn State)!
-                <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to EMNLP'23. Congratulations to </br>KInIT and Pike Lab (multilingual neural text detection), </br></li><strong>Jason</strong> (UMD, preventing privacy leakage in texts on social media), </br><strong>Nafis</strong> (Penn State, written v.s. spoken neural texts) and </br><strong>Chris</strong> (Ole Miss, fooling XAI explanations)!</li>
-                <li>10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text detection and obfuscation accepted at NAACL'24</li>
-                <li>09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</li>
-                <li>08/2023 - <i class="fa-solid fa-book-open"></i> <a href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</li>
-                <li>08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang Tran and Tuc Nguyen</li>
-                <li>07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and <strong>Chri</strong>s successfully defended their Master theses. Congratulations!</li>
-                <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on deepfake text detection accepted to <a href="https://www.trustedci.org/2023-cybersecurity-summit">2023 NSF Cybersecurity Summit</a></li>
-                <li>07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24
-                <li>07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at REU@PSU. Happy to see old/new faces at Penn State!</li>
-                <li>07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents via policy-graph+NLP+counterfactual abstractions is accepted to AAMAS Journal
-                <li>06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> - fooling AI explanations on text classifiers is available.
-                <li>05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee Jason Zijao (PhD at UMD), Eric Xing (PhD at WashU), Jayesh Khandelwal (MS at NYU) on graduate admissions.
-                <li>03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a href="http://arxiv.org/abs/2303.10430">NoisyHate</a> - an adversarial toxic texts dataset with human-written perturbations is available</li>
-                <li>01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors of LLM is accepted to WWW'23</li>
-                <li>01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable Authorship Text</i> is available</li>
-
-
-                <!-- <div style="text-align: left;">-----</div> -->
-                    </br>
-                <h4><strong>From 2022</strong></h4>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Tutorial <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf">``Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts"</a> accepted at WWW'23, with <a href="http://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a> and <a href="https://adauchendu.github.io/">Adaku Uchendu</a>.</li>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Survey paper on <i>Authorship Detection of Deepfake Texts</i> will be published at KDD Exploration</li>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Demo paper on perturbations in the wild is accepted at ICDM'23</li>
-                <li>2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22, WSDM'23, AAAI'23, WWW'23
-                <li>2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi</li>
-                <li>2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student Award for Research Excellence, College of IST, PSU</li>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Our papers on adversarial texts are accepted at ACL'22</li>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial Socialbots is accepted at WWW'22.</li>
-                <li>2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted at AAMAS'22.</li>
-                <li>2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk ``AI & Machine Learning for Communication Researchers'' at Michigan State University</li>
-
-            </ul>
-
-           <!--  <p class="tag_content"></p>
-            <span class="tag_content_label"><a href="http://137.184.247.33:8000/">Text Perturbations in the Wild (ACL'22, ICDE'23)</a></span>
- -->      </div>
-
+              </ul>
+            </div>
         </div>
 
 
