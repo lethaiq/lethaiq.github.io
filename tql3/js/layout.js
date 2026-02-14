@@ -13,14 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <nav>
                 <ul>
                     <li><a href="index.html" class="${page === 'index.html' || page === '' ? 'active' : ''}">ARKAI Lab</a></li>
-                    <li><a href="group.html" class="${page === 'group.html' ? 'active' : ''}">People</a></li>
+                    <li><a href="group.html" class="${page === 'group.html' ? 'active' : ''}">Team</a></li>
                     <li><a href="research.html" class="${page === 'research.html' ? 'active' : ''}">Research</a></li>
                     <li><a href="publication.html" class="${page === 'publication.html' ? 'active' : ''}">Publications</a></li>
                     <li><a href="dataset.html" class="${page === 'dataset.html' ? 'active' : ''}">Dataset & Software</a></li>
                     <li><a href="teaching.html" class="${page === 'teaching.html' ? 'active' : ''}">Teaching</a></li>
                 </ul>
             </nav>
-            <div class="mobile-menu-toggle">
+            <div class="mobile-menu-toggle" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <p>&copy; ${new Date().getFullYear()} Thai Le. All rights reserved.</p>
             <p>ARKAI Research Lab (Accountable, Resilient, and Kind AI)</p>
             <div style="margin-top: 10px;">
-                <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a> | 
-                <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en" target="_blank" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i> Google Scholar</a> | 
+                <a href="https://github.com/lethaiq" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </footer>

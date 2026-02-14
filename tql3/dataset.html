@@ -14,9 +14,9 @@
   <title>Datasets & Software - ARKAI Research Lab | Open Research Tools</title>
 
   <!-- Open Graph Tags -->
-  <meta property="og:title" content="Datasets & Software - ARKAI Research Lab">
+  <meta property="og:title" content="Open Source Datasets & Software - ARKAI Lab">
   <meta property="og:description"
-    content="Download our research datasets and open-source software for AI security and analysis.">
+    content="Access our open-source datasets (ShareChat 2026, PlagBench, NoisyHate) and research software (XAIFooler, ALISON).">
   <meta property="og:url" content="https://lethaiq.github.io/tql3/dataset.html">
 
   <!-- Twitter Card Tags -->
@@ -25,13 +25,33 @@
   <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
 
   <!-- Scripts -->
   <script src="js/layout.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://lethaiq.github.io/tql3/index.html"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Datasets & Software",
+      "item": "https://lethaiq.github.io/tql3/dataset.html"
+    }]
+  }
+  </script>
 </head>
 
 <body>
@@ -90,7 +110,7 @@
           <i class="fas fa-database" style="font-size: 1.8rem; color: var(--accent-color);"></i>
         </div>
         <h3 class="card-title"><a href="https://arxiv.org/abs/2512.17843">ShareChat</a></h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset (2025)</h4>
+        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset (2026)</h4>
         <div class="card-content">
           A large-scale dataset of real-world chatbot conversations in the wild, enabling research on user-chatbot
           interactions and safety.
