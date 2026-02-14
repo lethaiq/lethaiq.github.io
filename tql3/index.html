@@ -83,77 +83,119 @@
   <!-- Header and Nav are injected by js/layout.js -->
 
   <main class="container">
-    <!-- Hero / Intro Section -->
-    <section class="hero" style="justify-content: center; text-align: center; padding: 60px 40px;">
-      <div class="hero-content">
-        <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 20px;">ARKAI <span>Research Lab</span></h1>
-        <div class="intro-text" style="max-width: 800px; margin: 0 auto;">
-          <p style="font-size: 1.25rem; line-height: 1.8; color: var(--text-color);">
+    <!-- Hero Section -->
+    <section class="hero"
+      style="display: flex; align-items: center; justify-content: space-between; padding: 40px 0; text-align: left; gap: 40px; margin-bottom: 50px;">
+      <div class="hero-content" style="flex: 1.2; max-width: 650px;">
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
+          <img src="images/arkai_logo.svg" alt="ARKAI Lab Logo" style="width: 80px; height: 80px;">
+          <h1 class="hero-title" style="font-size: 3.2rem; margin: 0; line-height: 1.1;">ARKAI <span>Research Lab</span>
+          </h1>
+        </div>
+        <div class="intro-text">
+          <p style="font-size: 1.2rem; line-height: 1.6; color: var(--text-color);">
             Our mission is to enhance the <strong>robustness</strong>, <strong>safety</strong>, and
-            <strong>transparency</strong> of AI-related technologies in various sociotechnical contexts. We research
-            Accountable, Resilient, and Kind AI to ensure that society can harness machine intelligence with confidence
-            and
-            clarity.
+            <strong>transparency</strong> of AI. We research Accountable, Resilient, and Kind AI to ensure that society
+            can harness machine intelligence with confidence and clarity.
           </p>
           <div style="margin-top: 35px;">
-            <a href="research.html" class="btn" style="padding: 12px 30px; font-size: 1.1rem;">Explore Our Research</a>
+            <a href="publication.html" class="btn" style="padding: 12px 25px;">View Publications</a>
             <a href="group.html" class="btn"
-              style="background-color: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); margin-left: 15px; padding: 12px 30px; font-size: 1.1rem;">Meet
+              style="background-color: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); margin-left: 15px; padding: 12px 25px;">Meet
               the Team</a>
           </div>
         </div>
       </div>
+      <!-- Tag Cloud (Pushed Right, Zero Margin) -->
+      <div class="hero-visual"
+        style="flex: 0 0 400px; display: flex; justify-content: flex-end; align-items: center; margin-right: -20px;">
+        <div class="tag_content" style="width: 400px; height: 400px; margin: 0; padding: 0;"></div>
+      </div>
     </section>
 
-    <!-- Featured Research Section -->
-    <section class="research-preview" style="margin-top: 50px; margin-bottom: 60px;">
-      <h2 class="styled-section-header">Featured Research</h2>
-      <div class="grid-container" style="margin-top: 30px;">
-        <!-- Project 1: Understanding Generative AI -->
-        <div class="card research-card" id="understanding-genai">
-          <div class="card-banner banner-interpretability"></div>
-          <i class="fas fa-microscope"></i>
-          <h3 class="card-title">Understanding Generative AI</h3>
-          <div class="card-content">
-            Decoding the 'inner circuits' of LLMs to enable precise behavior steering and machine unlearning.
+    <!-- Recent Research Highlights -->
+    <section class="research-preview" style="margin-bottom: 60px;">
+      <h2 class="styled-section-header">Recent Research Highlights</h2>
+      <div class="grid-container"
+        style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 25px;">
+
+        <!-- Pillar 1: ShareChat -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-interpretability" style="height: 60px;"></div>
+          <i class="fas fa-database" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">ShareChat Dataset</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Large-scale dataset of real-world chatbot conversations to benchmark LLM interactions.
           </div>
-          <div class="card-footer" style="border: none; padding-top: 0;">
-            <a href="research.html#understanding-genai" style="font-weight: 600; color: var(--secondary-color);">Learn
-              More &rarr;</a>
-          </div>
+          <a href="https://arxiv.org/abs/2512.17843" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">arXiv'26 &rarr;</a>
         </div>
 
-        <!-- Project 2: Security & Privacy -->
-        <div class="card research-card" id="security">
-          <div class="card-banner banner-security"></div>
-          <i class="fas fa-shield-alt"></i>
-          <h3 class="card-title">AI Security & Privacy</h3>
-          <div class="card-content">
-            Protecting AI models from manipulation and ensuring reliable, secure, and private decision-making.
+        <!-- Pillar 2: Unlearning -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-interpretability" style="height: 60px;"></div>
+          <i class="fas fa-eraser" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">LLM Unlearning</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Evaluating unlearning in LLMs via Stimulus-Knowledge Entanglement-Behavior framework.
           </div>
-          <div class="card-footer" style="border: none; padding-top: 0;">
-            <a href="research.html#security" style="font-weight: 600; color: var(--secondary-color);">Learn More
-              &rarr;</a>
-          </div>
+          <a href="https://arxiv.org/pdf/2510.25732" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">arXiv'25 &rarr;</a>
         </div>
 
-        <!-- Project 3: AI Authenticity -->
-        <div class="card research-card">
-          <div class="card-banner banner-deepfake"></div>
-          <i class="fas fa-robot"></i>
-          <h3 class="card-title">AI Authenticity & Deepfakes</h3>
-          <div class="card-content">
-            Developing robust methods to detect AI-generated content and ensuring information authenticity.
+        <!-- Pillar 3: CAIN Attacks -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-security" style="height: 60px;"></div>
+          <i class="fas fa-user-secret" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">CAIN Prompt Attacks</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Two-stage malicious system prompt generation for hijacking LLM-human conversations.
           </div>
-          <div class="card-footer" style="border: none; padding-top: 0;">
-            <a href="research.html" style="font-weight: 600; color: var(--secondary-color);">Learn More &rarr;</a>
-          </div>
+          <a href="https://arxiv.org/abs/2505.16888" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">arXiv'25 &rarr;</a>
         </div>
+
+        <!-- Pillar 4: Indirect Injection -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-security" style="height: 60px;"></div>
+          <i class="fas fa-spider" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">Agent Security</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Manipulating LLM Web Agents via Indirect Prompt Injection in HTML Accessibility Trees.
+          </div>
+          <a href="https://arxiv.org/abs/2507.14799" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">arXiv'25 &rarr;</a>
+        </div>
+
+        <!-- Pillar 5: Safe RL -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-xai" style="height: 60px;"></div>
+          <i class="fas fa-shield-heart" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">Safe RL Abstractions</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Verification-guided falsification for Safe RL via explainable abstractions and exploration.
+          </div>
+          <a href="pdfs/arxiv25d.pdf" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">arXiv'25 &rarr;</a>
+        </div>
+
+        <!-- Pillar 6: Deepfake Speech -->
+        <div class="card research-card" style="padding: 15px; min-height: 180px;">
+          <div class="card-banner banner-deepfake" style="height: 60px;"></div>
+          <i class="fas fa-microphone-lines" style="top: 40px; width: 35px; height: 35px; font-size: 0.9rem;"></i>
+          <h3 class="card-title" style="margin-top: 25px; font-size: 0.95rem;">Deepfake Voice</h3>
+          <div class="card-content" style="font-size: 0.8rem; line-height: 1.4;">
+            Linguistic sensitivity in deepfake speech detection: What you read is not what you hear.
+          </div>
+          <a href="pdfs/arxiv25b.pdf" target="_blank"
+            style="font-size: 0.75rem; color: var(--secondary-color); font-weight: 600;">EMNLP'25 &rarr;</a>
+        </div>
+
       </div>
       <div style="text-align: center; margin-top: 30px;">
         <a href="research.html" class="btn"
           style="background-color: transparent; color: var(--secondary-color); border: 1px solid var(--secondary-color);">View
-          All Projects</a>
+          More Details &rarr;</a>
       </div>
     </section>
 
@@ -180,15 +222,6 @@
             <strong>Yan Yueru</strong>, and <strong>Melissa Lieffers</strong>!
           </div>
         </li>
-      </ul>
-    </section>
-
-    <!-- Research Keywords Section -->
-    <section class="keywords-section" style="text-align: center; margin-bottom: 60px;">
-      <h2 class="styled-section-header">Research Keywords</h2>
-      <div class="tag_content"
-        style="width: 100%; height: 350px; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-      </div>
     </section>
   </main>
 
@@ -202,7 +235,7 @@
       ];
 
       var tagCloud = TagCloud('.tag_content', myTags, {
-        radius: 150,
+        radius: 170,
         maxSpeed: 'normal',
         initSpeed: 'slow',
         direction: 135,

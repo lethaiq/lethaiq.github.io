@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, -30)">
+    <!-- Blue Structural Wave -->
+    <path d="M40 80 C 40 180, 160 180, 160 80 C 160 30, 100 30, 100 80" 
+          fill="none" stroke="#2c3e50" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Gold Truth Wave -->
+    <path d="M100 80 C 100 110, 140 110, 140 80" 
+          fill="none" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Core Dot -->
+    <circle cx="125" cy="80" r="8" fill="#e74c3c"/>
+  </g>
+</svg>
