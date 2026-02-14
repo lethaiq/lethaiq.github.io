@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <li><a href="publication.html" class="${page === 'publication.html' ? 'active' : ''}">Publications</a></li>
                     <li><a href="dataset.html" class="${page === 'dataset.html' ? 'active' : ''}">Dataset & Software</a></li>
                     <li><a href="teaching.html" class="${page === 'teaching.html' ? 'active' : ''}">Teaching</a></li>
+                    <li><a href="gallery.html" class="${page === 'gallery.html' ? 'active' : ''}">Gallery</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle" aria-label="Toggle navigation menu">
