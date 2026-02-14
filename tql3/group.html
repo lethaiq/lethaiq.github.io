@@ -1,863 +1,244 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
 
-    gtag('config', 'G-B0MH53RK3Y');
-  </script>
-  <style type="text/css">
-    body {
-      width: 55%;
-      margin: auto;
-      border-radius: 6px;
-      border: 1px grey solid;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      box-shadow: 6px 5px 5px whitesmoke;
-    }
-    #clustrmaps-widget-v2 {
-      float: right;
-      display: none!important;
-    }
-    body *:not(i,name) {
-      font-family: "Roboto",sans-serif!important;
-/*      font-weight: 300;*/
-      font-size: 0.7rem;
-      line-height: 1.3!important;
-/*      box-shadow: 6px 5px 5px whitesmoke;*/
-    }
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Meet the ARKAI Research Lab team at Indiana University. Led by Prof. Thai Le, our group researches Accountable, Resilient, and Kind AI.">
+  <meta name="keywords" content="ARKAI Lab Team, Thai Le, PhD Students, AI Researchers, Indiana University CS">
+  <meta name="author" content="Thai Le">
+  <link rel="canonical" href="https://lethaiq.github.io/tql3/group.html">
 
-    ul.publications * {
-/*      font-family: "Roboto",sans-serif;*/
-/*      font-weight: 300;*/
-/*      font-size: 1rem;*/
-    }
+  <title>Group Members - ARKAI Research Lab | Indiana University</title>
 
-    ul.publications {
-/*      list-style: none*/
-    }
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Group Members - ARKAI Research Lab">
+  <meta property="og:description" content="Meet the researchers building the future of safe and accountable AI.">
+  <meta property="og:url" content="https://lethaiq.github.io/tql3/group.html">
 
-    ul {
-        margin-left: -17px;
-        margin-right: 2px;
-    }
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary">
 
-    ul.news li{
-      display: block;
-      margin-bottom: 4px!important;
-    }
+  <!-- CSS / Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
 
-    ol.publications li{
-      margin-bottom: 5px!important;
-    }
-
-    ul.publications li {
-      display: block;
-      margin-bottom: 12px!important;
-    }
-
-    ul.teachings li {
-      display: block;
-      margin-bottom: 12px!important;
-    }
-
-    img {
-      border: solid 1px #bad0c6!important;
-      padding: 3px;
-      border-radius: 10px;
-      margin: 5px;
-    }
-    img.profile {
-      /*border: None!important;*/
-    }
-    a {
-      color: #981b1e!important;
-    }
-    p, span {
-      line-height: 18px;
-    }
-    span.ar{
-      font-size: small;
-      font-style: italic;
-      margin-left: 10px;
-    }
-    .btnDemo {
-      color: #fafff7;
-      background: #ff005b;
-      border: solid 1px black;
-      border-radius: 8px;
-      padding: 1px;
-      text-align: center;
-      display: block;
-      margin: auto;
-      width: 40%;
-      font-size: small;
-    }
-    .btnDemo a {
-      color: white;
-    }
-
-    name {
-      background: #862b07;
-      color: #e5e5e5;
-      width: 100%!important;
-      display: block;
-     border-radius: 5px 5px 0px 0px;
-      margin: 0px 0px -5px 0px!important;
-    }
-
-    ul li:not(:last-child) {
-        margin-bottom: 3px;
-    }
-
-/*    .thumbnail {
-      display: none;
-    }
-
-    .abstract {
-      display: none;
-    }
-*/
-    /*@media screen and (min-width: 320px) {
-          img{
-                display:none !important;
-       }
-     }*/
-
-    .tool {
-      display: block;
-      float: left;
-      margin: 20px;
-      text-align: center;
-    }
-
-    .tool img {
-      margin-bottom: 5px;
-    }
-
-    @media screen and (max-width: 768px) {
-      body {
-        width: 100%!important;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border: none;
-      }
-        img  {
-/*          display:none !important;*/
-       }
-
-       .tool{
-        display: inline!important;
-        width: 100%;
-       }
-
-       .tool img {
-/*        display: none!important;*/
-       }
-
-       img.profile {
-        display: inline!important;
-        border: solid 1px #bad0c6!important;
-        padding: 3px;
-        border-radius: 10px;
-        margin: 5px;
-       }
-       .thumbnail {
-        display: none!important;
-       }
-     }
-
-     /* .nav a {
-      padding: 4px 8px 4px 8px;
-      background: #ece2e2;
-      color: #981b1e;
-      border-radius: 4px;
-      border: solid grey 0.5px;
-      margin-right: 5px;
-     } */
-
-   /*  .news {
-      font-size: small;
-     }
-
-     .news a {
-      font-size: small!important;
-     }*/
-
-     .collapsible {
-      background-color: #d4c3c3;
-      color: #981b1e;
-      cursor: pointer;
-      padding: 2px;
-      width: 100%;
-      border: 1px #bdabab solid;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-    }
-
-   /* .active, .collapsible:hover {
-      background-color: #b2b0b0;
-      color: black;
-    }*/
-
-    .collapsible:after {
-      content: '\002B';
-      color: white;
-      font-weight: bold;
-      float: right;
-      margin-left: 5px;
-    }
-
-    /*.active:after {
-      content: "\2212";
-    }*/
-
-    .content {
-      padding: 0 18px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-      background-color: #f1f1f1;
-    }
-    papertitle {
-    /*  font-weight: 700;
-      font-size: small;*/
-      font-style: initial;
-      text-decoration: underline;
-    }
-    author {
-      display: block;
-      font-size: smaller;
-      padding-left: 10px;
-    }
-    venue {
-      display: block;
-      font-size: smaller;
-      padding-left: 10px;
-    }
-    tag {
-      font-weight: 600;
-      font-size: 0.5rem!important;
-      padding: 1px 2px 1px 2px;
-      border-radius: 3px;
-      margin: 2px;
-      font-family: monospace;
-      display: inline-block;
-    }
-    tag.llm {
-      background: #f14040;
-      color: white;
-    }
-    tag.survey {
-        background: pink;
-        color: black;
-    }
-    tag.xai {
-      background: blue;
-      color: white;
-    }
-    tag.robust {
-      background: green;
-      color: white;
-    }
-    tag.sns {
-      background: purple;
-      color: white;
-    }
-    tag.human {
-      background: black;
-      color: white;
-    }
-    tag.noisy {
-      background: brown;
-      color: white;
-    }
-    tag.fakenews {
-      background: orange;
-      color: white;
-    }
-    tag.textgen {
-      background: grey;
-      color: white;
-    }
-    tag.graph {
-      background: #3ee2da;
-      color: white;
-    }
-    tag.signal {
-      background: #a18bd2;
-      color: white;
-    }
-    papertitle a {
-      color: black!important;
-    }
-
-    tag.privacy {
-      background: grey;
-      color: white;
-    }
-    ul.publications{
-      margin: 10px;
-      padding: 0px;
-    }
-
-    ul.teachings li coursetitle{
-      color: #981b1e!important;;
-    }
-
-    .tab-pane {
-      margin-top: 20px;
-    }
-/*
-    .tab-pane ul {
-      margin: 10px;
-      padding: 0px;
-    }*/
-
-    .info {
-      display: block;
-    }
-
-    .nav-link {
-      color: #981b1e!important;
-    }
-
-    venue {
-      font-style: italic;
-    }
-
-   /* .swiper {
-      width: 100%;
-      height: 50px;
-    }*/
-
-    .introbox {
-      display: block;
-      border-radius: 5px;
-      width: 90%;
-      text-align: justify;
-      margin: 0px auto 20px auto;
-/*      margin: auto;*/
-      border: 1px dotted;
-      padding: 7px;
-/*      float: right;*/
-    }
-
-    #nav-tab button {
-      text-decoration: underline;
-    }
-
-    h3 {
-        /* font-size: medium!important; */
-        font-weight: bold;
-        color: #981b1e !important;
-    }
-
-    .arkai_page {
-        display: block;
-        margin-left: 20px;
-    }
-
-
-  </style>
-
-    <!-- Demo styles -->
+  <!-- Scripts -->
+  <script src="js/layout.js" defer></script>
   <style>
-    .mySwiper {
-      background-color: #f5efef;
-      border-radius: 10px;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 90px;
-      padding: 5px;
-      margin-top: -10px;
-      margin-bottom: 0px;
-/*      background-color: grey;*/
-    }
-
-    .swiper-slide {
+    .person-card {
       text-align: center;
-      font-size: 18px;
-/*      background: #fff;*/
-      display: flex;
-      justify-content: center;
       align-items: center;
     }
 
-    .swiper-slide img {
-      transition: transform 0.1s;
-/*      transform: scale(1.1);*/
+    .person-img-container {
+      width: 100px;
+      height: 100px;
+      background-color: #f0f0f0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      font-size: 2.5rem;
+      color: #ccc;
+      border: 3px solid var(--primary-color);
     }
 
-    .swiper-slide img:hover, .swiper-slide img:focus {
-      transform: scale(1.3);
+    .person-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 90px!important;
-      height: 70px;
-/*      object-fit: cover;*/
-      border-radius: 5px;
-
+    .person-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: var(--primary-color);
     }
 
-    .tag_content {
-/*      margin-top: -40px!important;*/
-/*      margin-bottom: -20px!important;*/
-/*      float: left;*/
-      display: block;
-/*      margin-left: 10px;*/
-/*      border: 1px dotted grey;*/
-/*      border-radius: 5px;*/
-/*      padding: 5px;*/
+    .person-role {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
     }
 
-    .tag_content_label {
-      text-align: center;
-      font-weight: 500;
-      display: block;
-      color: "#0eddae"!important
-    }
-
-    .highlight {
-        background-color:  "#0eddae"!important;
-        color: #981b1e !important;
-        font-weight: bolder;
-    }
-
-    ul.research li {
-        margin-bottom: -5px;
-    }
-
-    ul.research li a {
-        font-size: smaller;
-    }
-
-    div.photos img {
-        width: 40%;
-        text-align: center;
-    }
-
-    div.photos {
-        text-align: center;
-    }
-
-    div.photos .caption {
-        display: block;
-        font-style: italic;
-    }
-
-    div#previous_news {
-        display: none;
-    }
-
-    #show_previous_news {
-        border: 2px solid;
-        background-color: #f4dfe0;
-        border-radius: 4px;
-        padding: 2px 4px 2px 4px;
-        font-style: italic;
-        border-color: #a28080;
-    }
-
-    span.conf {
-        font-weight: bold;
-    }
-
-    ul.outreach {
-        text-align: center;
-    }
-
-    ul.outreach li {
-        list-style-type: none;
+    .section-header {
+      width: 100%;
+      border-bottom: 2px solid #eee;
+      margin: 40px 0 20px 0;
+      padding-bottom: 10px;
+      color: var(--secondary-color);
+      font-size: 1.5rem;
     }
   </style>
-
-  <title>Thai Le</title>
-
-  <meta name="author" content="Jon Barron">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <script async data-id="101439971" src="http://static.getclicky.com/js"></script> -->
-  <!-- <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101439971ns.gif" /></p></noscript> -->
-  <!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
-
-  <!-- # TAG CLOUD -->
-  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-  <style type="text/css">
-    .tagcloud {
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      font-weight: 650;
-      margin: auto;
-    }
-    .tagcloud--item:hover {
-      color: #36454F;
-    }
-  </style>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      var myTags = [
-          ["POLLICE", "poliice", "PooLice", "pOlicE", "pollce", "policeee", "poliice", "Pooolice", "policce", "POLLICE", "PO-LICE", "pollice", "po0lice", "poo-lice", "pOlice", "pooolice", "poliice", "po-lice", "po0lice", "Pol-ice", "PO-lice", "policie", "pooolice", "Po-Lice", "Pooolice", "po0lice", "pOlicE", "POlice", "POLLICE", "pOlicE", "pooLice", "PoliCE", "poo-lice", "PolIcE", "PolIcE", "poLICE", "PO-lice", "POLLICE", "pollce", "pOLice", "PoLiCe", "PolIcE", "pOlicE", "pooolice", "poLICE", "Pooolice", "Po-Lice", "pooLice", "polce", "pollce"],
-          ["amzzon", "amazzon", "ammazon", "AMAZN", "AMZN", "Amazn", "Amazn", "amazn", "amazonn", "amzn", "amz0n", "amzn", "amazn", "Amzn", "AMAZON", "AMAZONN", "amzzon", "Amaazon", "AMZON", "AMAAZON", "AMZN", "Amaazon", "AMAZONNN", "Amaazon", "amazoon", "AmZN", "AMAZONNN", "Amazn", "amZn", "AMZN", "Amazon", "Amzon", "Amazon", "Amazon", "AMMAZON", "amazzon", "AMMAZON", "AMAZN", "Amzon", "AMAZONNN", "Amazn", "amazn", "AMMAZON", "AMAZONNN", "amazonn", "AMazon", "AMAZON", "amz0n", "amazoon", "amz0n"],
-          ["Republican\u00b4s", "Republlicns", "republiCAN'S", "republican`s", "Republlicns", "Republicanns", "Repbublicans", "repubLIEcans", "REPUBLICAN's", "Republcans", "RepublIcans", "REPUBLICANs", "Republican;s", "Republicans\u2019s", "Republiicans", "Republicans's", "rePUBICans", "Republikcans", "Republican\u2019s", "REPUBLICAN\u2019S", "Republlicans", "REPUBLLICANS", "rePublicans", "REPUBLICAN's", "Republicans's", "Republican\"s", "republICANS", "Repubicans", "Republcans", "RepublicaNs", "rEPUBLICANS", "Repubicans", "republicanss", "republican's", "republicans\u2019s", "Republican's", "REPUBLICAN\u2019S", "Republican's", "republican's", "RePublicans", "Repubicans", "rePUBICans", "REPUBLLICANS", "Republicans", "republican`s", "Repubwicans", "Republiican's", "Repbublicans", "REPUBLICAN's", "republicns"],
-          ["DEMOCR-rats", "Demo-cRATS", "DEMOCR-rats", "DemocRAAT\u2019s", "democRATTS", "dEMOCRATS", "DemoCRATS", "Democrat\u2019\u2019s", "democRats", "Democratss", "Democrats\u2019s", "DEMOCRATs", "DemocRAATS", "DemocRAT's", "DemocRAATs", "DeMoCraTs", "DeMoCraTs", "Demo-crats", "Demo-cRATs", "DemocRATs", "DemOcraTss", "democrRATS", "democ-RATs", "democrat's", "demmocrats", "Democrat,s", "DEMOCRAT'S", "demo-crats", "Demo-cRATS", "Democrat's", "demoocRATS", "democcrats", "DemocRAAT\u2019s", "Demo0crats", "DEMOcrats", "DEMocRATS", "democRATS", "demoocrats", "Democratts", "DemocrRATS", "DemOCrAts", "democrat,s", "demcrats", "democrAts", "democRATs", "DemocraAts", "Democxrats", "demoocRATS", "DEMocrats", "DEMOCrats"]
-        ]
-
-      myTags = myTags[Math.floor(Math.random() * myTags.length)];
-      var tagCloud = TagCloud('.tag_content', myTags,{
-          radius: 90,
-          maxSpeed: 'fast',
-          initSpeed: 'slow',
-          direction: 10,
-          height:500,
-          keep: true
-        });
-
-      var colors = ['#0eddae'];
-      var random_color = colors[Math.floor(Math.random() * colors.length)];
-      document.querySelector('.tag_content').style.color = random_color;
-
-    });
-  </script>
-  <!-- # TAG CLOUD -->
-
 </head>
 
-
 <body>
-    <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?d=jC8HCCbff78LjpYZ1vBAFIMQvaJTcxyY41lNajSnSes&cl=ffffff&w=a"></script>
-    <script>
-      $(document).ready(function(){
-        $("#show_previous_news").on('click', function(){
-          $("#previous_news").fadeToggle();
-        });
-      });
-    </script>
-    <div class="info">
-        <p style="text-align:center">
-          <name>Thai Le</name>
-          <p style="text-align:center">
-            <i>tle [at] iu [dot] edu</i></br>
-            <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en"><u><i class="fa-solid fa-book-open"></i> Google Scholar</u> |</a>
-            <a href="https://github.com/lethaiq"><u><i class="fa-brands fa-github"></i> GitHub</u></a>
-          </p>
-        <p class="introbox">
-          Welcome! I am an Assistant Professor of the <a href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (Bloomington)</a>. I got my doctorate degree at <a href="http://www.psu.edu/">Penn State</a> in the <a href="https://ist.psu.edu/">College of IST</a> under the advisory of <a href="https://pike.psu.edu/dongwon/">Professor Dongwon Lee</a>. I am also an ex-Amazonian at <a href="https://www.amazon.science/">Amazon Science</a> and an ex-intern at <a href="https://research.yahoo.com/">Yahoo Research</a> and <a href="https://octo.vmware.com/">VMWare OCTO</a>.
-        </p>
+  <!-- Header and Nav are injected by js/layout.js -->
 
-        <!-- <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="images/arxiv24C.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/arxiv24B.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/arxiv24A.png" alt="arxiv24A" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ICWSM24.png" alt="ICWSM24" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/hcomp23.png" alt="HCOMP23" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/reprint23A.png" alt="KDD20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv22Z.png" alt="Arxiv22Z" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv22X.png" alt="Arxiv22X" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv22A.png" alt="Arxiv22A" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv21A.png" alt="Arxiv21A" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv21C.png" alt="Arxiv21B" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Arxiv21D.png" alt="KDD20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ACL21.png" alt="ACL21" tyle="border-style: none">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/EMNLP21.png" alt="EMNLP21" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/PKDD21.png" alt="PKDD21" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/CHI20.png" alt="CHI20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/KDD21.png" alt="KDD21" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ICDM20.png" alt="ICDM20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/KDD20.png" alt="KDD20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/EMNLP20.png" alt="EMNLP20" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ASONAM19.png" alt="ASONAM19" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ABS19.png" alt="ABS19" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/Websci19.png" alt="Websci19" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ICDM19.png" alt="ICDM19" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/SPWLAALS19.png" alt="SPWLAALS19" style="border-style: none" loading="lazy"/>
-              </div>
-              <div class="swiper-slide">
-                <img src="images/ICDM18.png" alt="ICDM18" style="border-style: none" loading="lazy"/>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div> -->
+  <main class="container">
+    <h1 class="section-title">People</h1>
+
+    <p style="margin-bottom: 30px; font-style: italic; color: #666;">
+      We are a group of researchers passionate about Accountable, Resilient, and Kind AI.
+    </p>
+
+    <h3 class="section-header">Active Students/Interns</h3>
+    <div class="grid-container">
+      <div class="card person-card">
+        <div class="person-img-container" style="border: none; padding: 0; overflow: hidden;">
+          <img src="https://nguyentuc.github.io/images/avatar.jpeg" alt="Tuc Nguyen - ARKAI Lab PhD Student"
+            class="person-img" loading="lazy" width="100" height="100">
+        </div>
+        <div class="person-name"><a href="https://nguyentuc.github.io">Tuc Nguyen</a></div>
+        <div class="person-role">PhD Student - CS<br><span style="font-size: 0.8em; color: var(--accent-color);">CS
+            Graduate Research Award 2025</span></div>
+      </div>
+
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user"></i></div>
+        <div class="person-name"><a href="https://ccmc.luddy.iu.edu/people/yueru-yan.html/">Yan Yueru</a></div>
+        <div class="person-role">PhD Student - ILS</div>
+      </div>
+
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user"></i></div>
+        <div class="person-name"><a href="https://www.linkedin.com/in/melissa-lieffers/">Melissa Lieffers</a></div>
+        <div class="person-role">PhD Student - Linguistics &rarr; CS</div>
+      </div>
+
+      <div class="card person-card">
+        <div class="person-img-container" style="border: none; padding: 0; overflow: hidden;">
+          <img src="https://bartsu.github.io/img/bartsu.png" alt="Bo Su - ARKAI Lab PhD Student" class="person-img"
+            loading="lazy" width="100" height="100">
+        </div>
+        <div class="person-name"><a href="https://bartsu.github.io/">Bo Su</a></div>
+        <div class="person-role">PhD Student - CS</div>
+      </div>
     </div>
 
-        <nav>
-        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-            <a href="index.html"><button class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">ARKAI Lab</button></a>
-            <a href="group.html"><button class="nav-link active" id="nav-arkai-tab" data-bs-toggle="tab" data-bs-target="#nav-arkai" type="button" role="tab" aria-controls="nav-arkai" aria-selected="true">people</button></a>
-            <a href="research.html"><button class="nav-link" id="nav-research-tab" data-bs-toggle="tab" data-bs-target="#nav-research" type="button" role="tab" aria-controls="nav-research" aria-selected="false">research</button></a>
-            <a href="publication.html"><button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">publications</button></a>
-            <a href="dataset.html"><button class="nav-link" id="nav-software-tab" data-bs-toggle="tab" data-bs-target="#nav-software" type="button" role="tab" aria-controls="nav-software" aria-selected="false">dataset & software</button></a>
-            <a href="outreach.html"><button class="nav-link" id="nav-outreach-tab" data-bs-toggle="tab" data-bs-target="#nav-outreach" type="button" role="tab" aria-controls="nav-outreach" aria-selected="false">outreach & service</button></a>
-            <a href="teaching.html"><button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">teaching</button></a>
-        </div>
-        </nav>
+    <h3 class="section-header">Alumni</h3>
+    <div class="grid-container">
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
+        <div class="person-name"><a href="https://sj110.pages.iu.edu/">Sam Johnson</a></div>
+        <div class="person-role">Data Science MSc &rarr; ML Engineer @ Advanced Space</div>
+      </div>
 
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane active show" id="nav-arkai" role="tabpanel" aria-labelledby="nav-arkai-tab">
-              <div class="arkai_page">
-                  <!-- <h3>people</h3> -->
-                      <ul class="outreach">
-                          <oi>---Active Students/Interns---</oi>
-                          <li>
-                              <coursetitle><a href="https://nguyentuc.github.io">Tuc Nguyen</a><coursetitle>
-                              <span class="student_tag">(PhD Student - CS → CS Graduate Research Award 2025)</span>
-                          </li>
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
+        <div class="person-name">Chris Burger</div>
+        <div class="person-role">CS PhD &rarr; Prof @ U. Mississippi</div>
+        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: Explainable AI...</div>
+      </div>
 
-                          <li>
-                              <coursetitle><a href="https://ccmc.luddy.iu.edu/people/yueru-yan.html/">Yan Yueru</a><coursetitle>
-                              <span class="student_tag">(PhD Student - ILS)</span>
-                          </li>
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
+        <div class="person-name">Rishabh Shrestha</div>
+        <div class="person-role">CS MSc &rarr; Software Engineer</div>
+        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: EarthsciBERT...</div>
+      </div>
 
-                          <li>
-                            <coursetitle><a href="https://www.linkedin.com/in/melissa-lieffers/">Melissa Lieffers</a><coursetitle>
-                            <span class="student_tag">(PhD Student - Linguistics → CS)</span>
-                          </li>
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
+        <div class="person-name">Sijan Shrestha</div>
+        <div class="person-role">CS MSc &rarr; App Analyst</div>
+        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: Google Smart Compose...</div>
+      </div>
 
-                          <li>
-                            <coursetitle><a href="https://bartsu.github.io/">Bo Su</a><coursetitle>
-                            <span class="student_tag">(PhD Student - CS)</span>
-                          </li>
+      <div class="card person-card">
+        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
+        <div class="person-name">Lisette Kamper-Hinson</div>
+        <div class="person-role">CS Graduate &rarr; MSc @ Wake Forest</div>
+      </div>
+    </div>
 
-                          <!-- <li>
-                              <coursetitle><a href="https://sj110.pages.iu.edu/">Sam Johnson</a><coursetitle>
-                              <span class="student_tag">(MS Student)</span>
-                          </li> -->
+    <h3 class="section-header">Research Mentees & Interns (Past/Current)</h3>
+    <div class="grid-container">
+      <!-- Simplified cards for mentees -->
+      <div class="card person-card">
+        <div class="person-name">Aakriti Shah</div>
+        <div class="person-role">MS @ USC</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Viet Pham</div>
+        <div class="person-role">Research Intern</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Minh Hoang</div>
+        <div class="person-role">Research Intern</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Binh Quoc</div>
+        <div class="person-role">Research Intern</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Trinh Tran</div>
+        <div class="person-role">Research Intern</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Cuong Nguyen</div>
+        <div class="person-role">Intern &rarr; PhD @ Virginia Tech</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Paulina Eguibar</div>
+        <div class="person-role">CS Undergrad @ U. Mississippi</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">James Michael</div>
+        <div class="person-role">PhD @ U. Mississippi</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Cara Yin</div>
+        <div class="person-role">PhD @ U. Mississippi</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Jun Jang</div>
+        <div class="person-role">Oxford High School &rarr; ISEF Winner</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Eric Xing</div>
+        <div class="person-role">WKU &rarr; WashU</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Ziyao Wang</div>
+        <div class="person-role">Wuhan Univ &rarr; UMD</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Jayesh Khandelwal</div>
+        <div class="person-role">IIT Jodhpur &rarr; NYU</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Yiran Ye</div>
+        <div class="person-role">MS @ Penn State &rarr; Minitab</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Adaku Uchendu</div>
+        <div class="person-role">PhD @ Penn State &rarr; MIT Lincoln Lab</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Joe McCalmon</div>
+        <div class="person-role">Wake Forest &rarr; Startup</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Tianyi Xie</div>
+        <div class="person-role">SJTU &rarr; UCLA</div>
+      </div>
+      <div class="card person-card">
+        <div class="person-name">Xinyue Cao</div>
+        <div class="person-role">Intern &rarr; CMU</div>
+      </div>
+    </div>
 
-                          <oi><br>---Alumni---</oi>
-                          <li>
-                            <coursetitle><a href="https://sj110.pages.iu.edu/">Sam Johnson</a><coursetitle>
-                            <span class="student_tag">(Data Science MSc → ML Engineer @ Advanced Space)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Chris Burger</a><coursetitle>
-                              <span class="student_tag">CS PhD → Instructional Assistant Professor in CS @ U. Mississippi from Fall 2024</span>
-                              <author>Doctorate Thesis: <i>Explainable AI for Neural Text Classification Models: Robustness and
-                              Knowledge Locality</i></author>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Rishabh Shrestha</a><coursetitle>
-                              <span class="student_tag">CS MSc → Intern @St. Jude → Software Engineer @Central Service Association, MS</span>
-                              <author>MSc Thesis: <i>EarthsciBERT: Pre-trained Language Model for Information Retrieval in Earth Science</i></author>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Sijan Shrestha</a><coursetitle>
-                              <span class="student_tag">CS MSc → Application Analyst @Institute of Child Nutrition</span>
-                              <author>MSc Thesis: <i>The Effects of Google Smart Compose In Open-ended Writings</i></author>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Lisette Kamper-Hinson</a><coursetitle>
-                              <span class="student_tag">CS Graduate → Intern @NASA → MSc @Wake Forest University</span>
-                          </li>
-
-
-                          <oi><br>---Research Mentees and Interns (Past and Current)---</oi>
-                          <li>
-                            <coursetitle><a href="">Aakriti Shah</a></coursetitle>
-                            <span class="student_tag">(MS @USC)</span>
-                          </li>
-
-                          <li>
-                            <coursetitle><a href="">Viet Pham</a></coursetitle>
-                            <span class="student_tag">(Research Intern)</span>
-                          </li>
-
-                          <li>
-                            <coursetitle><a href="">Minh Hoang</a></coursetitle>
-                            <span class="student_tag">(Research Intern)</span>
-                          </li>
-
-                          <li>
-                            <coursetitle><a href="">Binh Quoc</a></coursetitle>
-                            <span class="student_tag">(Research Intern → INTERSPEECH'25, EMNLP'25)</span>
-                          </li>
-                          
-                          <li>
-                            <coursetitle><a href="">Trinh Tran</a></coursetitle>
-                            <span class="student_tag">(Research Intern → EMNLP'25 Findings)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="">Cuong Nguyen</a></coursetitle>
-                              <span class="student_tag">(Research Intern → ACL'24 → PhD at Virginia Tech)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="">Paulina Eguibar</a></coursetitle>
-                              <span class="student_tag">(CS Undergraduate @ U. Mississippi)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">James Michael</a><coursetitle>
-                              <span class="student_tag">(PhD @U. Mississippi → Journal of Chem.Inf.Model.)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Cara Yin</a><coursetitle>
-                              <span class="student_tag">(PhD @U. Mississippi → ACMSE'24)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Jun Jang</a><coursetitle>
-                              <span class="student_tag">(Oxford High School → ISEF - 3rd place awarded by NSA)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Eric Xing</a><coursetitle>
-                              <span class="student_tag">(Western Kentucky U. → WashU)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Ziyao Wang</a><coursetitle>
-                              <span class="student_tag">(Wuhan University, China → UMD)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Jayesh Khandelwal</a><coursetitle>
-                              <span class="student_tag">(IIT Jodhpur, India → NYU)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Yiran Ye </a><coursetitle>
-                              <span class="student_tag">(MS@Penn State → Software Engineer @Minitab, PA )</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Adaku Uchendu</a><coursetitle>
-                              <span class="student_tag">(Phd@Penn State → Lab Technical Staff @MIT Lincoln Laboratory)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Joe McCalmon</a><coursetitle>
-                              <span class="student_tag">(CS Undergraduate @Wake Forest U. → Startup)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Tianyi Xie</a><coursetitle>
-                              <span class="student_tag">(Shanghai Jia Tong University, China → UCLA)</span>
-                          </li>
-                          <li>
-                              <coursetitle><a href="#">Xinyue Cao</a><coursetitle>
-                              <span class="student_tag">(Intern @Penn State → CMU)</span>
-                          </li>
-
-                      </ul>
-
-                  <h3>photos</h3>
-                      <div class="photos">
-                          <img src="./images/arkai_lab_22.jpg" alt="ARKAI Lab - Ole Miss - 2022"/>
-                          <span class="caption"></span>Lab picnic at Sardis Lake, MS - 2022</div>
-                      </div>
-              </div>
-            </div>
-
-        </div>
-
-
+  </main>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-
-    var swiper = new Swiper(".mySwiper", {
-      // slidesPerView: 7,
-      breakpoints: {
-        320: {
-          slidesPerView: 5,
-          spaceBetween: 10,
-        },
-        640: {
-          slidesPerView: 5,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 5,
-          spaceBetween: 10,
-        },
-        950: {
-          slidesPerView: 8,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 10,
-          spaceBetween: 10,
-        },
-      },
-      // spaceBetween: 10,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-</script>
 
 </html>

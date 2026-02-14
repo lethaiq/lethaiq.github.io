@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; font-size: 24px; }
+    .label { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; font-size: 16px; }
+    .p { fill: #2c3e50; } /* Navy */
+    .s { fill: #3498db; } /* Sky Blue */
+    .g { fill: #d4af37; } /* Gold */
+    .a { fill: #e74c3c; } /* Red */
+    .fold-line { stroke: white; stroke-width: 1; opacity: 0.5; }
+    .arrow { fill: none; stroke: #e74c3c; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#e74c3c" />
+    </marker>
+  </defs>
+
+  <!-- Step 6: The Interlocking Diamond (LOGO BASE) -->
+  <g transform="translate(100, 50)">
+    <text x="100" y="20" class="label" text-anchor="middle">STEP 6: The Interlocking Core</text>
+    <text x="100" y="320" class="text" text-anchor="middle">The Logo</text>
+    
+    <path d="M100 40 L 140 100 L 100 160 L 60 100 Z" class="p" /> <!-- Top -->
+    <path d="M100 100 L 140 160 L 100 220 L 60 160 Z" class="g" /> <!-- Bottom -->
+    <path d="M60 100 L 100 130 L 60 160 L 20 130 Z" class="s" /> <!-- Left -->
+    <path d="M140 100 L 180 130 L 140 160 L 100 130 Z" class="s" /> <!-- Right -->
+    
+    <rect x="94" y="124" width="12" height="12" class="a" transform="rotate(45, 100, 130)" />
+    
+    <!-- Animation Arrow for Step 7 -->
+    <path d="M100 230 L 100 210" class="arrow" />
+    <text x="100" y="250" class="label" font-size="12" text-anchor="middle">Fold bottom point up</text>
+  </g>
+
+  <!-- Step 7: The Unfolding Transition -->
+  <g transform="translate(500, 50)">
+    <text x="100" y="20" class="label" text-anchor="middle">STEP 7: The Unfolding</text>
+    <text x="100" y="320" class="text" text-anchor="middle">The Transition</text>
+    
+    <!-- Flattened Hull -->
+    <path d="M40 160 L 160 160 L 130 200 L 70 200 Z" class="g" />
+    <!-- Rising Sails -->
+    <path d="M100 40 L 100 160 L 40 160 Z" class="p" />
+    <path d="M100 70 L 100 160 L 140 160 Z" class="a" opacity="0.8" />
+    
+    <path d="M170 160 L 210 160" class="arrow" />
+    <text x="190" y="180" class="label" font-size="12" text-anchor="middle">Reveal hull</text>
+  </g>
+
+  <!-- FINAL: THE ARK (Sailboat) -->
+  <g transform="translate(900, 50)">
+    <text x="100" y="20" class="label" text-anchor="middle">FINAL: The Golden Ark</text>
+    <text x="100" y="320" class="text" text-anchor="middle">The Result</text>
+    
+    <!-- The Boat Hull -->
+    <path d="M20 160 L 180 160 L 150 200 L 50 200 Z" class="g" />
+    <!-- The Sails -->
+    <path d="M100 40 L 100 155 L 30 155 Z" class="p" /> <!-- Main Sail -->
+    <path d="M105 80 L 105 155 L 145 155 Z" class="a" /> <!-- Second Sail -->
+    
+    <circle cx="100" cy="157" r="5" fill="#3498db" /> <!-- Connection Node -->
+  </g>
+</svg>

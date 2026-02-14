@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; font-size: 24px; }
+    .label { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; font-size: 14px; }
+    .desc { font-family: 'Inter', sans-serif; font-weight: 300; fill: #95a5a6; font-size: 12px; }
+    .p { fill: #2c3e50; } 
+    .s { fill: #34495e; } 
+    .a { fill: #e74c3c; } 
+    .gold { fill: #d4af37; } /* Gold for Divine/Golden Ratio */
+  </style>
+
+  <!-- Concept 1: "The Golden Ark" (Fibonacci Spiral) -->
+  <!-- Narrative: Mathematical perfection (God's language) forming a vessel. 
+       A golden spiral curve that cradles/protects. -->
+  <g transform="translate(100, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">1. The Golden Ark</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Mathematical perfection (Fibonacci) as shelter</text>
+    
+    <!-- The Spiral Hull -->
+    <path d="M40 80 C 40 180, 160 180, 160 80" fill="none" stroke="#2c3e50" stroke-width="4"/>
+    <path d="M160 80 C 160 30, 100 30, 100 80" fill="none" stroke="#2c3e50" stroke-width="3"/>
+    <path d="M100 80 C 100 110, 140 110, 140 80" fill="none" stroke="#d4af37" stroke-width="3"/> <!-- Gold center -->
+    
+    <circle cx="125" cy="80" r="4" class="a"/> <!-- Singularity/Core -->
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Concept 2: "The Divine Shield" (Light & Structure) -->
+  <!-- Narrative: Rays of light (Truth/Divinity) intersecting to form a shield. 
+       Looks like a graph/network but symmetrical and radiant. -->
+  <g transform="translate(500, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">2. The Divine Shield</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Light rays forming a protective structure</text>
+    
+    <!-- Center Core -->
+    <circle cx="100" cy="80" r="10" class="gold"/>
+    
+    <!-- Rays forming shield outline -->
+    <path d="M100 20 L 100 60" stroke="#34495e" stroke-width="2"/>
+    <path d="M100 140 L 100 100" stroke="#34495e" stroke-width="2"/>
+    <path d="M40 50 L 85 75" stroke="#34495e" stroke-width="2"/>
+    <path d="M160 50 L 115 75" stroke="#34495e" stroke-width="2"/>
+    <path d="M40 110 L 85 85" stroke="#34495e" stroke-width="2"/>
+    <path d="M160 110 L 115 85" stroke="#34495e" stroke-width="2"/>
+    
+    <!-- Shield Outline (Implied by ray endpoints) -->
+    <path d="M100 20 L 160 50 L 160 110 L 100 140 L 40 110 L 40 50 Z" fill="none" stroke="#2c3e50" stroke-width="4"/>
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Concept 3: "The Trinity Node" (Unity & Safety) -->
+  <!-- Narrative: Three circles (Trinity) intersecting. 
+       The intersection forms a protected Reuleaux triangle (Ark-like shape). -->
+  <g transform="translate(900, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">3. The Trinity Node</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Interconnected unity protecting the core</text>
+    
+    <!-- Circles -->
+    <circle cx="100" cy="65" r="40" fill="none" stroke="#2c3e50" stroke-width="3"/> <!-- Top -->
+    <circle cx="70" cy="115" r="40" fill="none" stroke="#2c3e50" stroke-width="3"/> <!-- Bot Left -->
+    <circle cx="130" cy="115" r="40" fill="none" stroke="#2c3e50" stroke-width="3"/> <!-- Bot Right -->
+    
+    <!-- Overlap Hull -->
+    <path d="M100 100 L 85 130 L 115 130 Z" fill="#e74c3c" opacity="0.8"/> <!-- Center Core -->
+    <circle cx="100" cy="115" r="3" fill="#fff"/>
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Concept 4: "The Halo Ark" (Enlightenment) -->
+  <!-- Narrative: A simple vessel with a halo/sun rising. 
+       Symbolizes exploring beauty (Light) and safety (Ark). -->
+  <g transform="translate(100, 400)">
+    <text x="100" y="20" class="label" text-anchor="middle">4. The Halo Ark</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">A vessel guided by divine light</text>
+    
+    <!-- The Halo / Sun -->
+    <circle cx="100" cy="60" r="30" fill="none" stroke="#d4af37" stroke-width="4"/>
+    <circle cx="100" cy="60" r="15" class="gold" opacity="0.3"/>
+    
+    <!-- The Ark -->
+    <path d="M40 90 Q 100 140, 160 90 L 140 110 Q 100 150, 60 110 Z" class="p"/>
+    
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Concept 5: "The Fractured Whole" (Restoration) -->
+  <!-- Narrative: Taking broken pieces (malicious tech) and assembling them into a perfect sphere. -->
+  <g transform="translate(500, 400)">
+    <text x="100" y="20" class="label" text-anchor="middle">5. The Restored Sphere</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Making the broken whole (Japanese Kintsugi)</text>
+    
+    <circle cx="100" cy="90" r="50" fill="#34495e"/>
+    <!-- Gold Cracks (Restoration) -->
+    <path d="M70 60 L 100 90 L 140 70" fill="none" stroke="#d4af37" stroke-width="3"/>
+    <path d="M100 90 L 90 130" fill="none" stroke="#d4af37" stroke-width="3"/>
+    
+    <!-- Bottom arc = Ark shape impliciation -->
+    <path d="M60 120 Q 100 150, 140 120" fill="none" stroke="#e74c3c" stroke-width="4" stroke-linecap="round"/>
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+</svg>

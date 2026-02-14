@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Subtle Origami Concepts
+    Narrative: Safety and structure as an emergent property of geometric precision.
+    The "Ark" is hidden in the folds.
+  -->
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; font-size: 24px; }
+    .label { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; font-size: 14px; }
+    .desc { font-family: 'Inter', sans-serif; font-weight: 300; fill: #95a5a6; font-size: 12px; }
+    .p { fill: #2c3e50; } /* Navy */
+    .s { fill: #3498db; } /* Sky Blue */
+    .g { fill: #d4af37; } /* Gold */
+    .a { fill: #e74c3c; } /* Red */
+  </style>
+
+  <!-- 1. The Interlocking Diamonds -->
+  <!-- Two diamonds overlap. The bottom facets form a sharp 'V' that hints at a hull without being one. -->
+  <g transform="translate(100, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">1. Interlocking Folds</text>
+    
+    <!-- Deep Fold -->
+    <path d="M100 40 L 160 100 L 100 160 L 40 100 Z" class="p" opacity="0.1" />
+    
+    <!-- Top Diamond (Structure) -->
+    <path d="M100 40 L 140 80 L 100 120 L 60 80 Z" class="p" />
+    <path d="M100 40 L 100 120 L 60 80 Z" fill="#1a252f" opacity="0.3" />
+    
+    <!-- Bottom Diamond (Protection) -->
+    <path d="M100 80 L 140 120 L 100 160 L 60 120 Z" class="g" opacity="0.9" />
+    <path d="M100 80 L 100 160 L 60 120 Z" fill="#b8860b" opacity="0.3" />
+    
+    <!-- The Red Core -->
+    <rect x="95" y="95" width="10" height="10" class="a" transform="rotate(45, 100, 100)" />
+
+    <text x="100" y="220" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="250" class="desc" text-anchor="middle">Ark hidden in overlapping diamonds</text>
+  </g>
+
+  <!-- 2. The Abstract Peak -->
+  <!-- Sharp upward folds representing progress. The "Ark" is the stable base. -->
+  <g transform="translate(500, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">2. Abstract Peak</text>
+    
+    <!-- The Base (Very Abstract Ark) -->
+    <path d="M40 140 L 160 140 L 145 155 L 55 155 Z" class="p" />
+    
+    <!-- The Rising Folds -->
+    <path d="M100 40 L 140 140 L 60 140 Z" class="s" />
+    <path d="M100 40 L 100 140 L 60 140 Z" fill="#2980b9" opacity="0.4" />
+    
+    <path d="M120 70 L 160 140 L 100 140 Z" class="g" opacity="0.6" />
+    
+    <!-- Red Accent -->
+    <path d="M100 40 L 110 60 L 100 65 Z" class="a" />
+
+    <text x="100" y="220" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="250" class="desc" text-anchor="middle">Vessel hidden as a stable foundation</text>
+  </g>
+
+  <!-- 3. Geometric Flow -->
+  <!-- A series of overlapping triangles that suggest movement and shelter. -->
+  <g transform="translate(900, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">3. Geometric Flow</text>
+    
+    <!-- Background Triangles -->
+    <path d="M40 150 L 100 60 L 160 150" fill="none" stroke="#bdc3c7" stroke-width="2" />
+    
+    <!-- Fold 1 -->
+    <path d="M60 140 L 100 80 L 120 140 Z" class="p" />
+    <!-- Fold 2 -->
+    <path d="M80 140 L 120 100 L 140 140 Z" class="g" opacity="0.8" />
+    <!-- Fold 3 -->
+    <path d="M100 140 L 140 120 L 150 140 Z" class="s" opacity="0.6" />
+    
+    <!-- Red Anchor -->
+    <circle cx="100" cy="140" r="5" class="a" />
+
+    <text x="100" y="220" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="250" class="desc" text-anchor="middle">Minimalist shelter through flow</text>
+  </g>
+</svg>

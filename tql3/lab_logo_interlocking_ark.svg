@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Interlocking Origami Ark (Refined)
+    Concept: Step 6 of the traditional origami sailboat.
+    A geometric diamond where the internal folds represent the potential to become an Ark.
+  -->
+  <g transform="translate(0, -10)">
+    <!-- 1. The Main Diamond Structure -->
+    <!-- Top Sail Fold (Navy) -->
+    <path d="M100 40 L 140 80 L 100 120 L 60 80 Z" fill="#2c3e50" />
+    <!-- Bottom Hull Fold (Gold) -->
+    <path d="M100 80 L 140 120 L 100 160 L 60 120 Z" fill="#d4af37" />
+    
+    <!-- 2. Interlocking Side Folds (Sky Blue) -->
+    <!-- Left Fold -->
+    <path d="M60 80 L 100 100 L 60 120 L 40 100 Z" fill="#3498db" />
+    <!-- Right Fold -->
+    <path d="M140 80 L 160 100 L 140 120 L 100 100 Z" fill="#3498db" />
+
+    <!-- 3. The Core Seal (Red) -->
+    <!-- Represents the safety and integrity at the heart of the folds -->
+    <rect x="94" y="94" width="12" height="12" fill="#e74c3c" transform="rotate(45, 100, 100)" />
+
+    <!-- 4. Fold Creases (Light transparency for depth) -->
+    <path d="M100 40 L 100 160" stroke="white" stroke-width="1" opacity="0.3" />
+    <path d="M40 100 L 160 100" stroke="white" stroke-width="1" opacity="0.3" />
+
+    <!-- Branding -->
+    <text x="100" y="190" font-family="Inter, sans-serif" font-weight="700" fill="#2c3e50" font-size="16" text-anchor="middle">
+      ARKAI <tspan font-weight="300">LAB</tspan>
+    </text>
+  </g>
+</svg>

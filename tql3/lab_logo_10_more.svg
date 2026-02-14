@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 600">
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; font-size: 24px; }
+    .label { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; font-size: 14px; }
+    /* Palette from user preference */
+    .p { fill: #2c3e50; } /* Primary */
+    .s { fill: #34495e; } /* Secondary */
+    .a { fill: #e74c3c; } /* Accent */
+    .w { fill: #ffffff; }
+  </style>
+
+  <!-- ROW 1 -->
+
+  <!-- 1. Geometric A -->
+  <g transform="translate(100, 50)">
+    <path d="M50 10 L 90 110 L 10 110 Z" class="p"/>
+    <path d="M50 10 L 30 110 L 10 110 Z" fill="rgba(0,0,0,0.2)"/>
+    <rect x="25" y="80" width="50" height="15" class="a"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">1. Geometric A</text>
+  </g>
+
+  <!-- 2. Tech Shield -->
+  <g transform="translate(350, 50)">
+    <path d="M50 110 C 50 110, 10 90, 10 30 L 50 10 L 90 30 C 90 90, 50 110, 50 110 Z" class="s"/>
+    <circle cx="50" cy="50" r="15" class="p"/>
+    <circle cx="50" cy="50" r="6" class="a"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">2. Tech Shield</text>
+  </g>
+
+  <!-- 3. Abstract Boat (Swoosh) -->
+  <g transform="translate(600, 50)">
+    <path d="M10 70 Q 50 110, 90 70" fill="none" stroke="#2c3e50" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="12" class="a"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">3. Swoosh</text>
+  </g>
+
+  <!-- 4. Signal Ark -->
+  <g transform="translate(850, 50)">
+    <path d="M50 80 L 20 50 A 40 40 0 0 0 80 50 Z" class="p" transform="rotate(180, 50, 50)"/>
+    <path d="M50 90 L 35 75 A 20 20 0 0 0 65 75 Z" class="a" transform="rotate(180, 50, 70)"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">4. Signal</text>
+  </g>
+
+  <!-- 5. Open Cube -->
+  <g transform="translate(1100, 50)">
+    <path d="M10 30 L 50 50 L 90 30 L 90 80 L 50 100 L 10 80 Z" fill="none" stroke="#2c3e50" stroke-width="5"/>
+    <path d="M10 80 L 50 100 L 90 80" fill="none" stroke="#e74c3c" stroke-width="5"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">5. Container</text>
+  </g>
+
+  <!-- ROW 2 -->
+
+  <!-- 6. Node V -->
+  <g transform="translate(100, 300)">
+    <circle cx="20" cy="20" r="10" class="p"/>
+    <circle cx="80" cy="20" r="10" class="p"/>
+    <circle cx="50" cy="80" r="12" class="a"/>
+    <line x1="20" y1="20" x2="50" y2="80" stroke="#34495e" stroke-width="4"/>
+    <line x1="80" y1="20" x2="50" y2="80" stroke="#34495e" stroke-width="4"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">6. Node Conn.</text>
+  </g>
+
+  <!-- 7. Data Layers -->
+  <g transform="translate(350, 300)">
+    <rect x="20" y="20" width="60" height="10" class="s"/>
+    <rect x="20" y="40" width="60" height="10" class="s"/>
+    <path d="M20 60 L 80 60 C 80 60, 70 90, 50 90 C 30 90, 20 60, 20 60 Z" class="a"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">7. Layers</text>
+  </g>
+
+  <!-- 8. Pulse Hull -->
+  <g transform="translate(600, 300)">
+    <polyline points="10,50 30,50 40,20 60,80 70,50 90,50" fill="none" stroke="#2c3e50" stroke-width="4"/>
+    <path d="M10 80 Q 50 110, 90 80" fill="none" stroke="#e74c3c" stroke-width="6"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">8. Pulse</text>
+  </g>
+
+  <!-- 9. Pixel Ark -->
+  <g transform="translate(850, 300)">
+    <rect x="20" y="50" width="10" height="10" class="p"/>
+    <rect x="30" y="60" width="10" height="10" class="p"/>
+    <rect x="40" y="70" width="20" height="10" class="a"/> <!-- Core -->
+    <rect x="60" y="60" width="10" height="10" class="p"/>
+    <rect x="70" y="50" width="10" height="10" class="p"/>
+    <rect x="40" y="40" width="20" height="10" class="s"/> <!-- Top -->
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">9. Pixel</text>
+  </g>
+
+  <!-- 10. Monogram Circle -->
+  <g transform="translate(1100, 300)">
+    <circle cx="50" cy="60" r="45" fill="none" stroke="#2c3e50" stroke-width="4"/>
+    <path d="M50 25 L 75 85 L 25 85 Z" class="s" opacity="0.2"/>
+    <path d="M25 85 L 50 70 L 75 85" fill="none" stroke="#e74c3c" stroke-width="5"/>
+    <text x="50" y="150" class="text" text-anchor="middle">ARKAI</text>
+    <text x="50" y="170" class="label" text-anchor="middle">10. Circle</text>
+  </g>
+
+</svg>

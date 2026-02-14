@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    Refined Origami Ark
+    Narrative: Precision, structure, and unfolding potential. 
+    Aesthetic: Clean geometric folds with the Navy, Gold, and Red palette.
+  -->
+  <g transform="translate(0, -10)">
+    <!-- 1. The Hull (Base Fold) - Navy Blue -->
+    <path d="M40 120 L 160 120 L 140 150 L 60 150 Z" fill="#2c3e50" />
+    <!-- Hull Shading/Fold -->
+    <path d="M40 120 L 100 135 L 160 120 L 100 125 Z" fill="#1a252f" opacity="0.3" />
+
+    <!-- 2. The Main Sail (Folded Aspect) - Sky Blue to Gold Gradient -->
+    <defs>
+      <linearGradient id="sailGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#3498db" />
+        <stop offset="100%" stop-color="#d4af37" />
+      </linearGradient>
+    </defs>
+    
+    <!-- Left Fold (Sail) -->
+    <path d="M100 30 L 100 115 L 45 115 Z" fill="#3498db" />
+    <path d="M100 30 L 100 115 L 60 100 Z" fill="#2980b9" opacity="0.5" />
+
+    <!-- Right Fold (Secondary Sail) - Gold -->
+    <path d="M105 50 L 105 115 L 150 115 Z" fill="#d4af37" />
+    <path d="M105 50 L 105 115 L 130 100 Z" fill="#b8860b" opacity="0.4" />
+
+    <!-- 3. The Red Core Fold (Star/Flag) -->
+    <path d="M100 30 L 115 45 L 105 50 Z" fill="#e74c3c" />
+
+    <!-- Branding -->
+    <text x="100" y="190" font-family="Inter, sans-serif" font-weight="700" fill="#2c3e50" font-size="16" text-anchor="middle">
+      ARKAI <tspan font-weight="300">LAB</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lethaiq.github.io/tql3/sitemap.xml

@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Publications (by Year) - ARKAI Research Lab.">
+    <meta name="author" content="Thai Le">
+
+    <title>Publications (Year) - ARKAI Research Lab</title>
+
+    <!-- CSS / Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Scripts -->
+    <script src="js/layout.js" defer></script>
+</head>
+
+<body>
+    <!-- Header and Nav are injected by js/layout.js -->
+
+    <main class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2 class="section-title" style="margin-bottom: 0;">Publications</h2>
+            <div style="font-size: 0.9rem;">
+                <a href="publication.html" style="color: #777;">By Venue</a> <span style="color: #ccc;">|</span>
+                <a href="publications_year.html" style="font-weight: 700; color: var(--primary-color);">By Year</a>
+            </div>
+        </div>
+
+        <div style="margin-bottom: 30px;">
+            <strong>For concurrent work, please see <a href="#2026"
+                    style="text-decoration: underline; color: var(--primary-color);">Preprints & 2026</a></strong>
+        </div>
+
+        <!-- Filter Container (Reused from logic) -->
+        <div class="filter-container" id="tagFilters">
+            <span class="filter-label"><i class="fas fa-filter"></i> Filter by:</span>
+            <button class="filter-btn active" data-filter="all">All</button>
+        </div>
+
+        <!-- Content Grouped by Year -->
+        <ol class="publications">
+            <!-- 2026 & Preprints -->
+            <h3 id="2026">2026 & Preprints</h3>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2512.17843">ShareChat: A Dataset of Chatbot Conversations in
+                        the Wild</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Yueru Yan, Tuc Nguyen, Bo Su, Melissa Lieffers, Thai Le</author>
+                <venue>Preprint</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2510.25732">The Limits of Obliviate: Evaluating Unlearning in
+                        LLMs via Stimulus-Knowledge Entanglement-Behavior Framework</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <tag class="xai">Explainable AI</tag>
+                <author>Aakriti Shah, Thai Le</author>
+                <venue>Preprint 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="./pdfs/arxiv25d.pdf">Verification-Guided Falsification for Safe RL via Explainable
+                        Abstraction and Risk-Aware Exploration</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="xai">Explainable AI</tag>
+                <author>Tuan Le, Risal Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani</author>
+                <venue>Preprint 2025</venue>
+            </li>
+
+            <li>
+                <papertitle><a href="#">Interpretable Failure Analysis in Multi-Agent Reinforcement Learning Systems</a>
+                </papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="xai">Explainable AI</tag>
+                <author>Risal Shahriar Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani</author>
+                <venue>AAMAS 2026</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2406.15839">The Effect of Similarity Measures on Accurate
+                        Stability
+                        Estimates for Local Surrogate Models in Text-based Explainable AI</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <tag class="xai">Explainable AI</tag>
+                <author>Christopher Burger, Charles Walter, Thai Le</author>
+                <venue>Preprint 2024</venue>
+            </li>
+            <li>
+                <papertitle><a href="#">Style-First Authorship Verification for Academic Integrity in the Generative AI
+                        Era</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <tag class="human">Human</tag>
+                <author>Jun Jang, Thai Le</author>
+                <venue>AAAI-26 (SAPP)</venue>
+            </li>
+
+            <!-- 2025 -->
+            <h3>2025</h3>
+
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2507.14799">Manipulating LLM Web Agents with Indirect Prompt
+                        Injection Attack via HTML Accessibility Tree</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Sam Johnson, Viet Pham, Thai Le</author>
+                <venue>EMNLP 2025 (Demo)</venue>
+            </li>
+            <li>
+                <papertitle><a href="./pdfs/arxiv25b.pdf">What You Read Isn't What You Hear: Linguistic Sensitivity in
+                        Deepfake Speech Detection</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="speech">Speech</tag>
+                <tag class="audio">Audio LM</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Binh Nguyen, Shuju Shi, Ryan Ofman, Thai Le</author>
+                <venue>EMNLP 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2505.14195">Unraveling Interwoven Roles of Large Language
+                        Models in Authorship Privacy: Obfuscation, Mimicking, and Verification</a></papertitle>
+                <tag class="privacy">Privacy</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Tuc Nguyen, Yifan Hu, Thai Le</author>
+                <venue>EMNLP 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="./pdfs/arxiv25c.pdf">Harry Potter is Still Here! Probing Knowledge Leakage in
+                        Targeted Unlearned Large Language Models via Automated Adversarial Prompting</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Bang Trinh Tran To, Thai Le</author>
+                <venue>EMNLP 2025 (Findings)</venue>
+            </li>
+            <li>
+                <papertitle><a href="#">Turing's Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection
+                        via Gamification</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="llm">Gen AI</tag>
+                <tag class="audio">Audio LM</tag>
+                <author>Binh Nguyen, Thai Le</author>
+                <venue>INTERSPEECH 2025 (Demo)</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2303.10430">NoisyHate: Benchmarking Content Moderation
+                        Machine Learning Models with Human-Written Perturbations Online</a></papertitle>
+                <tag class="robust">Security</tag>
+                <author>Yiran Ye, Thai Le, Dongwon Lee</author>
+                <venue>ICWSM 2025 (Dataset)</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Exploring the Duality of Large
+                        Language Models in Plagiarism Generation and Detection</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</author>
+                <venue>NAACL 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="http://arxiv.org/abs/2412.19311">xSRL: Safety-Aware Explainable RL - Safety as a
+                        Product of Explainability</a></papertitle>
+                <tag class="xai">Explainable AI</tag>
+                <tag class="robust">Security</tag>
+                <author>Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani</author>
+                <venue>AAMAS 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Generating “No Matter What”
+                        Alterfactual Examples for Explaining Black-Box Text Classification Models</a></papertitle>
+                <tag class="xai">Explainable AI</tag>
+                <author>Tuc Van Nguyen, James Michels, Hua Shen, Thai Le</author>
+                <venue>AAAI 2025</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2409.13057">Natural Language Processing Methods for the Study
+                        of Protein-Ligand Interactions</a></papertitle>
+                <tag class="survey">Survey</tag>
+                <author>James Michels, Ramya Bandarupalli, Amin Ahangar Akbari, Thai Le, Hong Xiao, Jing Li, Erik F. Y.
+                    Hom</author>
+                <venue>Journal of Chemical Information and Modeling (2025)</venue>
+            </li>
+
+            <!-- 2024 -->
+            <h3>2024</h3>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2401.10111.pdf">Adapters Mixup: Mixing Parameter-Efficient
+                        Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text Classifiers</a>
+                </papertitle>
+                <tag class="robust">Security</tag>
+                <author>Tuc Van Nguyen, Thai Le</author>
+                <venue>EMNLP 2024</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2309.12934">Topology-Aware Authorship Attribution of Deepfake
+                        Texts with Diverse Writing Styles</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <tag class="tda">TDA</tag>
+                <author>Adaku Uchendu, Thai Le, Dongwon Lee</author>
+                <venue>ECAI 2024</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2402.10639">Generalizability of Mixture of Domain-Specific
+                        Adapters from the Lens of Signed Weight Directions and its Application to Effective Model
+                        Pruning </a></papertitle>
+                <tag class="robust">Security</tag>
+                <author>Tuc Van Nguyen, Thai Le</author>
+                <venue>ACL 2024</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2402.11469">A Curious Case of Searching for the Correlation
+                        between Training Data and Adversarial Robustness of Transformer Textual Models</a></papertitle>
+                <tag class="robust">Security</tag>
+                <author>Dang Cao Cuong, Dung D. Le, Thai Le</author>
+                <venue>ACL 2024 (Findings) </venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Curious Cases of
+                        Paraphrasing in LLM-Generated Texts</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Nafis Irtiza Tripto, Saranya Venkatraman, Dominik Macko, Robert Moro, Ivan Srba, Adaku Uchendu,
+                    Thai Le, Dongwon Lee</author>
+                <venue>ACL 2024 </venue>
+            </li>
+            <li>
+                <papertitle><a href="./pdfs/AEID24.pdf">The Unexpected Effects of Google Smart Compose on Open-Ended
+                        Writing Tasks</a></papertitle>
+                <tag class="human">Human</tag>
+                <tag class="llm">Gen AI</tag>
+                <author>Robert Cummings, Sijan Shrestha, Carrie Smith, Thai Le</author>
+                <venue>AIED'24</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Fast and Effective
+                        Stylometric Authorship Obfuscation</a></papertitle>
+                <tag class="robust">Security</tag>
+                <author>Eric Xin, Saranya Venkatraman, Thai Le, Dongwon Lee</author>
+                <venue>AAAI'24</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">The Strange Case of Jekyll and
+                        Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit</a></papertitle>
+                <tag class="sns">Social Media</tag>
+                <author>Wooyong Jung, Nishant Asati, Lucy Phuong Doan, Thai Le, Aiping Xiong, Dongwon Lee</author>
+                <venue>AAAI-ICWSM'24</venue>
+            </li>
+
+            <!-- 2023 -->
+            <h3>2023</h3>
+            <li>
+                <papertitle><a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">Catch Me If You GPT:
+                        Tutorial on Deepfake Texts</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Adaku Uchendu, Saranya Venkatraman, Thai Le, Dongwon Lee</author>
+                <venue>NAACL 2024 Tutorial / NSF Summit 2023</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2305.12351.pdf">``Are Your Explanations Reliable?"
+                        Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and
+                        Adversarial Attack </a></papertitle>
+                <tag class="xai">Explainable AI</tag>
+                <tag class="robust">Security</tag>
+                <author>Christopher Burger, Lingwei Chen, Thai Le</author>
+                <venue>EMNLP'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2310.13606.pdf">MULTITuDE: Large-Scale Multilingual
+                        Machine-Generated Text Detection Benchmark</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Dominik Macko, Robert Moro, et al., Thai Le, Dongwon Lee</author>
+                <venue>EMNLP'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship Leakage from
+                        Public Text Release via Data Poisoning</a></papertitle>
+                <tag class="robust">Security</tag>
+                <tag class="privacy">Privacy</tag>
+                <author>Ziyao Wang, Thai Le, Dongwon Lee</author>
+                <venue>Findings of EMNLP'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/abs/2304.01002">Does Human Collaboration Enhance the Accuracy of
+                        Identifying Deepfake Texts?</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <tag class="human">Human</tag>
+                <author>Adaku Uchendu, Jooyoung Lee, Hua Shen, Thai Le, Ting-Hao Huang and Dongwon Lee</author>
+                <venue>HCOMP'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">A Policy-Graph
+                        Approach to Explain Reinforcement Learning Agents</a></papertitle>
+                <author>Tongtong Liu, Joe McCalmon, Thai Le, Md Asifur Rahman, Dongwon Lee, Sarra Alqahtani</author>
+                <venue>AAMASJ'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">Catch Me If You GAN:
+                        Generation, Detection, and Obfuscation of Deepfake Texts</a></papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Adaku Uchendu, Thai Le, Dongwon Lee</author>
+                <venue>WWW'23 (Tutorial)</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2203.07618.pdf">Do Language Models Plagiarize?</a>
+                </papertitle>
+                <tag class="llm">Gen AI</tag>
+                <author>Jooyoung Lee, Thai Le, Jinghui Chen, Dongwon Lee</author>
+                <venue>WWW'23</venue>
+            </li>
+            <li>
+                <papertitle><a href="https://arxiv.org/pdf/2301.06494.pdf">CryptText: Interactive Discovery and
+                        Visualization of Human-Written Text Perturbations in the Wild</a></papertitle>
+                <tag class="robust">Security</tag>
+                <author>Thai Le, Ye Yiran, Yifan Hu, Dongwon Lee</author>
+                <venue>ICDE'23</venue>
+            </li>
+
+        </ol>
+
+    </main>
+
+    <script>
+        // Include same script logic for filtering
+        document.addEventListener('DOMContentLoaded', () => {
+            const tags = new Set();
+            document.querySelectorAll('tag').forEach(tag => {
+                if (tag.textContent.trim()) {
+                    tags.add(tag.textContent.trim());
+                }
+            });
+
+            const filterContainer = document.getElementById('tagFilters');
+            const sortedTags = Array.from(tags).sort();
+
+            sortedTags.forEach(tagName => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.textContent = tagName;
+                btn.dataset.filter = tagName;
+                filterContainer.appendChild(btn);
+            });
+
+            const buttons = document.querySelectorAll('.filter-btn');
+            const pubItems = document.querySelectorAll('.publications li');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    buttons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.dataset.filter;
+
+                    pubItems.forEach(item => {
+                        if (filterValue === 'all') {
+                            item.style.display = '';
+                        } else {
+                            const itemTags = Array.from(item.querySelectorAll('tag')).map(t => t.textContent.trim());
+                            if (itemTags.includes(filterValue)) {
+                                item.style.display = '';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

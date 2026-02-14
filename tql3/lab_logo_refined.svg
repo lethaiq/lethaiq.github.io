@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Style Definitions -->
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; }
+    .subtitle { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; }
+    /* Palette from "v4 middle" (Geometric Shield) */
+    .primary { fill: #2c3e50; } /* Dark Blue */
+    .secondary { fill: #34495e; } /* Slightly Lighter Blue */
+    .accent { fill: #e74c3c; } /* Red */
+    .white-core { fill: #ffffff; }
+  </style>
+
+  <!-- Option 1: "The Origami A" -->
+  <!-- Looks like an abstract letter 'A' or a tent/mountain. 
+       Negative space or the bottom fold implies a hull/boat. -->
+  <g transform="translate(100, 100)">
+    <!-- Right side of the 'A' / Sail -->
+    <path d="M100 20 L 160 160 L 100 160 Z" class="primary"/>
+    <!-- Left side of the 'A' / Sail -->
+    <path d="M100 20 L 40 160 L 100 160 Z" class="secondary" opacity="0.9"/>
+    
+    <!-- The "Hull" is formed by the bottom crossbar/fold -->
+    <!-- A red fold that turns the A into a floating structure -->
+    <path d="M40 160 L 100 130 L 160 160 L 100 180 Z" class="accent"/>
+    
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">LAB</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 1: Origami 'A'</text>
+  </g>
+
+  <!-- Option 2: "The Open Book / Wings" -->
+  <!-- Looks like an open book or bird. 
+       The bottom curve subtly suggests a boat hull. -->
+  <g transform="translate(500, 100)">
+    <!-- Left Wing/Page -->
+    <path d="M100 120 L 20 60 L 20 120 L 100 180 Z" class="secondary"/>
+    <!-- Right Wing/Page -->
+    <path d="M100 120 L 180 60 L 180 120 L 100 180 Z" class="primary"/>
+    
+    <!-- Central "Spine" / Mast / Diamond -->
+    <path d="M100 120 L 100 40 L 120 20 L 80 20 Z" class="accent"/>
+    
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">RESEARCH</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 2: Abstract Wings</text>
+  </g>
+
+  <!-- Option 3: "The Geometric Prism" -->
+  <!-- Looks like a 3D crystal or shield. 
+       The bottom facets form a boat-like base. -->
+  <g transform="translate(900, 100)">
+    <!-- Main Hexagon/Crystal shape -->
+    <path d="M100 20 L 170 60 L 170 140 L 100 180 L 30 140 L 30 60 Z" fill="none"/> <!-- bounding box -->
+    
+    <!-- Left Facet -->
+    <path d="M100 100 L 30 140 L 30 60 L 100 20 Z" class="secondary" opacity="0.8"/>
+    <!-- Right Facet -->
+    <path d="M100 100 L 170 140 L 170 60 L 100 20 Z" class="primary"/>
+    
+    <!-- Bottom "Hull" Facet (The Ark) -->
+    <!-- This red triangle anchors it, looking like a red boat carrying the structure -->
+    <path d="M100 100 L 170 140 L 100 180 L 30 140 Z" class="accent"/>
+
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">LABORATORY</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 3: Prism Ark</text>
+  </g>
+
+</svg>

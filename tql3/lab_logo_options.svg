@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Style Definitions -->
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; }
+    .subtitle { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; }
+    .accent { fill: #e74c3c; } /* Red/Heart */
+    .primary { fill: #2c3e50; } /* Dark Blue */
+    .secondary { fill: #3498db; } /* Blue */
+    .tertiary { fill: #27ae60; } /* Green */
+  </style>
+
+  <!-- Option 1: The "Shield & Circuit" (Accountable & Resilient) -->
+  <g transform="translate(100, 100)">
+    <!-- Shield Background -->
+    <path d="M100 180 C 100 180, 20 140, 20 40 L 180 40 C 180 140, 100 180, 100 180" fill="none" stroke="#2c3e50" stroke-width="8"/>
+    
+    <!-- Circuit/Brain Nodes -->
+    <circle cx="100" cy="80" r="15" class="accent"/>
+    <circle cx="70" cy="110" r="10" class="secondary"/>
+    <circle cx="130" cy="110" r="10" class="tertiary"/>
+    <line x1="100" y1="80" x2="70" y2="110" stroke="#2c3e50" stroke-width="4"/>
+    <line x1="100" y1="80" x2="130" y2="110" stroke="#2c3e50" stroke-width="4"/>
+    <line x1="70" y1="110" x2="130" y2="110" stroke="#2c3e50" stroke-width="4"/>
+    
+    <!-- Text -->
+    <text x="50" y="240" font-size="40" class="text" text-anchor="middle" transform="translate(50,0)">ARKAI</text>
+    <text x="50" y="270" font-size="16" class="subtitle" text-anchor="middle" transform="translate(50,0)">LAB</text>
+    <text x="50" y="310" font-size="14" fill="#95a5a6" text-anchor="middle" transform="translate(50,0)">Option 1: Shield</text>
+  </g>
+
+  <!-- Option 2: The "Kind Eye" (Transparency & Kindness) -->
+  <g transform="translate(500, 100)">
+    <!-- Eye Shape -->
+    <path d="M20 100 Q 100 20, 180 100 Q 100 180, 20 100 Z" fill="none" stroke="#2c3e50" stroke-width="8"/>
+    
+    <!-- Pupil as a Heart -->
+    <path d="M100 115 L 100 115 
+             Q 85 90, 80 100 
+             A 10 10 0 0 1 100 100 
+             A 10 10 0 0 1 120 100 
+             Q 115 90, 100 115 Z" 
+             transform="translate(0, -10) scale(1.5)" fill="#e74c3c" />
+    
+    <!-- Iris details -->
+    <circle cx="100" cy="100" r="35" fill="none" stroke="#3498db" stroke-width="3" stroke-dasharray="5,5"/>
+
+    <!-- Text -->
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">RESEARCH</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 2: Vision</text>
+  </g>
+
+  <!-- Option 3: Modern Typographic (Integrated Pillars) -->
+  <g transform="translate(900, 100)">
+    <!-- Stylized A -->
+    <path d="M40 140 L 80 40 L 120 140" fill="none" stroke="#2c3e50" stroke-width="12" stroke-linecap="round"/>
+    <line x1="60" y1="100" x2="100" y2="100" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Abstract Nodes representing A-R-K -->
+    <circle cx="160" cy="60" r="12" class="secondary"/>
+    <circle cx="160" cy="100" r="12" class="tertiary"/>
+    <circle cx="160" cy="140" r="12" class="accent"/>
+    <line x1="160" y1="60" x2="160" y2="140" stroke="#bdc3c7" stroke-width="2"/>
+
+    <!-- Text -->
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">LABORATORY</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 3: Modern</text>
+  </g>
+
+</svg>

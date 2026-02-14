@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; font-size: 24px; }
+    .label { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; font-size: 14px; }
+    .desc { font-family: 'Inter', sans-serif; font-weight: 300; fill: #95a5a6; font-size: 12px; }
+    .p { fill: #2c3e50; } 
+    .s { fill: #34495e; } 
+    .a { fill: #e74c3c; } 
+  </style>
+
+  <!-- Story 4: "The Sound of Truth" (Audio AI & Deepfake) -->
+  <!-- Narrative: A waveform that mirrors itself to form a vessel. 
+       Represents detecting the true signal in the noise. -->
+  <g transform="translate(100, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">4. The Sound of Truth</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Waveform mirroring to form a vessel</text>
+    
+    <!-- Top Half (Air/Signal) -->
+    <path d="M20 80 Q 40 40, 60 80 T 100 80 T 140 80 T 180 80" fill="none" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Bottom Half (Reflection/Hull) -->
+    <!-- Creating a solid shape that looks like a reflection but feels like a boat hull -->
+    <path d="M20 90 Q 40 130, 60 90 T 100 90 T 140 90 T 180 90 L 160 110 Q 100 140, 40 110 Z" class="a" opacity="0.9"/>
+    
+    <!-- Center Line (Water/Surface) -->
+    <line x1="10" y1="85" x2="190" y2="85" stroke="#3498db" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Story 5: "The Unlearning Void" (Negative Space) -->
+  <!-- Narrative: "Unlearning". Removing data to leave a safe space. 
+       A solid block of "Data" with an Ark shape carved out of it (Negative Space). -->
+  <g transform="translate(500, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">5. The Unlearning Void</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Safety created by removing harmful data</text>
+    
+    <!-- The Data Block -->
+    <rect x="40" y="40" width="120" height="100" class="p" rx="4"/>
+    
+    <!-- The cutout (The Ark) -->
+    <!-- This path is white to cut through the dark block -->
+    <path d="M60 100 L 140 100 C 140 100, 130 130, 100 130 C 70 130, 60 100, 60 100 Z" fill="#f8f9fa"/>
+    <path d="M100 50 L 100 90" stroke="#f8f9fa" stroke-width="4"/> <!-- Mast -->
+    <circle cx="100" cy="40" r="6" fill="#f8f9fa"/> <!-- Light -->
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+  <!-- Story 6: "The Neural Weave" (Safety & Robustness) -->
+  <!-- Narrative: Threads of a neural network weaving together to form a strong shield/hull. -->
+  <g transform="translate(900, 100)">
+    <text x="100" y="20" class="label" text-anchor="middle">6. The Neural Weave</text>
+    <text x="100" y="230" class="desc" text-anchor="middle">Interconnected strength & resilience</text>
+    
+    <!-- Weaving Lines -->
+    <path d="M40 40 C 60 80, 140 80, 160 40" fill="none" stroke="#2c3e50" stroke-width="4" opacity="0.5"/>
+    <path d="M30 60 C 60 100, 140 100, 170 60" fill="none" stroke="#2c3e50" stroke-width="4" opacity="0.7"/>
+    
+    <!-- The Main Hull formed by the tightest weave -->
+    <path d="M50 80 Q 100 130, 150 80" fill="none" stroke="#e74c3c" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Nodes at intersections -->
+    <circle cx="50" cy="80" r="5" class="p"/>
+    <circle cx="150" cy="80" r="5" class="p"/>
+    <circle cx="100" cy="105" r="5" class="p"/>
+
+    <text x="100" y="200" class="text" text-anchor="middle">ARKAI</text>
+  </g>
+
+</svg>

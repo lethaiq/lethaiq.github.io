@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" style="background-color: #f8f9fa;">
+  <!-- Style Definitions -->
+  <style>
+    .text { font-family: 'Inter', sans-serif; font-weight: 700; fill: #2c3e50; }
+    .subtitle { font-family: 'Inter', sans-serif; font-weight: 400; fill: #7f8c8d; }
+    .accent { fill: #e74c3c; } /* Red */
+    .primary { fill: #2c3e50; } /* Dark Blue */
+    .secondary { fill: #3498db; } /* Blue */
+    .shape { stroke: #2c3e50; stroke-width: 0; }
+  </style>
+
+  <!-- Option 1: The "Abstract Paper" (Research Focus) -->
+  <g transform="translate(100, 100)">
+    <!-- Looks like 2 stacked papers or a checkmark, but negative space implies a hull -->
+    <path d="M40 100 L 100 160 L 180 60 L 140 20 L 80 100 Z" fill="#3498db" opacity="0.9"/>
+    <path d="M40 100 L 100 160 L 60 160 Z" fill="#2980b9" opacity="0.6"/> <!-- Shadow/Fold -->
+    
+    <!-- Subtle 'Core' -->
+    <circle cx="100" cy="100" r="8" fill="white"/>
+
+    <!-- Text -->
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">LAB</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 1: Abstract Paper</text>
+  </g>
+
+  <!-- Option 2: The "Neural Shield" (Security Focus) -->
+  <g transform="translate(500, 100)">
+    <!-- Shield shape made of geometric shards -->
+    <!-- Left shard -->
+    <path d="M100 180 C 100 180, 20 140, 20 40 L 100 80 Z" fill="#2c3e50"/>
+    <!-- Right shard -->
+    <path d="M100 180 C 100 180, 180 140, 180 40 L 100 80 Z" fill="#34495e"/>
+    <!-- Top 'diamond' (The Ark cabin?) -->
+    <path d="M100 80 L 140 30 L 100 10 L 60 30 Z" fill="#e74c3c"/>
+    
+    <!-- Text -->
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">RESEARCH</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 2: Geometric Shield</text>
+  </g>
+
+  <!-- Option 3: The "Floating A" (Identity Focus) -->
+  <g transform="translate(900, 100)">
+    <!-- An 'A' that suggests upward movement or a vessel hull -->
+    <!-- Left Leg -->
+    <path d="M100 20 L 60 140 L 90 140 Z" fill="#2c3e50"/>
+    <!-- Right Leg -->
+    <path d="M100 20 L 140 140 L 110 140 Z" fill="#2c3e50"/>
+    <!-- Crossbar / Hull curve -->
+    <path d="M65 110 Q 100 130, 135 110" fill="none" stroke="#e74c3c" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Text -->
+    <text x="100" y="240" font-size="40" class="text" text-anchor="middle">ARKAI</text>
+    <text x="100" y="270" font-size="16" class="subtitle" text-anchor="middle">LABORATORY</text>
+    <text x="100" y="310" font-size="14" fill="#95a5a6" text-anchor="middle">Option 3: Floating 'A'</text>
+  </g>
+
+</svg>
