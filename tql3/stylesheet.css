@@ -157,6 +157,19 @@ nav a.active::after {
   margin-bottom: 15px;
   line-height: 1.2;
   font-weight: 800;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-subtitle {
@@ -164,6 +177,19 @@ nav a.active::after {
   color: var(--text-color);
   margin-bottom: 25px;
   font-weight: 400;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .profile-img {

@@ -84,65 +84,117 @@
 
   <main class="container">
     <!-- Hero / Intro Section -->
-    <section class="hero">
-      <img src="https://luddywww.sites.iu.edu/images/people/tle.jpg"
-        alt="Thai Le - Assistant Professor at Indiana University" class="profile-img" fetchpriority="high" width="200"
-        height="200" onerror="this.src='images/profile.jpg'">
-
+    <section class="hero" style="justify-content: center; text-align: center; padding: 60px 40px;">
       <div class="hero-content">
-        <div class="intro-text">
-          <p>
-            Hi, I am <strong>Thai Le</strong>, an Assistant Professor of <a
-              href="https://cs.indiana.edu/index.html">Computer Science@Luddy at Indiana University (Bloomington)</a>. I
-            earned my PhD at <a href="http://www.psu.edu/">Penn State</a> advised by <a
-              href="https://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a>, following experiences at <a
-              href="https://www.amazon.science/">Amazon Science</a>, <a href="https://research.yahoo.com/">Yahoo
-              Research</a>, and <a href="https://octo.vmware.com/">VMWare OCTO</a>. Welcome to <strong>ARKAI Research
-              Lab</strong>, where we research AI robustness, safety, and transparency to ensure these technologies are
-            used with
-            confidence and clarity across society.
+        <h1 class="hero-title" style="font-size: 3.5rem; margin-bottom: 20px;">ARKAI <span>Research Lab</span></h1>
+        <div class="intro-text" style="max-width: 800px; margin: 0 auto;">
+          <p style="font-size: 1.25rem; line-height: 1.8; color: var(--text-color);">
+            Our mission is to enhance the <strong>robustness</strong>, <strong>safety</strong>, and
+            <strong>transparency</strong> of AI-related technologies in various sociotechnical contexts. We research
+            Accountable, Resilient, and Kind AI to ensure that society can harness machine intelligence with confidence
+            and
+            clarity.
           </p>
-          <p style="margin-top: 15px; font-size: 0.95rem; color: #555;">
-            <i class="fas fa-envelope"></i> tle [at] iu [dot] edu
-          </p>
-          <div style="margin-top: 25px;">
-            <a href="group.html" class="btn">Meet the Team</a>
-            <a href="research.html" class="btn"
-              style="background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color); margin-left: 10px;">Our
-              Research</a>
+          <div style="margin-top: 35px;">
+            <a href="research.html" class="btn" style="padding: 12px 30px; font-size: 1.1rem;">Explore Our Research</a>
+            <a href="group.html" class="btn"
+              style="background-color: transparent; color: var(--primary-color); border: 2px solid var(--primary-color); margin-left: 15px; padding: 12px 30px; font-size: 1.1rem;">Meet
+              the Team</a>
           </div>
         </div>
       </div>
-
-      <!-- Tag Cloud Container -->
-      <div class="tag_content"
-        style="width: 300px; height: 300px; display: flex; justify-content: center; align-items: center;"></div>
     </section>
 
-    <!-- News Section -->
-    <section class="news-section">
-      <h2 class="section-title">Lab Highlights</h2>
-      <ul class="news-list">
-        <li class="news-item">
-          <span class="news-date">Jan 2026</span>
+    <!-- Featured Research Section -->
+    <section class="research-preview" style="margin-top: 50px; margin-bottom: 60px;">
+      <h2 class="styled-section-header">Featured Research</h2>
+      <div class="grid-container" style="margin-top: 30px;">
+        <!-- Project 1: Understanding Generative AI -->
+        <div class="card research-card" id="understanding-genai">
+          <div class="card-banner banner-interpretability"></div>
+          <i class="fas fa-microscope"></i>
+          <h3 class="card-title">Understanding Generative AI</h3>
+          <div class="card-content">
+            Decoding the 'inner circuits' of LLMs to enable precise behavior steering and machine unlearning.
+          </div>
+          <div class="card-footer" style="border: none; padding-top: 0;">
+            <a href="research.html#understanding-genai" style="font-weight: 600; color: var(--secondary-color);">Learn
+              More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Security & Privacy -->
+        <div class="card research-card" id="security">
+          <div class="card-banner banner-security"></div>
+          <i class="fas fa-shield-alt"></i>
+          <h3 class="card-title">AI Security & Privacy</h3>
+          <div class="card-content">
+            Protecting AI models from manipulation and ensuring reliable, secure, and private decision-making.
+          </div>
+          <div class="card-footer" style="border: none; padding-top: 0;">
+            <a href="research.html#security" style="font-weight: 600; color: var(--secondary-color);">Learn More
+              &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Authenticity -->
+        <div class="card research-card">
+          <div class="card-banner banner-deepfake"></div>
+          <i class="fas fa-robot"></i>
+          <h3 class="card-title">AI Authenticity & Deepfakes</h3>
+          <div class="card-content">
+            Developing robust methods to detect AI-generated content and ensuring information authenticity.
+          </div>
+          <div class="card-footer" style="border: none; padding-top: 0;">
+            <a href="research.html" style="font-weight: 600; color: var(--secondary-color);">Learn More &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 30px;">
+        <a href="research.html" class="btn"
+          style="background-color: transparent; color: var(--secondary-color); border: 1px solid var(--secondary-color);">View
+          All Projects</a>
+      </div>
+    </section>
+
+    <!-- Thinner News Section -->
+    <section class="news-section thin-news"
+      style="padding: 20px 30px; border-left: 3px solid var(--accent-red); margin-bottom: 60px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h2 class="section-title" style="font-size: 1.3rem; margin-bottom: 0;">Lab Highlights</h2>
+        <a href="#" id="toggle-news-btn"
+          style="font-size: 0.85rem; color: var(--secondary-color); font-weight: 600;">View Older News</a>
+      </div>
+      <ul class="news-list" style="margin-top: 0;">
+        <li class="news-item" style="padding: 8px 0; font-size: 0.95rem;">
+          <span class="news-date" style="min-width: 80px;">Jan 2026</span>
           <div class="news-content">
             <i class="fa-solid fa-champagne-glasses"></i> Happy New Year 2026!
           </div>
         </li>
-        <li class="news-item">
-          <span class="news-date">Aug 2025</span>
+        <li class="news-item" style="padding: 8px 0; border-bottom: none; font-size: 0.95rem;">
+          <span class="news-date" style="min-width: 80px;">Aug 2025</span>
           <div class="news-content">
-            <i class="fa-solid fa-user-graduate"></i> Welcome <strong>Tuc Nguyen</strong>, <strong>Bo Su</strong>,
-            <strong>Yan Yueru</strong>, and <strong>Melissa Lieffers</strong> to joining the lab as PhD students!
+            <i class="fa-solid fa-user-graduate"></i> Welcome new PhD students <strong>Tuc Nguyen</strong>, <strong>Bo
+              Su</strong>,
+            <strong>Yan Yueru</strong>, and <strong>Melissa Lieffers</strong>!
           </div>
         </li>
       </ul>
     </section>
+
+    <!-- Research Keywords Section -->
+    <section class="keywords-section" style="text-align: center; margin-bottom: 60px;">
+      <h2 class="styled-section-header">Research Keywords</h2>
+      <div class="tag_content"
+        style="width: 100%; height: 350px; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+      </div>
+    </section>
   </main>
 
   <script>
-    // Tag Cloud Setup
     $(document).ready(function () {
+      // Tag Cloud Setup
       var myTags = [
         "NLP", "Security", "Privacy", "Adversarial ML", "Deepfake", "Explainability", "Robustness",
         "Safety", "LLMs", "Social Good", "Fairness", "Trustworthy AI", "Authorship", "GenAI",
@@ -150,33 +202,26 @@
       ];
 
       var tagCloud = TagCloud('.tag_content', myTags, {
-        radius: 130,
+        radius: 150,
         maxSpeed: 'normal',
         initSpeed: 'slow',
         direction: 135,
         keep: true
       });
 
-      // Colorize tags after generation to fit theme
-      // Colors: Primary Red (#981b1e), Secondary Blue (#2c3e50), Accent Teal (#0eddae), Dark Grey (#333)
-      const colors = ['#981b1e', '#2c3e50', '#0eddae', '#555555'];
-
-      // Function to apply colors
+      const colors = ['#981b1e', '#4682b4', '#c5a059', '#2c3e50'];
       function colorize() {
-        const items = document.querySelectorAll('.tagcloud--item');
-        items.forEach((item, index) => {
-          item.style.color = colors[index % colors.length];
+        $('.tagcloud--item').each(function (i) {
+          $(this).css('color', colors[i % colors.length]);
         });
       }
-
-      // Apply initially and observe changes (TagCloud rotates/re-renders)
-      colorize();
-      // Since TagCloud rotates using 3D transforms, the elements persist, so color should stay.
+      setTimeout(colorize, 100);
 
       // News Toggle
-      $("#show_previous_news_btn").on('click', function () {
-        $("#previous_news").slideToggle();
-        $(this).text($(this).text() === 'Show Older News' ? 'Hide Older News' : 'Show Older News');
+      $("#toggle-news-btn").on('click', function (e) {
+        e.preventDefault();
+        // Since we don't have older news in HTML yet, this is a placeholder or can be removed
+        alert("Older news archive coming soon!");
       });
     });
   </script>
