@@ -716,27 +716,24 @@ ul.teachings li {
   text-align: center;
 }
 
-/* Security: Red/Navy */
+/* Standardized Research Banners: Unified Blue/Navy Spectrum */
 .banner-security {
-  background: linear-gradient(135deg, #981b1e 0%, #1a252f 100%);
+  background: linear-gradient(135deg, var(--accent-red) 0%, var(--primary-color) 100%);
+  opacity: 0.85;
 }
 
-/* Deepfakes: Blue/Navy */
 .banner-deepfake {
-  background: linear-gradient(135deg, #4682b4 0%, #1a252f 100%);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }
 
-/* XAI: Gold/Navy */
 .banner-xai {
-  background: linear-gradient(135deg, #c5a059 0%, #1a252f 100%);
+  background: linear-gradient(135deg, #5dade2 0%, var(--primary-color) 100%);
 }
 
-/* Social Good: Navy/Tealish */
 .banner-social {
-  background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, var(--primary-color) 100%);
 }
 
-/* Interpretability: Indigo/Cyan */
 .banner-interpretability {
-  background: linear-gradient(135deg, #4b0082 0%, #00ffff 100%);
+  background: linear-gradient(135deg, #34495e 0%, var(--primary-color) 100%);
 }
