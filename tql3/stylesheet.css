@@ -139,12 +139,22 @@ nav a.active::after {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  text-align: left;
   gap: 40px;
   margin-bottom: 50px;
   background: white;
-  padding: 40px;
+  padding: 40px 30px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+}
+
+.hero-visual {
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: -20px;
 }
 
 .hero-content {
@@ -201,12 +211,18 @@ nav a.active::after {
   box-shadow: var(--box-shadow);
 }
 
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+}
+
 /* Card Grid for Research */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 25px;
 }
 
 .card {
@@ -353,6 +369,22 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr !important;
   }
 
   .profile-img {
