@@ -500,7 +500,9 @@ tag.tda {
 }
 
 /* Distinct Section Headers */
+.styled-section-header,
 ol.publications h3 {
+  width: 100%;
   margin-top: 40px;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -509,8 +511,10 @@ ol.publications h3 {
   /* Gold Year Header */
   font-size: 1.4rem;
   position: relative;
+  font-weight: 700;
 }
 
+.styled-section-header::after,
 ol.publications h3::after {
   content: '';
   display: block;
