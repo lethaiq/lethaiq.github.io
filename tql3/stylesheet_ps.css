@@ -473,6 +473,10 @@ input:checked+.ps-slider:before {
     color: #166534;
 }
 
+.ps-card-header.theme-purple {
+    background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+}
+
 .ps-card-header.theme-amber {
     background-color: #fef3c7;
     color: #92400e;
