@@ -60,6 +60,16 @@
         <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
       </nav>
 
+      <!-- News Toggle -->
+      <div class="ps-toggle-wrapper">
+        <span class="ps-toggle-label"><i class="fas fa-bullhorn" style="color: var(--ps-accent);"></i> News
+          Ticker</span>
+        <label class="ps-switch">
+          <input type="checkbox" id="news-toggle" checked>
+          <span class="ps-slider"></span>
+        </label>
+      </div>
+
       <div class="ps-sidebar-tracker" style="display: none;">
         <script type='text/javascript' id='clustrmaps'
           src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
@@ -975,6 +985,32 @@
       border-color: var(--ps-muted);
     }
   </style>
+
+  <script>
+    // News Ticker Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const newsToggle = document.getElementById('news-toggle');
+      const newsContainer = document.querySelector('.ps-news-container');
+
+      // Load state
+      const newsHidden = localStorage.getItem('ps-news-hidden') === 'true';
+      if (newsHidden) {
+        newsToggle.checked = false;
+        newsContainer.classList.add('ps-hidden');
+      }
+
+      // Handle toggle
+      newsToggle.addEventListener('change', () => {
+        if (newsToggle.checked) {
+          newsContainer.classList.remove('ps-hidden');
+          localStorage.setItem('ps-news-hidden', 'false');
+        } else {
+          newsContainer.classList.add('ps-hidden');
+          localStorage.setItem('ps-news-hidden', 'true');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
