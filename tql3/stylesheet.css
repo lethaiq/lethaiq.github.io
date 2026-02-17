@@ -144,18 +144,123 @@ nav a.active::after {
   cursor: pointer;
 }
 
-/* Hero Section */
-.hero {
+/* Prosocial Horizontal Header */
+.prosocial-header {
+  padding: 80px 0 40px 0;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 60px;
+}
+
+.pro-name {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: 15px;
+  letter-spacing: -1.5px;
+}
+
+.pro-title {
+  font-size: 1.25rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.pro-bio {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.pro-links {
+  display: flex;
+  gap: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.pro-links a {
+  color: var(--primary-color);
   display: flex;
   align-items: center;
+  gap: 8px;
+}
+
+/* Publication Feed (Cards) */
+.publications-section {
+  margin-bottom: 80px;
+}
+
+.feed-header {
+  display: flex;
   justify-content: space-between;
-  text-align: left;
-  gap: 40px;
-  margin-bottom: 50px;
-  background: white;
-  padding: 40px 30px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.search-box input {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-family: inherit;
+  width: 250px;
+}
+
+.pub-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pub-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 25px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.pub-card:hover {
+  border-color: var(--secondary-color);
+  transform: translateX(5px);
+}
+
+.pub-tags {
+  margin-bottom: 12px;
+}
+
+.pub-title {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.pub-title a {
+  color: var(--primary-color);
+  border-bottom: none;
+}
+
+.pub-authors {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.pub-venue {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Hide Hero Section if any leftover */
+.hero {
+  display: none !important;
 }
 
 .hero-visual {

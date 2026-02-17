@@ -5,223 +5,219 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Open-source datasets and software from ARKAI Research Lab, including ShareChat, NoisyHate, and authorship obfuscation tools.">
-  <meta name="keywords"
-    content="AI Datasets, NLP Software, Open Source Research, Deepfake Detection Tools, ARKAI Lab Datasets">
-  <meta name="author" content="Thai Le">
+    content="Public datasets and software released by ARKAI Lab for AI safety and security research.">
   <link rel="canonical" href="https://lethaiq.github.io/tql3/dataset.html">
 
-  <title>Datasets & Software - ARKAI Research Lab | Open Research Tools</title>
-
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Open Source Datasets & Software - ARKAI Lab">
-  <meta property="og:description"
-    content="Access our open-source datasets (ShareChat 2026, PlagBench, NoisyHate) and research software (XAIFooler, ALISON).">
-  <meta property="og:url" content="https://lethaiq.github.io/tql3/dataset.html">
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary">
-
+  <title>ARKAI Research Lab</title>
+  <meta name="keywords" content="ShareChat Dataset, NoisyHate, PlagBench, AI Safety Tools, ARKAI Software">
   <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet_ps.css">
 
-  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/layout.js" defer></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://lethaiq.github.io/tql3/index.html"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Datasets & Software",
-      "item": "https://lethaiq.github.io/tql3/dataset.html"
-    }]
-  }
-  </script>
 </head>
 
 <body>
-  <!-- Header and Nav are injected by js/layout.js -->
+  <div class="ps-layout">
+    <!-- SIDEBAR -->
+    <aside class="ps-sidebar">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <a href="index.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="ps-sidebar-brand"
+            style="margin-bottom: 0; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px;">
+            <span style="color: var(--ps-accent);">ARKAI</span> Lab
+          </div>
+        </a>
+      </div>
 
-  <main class="container">
-    <h1 class="section-title">Dataset & Software</h1>
-    <p class="intro-text">
-      We open-source our datasets and software to support the research community. Below are some of our key resources.
-    </p>
+      <div class="ps-sidebar-bio">
+        The <strong>ARKAI Research Lab</strong> aims to advance
+        <strong>Accountable, Resilient, and Kind AI</strong> through multi-disciplinary research in
+        robustness, safety, and transparency.
+      </div>
 
-    <!-- Section: Prototype or Demo -->
-    <h3 class="styled-section-header">Prototype or Demo</h3>
-    <div class="grid-container">
-      <!-- Turing's Echo -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-gamepad" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://lethaiq.github.io/turingsecho/">Turing's Echo</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Software / Game</h4>
-        <div class="card-content">
-          Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification. Play the game to test your
-          ears!
+      <div class="ps-sidebar-links">
+        <a href="mailto:thaile@iu.edu"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ" target="_blank"><i
+            class="fas fa-graduation-cap"></i> Scholar</a>
+        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <nav class="ps-sidebar-nav" style="margin-bottom: 30px;">
+        <a href="index.html" class="ps-nav-item"><i class="fas fa-home"></i>Publications</a>
+        <a href="research.html" class="ps-nav-item"><i class="fas fa-flask"></i>Research Projects</a>
+        <a href="group.html" class="ps-nav-item"><i class="fas fa-users"></i>Meet the Team</a>
+        <a href="dataset.html" class="ps-nav-item active"><i class="fas fa-database"></i>Resources</a>
+        <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
+      </nav>
+
+      <div class="ps-sidebar-tracker" style="display: none;">
+        <script type='text/javascript' id='clustrmaps'
+          src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
+      </div>
+    </aside>
+
+    <!-- FEED -->
+    <main class="ps-feed">
+
+      <h2 class="ps-year-header">Prototypes & Demos</h2>
+      <div class="ps-card-grid">
+        <!-- Turing's Echo -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-amber"><i class="fas fa-gamepad"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Software</span><span class="ps-card-tag">Game</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://lethaiq.github.io/turingsecho/">Turing's Echo</a></h2>
+            <p class="ps-card-authors">Gamified Deepfake Detection</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification. Test your ears!
+            </div>
+          </div>
+          <div class="ps-card-footer"><a href="https://lethaiq.github.io/turingsecho/"><i
+                class="fas fa-play-circle"></i> Play Game</a></div>
         </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://lethaiq.github.io/turingsecho/"><i class="fas fa-play-circle"></i> Play Game</a>
+
+        <!-- CrypText -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-amber"><i class="fas fa-laptop-code"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Software</span><span class="ps-card-tag">Demo</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://lethaiq.github.io/anthro">CrypText</a></h2>
+            <p class="ps-card-authors">Text Perturbation Discovery</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              Discover text perturbations in the wild. The first and largest collection of human-written perturbations.
+            </div>
+          </div>
+          <div class="ps-card-footer">
+            <a href="https://youtu.be/8WT3G8xjIoI" style="color: inherit; text-decoration: none;"><i
+                class="fas fa-video"></i> Video</a> &nbsp;|&nbsp;
+            <a href="https://lethaiq.github.io/anthro" style="color: inherit; text-decoration: none;"><i
+                class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
         </div>
       </div>
 
-      <!-- CrypText -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-laptop-code" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://lethaiq.github.io/anthro">CrypText</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Software / Demo</h4>
-        <div class="card-content">
-          Discover text perturbations in the wild. The first and largest collection of human-written perturbations
-          online in English.
+      <h2 class="ps-year-header">Datasets</h2>
+      <div class="ps-card-grid">
+        <!-- ShareChat -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-database"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">HCI</span><span class="ps-card-tag">Safety</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">ShareChat</a></h2>
+            <p class="ps-card-authors">Chatbot Conversations Dataset (2026)</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              A large-scale dataset of real-world chatbot conversations in the wild.
+            </div>
+          </div>
+          <div class="ps-card-footer">
+            <a href="https://arxiv.org/abs/2512.17843" style="color: inherit; text-decoration: none;"><i
+                class="fas fa-file-pdf"></i> Paper</a> &nbsp;|&nbsp;
+            <a href="https://huggingface.co/datasets/tucnguyen/ShareChat" target="_blank"
+              style="color: inherit; text-decoration: none;"><i class="fas fa-download"></i> Download</a>
+          </div>
         </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://youtu.be/8WT3G8xjIoI"><i class="fas fa-video"></i> Video</a> |
-          <a href="https://lethaiq.github.io/anthro"><i class="fas fa-external-link-alt"></i> Demo</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Section: Datasets -->
-    <h3 class="styled-section-header">Datasets</h3>
-    <div class="grid-container">
+        <!-- PlagBench -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-database"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Integrity</span><span class="ps-card-tag">LLMs</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2406.16288">PlagBench</a></h2>
+            <p class="ps-card-authors">NAACL 2025 Benchmark</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              A benchmark for evaluating the plagiarism behaviors of Large Language Models.
+            </div>
+          </div>
+          <div class="ps-card-footer"><a href="https://arxiv.org/abs/2406.16288"><i class="fas fa-file-pdf"></i>
+              Paper</a></div>
+        </div>
 
-      <!-- ShareChat -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-database" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://arxiv.org/abs/2512.17843">ShareChat</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset (2026)</h4>
-        <div class="card-content">
-          A large-scale dataset of real-world chatbot conversations in the wild, enabling research on user-chatbot
-          interactions and safety.
+        <!-- NoisyHate -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-database"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Moderation</span><span
+                class="ps-card-tag">Robustness</span></div>
+            <h2 class="ps-card-title"><a
+                href="https://huggingface.co/datasets/yiran223/toxic-detection-testset-perturbations">NoisyHate</a></h2>
+            <p class="ps-card-authors">ICWSM 2025 Toxic Detection</p>
+          </div>
+          <div class="ps-card-footer"><a href="https://huggingface.co/datasets/NoisyHate/Noisy_Hate_Data"><i
+                class="fas fa-cloud-download-alt"></i> HuggingFace</a></div>
         </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://arxiv.org/abs/2512.17843"><i class="fas fa-file-pdf"></i> Paper</a>
-        </div>
-      </div>
 
-      <!-- PlagBench -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-database" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://arxiv.org/abs/2406.16288">PlagBench</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset (NAACL 2025)</h4>
-        <div class="card-content">
-          A benchmark for evaluating the plagiarism behaviors of Large Language Models, assessing their integrity and
-          originality.
-        </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://arxiv.org/abs/2406.16288"><i class="fas fa-file-pdf"></i> Paper</a>
-        </div>
-      </div>
-
-      <!-- NoisyHate -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-database" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://huggingface.co/datasets/yiran223/toxic-detection-testset-perturbations">NoisyHate</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset (ICWSM 2025)</h4>
-        <div class="card-content">
-          Benchmarking offensive text classifiers with real-life human-written (and not machine-generated)
-          perturbations.
-        </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://huggingface.co/datasets/NoisyHate/Noisy_Hate_Data"><i class="fas fa-cloud-download-alt"></i>
-            HuggingFace</a>
+        <!-- TuringBench -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-database"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Generation</span><span
+                class="ps-card-tag">Benchmark</span></div>
+            <h2 class="ps-card-title"><a href="https://huggingface.co/datasets/turingbench/TuringBench">TuringBench</a>
+            </h2>
+            <p class="ps-card-authors">Machine-Generated Text Benchmark</p>
+          </div>
+          <div class="ps-card-footer"><a href="https://huggingface.co/datasets/turingbench/TuringBench"><i
+                class="fas fa-cloud-download-alt"></i> HuggingFace</a></div>
         </div>
       </div>
 
-      <!-- TuringBench -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-database" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://huggingface.co/datasets/turingbench/TuringBench">TuringBench</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Dataset</h4>
-        <div class="card-content">
-          A comprehensive benchmark for detecting machine-generated texts across various authors and architectures.
+      <h2 class="ps-year-header">Algorithms & Toolkits</h2>
+      <div class="ps-card-grid">
+        <!-- XAIFooler -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-blue"><i class="fas fa-code"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">XAI</span><span class="ps-card-tag">Security</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2305.12351">XAIFooler</a></h2>
+            <p class="ps-card-authors">EMNLP 2023 Toolkit</p>
+          </div>
+          <div class="ps-card-footer"><a href="https://arxiv.org/pdf/2305.12351.pdf"><i class="fas fa-file-pdf"></i>
+              Paper</a></div>
         </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://huggingface.co/datasets/turingbench/TuringBench"><i class="fas fa-cloud-download-alt"></i>
-            HuggingFace</a>
-        </div>
-      </div>
-    </div>
 
-    <!-- Section: Software -->
-    <h3 class="styled-section-header">Software</h3>
-    <div class="grid-container">
-      <!-- XAIFooler -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-code" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://arxiv.org/abs/2305.12351">XAIFooler</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Software (EMNLP 2023)</h4>
-        <div class="card-content">
-          A framework for "fooling" AI explanations, demonstrating vulnerabilities in current Explainable AI methods on
-          text classifiers.
+        <!-- ALISON -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-blue"><i class="fas fa-user-secret"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Auth
+                Obfuscation</span></div>
+            <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON</a></h2>
+            <p class="ps-card-authors">AAAI 2024 Algorithm</p>
+          </div>
+          <div class="ps-card-footer"><a href="https://pike.psu.edu/publications/aaai24.pdf"><i
+                class="fas fa-file-pdf"></i> Paper</a></div>
         </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://arxiv.org/pdf/2305.12351.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
-        </div>
-      </div>
 
-      <!-- ALISON -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-user-secret" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Algorithm (AAAI 2024)</h4>
-        <div class="card-content">
-          Fast and Effective Stylometric Authorship Obfuscation. An algorithm to hide true authorship from texts,
-          including ChatGPT-generated ones.
-        </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://pike.psu.edu/publications/aaai24.pdf"><i class="fas fa-file-pdf"></i> Paper</a>
+        <!-- PathFinder -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-blue"><i class="fas fa-project-diagram"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">RecSys</span><span class="ps-card-tag">Graph</span>
+            </div>
+            <h2 class="ps-card-title"><a
+                href="https://ieeexplore.ieee.org/document/8955535?signout=success">PathFinder</a></h2>
+            <p class="ps-card-authors">Course Recommendation Algorithm</p>
+          </div>
+          <div class="ps-card-footer"><a href="https://ieeexplore.ieee.org/document/8955535?signout=success"><i
+                class="fas fa-external-link-alt"></i> Explore</a></div>
         </div>
       </div>
 
-      <!-- PathFinder -->
-      <div class="card">
-        <h3 class="card-title">
-          <i class="fas fa-project-diagram" style="margin-right: 10px; color: var(--secondary-color);"></i>
-          <a href="https://ieeexplore.ieee.org/document/8955535?signout=success">PathFinder</a>
-        </h3>
-        <h4 style="font-size: 0.8rem; color: #777; margin-bottom: 10px; text-align: center;">Algorithm</h4>
-        <div class="card-content">
-          Graph-based Itemset Embedding for Learning Course Recommendation and Beyond.
-        </div>
-        <div class="card-footer" style="text-align: center;">
-          <a href="https://ieeexplore.ieee.org/document/8955535?signout=success"><i
-              class="fas fa-external-link-alt"></i> Link</a>
-        </div>
-      </div>
-    </div>
+  </div>
   </main>
+  </div>
 </body>
 
 </html>

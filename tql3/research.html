@@ -6,216 +6,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
     content="Research projects at the ARKAI Lab (Indiana University) focus on AI Security, Privacy, Authenticity (Deepfakes), and Explainable AI (XAI).">
-  <meta name="keywords"
-    content="AI Security Research, Deepfake Detection, Explainable AI, XAI, NLP for Social Good, AI Safety, ARKAI Lab">
-  <meta name="author" content="Thai Le">
   <link rel="canonical" href="https://lethaiq.github.io/tql3/research.html">
 
-  <title>Research Projects - ARKAI Research Lab | AI Security & Safety</title>
-
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Research Areas - ARKAI Lab | AI Security & Safety">
-  <meta property="og:description"
-    content="Our research focuses on AI Security, Privacy, Authenticity (Deepfakes), and Explainable AI (XAI) at Indiana University.">
-  <meta property="og:url" content="https://lethaiq.github.io/tql3/research.html">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Research - ARKAI Research Lab">
-  <meta name="twitter:description" content="AI Security, Privacy, and Explainability research at Indiana University.">
-
+  <title>ARKAI Research Lab</title>
+  <meta name="description"
+    content="Research thrusts at ARKAI Lab: LLM Security, AI Safety, Explainable AI, and Human-Centric AI.">
+  <meta name="keywords"
+    content="LLM Security, Prompt Injection, AI Unlearning, Audio Deepfake Detection, INDIANA UNIVERSITY">
   <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet_ps.css">
 
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "ARKAI Research Lab Projects",
-    "description": "Research projects at the ARKAI Lab focus on AI Security, Privacy, and Safety.",
-    "itemListElement": [
-      {
-        "@type": "ResearchProject",
-        "name": "Understanding Generative AI",
-        "description": "Decoding 'inner circuits' of reasoning to enable precise model behavior steering and machine unlearning.",
-        "url": "https://lethaiq.github.io/tql3/research.html#understanding-genai"
-      },
-      {
-        "@type": "ResearchProject",
-        "name": "AI Security & Privacy",
-        "description": "Protecting AI models from manipulation and ensuring reliable decisions.",
-        "url": "https://lethaiq.github.io/tql3/research.html#security"
-      },
-      {
-        "@type": "ResearchProject",
-        "name": "AI Authenticity & Deepfakes",
-        "description": "Detecting AI-written text and deepfake speech to ensure authenticity.",
-        "url": "https://lethaiq.github.io/tql3/research.html#detection"
-      },
-      {
-        "@type": "ResearchProject",
-        "name": "Explainable AI (XAI)",
-        "description": "Making AI decisions transparent and trustworthy.",
-        "url": "https://lethaiq.github.io/tql3/research.html#xai"
-      },
-      {
-        "@type": "ResearchProject",
-        "name": "NLP for Social Good",
-        "description": "Solving critical social problems using Natural Language Processing.",
-        "url": "https://lethaiq.github.io/tql3/research.html#socialgood"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://lethaiq.github.io/tql3/index.html"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Research",
-      "item": "https://lethaiq.github.io/tql3/research.html"
-    }]
-  }
-  </script>
-
-  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/layout.js" defer></script>
 </head>
 
 <body>
-  <!-- Header and Nav are injected by js/layout.js -->
-
-  <main class="container">
-    <h1 class="section-title">Research Projects</h1>
-    <p class="intro-text">
-      Our research focuses on enhancing the robustness, safety, and transparency of AI. We are particularly interested
-      in the intersection of NLP, Security, and Human-AI Interaction.
-    </p>
-
-    <div class="grid-container">
-      <!-- Project 1: Understanding Generative AI (Pinned to Top) -->
-      <div class="card research-card" id="understanding-genai">
-        <div class="card-banner banner-interpretability"></div>
-        <i class="fas fa-microscope"></i>
-        <h3 class="card-title">Understanding Generative AI</h3>
-        <h4 style="font-size: 0.9rem; color: #777; margin-bottom: 10px; font-style: italic;">How can we better
-          understand stochastic behaviors of LLMs and precisely control it?</h4>
-        <div class="card-content">
-          We delve into the high-dimensional latent space of LLMs to uncover how knowledge is encoded. Our research
-          focuses on mechanistic interpretability to decode the 'inner circuits' of reasoning, enabling
-          precise behavior steering and machine unlearning—the surgical removal of
-          sensitive information without compromising general capabilities.
-        </div>
+  <div class="ps-layout">
+    <!-- SIDEBAR -->
+    <aside class="ps-sidebar">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <a href="index.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="ps-sidebar-brand"
+            style="margin-bottom: 0; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px;">
+            <span style="color: var(--ps-accent);">ARKAI</span> Lab
+          </div>
+        </a>
       </div>
 
-      <!-- Project 2: Security & Privacy -->
-      <div class="card research-card" id="security">
-        <div class="card-banner banner-security"></div>
-        <i class="fas fa-shield-alt"></i>
-        <h3 class="card-title">AI Security & Privacy</h3>
-        <h4 style="font-size: 0.9rem; color: #777; margin-bottom: 10px; font-style: italic;">How can we keep AI systems
-          safe from security and privacy threats?</h4>
-        <div class="card-content">
-          This research focuses on protecting AI models from being tricked or manipulated. It explores ways to prevent
-          attacks that exploit weaknesses, ensuring AI makes reliable and secure decisions.
-        </div>
-        <div class="card-footer">
-          <strong>Key Papers:</strong><br>
-          <a href="https://aclanthology.org/2021.acl-long.296.pdf">ACL'21</a>,
-          <a href="https://arxiv.org/pdf/2011.08908.pdf">ACL'22a</a>,
-          <a href="https://arxiv.org/pdf/2203.10346.pdf">ACL'22b</a>,
-          <a href="https://arxiv.org/pdf/2301.06494.pdf">ICDE'23</a>,
-          <a href="https://pike.psu.edu/publications/aaai24.pdf">AAAI'24</a>,
-          <a href="https://arxiv.org/abs/2402.11469">ACL'24b</a>,
-          <a href="https://arxiv.org/abs/2505.17513">EMNLP'25</a>
-        </div>
+      <div class="ps-sidebar-bio">
+        The <strong>ARKAI Research Lab</strong> aims to advance
+        <strong>Accountable, Resilient, and Kind AI</strong> through multi-disciplinary research in
+        robustness, safety, and transparency.
       </div>
 
-      <!-- Project 2: AI Artifacts & Detection -->
-      <div class="card research-card">
-        <div class="card-banner banner-deepfake"></div>
-        <i class="fas fa-robot"></i>
-        <h3 class="card-title">AI Authenticity & Deepfakes</h3>
-        <h4 style="font-size: 0.9rem; color: #777; margin-bottom: 10px; font-style: italic;">How to improve and detect
-          AI-generated artifacts?</h4>
-        <div class="card-content">
-          We focus on improving AI’s ability to generate natural content while developing robust methods to detect
-          AI-written text and deepfake speech, ensuring authenticity and preventing misuse.
-        </div>
-        <div class="card-footer">
-          <strong>Key Papers:</strong><br>
-          <a href="https://aclanthology.org/2020.emnlp-main.673">EMNLP'20</a>,
-          <a href="https://arxiv.org/abs/2304.01002">HCOMP'23</a>,
-          <a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">WWW'23</a>,
-          <a href="https://adauchendu.github.io/Deepfake_Text_Tutorial_NSF.pdf">NAACL'24</a>,
-          <a href="https://arxiv.org/abs/2309.12934">ECAI'24</a>,
-          <a href="https://arxiv.org/abs/2406.16288">INTERSPEECH'25</a>
-        </div>
+      <div class="ps-sidebar-links">
+        <a href="mailto:thaile@iu.edu"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ" target="_blank"><i
+            class="fas fa-graduation-cap"></i> Scholar</a>
+        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       </div>
 
-      <!-- Project 3: Explainable AI -->
-      <div class="card research-card">
-        <div class="card-banner banner-xai"></div>
-        <i class="fas fa-search-plus"></i>
-        <h3 class="card-title">Explainable AI (XAI)</h3>
-        <h4 style="font-size: 0.9rem; color: #777; margin-bottom: 10px; font-style: italic;">How to explain AI's
-          decisions securely and clearly?</h4>
-        <div class="card-content">
-          This research explores making AI decisions more transparent while addressing vulnerabilities in explanations.
-          It aims to ensure AI insights are trustworthy, resistant to manipulation, and easy for end users to
-          understand.
-        </div>
-        <div class="card-footer">
-          <strong>Key Papers:</strong><br>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">KDD'20</a>,
-          <a href="https://par.nsf.gov/servlets/purl/10393053">AAMAS'22</a>,
-          <a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">AAMASJ'23</a>,
-          <a href="https://arxiv.org/pdf/2305.12351.pdf">EMNLP'23</a>,
-          <a href="https://arxiv.org/abs/2408.10528">AAAI'25</a>
-        </div>
+      <nav class="ps-sidebar-nav" style="margin-bottom: 30px;">
+        <a href="index.html" class="ps-nav-item"><i class="fas fa-home"></i>Publications</a>
+        <a href="research.html" class="ps-nav-item active"><i class="fas fa-flask"></i>Research Projects</a>
+        <a href="group.html" class="ps-nav-item"><i class="fas fa-users"></i>Meet the Team</a>
+        <a href="dataset.html" class="ps-nav-item"><i class="fas fa-database"></i>Resources</a>
+        <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
+      </nav>
+
+      <div class="ps-sidebar-tracker" style="display: none;">
+        <script type='text/javascript' id='clustrmaps'
+          src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
       </div>
 
-      <!-- Project 4: NLP for Social Good -->
-      <div class="card research-card" id="socialgood">
-        <div class="card-banner banner-social"></div>
-        <i class="fas fa-users"></i>
-        <h3 class="card-title">NLP for Social Good</h3>
-        <h4 style="font-size: 0.9rem; color: #777; margin-bottom: 10px; font-style: italic;">Solving pressing social and
-          science problems</h4>
-        <div class="card-content">
-          We apply our developed methodology in various critical NLP applications, from healthcare to education and
-          social media analysis.
+    </aside>
+
+    <!-- FEED -->
+    <main class="ps-feed">
+      <div class="ps-card-grid">
+
+        <!-- Project 1 -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-amber"><i class="fas fa-microscope"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">LLM Control</span></div>
+            <h2 class="ps-card-title">Understanding Generative AI</h2>
+            <p class="ps-card-authors">Mechanistic Reasoning and Steering</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              We delve into the high-dimensional latent space of LLMs to uncover how knowledge is encoded. Our research
+              focuses on mechanistic interpretability to decode the 'inner circuits' of reasoning, enabling precise
+              behavior steering and machine unlearning.
+            </div>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-search"></i> Reasoning and Steering</div>
         </div>
-        <div class="card-footer">
-          <strong>Key Papers:</strong><br>
-          <a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">ICDM'20</a>,
-          <a href="https://dl.acm.org/doi/pdf/10.1145/3411764.3445753">CHI'21</a>,
-          <a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">ICWSM'24</a>,
-          <a href="./pdfs/AEID24.pdf">AIED'24</a>,
-          <a href="./pdfs/ICWSM25.pdf">ICWSM'25</a>
+
+        <!-- Project 2 -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-shield-alt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Robustness</span><span
+                class="ps-card-tag">Privacy</span></div>
+            <h2 class="ps-card-title">AI Security & Privacy</h2>
+            <p class="ps-card-authors">Adversarial Attacks & Defensive Schemes</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              This research focuses on protecting AI models from manipulation. It explores ways to prevent attacks that
+              exploit weaknesses, ensuring AI makes reliable and secure decisions.
+            </div>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-lock"></i> Trustworthy AI</div>
         </div>
+
+        <!-- Project 3 -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-blue"><i class="fas fa-robot"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Detection</span><span
+                class="ps-card-tag">Deepfakes</span></div>
+            <h2 class="ps-card-title">AI Authenticity & Deepfakes</h2>
+            <p class="ps-card-authors">Verification and Generation Artifacts</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              We focus on improving AI’s ability to generate natural content while developing robust methods to detect
+              AI-written text and deepfake speech, ensuring authenticity and preventing misuse.
+            </div>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-check-circle"></i> Authenticity</div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-amber"><i class="fas fa-search-plus"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">XAI</span></div>
+            <h2 class="ps-card-title">Explainable AI (XAI)</h2>
+            <p class="ps-card-authors">Transparency & Trust</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              Explores making AI decisions more transparent while addressing vulnerabilities in explanations. It aims to
+              ensure AI insights are trustworthy, resistant to manipulation, and easy for end users to understand.
+            </div>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-eye"></i> Explainability</div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="ps-card">
+          <div class="ps-card-header theme-green"><i class="fas fa-users"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Good</span></div>
+            <h2 class="ps-card-title">NLP for Social Good</h2>
+            <p class="ps-card-authors">Real-world Impacts</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              We apply our developed methodology in various critical NLP applications, from healthcare to education and
+              social media analysis.
+            </div>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-heart"></i> Impact</div>
+        </div>
+
       </div>
 
-    </div>
-    </div>
+  </div>
   </main>
+  </div>
 </body>
 
 </html>

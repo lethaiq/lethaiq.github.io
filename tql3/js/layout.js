@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul style="display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;">
                     <li><a href="index.html" style="text-decoration: none; font-weight: 600; color: ${page === 'index.html' || page === '' ? 'var(--accent-red)' : 'var(--primary-color)'};">Home</a></li>
                     <li><a href="research.html" style="text-decoration: none; font-weight: 600; color: ${page === 'research.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Research</a></li>
-                    <li><a href="publication.html" style="text-decoration: none; font-weight: 600; color: ${page === 'publication.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Publications</a></li>
                     <li><a href="dataset.html" style="text-decoration: none; font-weight: 600; color: ${page === 'dataset.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Datasets & Software</a></li>
                     <li><a href="group.html" style="text-decoration: none; font-weight: 600; color: ${page === 'group.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Team</a></li>
                     <li><a href="teaching.html" style="text-decoration: none; font-weight: 600; color: ${page === 'teaching.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Knowledge Transfer</a></li>
@@ -40,16 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <p style="color: #a0aec0; font-size: 0.85rem; letter-spacing: 1px;">
                 &copy; ${new Date().getFullYear()} ARKAI Research Lab
             </p>
-            <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
-                <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en" target="_blank" style="color: var(--secondary-color); text-decoration: none; font-size: 0.9rem;"><i class="fas fa-graduation-cap"></i> Scholar</a>
-                <a href="https://github.com/lethaiq" target="_blank" style="color: var(--secondary-color); text-decoration: none; font-size: 0.9rem;"><i class="fab fa-github"></i> GitHub</a>
-            </div>
         </div>
     </footer>
     `;
 
-    // Inject Header at the beginning of body
-    document.body.insertAdjacentHTML('afterbegin', headerHTML);
+    // Inject Header at the beginning of body - Skip if using the new Prosocial Sidebar layout
+    if (!document.querySelector('.ps-sidebar')) {
+        document.body.insertAdjacentHTML('afterbegin', headerHTML);
+    }
 
     // Inject Footer at the end of body
     document.body.insertAdjacentHTML('beforeend', footerHTML);

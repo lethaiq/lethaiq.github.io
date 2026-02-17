@@ -5,283 +5,258 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Meet the ARKAI Research Lab team at Indiana University. Led by Prof. Thai Le, our group researches Accountable, Resilient, and Kind AI.">
-  <meta name="keywords" content="ARKAI Lab Team, Thai Le, PhD Students, AI Researchers, Indiana University CS">
-  <meta name="author" content="Thai Le">
+    content="Meet the ARKAI Lab team: Ph.D. students, Masters students, and Alumni led by Prof. Thai Le.">
   <link rel="canonical" href="https://lethaiq.github.io/tql3/group.html">
 
-  <title>Team Members - ARKAI Research Lab | Indiana University</title>
-
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Meet the Team - ARKAI Research Lab">
-  <meta property="og:description"
-    content="The people behind ARKAI Lab: researchers, PhD students, and collaborators dedicated to trustworthy AI.">
-  <meta property="og:url" content="https://lethaiq.github.io/tql3/group.html">
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary">
+  <title>ARKAI Research Lab</title>
+  <meta name="keywords" content="Thai Le, ARKAI Team, IU Research, AI Researchers, Indiana University Bloomington">
 
   <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet_ps.css">
 
-  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/layout.js" defer></script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://lethaiq.github.io/tql3/index.html"
-    },{
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Team",
-      "item": "https://lethaiq.github.io/tql3/group.html"
-    }]
-  }
-  </script>
   <style>
-    .person-card {
-      text-align: center;
-      align-items: center;
-    }
-
-    .person-img-container {
-      width: 100px;
-      height: 100px;
-      background-color: #f8f9fa;
+    .ps-person-img {
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 15px;
-      font-size: 2.2rem;
-      color: #dae0e5;
-      border: 2px solid #edeff1;
-    }
-
-    .person-img {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
-      border-radius: 50%;
+      border: 3px solid var(--ps-border);
+      margin-bottom: 15px;
     }
 
-    .person-name {
-      font-size: 1.1rem;
-      font-weight: 700;
+    .ps-card.person-card {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .ps-card.person-card .ps-card-title {
       margin-bottom: 5px;
-      color: var(--primary-color);
+      font-size: 1.1rem;
     }
 
-    .person-role {
-      font-size: 0.9rem;
-      color: #666;
+    .ps-card.person-card .ps-card-authors {
+      margin-bottom: 0;
       font-style: italic;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header and Nav are injected by js/layout.js -->
-
-  <main class="container">
-    <h3 class="styled-section-header">Principal Investigator</h3>
-    <div class="grid-container" style="grid-template-columns: 1fr;">
-      <div class="card person-card"
-        style="display: flex; flex-direction: row; text-align: left; align-items: flex-start; gap: 30px;">
-        <div class="person-img-container"
-          style="flex-shrink: 0; width: 150px; height: 150px; border: 4px solid var(--accent-red); padding: 0; overflow: hidden;">
-          <img src="https://luddywww.sites.iu.edu/images/people/tle.jpg"
-            alt="Thai Le - Assistant Professor at Indiana University" class="person-img" width="150" height="150"
-            onerror="this.src='images/profile.jpg'">
-        </div>
-        <div style="flex-grow: 1;">
-          <div class="person-name" style="font-size: 1.4rem;">Thai Le, Ph.D.</div>
-          <div class="person-role" style="font-size: 1rem; margin-bottom: 15px;">Assistant Professor of Computer Science
-            @ Indiana University (Bloomington)</div>
-          <div class="card-content" style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
-            Hi, I am <strong>Thai Le</strong>. I earned my PhD at <a href="http://www.psu.edu/">Penn State</a> advised
-            by <a href="https://pike.psu.edu/dongwon/">Prof. Dongwon Lee</a>, following experiences at <a
-              href="https://www.amazon.science/">Amazon Science</a>, <a href="https://research.yahoo.com/">Yahoo
-              Research</a>, and <a href="https://octo.vmware.com/">VMWare OCTO</a>. My research focuses on enhancing the
-            robustness, safety, and transparency of AI-related technologies in various sociotechnical contexts, ensuring
-            that society can harness their power with confidence and clarity.
+  <div class="ps-layout">
+    <!-- SIDEBAR -->
+    <aside class="ps-sidebar">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <a href="index.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="ps-sidebar-brand"
+            style="margin-bottom: 0; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px;">
+            <span style="color: var(--ps-accent);">ARKAI</span> Lab
           </div>
-          <div style="font-size: 0.9rem; color: #555;">
-            <i class="fas fa-envelope"></i> tle [at] iu [dot] edu |
-            <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ&hl=en" target="_blank"><i
-                class="fas fa-graduation-cap"></i> Scholar</a> |
-            <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </a>
+      </div>
+
+      <div class="ps-sidebar-bio">
+        The <strong>ARKAI Research Lab</strong> aims to advance
+        <strong>Accountable, Resilient, and Kind AI</strong> through multi-disciplinary research in
+        robustness, safety, and transparency.
+      </div>
+
+
+      <div class="ps-sidebar-links">
+        <a href="mailto:thaile@iu.edu"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ" target="_blank"><i
+            class="fas fa-graduation-cap"></i> Scholar</a>
+        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+
+      <nav class="ps-sidebar-nav" style="margin-bottom: 30px;">
+        <a href="index.html" class="ps-nav-item"><i class="fas fa-home"></i>Publications</a>
+        <a href="research.html" class="ps-nav-item"><i class="fas fa-flask"></i>Research Projects</a>
+        <a href="group.html" class="ps-nav-item active"><i class="fas fa-users"></i>Meet the Team</a>
+        <a href="dataset.html" class="ps-nav-item"><i class="fas fa-database"></i>Resources</a>
+        <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
+      </nav>
+
+      <div class="ps-sidebar-tracker" style="display: none;">
+        <script type='text/javascript' id='clustrmaps'
+          src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
+      </div>
+    </aside>
+
+    <!-- FEED -->
+    <main class="ps-feed">
+
+      <h2 class="ps-year-header">Principal Investigator</h2>
+      <div class="ps-card-grid" style="grid-template-columns: 1fr;">
+        <div class="ps-card" style="flex-direction: row; padding: 40px; align-items: center; gap: 40px;">
+          <img src="https://luddywww.sites.iu.edu/images/people/tle.jpg" alt="Thai Le"
+            style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid var(--ps-accent); object-fit: cover;">
+          <div class="ps-card-content" style="padding: 0;">
+            <h2 class="ps-card-title" style="font-size: 1.5rem;">Thai Le, Ph.D.</h2>
+            <p class="ps-card-authors" style="font-style: normal; font-weight: 600; color: var(--ps-accent);">Assistant
+              Professor of Computer Science @ Indiana University</p>
+            <div style="font-size: 0.95rem; color: var(--ps-text); line-height: 1.6; margin-top: 15px;">
+              Hi, I lead the ARKAI Research Lab. I earned my PhD at Penn State advised by Prof. Dongwon Lee. My research
+              focuses on enhancing the robustness, safety, and transparency of AI-related technologies in various
+              sociotechnical contexts.
+            </div>
+            <div style="margin-top: 20px; font-size: 0.9rem; color: var(--ps-muted);">
+              <a href="mailto:thaile@iu.edu" style="color: inherit; text-decoration: none;"><i
+                  class="fas fa-envelope"></i> Email</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <h3 class="styled-section-header">Active Members</h3>
-    <div class="grid-container">
-      <div class="card person-card">
-        <div class="person-img-container" style="border: 3px solid var(--accent-red); padding: 0; overflow: hidden;">
-          <img src="https://nguyentuc.github.io/images/avatar.jpeg" alt="Tuc Nguyen - ARKAI Lab PhD Student"
-            class="person-img" loading="lazy" width="100" height="100">
+      <h2 class="ps-year-header">Active Members</h2>
+      <div class="ps-card-grid">
+        <!-- Tuc Nguyen -->
+        <div class="ps-card person-card">
+          <img src="https://nguyentuc.github.io/images/avatar.jpeg" alt="Tuc Nguyen"
+            class="ps-person-img ps-active-border">
+          <h2 class="ps-card-title"><a href="https://nguyentuc.github.io">Tuc Nguyen</a></h2>
+          <p class="ps-card-authors">PhD Student - CS</p>
+          <div style="font-size: 0.75rem; color: var(--ps-accent); font-weight: 700; margin-top: 10px;">Graduate
+            Research Award 2025</div>
         </div>
-        <div class="person-name"><a href="https://nguyentuc.github.io">Tuc Nguyen</a></div>
-        <div class="person-role">PhD Student - CS<br><span style="font-size: 0.8em; color: var(--accent-color);">CS
-            Graduate Research Award 2025</span></div>
-      </div>
 
-      <div class="card person-card">
-        <div class="person-img-container" style="border: 3px solid var(--accent-red);"><i class="fas fa-user"
-            style="font-size: 50px;"></i></div>
-        <div class="person-name"><a href="https://ccmc.luddy.iu.edu/people/yueru-yan.html/">Yan Yueru</a></div>
-        <div class="person-role">PhD Student - ILS</div>
-      </div>
+        <!-- Yan Yueru -->
+        <div class="ps-card person-card">
+          <div
+            style="width: 80px; height: 80px; border-radius: 50%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 3px solid var(--ps-accent);">
+            <i class="fas fa-user" style="font-size: 2rem; color: var(--ps-accent);"></i>
+          </div>
+          <h2 class="ps-card-title"><a href="https://ccmc.luddy.iu.edu/people/yueru-yan.html/">Yan Yueru</a></h2>
+          <p class="ps-card-authors">PhD Student - ILS</p>
+        </div>
 
-      <div class="card person-card">
-        <div class="person-img-container" style="border: 3px solid var(--accent-red); padding: 0; overflow: hidden;">
+        <!-- Melissa Lieffers -->
+        <div class="ps-card person-card">
           <img
             src="https://media.licdn.com/dms/image/v2/D5603AQF5yz9YlSAROQ/profile-displayphoto-scale_400_400/B56Zs4nM8xKAAg-/0/1766181360360?e=1772668800&v=beta&t=dGpaxZXcR4j4LMpaN0w9yjWsTWGqO5eN-CyfBD0MLEY"
-            alt="Melissa Lieffers - ARKAI Lab PhD Student" class="person-img" loading="lazy" width="100" height="100">
+            alt="Melissa Lieffers" class="ps-person-img ps-active-border">
+          <h2 class="ps-card-title"><a href="https://www.linkedin.com/in/melissa-lieffers/">Melissa Lieffers</a></h2>
+          <p class="ps-card-authors">PhD Student - Linguistics &rarr; CS</p>
         </div>
-        <div class="person-name"><a href="https://www.linkedin.com/in/melissa-lieffers/">Melissa Lieffers</a></div>
-        <div class="person-role">PhD Student - Linguistics &rarr; CS</div>
-      </div>
 
-      <div class="card person-card">
-        <div class="person-img-container" style="border: 3px solid var(--accent-red); padding: 0; overflow: hidden;">
-          <img src="https://bartsu.github.io/img/bartsu.png" alt="Bo Su - ARKAI Lab PhD Student" class="person-img"
-            loading="lazy" width="100" height="100">
+        <!-- Bo Su -->
+        <div class="ps-card person-card">
+          <img src="https://bartsu.github.io/img/bartsu.png" alt="Bo Su" class="ps-person-img ps-active-border">
+          <h2 class="ps-card-title"><a href="https://bartsu.github.io/">Bo Su</a></h2>
+          <p class="ps-card-authors">PhD Student - CS</p>
         </div>
-        <div class="person-name"><a href="https://bartsu.github.io/">Bo Su</a></div>
-        <div class="person-role">PhD Student - CS</div>
-      </div>
-    </div>
-
-    <h3 class="styled-section-header">Alumni</h3>
-    <div class="grid-container">
-      <div class="card person-card">
-        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
-        <div class="person-name"><a href="https://sj110.pages.iu.edu/">Sam Johnson</a></div>
-        <div class="person-role">Data Science MSc &rarr; ML Engineer @ Advanced Space</div>
       </div>
 
-      <div class="card person-card">
-        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
-        <div class="person-name">Chris Burger</div>
-        <div class="person-role">CS PhD &rarr; Prof @ U. Mississippi</div>
-        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: Explainable AI...</div>
+      <h2 class="ps-year-header">Alumni</h2>
+      <div class="ps-card-grid">
+        <div class="ps-card person-card">
+          <h2 class="ps-card-title"><a href="https://sj110.pages.iu.edu/">Sam Johnson</a></h2>
+          <p class="ps-card-authors">Data Science MSc &rarr; Advanced Space</p>
+        </div>
+        <div class="ps-card person-card">
+          <h2 class="ps-card-title">Chris Burger</h2>
+          <p class="ps-card-authors">CS PhD &rarr; Prof @ U. Mississippi</p>
+        </div>
+        <div class="ps-card person-card">
+          <h2 class="ps-card-title">Rishabh Shrestha</h2>
+          <p class="ps-card-authors">CS MSc &rarr; Software Engineer</p>
+        </div>
+        <div class="ps-card person-card">
+          <h2 class="ps-card-title">Sijan Shrestha</h2>
+          <p class="ps-card-authors">CS MSc &rarr; App Analyst</p>
+        </div>
+        <div class="ps-card person-card">
+          <h2 class="ps-card-title">Lisette Kamper-Hinson</h2>
+          <p class="ps-card-authors">CS Graduate &rarr; MSc @ Wake Forest</p>
+        </div>
       </div>
 
-      <div class="card person-card">
-        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
-        <div class="person-name">Rishabh Shrestha</div>
-        <div class="person-role">CS MSc &rarr; Software Engineer</div>
-        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: EarthsciBERT...</div>
+      <h2 class="ps-year-header">Research Mentees & Interns</h2>
+      <div class="ps-card-grid">
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Aakriti Shah</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">MS @ USC</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Viet Pham</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Research Intern</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Minh Hoang</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Research Intern</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Binh Quoc</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Research Intern</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Trinh Tran</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Intern &rarr; EMNLP'25</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Cuong Nguyen</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Intern &rarr; PhD @ VT</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Paulina Eguibar</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Undergrad @ UMiss</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">James Michael</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">PhD @ UMiss</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Cara Yin</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">PhD @ UMiss</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Jun Jang</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">ISEF &rarr; Stanford</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Eric Xing</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">WKU &rarr; WashU</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Ziyao Wang</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Wuhan &rarr; UMD</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Jayesh Khandelwal</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">IIT &rarr; NYU</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Yiran Ye</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">MS @ PSU &rarr; Minitab</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Adaku Uchendu</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">PhD @ PSU &rarr; MIT</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Joe McCalmon</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">WFU &rarr; Startup</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Tianyi Xie</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">SJTU &rarr; UCLA</p>
+        </div>
+        <div class="ps-card person-card" style="padding: 20px;">
+          <h2 class="ps-card-title" style="font-size: 1rem;">Xinyue Cao</h2>
+          <p class="ps-card-authors" style="font-size: 0.8rem;">Intern &rarr; CMU</p>
+        </div>
       </div>
-
-      <div class="card person-card">
-        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
-        <div class="person-name">Sijan Shrestha</div>
-        <div class="person-role">CS MSc &rarr; App Analyst</div>
-        <div style="font-size: 0.8rem; margin-top: 5px; color: #777;">Thesis: Google Smart Compose...</div>
-      </div>
-
-      <div class="card person-card">
-        <div class="person-img-container"><i class="fas fa-user-graduate"></i></div>
-        <div class="person-name">Lisette Kamper-Hinson</div>
-        <div class="person-role">CS Graduate &rarr; MSc @ Wake Forest</div>
-      </div>
-    </div>
-
-    <h3 class="styled-section-header">Research Mentees & Interns (Past/Current)</h3>
-    <div class="grid-container">
-      <!-- Simplified cards for mentees -->
-      <div class="card person-card">
-        <div class="person-name">Aakriti Shah</div>
-        <div class="person-role">MS @ USC</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Viet Pham</div>
-        <div class="person-role">Research Intern</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Minh Hoang</div>
-        <div class="person-role">Research Intern</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Binh Quoc</div>
-        <div class="person-role">Research Intern</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Trinh Tran</div>
-        <div class="person-role">Research Intern &rarr; EMNLP'25</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Cuong Nguyen</div>
-        <div class="person-role">Intern &rarr; PhD @ Virginia Tech</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Paulina Eguibar</div>
-        <div class="person-role">CS Undergrad @ U. Mississippi</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">James Michael</div>
-        <div class="person-role">PhD @ U. Mississippi</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Cara Yin</div>
-        <div class="person-role">PhD @ U. Mississippi</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Jun Jang</div>
-        <div class="person-role">Oxford High School &rarr; ISEF Award &rarr; Stanford</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Eric Xing</div>
-        <div class="person-role">WKU &rarr; WashU</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Ziyao Wang</div>
-        <div class="person-role">Wuhan Univ &rarr; UMD</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Jayesh Khandelwal</div>
-        <div class="person-role">IIT Jodhpur &rarr; NYU</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Yiran Ye</div>
-        <div class="person-role">MS @ Penn State &rarr; Minitab</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Adaku Uchendu</div>
-        <div class="person-role">PhD @ Penn State &rarr; MIT Lincoln Lab</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Joe McCalmon</div>
-        <div class="person-role">Wake Forest &rarr; Startup</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Tianyi Xie</div>
-        <div class="person-role">SJTU &rarr; UCLA</div>
-      </div>
-      <div class="card person-card">
-        <div class="person-name">Xinyue Cao</div>
-        <div class="person-role">Intern &rarr; CMU</div>
-      </div>
-    </div>
-
+  </div>
   </main>
+  </div>
 </body>
 
 </html>
