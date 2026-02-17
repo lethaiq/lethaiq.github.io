@@ -160,6 +160,75 @@ body {
     margin-bottom: 20px;
 }
 
+/* Lab News Ticker */
+.ps-news-ticker {
+    background: #f8fafc;
+    border: 1px solid var(--ps-border);
+    border-radius: var(--ps-radius);
+    padding: 12px 20px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ps-news-ticker-label {
+    background: var(--ps-accent);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-right: 20px;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.ps-news-ticker-content {
+    display: flex;
+    white-space: nowrap;
+    animation: ps-ticker-scroll 40s linear infinite;
+}
+
+.ps-news-ticker-content:hover {
+    animation-play-state: paused;
+}
+
+.ps-news-item {
+    font-size: 0.9rem;
+    color: var(--ps-text);
+    font-weight: 500;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ps-news-item i {
+    color: var(--ps-accent);
+    font-size: 0.6rem;
+}
+
+@keyframes ps-ticker-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .ps-news-ticker {
+        margin-top: 20px;
+    }
+}
+
 .ps-sidebar-bio a.ps-link-red {
     color: #990000;
     /* IU Crimson */
