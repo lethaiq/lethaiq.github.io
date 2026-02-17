@@ -160,6 +160,35 @@ body {
     margin-bottom: 20px;
 }
 
+.ps-sidebar-bio a.ps-link-red {
+    color: #990000;
+    /* IU Crimson */
+    font-weight: 700;
+}
+
+.ps-sidebar-bio a.ps-link-red:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+/* Mobile Select Filter */
+.ps-mobile-select {
+    display: none;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--ps-border);
+    background: white;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ps-text);
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 /* Publication Card Grid */
 .ps-card-grid {
     display: grid;
@@ -309,11 +338,49 @@ body {
         border-right: none;
         border-bottom: 1px solid var(--ps-border);
         padding: 40px;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .ps-sidebar-brand {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .ps-sidebar-bio {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .ps-sidebar-links {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .ps-sidebar-nav {
+        align-items: center;
+        margin-top: 20px;
     }
 
     .ps-feed {
-        padding: 40px;
+        padding: 30px 20px;
     }
+
+    /* Hide desktop buttons and show mobile select */
+    #tagFilters {
+        display: none !important;
+    }
+
+    .ps-mobile-select {
+        display: block;
+    }
+
+    .ps-feed-filters {
+        padding: 20px !important;
+    }
+
 }
 
 /* Team Page Styles */
