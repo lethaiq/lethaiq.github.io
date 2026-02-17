@@ -39,6 +39,7 @@ body {
 
 .ps-sidebar {
     width: 380px;
+    flex-shrink: 0;
     padding: 60px 40px;
     margin: 30px;
     background: var(--ps-sidebar-bg);
@@ -57,6 +58,7 @@ body {
 
 .ps-feed {
     flex: 1;
+    min-width: 0;
     padding: 60px 60px 100px 60px;
     background: var(--ps-bg);
 }
@@ -160,32 +162,39 @@ body {
     margin-bottom: 20px;
 }
 
-/* Lab News Ticker */
+/* Lab News Ticker Layout */
+.ps-news-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    width: 100%;
+}
+
 .ps-news-ticker {
     background: #f8fafc;
     border: 1px solid var(--ps-border);
     border-radius: var(--ps-radius);
     padding: 12px 20px;
-    margin-bottom: 24px;
     overflow: hidden;
     display: flex;
     align-items: center;
+    flex: 1;
+    min-width: 0;
     position: relative;
 }
 
 .ps-news-ticker-label {
     background: var(--ps-accent);
     color: white;
-    padding: 4px 12px;
-    border-radius: 4px;
+    padding: 6px 14px;
+    border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    margin-right: 20px;
     white-space: nowrap;
-    position: relative;
-    z-index: 2;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ps-news-ticker-content {
@@ -224,8 +233,16 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .ps-news-ticker {
+    .ps-news-container {
+        flex-direction: row;
+        /* Keep adjacent on mobile unless screen is very tiny */
         margin-top: 20px;
+        gap: 10px;
+    }
+
+    .ps-news-ticker-label {
+        padding: 4px 10px;
+        font-size: 0.65rem;
     }
 }
 
