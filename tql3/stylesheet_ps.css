@@ -197,10 +197,23 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Slow down news ticker for readability */
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
 .ps-news-ticker-content {
     display: flex;
     white-space: nowrap;
-    animation: ps-ticker-scroll 40s linear infinite;
+    animation: ticker 600s linear infinite;
+    /* Drastically slowed down for premium readability (600s) */
+    gap: 0;
 }
 
 .ps-news-ticker-content:hover {
@@ -327,6 +340,52 @@ input:checked+.ps-slider:before {
     opacity: 0.8;
 }
 
+
+/* Mobile Navigation Tabs (Premium Pill Style) */
+.ps-mobile-nav-tabs {
+    display: none;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+    padding: 10px 0;
+    margin-top: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.ps-mobile-nav-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.ps-mobile-nav-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: #ffffff;
+    border: 1px solid var(--ps-border);
+    border-radius: 100px;
+    color: var(--ps-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ps-mobile-nav-tab i {
+    color: var(--ps-accent);
+}
+
+.ps-mobile-nav-tab.active {
+    background: var(--ps-accent);
+    color: #ffffff;
+    border-color: var(--ps-accent);
+}
+
+.ps-mobile-nav-tab.active i {
+    color: #ffffff;
+}
 
 /* Mobile Select Filter */
 .ps-mobile-select {
@@ -511,13 +570,34 @@ input:checked+.ps-slider:before {
     }
 
     .ps-sidebar-links {
-        align-items: center;
-        margin-bottom: 30px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+
+    .ps-sidebar-links a {
+        font-size: 1.2rem;
+    }
+
+    .ps-sidebar-links a span {
+        display: none;
+        /* Hide link text on mobile */
     }
 
     .ps-sidebar-nav {
-        align-items: center;
-        margin-top: 20px;
+        display: none !important;
+        /* Hide desktop nav on mobile */
+    }
+
+    .ps-mobile-nav-tabs {
+        display: flex;
+        /* Show tab bar on mobile */
+    }
+
+    .ps-mobile-nav-select {
+        display: none !important;
+        /* Force hide the old select */
     }
 
     .ps-feed {
@@ -541,8 +621,8 @@ input:checked+.ps-slider:before {
 
 /* Team Page Styles */
 .ps-person-img {
-    width: 100px;
-    height: 100px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto 15px;
@@ -557,4 +637,36 @@ input:checked+.ps-slider:before {
 .person-card {
     text-align: center;
     padding: 30px;
+}
+
+/* PI Card Specific Refinement */
+.ps-pi-card {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    align-items: center;
+    gap: 40px;
+}
+
+.ps-pi-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--ps-accent);
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* PI Responsive Stacking */
+@media (max-width: 768px) {
+    .ps-pi-card {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ps-pi-img {
+        margin: 0 auto;
+    }
 }

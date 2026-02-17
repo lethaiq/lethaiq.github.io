@@ -87,19 +87,28 @@
 
 
       <div class="ps-sidebar-links">
-        <a href="mailto:thaile@iu.edu"><i class="fas fa-envelope"></i> Email</a>
+        <a href="mailto:thaile@iu.edu"><i class="fas fa-envelope"></i> <span>Email</span></a>
         <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ" target="_blank"><i
-            class="fas fa-graduation-cap"></i> Scholar</a>
-        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            class="fas fa-graduation-cap"></i> <span>Scholar</span></a>
+        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> <span>GitHub</span></a>
       </div>
 
-      <nav class="ps-sidebar-nav" style="margin-bottom: 30px;">
+      <nav class="ps-sidebar-nav">
         <a href="index.html" class="ps-nav-item"><i class="fas fa-home"></i>Publications</a>
         <a href="research.html" class="ps-nav-item"><i class="fas fa-flask"></i>Research Projects</a>
         <a href="group.html" class="ps-nav-item active"><i class="fas fa-users"></i>Meet the Team</a>
         <a href="dataset.html" class="ps-nav-item"><i class="fas fa-database"></i>Resources</a>
         <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
       </nav>
+
+      <!-- Mobile Navigation Tabs -->
+      <div class="ps-mobile-nav-tabs">
+        <a href="index.html" class="ps-mobile-nav-tab"><i class="fas fa-home"></i>Home</a>
+        <a href="research.html" class="ps-mobile-nav-tab"><i class="fas fa-flask"></i>Research</a>
+        <a href="group.html" class="ps-mobile-nav-tab active"><i class="fas fa-users"></i>Team</a>
+        <a href="dataset.html" class="ps-mobile-nav-tab"><i class="fas fa-database"></i>Resources</a>
+        <a href="teaching.html" class="ps-mobile-nav-tab"><i class="fas fa-book"></i>Teaching</a>
+      </div>
 
       <div class="ps-sidebar-tracker" style="display: none;">
         <script type='text/javascript' id='clustrmaps'
@@ -113,9 +122,8 @@
 
       <h2 class="ps-year-header">Principal Investigator</h2>
       <div class="ps-card-grid" style="grid-template-columns: 1fr;">
-        <div class="ps-card ps-pi-card" style="flex-direction: row; padding: 40px; align-items: center; gap: 40px;">
-          <img src="https://luddywww.sites.iu.edu/images/people/tle.jpg" alt="Thai Le"
-            style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid var(--ps-accent); object-fit: cover;">
+        <div class="ps-card ps-pi-card">
+          <img src="https://luddywww.sites.iu.edu/images/people/tle.jpg" alt="Thai Le" class="ps-pi-img">
           <div class="ps-card-content" style="padding: 0;">
             <h2 class="ps-card-title" style="font-size: 1.5rem;">Thai Le, Ph.D.</h2>
             <p class="ps-card-authors" style="font-style: normal; font-weight: 600; color: var(--ps-accent);">Assistant
@@ -143,14 +151,11 @@
           <p class="ps-card-authors">PhD Student - CS</p>
         </div>
 
-        <!-- Yan Yueru -->
+        <!-- Yueru Yan -->
         <div class="ps-card person-card">
-          <div
-            style="width: 80px; height: 80px; border-radius: 50%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; border: 3px solid var(--ps-accent);">
-            <i class="fas fa-user" style="font-size: 2rem; color: var(--ps-accent);"></i>
-          </div>
-          <h2 class="ps-card-title"><a href="https://ccmc.luddy.iu.edu/people/yueru-yan.html/">Yan Yueru</a></h2>
-          <p class="ps-card-authors">PhD Student - ILS</p>
+          <img src="https://raye22.github.io/yueru/profile.jpg" alt="Yueru Yan" class="ps-person-img ps-active-border">
+          <h2 class="ps-card-title"><a href="https://raye22.github.io/yueru/">Yueru Yan</a></h2>
+          <p class="ps-card-authors">PhD Student - ILS, CS Minor</p>
         </div>
 
         <!-- Melissa Lieffers -->

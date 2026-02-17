@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <footer style="margin-top: 100px; padding: 60px 0; border-top: 1px solid #eee; background: #fff;">
         <div class="container" style="max-width: var(--max-width); margin: 0 auto; text-align: center; width: 95%;">
             <div style="font-size: 0.95rem; font-weight: 600; color: var(--secondary-color); letter-spacing: 3px; text-transform: uppercase; margin-bottom: 20px; opacity: 0.7;">
-                Accountable &bull; Resilient &bull; Kind
+                Accountable • Resilient • Kind AI
             </div>
             <p style="color: #a0aec0; font-size: 0.85rem; letter-spacing: 1px;">
                 &copy; ${new Date().getFullYear()} ARKAI Research Lab
