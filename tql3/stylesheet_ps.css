@@ -27,6 +27,7 @@ body {
     font-family: var(--font-sans);
     margin: 0;
     padding: 0;
+    zoom: 0.8;
 }
 
 /* Layout Structure */
