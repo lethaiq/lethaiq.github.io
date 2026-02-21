@@ -25,6 +25,46 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/layout.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Site Navigation",
+    "itemListElement": [
+      {
+        "@type": "SiteNavigationElement",
+        "position": 1,
+        "name": "Home",
+        "url": "https://lethaiq.github.io/tql3/index.html"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 2,
+        "name": "Research",
+        "url": "https://lethaiq.github.io/tql3/research.html"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 3,
+        "name": "Team",
+        "url": "https://lethaiq.github.io/tql3/group.html"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 4,
+        "name": "Resources",
+        "url": "https://lethaiq.github.io/tql3/dataset.html"
+      },
+      {
+        "@type": "SiteNavigationElement",
+        "position": 5,
+        "name": "Knowledge Transfer",
+        "url": "https://lethaiq.github.io/tql3/teaching.html"
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -595,7 +635,8 @@
         <div class="ps-card" data-tags="Security">
           <div class="ps-card-header theme-green"><i class="fas fa-brain"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Explainable
+                AI</span></div>
             <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2602.08104">Interpretable Failure Analysis in
                 Multi-Agent RL</a></h2>
             <p class="ps-card-authors">Risal Shefin, Thai Le, Sarra Alqahtani</p>
