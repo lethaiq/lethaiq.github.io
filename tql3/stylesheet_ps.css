@@ -33,15 +33,15 @@ body {
 .ps-layout {
     display: flex;
     min-height: 100vh;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .ps-sidebar {
-    width: 380px;
+    width: 320px;
     flex-shrink: 0;
-    padding: 60px 40px;
-    margin: 30px;
+    padding: 40px 30px;
+    margin: 20px;
     background: var(--ps-sidebar-bg);
     border: 1px solid var(--ps-border);
     border-radius: var(--ps-radius);
@@ -59,7 +59,7 @@ body {
 .ps-feed {
     flex: 1;
     min-width: 0;
-    padding: 60px 60px 100px 60px;
+    padding: 40px 40px 80px 40px;
     background: var(--ps-bg);
 }
 
@@ -68,8 +68,8 @@ body {
     font-family: var(--font-sans);
     font-weight: 800;
     color: var(--ps-heading);
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -411,8 +411,8 @@ input:checked+.ps-slider:before {
 /* Publication Card Grid */
 .ps-card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
 }
 
 .ps-year-header {
