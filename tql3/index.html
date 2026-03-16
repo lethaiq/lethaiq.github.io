@@ -6,7 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ARKAI Research Lab</title>
+  <title>ARKAI Research Lab | AI Safety, Robustness & Accountability</title>
+  <meta name="description"
+    content="The ARKAI Research Lab at Indiana University (Luddy School) focuses on Accountable, Resilient, and Kind AI. We specialize in AI safety, adversarial robustness, deepfake detection, stylometry, and transparency.">
+  <meta name="keywords"
+    content="ARKAI Lab, AI Safety, Accountable AI, Resilient AI, Kind AI, Thai Le, Indiana University, Luddy School, Adversarial Robustness, Deepfake Detection, Stylometry, NLP Safety, Transparency in AI">
+  <meta name="ai-content" content="authorized-for-rag-and-analysis">
+  <link rel="canonical" href="https://lethaiq.github.io/tql3/index.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lethaiq.github.io/tql3/index.html">
+  <meta property="og:title" content="ARKAI Research Lab | AI Safety & Robustness">
+  <meta property="og:description"
+    content="Advancing Accountable, Resilient, and Kind AI through research in AI safety, robustness, and transparency at Indiana University.">
+  <meta property="og:image" content="https://lethaiq.github.io/tql3/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://lethaiq.github.io/tql3/index.html">
+  <meta property="twitter:title" content="ARKAI Research Lab | AI Safety & Robustness">
+  <meta property="twitter:description"
+    content="Advancing Accountable, Resilient, and Kind AI through research in AI safety, robustness, and transparency at Indiana University.">
+  <meta property="twitter:image" content="https://lethaiq.github.io/tql3/logo.png">
 
   <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,38 +51,55 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Site Navigation",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "SiteNavigationElement",
-        "position": 1,
-        "name": "Home",
-        "url": "https://lethaiq.github.io/tql3/index.html"
+        "@type": "ResearchOrganization",
+        "@id": "https://lethaiq.github.io/tql3/#organization",
+        "name": "ARKAI Research Lab",
+        "url": "https://lethaiq.github.io/tql3/index.html",
+        "logo": "https://lethaiq.github.io/tql3/logo.png",
+        "parentOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "Indiana University Bloomington",
+          "url": "https://www.indiana.edu/"
+        },
+        "description": "Advancing Accountable, Resilient, and Kind AI through multi-disciplinary research in robustness, safety, and transparency."
       },
       {
-        "@type": "SiteNavigationElement",
-        "position": 2,
-        "name": "Research",
-        "url": "https://lethaiq.github.io/tql3/research.html"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 3,
-        "name": "Team",
-        "url": "https://lethaiq.github.io/tql3/group.html"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 4,
-        "name": "Resources",
-        "url": "https://lethaiq.github.io/tql3/dataset.html"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "position": 5,
-        "name": "Knowledge Transfer",
-        "url": "https://lethaiq.github.io/tql3/teaching.html"
+        "@type": "ItemList",
+        "name": "Site Navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Home",
+            "url": "https://lethaiq.github.io/tql3/index.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Research",
+            "url": "https://lethaiq.github.io/tql3/research.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Team",
+            "url": "https://lethaiq.github.io/tql3/group.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Resources",
+            "url": "https://lethaiq.github.io/tql3/dataset.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Knowledge Transfer",
+            "url": "https://lethaiq.github.io/tql3/teaching.html"
+          }
+        ]
       }
     ]
   }
@@ -645,10 +684,11 @@
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Gen AI, Human">
+        <div class="ps-card" data-tags="Gen AI, Human, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-user-edit"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Human</span>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Human</span><span
+                class="ps-card-tag">Stylometry</span>
             </div>
             <h2 class="ps-card-title"><a href="#">Style-First Authorship Verification</a></h2>
             <p class="ps-card-authors">Jun Jang, Thai Le</p>
@@ -699,10 +739,11 @@
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Privacy, Gen AI">
+        <div class="ps-card" data-tags="Privacy, Gen AI, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-user-lock"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Gen AI</span>
+            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Gen
+                AI</span><span class="ps-card-tag">Stylometry</span>
             </div>
             <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2505.14195">Authorship Privacy in Large Language
                 Models</a></h2>
@@ -802,10 +843,11 @@
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Gen AI, TDA, Deepfake">
+        <div class="ps-card" data-tags="Gen AI, TDA, Deepfake, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-fingerprint"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span
+                class="ps-card-tag">Stylometry</span>
             </div>
             <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2309.12934">Topology-Aware Authorship
                 Attribution</a></h2>
@@ -863,10 +905,11 @@
           <div class="ps-card-footer"><i class="fas fa-user-friends"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Security">
+        <div class="ps-card" data-tags="Security, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-mask"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span
+                class="ps-card-tag">Stylometry</span></div>
             <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Stylometric
                 Authorship Obfuscation</a></h2>
             <p class="ps-card-authors">Eric Xin, Thai Le</p>
@@ -925,10 +968,11 @@
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Security, Privacy">
+        <div class="ps-card" data-tags="Security, Privacy, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-lock"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Privacy</span>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span
+                class="ps-card-tag">Privacy</span><span class="ps-card-tag">Stylometry</span>
             </div>
             <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship
                 Leakage</a></h2>
@@ -1127,10 +1171,11 @@
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
 
-        <div class="ps-card" data-tags="Gen AI, Deepfake">
+        <div class="ps-card" data-tags="Gen AI, Deepfake, Stylometry">
           <div class="ps-card-header theme-green"><i class="fas fa-id-card"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span
+                class="ps-card-tag">Stylometry</span>
             </div>
             <h2 class="ps-card-title"><a href="https://aclanthology.org/2020.emnlp-main.673">Authorship Attribution for
                 Neural Text</a></h2>
