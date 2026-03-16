@@ -38,10 +38,10 @@
 }
 
 html {
-  zoom: 0.9;
-  -moz-transform: scale(0.9);
+  zoom: 1.15;
+  -moz-transform: scale(1.15);
   -moz-transform-origin: top center;
-  transform: scale(0.9);
+  transform: scale(1.15);
   transform-origin: top center;
 }
 
