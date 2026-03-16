@@ -1258,14 +1258,23 @@
   </div>
   </main>
 
+  <script src="abstracts.js"></script>
+
   <script>
     $(document).ready(function () {
       const pubCards = $(".ps-card");
       const searchInput = $("#pubSearch");
       const tagContainer = $("#tagFilters");
       const pubCountSpan = $("#pubCount");
-
       const mobileTagSelect = $("#mobileTagFilters");
+
+      // We now load abstracts from abstracts.js which defines window.PAPER_ABSTRACTS
+      const abstracts = window.PAPER_ABSTRACTS || {};
+
+      // Helper to normalize whitespace for matching
+      function normalizeText(text) {
+        return text.replace(/\s+/g, ' ').trim();
+      }
 
       // 1. Collect and create tag buttons/options
       const tags = new Set();
@@ -1290,10 +1299,16 @@
         let visible = 0;
 
         pubCards.each(function () {
+          const title = normalizeText($(this).find(".ps-card-title").text());
           const text = $(this).text().toLowerCase();
           const pDataTags = ($(this).data("tags") || "").split(",").map(t => t.trim());
 
-          const matchesSearch = query === "" || text.includes(query);
+          const paperAbstract = abstracts[title] || "";
+
+          const matchesSearch = query === "" ||
+            text.includes(query) ||
+            paperAbstract.toLowerCase().includes(query);
+
           const matchesTag = activeTag === "all" || pDataTags.includes(activeTag);
 
           if (matchesSearch && matchesTag) {
