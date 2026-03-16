@@ -23,4 +23,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: xai-crawler
+Allow: /
+
+User-agent: Grok
+Allow: /
+
 Sitemap: https://lethaiq.github.io/tql3/sitemap.xml
