@@ -537,8 +537,9 @@
             <input type="text" id="pubSearch" placeholder="Search by title, author, or keyword..."
               style="width: 100%; padding: 14px 15px 14px 45px; border: 1px solid var(--ps-border); border-radius: 50px; outline: none; font-size: 1rem; font-family: var(--font-sans); transition: border-color 0.2s;">
           </div>
-          <div style="text-align: right; color: var(--ps-muted); font-weight: 600; font-size: 0.9rem; display: none;">
-            Showing <span id="pubCount" style="color: var(--ps-accent); font-weight: 800;">0</span> results
+          <div class="ps-view-toggle">
+            <button id="gridView" class="view-btn active" title="Grid View"><i class="fas fa-th-large"></i></button>
+            <button id="listView" class="view-btn" title="List View"><i class="fas fa-list"></i></button>
           </div>
         </div>
 
@@ -1310,7 +1311,6 @@
       const pubCards = $(".ps-card");
       const searchInput = $("#pubSearch");
       const tagContainer = $("#tagFilters");
-      const pubCountSpan = $("#pubCount");
       const mobileTagSelect = $("#mobileTagFilters");
 
       // We now load abstracts from abstracts.js which defines window.PAPER_ABSTRACTS
@@ -1382,8 +1382,6 @@
             header.hide();
           }
         });
-
-        pubCountSpan.text(visible);
       }
 
       // 3. Listeners
@@ -1404,6 +1402,31 @@
         $(`.filter-btn[data-filter="${val}"]`).addClass("active");
         updateView();
       });
+
+      // 4. View Mode Toggle Logic
+      const cardGrid = $("#pubFeed");
+      const gridBtn = $("#gridView");
+      const listBtn = $("#listView");
+
+      function setViewMode(mode) {
+        if (mode === "list") {
+          cardGrid.addClass("ps-list-view");
+          listBtn.addClass("active");
+          gridBtn.removeClass("active");
+          localStorage.setItem("pub-view-mode", "list");
+        } else {
+          cardGrid.removeClass("ps-list-view");
+          gridBtn.addClass("active");
+          listBtn.removeClass("active");
+          localStorage.setItem("pub-view-mode", "grid");
+        }
+      }
+
+      gridBtn.on("click", () => setViewMode("grid"));
+      listBtn.on("click", () => setViewMode("list"));
+
+      const savedMode = localStorage.getItem("pub-view-mode");
+      if (savedMode) setViewMode(savedMode);
 
       // Initial Update
       updateView();

@@ -445,7 +445,6 @@ input:checked+.ps-slider:before {
     flex-direction: column;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%;
 }
 
 .ps-card:hover {
@@ -502,7 +501,7 @@ input:checked+.ps-slider:before {
 }
 
 .ps-card-tag {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 700;
     padding: 4px 10px;
     border-radius: 100px;
@@ -513,7 +512,7 @@ input:checked+.ps-slider:before {
 }
 
 .ps-card-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--ps-heading);
     line-height: 1.3;
@@ -677,5 +676,174 @@ input:checked+.ps-slider:before {
 
     .ps-pi-img {
         margin: 0 auto;
+    }
+}
+
+/* Filtering & View Toggle Styles */
+.filter-btn {
+    padding: 6px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--ps-border);
+    background: white;
+    color: var(--ps-text);
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn.active {
+    background: var(--ps-heading);
+    color: white;
+    border-color: var(--ps-heading);
+}
+
+.filter-btn:hover:not(.active) {
+    background: #f1f5f9;
+    border-color: var(--ps-muted);
+}
+
+.ps-search-group input {
+    width: 100%;
+    padding: 14px 20px 14px 45px;
+    border: 1px solid var(--ps-border);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    color: var(--ps-text);
+    background: #f8fafc;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+.ps-search-group input:focus {
+    background: white;
+    border-color: var(--ps-accent);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+    outline: none;
+}
+
+.ps-view-toggle {
+    display: flex;
+    gap: 8px;
+    background: #f1f5f9;
+    padding: 4px;
+    border-radius: 14px;
+    border: 1px solid var(--ps-border);
+}
+
+.view-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: var(--ps-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1rem;
+}
+
+.view-btn.active {
+    background: white;
+    color: var(--ps-accent);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.view-btn:hover:not(.active) {
+    color: var(--ps-heading);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* List View Layout Overrides */
+.ps-card-grid.ps-list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ps-list-view .ps-card {
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 20px;
+}
+
+.ps-list-view .ps-card:hover {
+    transform: translateX(4px);
+}
+
+.ps-list-view .ps-card-header {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    font-size: 1.10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ps-list-view .ps-card-content {
+    padding: 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "title"
+        "venue"
+        "authors";
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.ps-list-view .ps-card-tags, 
+.ps-list-view .ps-card-footer {
+    display: none;
+}
+
+.ps-list-view .ps-card-title {
+    grid-area: title;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.ps-list-view .ps-card-authors {
+    grid-area: authors;
+    font-size: 0.82rem;
+    margin-bottom: 0;
+    color: var(--ps-muted);
+    display: block;
+}
+
+.ps-list-view .ps-card-venue {
+    grid-area: venue;
+    font-size: 0.85rem;
+    margin-top: 2px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--ps-accent);
+}
+
+@media (max-width: 768px) {
+    .ps-list-view .ps-card {
+        padding: 15px;
+    }
+    .ps-list-view .ps-card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    .ps-list-view .ps-card-venue {
+        text-align: left;
     }
 }
