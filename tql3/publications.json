@@ -1,0 +1,746 @@
+[
+  {
+    "yearCategory": "Forthcoming / Pre-prints",
+    "title": "Interpretable Failure Analysis in Multi-Agent Reinforcement Learning Systems",
+    "authors": "Risal Shahriar Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani",
+    "venue": "25th International Conference on Autonomous Agents and Multiagent Systems. (AAMAS\u201926) 2026",
+    "tags": [
+      "Security",
+      "Explainable AI"
+    ],
+    "link": "https://arxiv.org/abs/2602.08104",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-clock\"></i> Pre-print"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Turing\u2019s Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification",
+    "authors": "Binh Nguyen, Thai Le",
+    "venue": "26th edition of the Interspeech Conference (Demo). (INTERSPEECH\u201925) 2025",
+    "tags": [
+      "Security",
+      "Gen AI",
+      "Audio LM",
+      "Deepfake"
+    ],
+    "link": "https://www.isca-archive.org/interspeech_2025/nguyen25e_interspeech.html",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "What You Read Isn\u2019t What You Hear: Linguistic Sensitivity in Deepfake Speech Detection",
+    "authors": "Binh Nguyen, Shuju Shi, Ryan Ofman, Thai Le",
+    "venue": "Conference on Empirical Methods in Natural Language Processing. (EMNLP\u201925) 2025",
+    "tags": [
+      "Security",
+      "Speech",
+      "Audio LM",
+      "Gen AI",
+      "Deepfake"
+    ],
+    "link": "./pdfs/arxiv25b.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification",
+    "authors": "Tuc Nguyen, Yifan Hu, Thai Le",
+    "venue": "Conference on Empirical Methods in Natural Language Processing. (EMNLP\u201925) 2025",
+    "tags": [
+      "Privacy",
+      "Gen AI",
+      "Stylometry"
+    ],
+    "link": "https://arxiv.org/abs/2505.14195",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Manipulating LLM Web Agents with Indirect Prompt Injection Attack via HTML Accessibility Tree",
+    "authors": "Sam Johnson, Viet Pham, Thai Le",
+    "venue": "Conference on Empirical Methods in Natural Language Processing (Demo). (EMNLP\u201925) 2025",
+    "tags": [
+      "Social Media",
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/abs/2507.14799",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Harry Potter is Still Here! Probing Knowledge Leakage in Targeted Unlearned Large Language Models",
+    "authors": "Bang Trinh Tran To, Thai Le",
+    "venue": "Findings of Empirical Methods in Natural Language Processing. (EMNLP\u201925) 2025",
+    "tags": [
+      "Security",
+      "Gen AI",
+      "Unlearning"
+    ],
+    "link": "./pdfs/arxiv25c.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Turing\u2019s Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification",
+    "authors": "Binh Nguyen, Thai Le",
+    "venue": "26th Conference of the International Speech Communication Association (Demo). (INTERSPEECH\u201925) 2025",
+    "tags": [
+      "Security",
+      "Gen AI",
+      "Audio LM",
+      "Deepfake"
+    ],
+    "link": "https://www.isca-archive.org/interspeech_2025/nguyen25e_interspeech.html",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online",
+    "authors": "Yiran Ye, Thai Le, Dongwon Lee",
+    "venue": "International AAAI Conference on Web and Social Media (Dataset). (ICWSM\u201925) 2025",
+    "tags": [
+      "Signal Processing"
+    ],
+    "link": "https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection",
+    "authors": "Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee",
+    "venue": "Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics. (NAACL\u201925) 2025",
+    "tags": [
+      "Privacy",
+      "Gen AI",
+      "Stylometry"
+    ],
+    "link": "https://arxiv.org/abs/2505.14195",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "xSRL: Safety-Aware Explainable RL Safety as a Product of Explainability",
+    "authors": "Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani",
+    "venue": "The 24th International Conference on Autonomous Agents and Multiagent Systems. (AAMAS\u201925) 2025",
+    "tags": [
+      "Security"
+    ],
+    "link": "http://arxiv.org/abs/2412.19311",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "NoMatterXAI: Generating \u201cNo Matter What\u201d Alterfactual Examples for Explaining Black-Box Text Classification Models",
+    "authors": "Tuc Nguyen, James Michels, Hua Shen, Thai Le",
+    "venue": "ThirtyNinth AAAI Conference on Artificial Intelligence. (AAAI\u201925) 2025",
+    "tags": [
+      "Security"
+    ],
+    "link": "http://arxiv.org/abs/2412.19311",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "Adapters Mixup: Mixing Parameter-Efficient Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text ClassifiersSec",
+    "authors": "Tuc Nguyen, Thai Le",
+    "venue": "The 2024 Conference on Empirical Methods in Natural Language Processing. (EMNLP\u201924) 2024",
+    "tags": [
+      "Security"
+    ],
+    "link": "http://arxiv.org/abs/2412.19311",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning",
+    "authors": "Tuc Nguyen, Thai Le",
+    "venue": "The 62nd Annual Meeting of the Association for Computational Linguistics. (ACL\u201924) 2024",
+    "tags": [
+      "Security"
+    ],
+    "link": "https://arxiv.org/abs/2402.10639",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "Le, Thai Le",
+    "authors": "Dang Cao Cuong, Dung D",
+    "venue": "A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models. Findings of the 62nd Annual Meeting of the Association for Computational Linguistics. (ACL\u201924) 2024",
+    "tags": [
+      "Security"
+    ],
+    "link": "./pdfs/arxiv25d.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts",
+    "authors": "Nafis Irtiza Tripto, Saranya Venkatraman, Dominik Macko, Robert Moro, Ivan Srba, Adaku Uchendu, Thai Le, Dongwon Lee",
+    "venue": "The 62nd Annual Meeting of the Association for Computational Linguistics. (ACL\u201924) 2024",
+    "tags": [
+      "Security",
+      "Gen AI",
+      "Deepfake"
+    ],
+    "link": "https://arxiv.org/pdf/2311.08374.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "Topology-Aware Authorship Attribution of Deepfake Texts with Diverse Writing Styles",
+    "authors": "Adaku Uchendu, Thai Le, Dongwon Lee",
+    "venue": "The 27th European Conference on Artificial Intelligence. (EACL\u201924) 2024",
+    "tags": [
+      "Gen AI",
+      "TDA",
+      "Deepfake",
+      "Stylometry"
+    ],
+    "link": "https://arxiv.org/abs/2309.12934",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks",
+    "authors": "Robert Cummings, Sijan Shrestha, Carrie Smith, Thai Le",
+    "venue": "The 25th International Conference on Artificial Intelligence in Education. July (AIED\u201924) 2024",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "./pdfs/AEID24.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms",
+    "authors": "Marie Ozanne, Maria Molina, Thai Le",
+    "venue": "The American Academy of Advertising conference. March (AAA\u201924) 2024",
+    "tags": [
+      "Social Media"
+    ],
+    "link": "#",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "ALISON: Fast and Effective Stylometric Authorship Obfuscation",
+    "authors": "Eric Xin, Saranya Venkatraman, Thai Le, Dongwon Lee",
+    "venue": "Thirty-Eighth AAAI Conference on Artificial Intelligence. February (AAAI\u201924) 2024",
+    "tags": [
+      "Security",
+      "Stylometry"
+    ],
+    "link": "https://pike.psu.edu/publications/aaai24.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2024",
+    "title": "The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit",
+    "authors": "Wooyong Jung, Nishant Asati, Lucy Phuong Doan, Thai Le, Aiping Xiong, Dongwon Lee",
+    "venue": "The International AAAI Conference on Web and Social Media. June (AAAI-ICWSM\u201924) 2024",
+    "tags": [
+      "Social Media"
+    ],
+    "link": "https://pike.psu.edu/publications/icwsm24-jh.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "\u201cAre Your Explanations Reliable?\u201d Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack",
+    "authors": "Christopher Burger, Lingwei Chen, Thai Le",
+    "venue": "The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Main Conference) (EMNLP\u201923) 2025",
+    "tags": [
+      "Security"
+    ],
+    "link": "https://arxiv.org/pdf/2305.12351.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark",
+    "authors": "Dominik Macko, Robert Moro, Adaku Uchendu, Jason S Lucas, Michiharu Yamashita, Mat Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova",
+    "venue": "The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Main Conference) (EMNLP\u201923) 2025",
+    "tags": [
+      "Gen AI",
+      "Deepfake"
+    ],
+    "link": "https://arxiv.org/pdf/2310.13606.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning",
+    "authors": "Ziyao Wang, Thai Le, Dongwon Lee",
+    "venue": "The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Findings) (EMNLP\u201923) 2025",
+    "tags": [
+      "Security",
+      "Privacy",
+      "Stylometry"
+    ],
+    "link": "https://arxiv.org/pdf/2211.09717.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "HANSEN: Human and AI Spoken Text Benchmark for Authorship Analysis",
+    "authors": "Nafis Irtiza Tripto, Adaku Uchendu, Thai Le, Mattia Setzu, Fosca Giannotti, Dongwon Lee",
+    "venue": "The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Findings) (EMNLP\u201923) 2025",
+    "tags": [
+      "Gen AI",
+      "Audio LM"
+    ],
+    "link": "https://arxiv.org/pdf/2310.16746.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts? 11th AAAI Conference on Human Computation and Crowdsourcing",
+    "authors": "Adaku Uchendu, Jooyoung Lee, Hua Shen, Thai Le, Ting-Hao Huang and Dongwon Lee",
+    "venue": "November (HCOMP\u201923) 2023",
+    "tags": [
+      "Gen AI",
+      "Audio LM"
+    ],
+    "link": "https://arxiv.org/pdf/2310.16746.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "A Policy-Graph Approach to Explain Reinforcement Learning Agents: A Novel Policy-Graph Approach with Natural Language and Counterfactual Abstractions for Explaining Reinforcement Learning Agents",
+    "authors": "Tongtong Liu, Joe McCalmon, Thai Le, Md Asifur Rahman, Dongwon Lee, Sarra Alqahtani",
+    "venue": "Autonomous Agents and Multi-Agent Systems Journal. Springer. August (AAMASJ\u201923) 2023",
+    "tags": [
+      "Explainable AI"
+    ],
+    "link": "https://link.springer.com/article/10.1007/s10458-023-09615-8",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Do Language Models Plagiarize?",
+    "authors": "Jooyoung Lee, Thai Le, Jinghui Chen, Dongwon Lee",
+    "venue": "The 2023 ACM Web Conference. April (WWW\u201923) 2023",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/pdf/2203.07618.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild",
+    "authors": "Thai Le, Yiran Ye, Yifan Hu, Dongwon Lee",
+    "venue": "The 39th IEEE International Conference on Data Engineering 2023. Demo: lethaiq.github.io/anthro (ICDE\u201923) 2025",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/abs/2512.17843",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "SHIELD: Defending Textual Neural Networks against Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher",
+    "authors": "Thai Le, Noseong Park, Dongwon Lee",
+    "venue": "60th Annual Meeting of the Association for Computational Linguistics 2022. (Long Paper, Main Conference). (ACL\u201922) 2025",
+    "tags": [
+      "Security"
+    ],
+    "link": "https://arxiv.org/pdf/2011.08908.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "60th Annual Meeting of the Association for Computational Linguistics 2022",
+    "authors": "Thai Le, Jooyoung Lee, Kevin Yen, Yifan Hu, Dongwon Lee Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense",
+    "venue": "(Long Paper, Findings). (ACL\u201922) 2025",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/abs/2512.17843",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning",
+    "authors": "Thai Le, Long-Thanh Tran, Dongwon Lee",
+    "venue": "The ACM Web Conference. June (WWW\u201922) 2022",
+    "tags": [
+      "Security",
+      "Social Media"
+    ],
+    "link": "https://arxiv.org/abs/2110.10655",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents",
+    "authors": "Joe McCalmon, Thai Le, Sarra Alqahtani and Dongwon Lee",
+    "venue": "The 21st International Conference on Autonomous Agents and Multiagent Systems. May (AAMAS\u201922) 2022",
+    "tags": [
+      "Explainable AI"
+    ],
+    "link": "https://par.nsf.gov/servlets/purl/10393053",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Triggers Adversarial Attacks",
+    "authors": "Thai Le, Noseong Park, Dongwon Lee",
+    "venue": "59th Annual Meeting of the Association for Computational Linguistics. 2021. (Full Paper, Main Conference). (ACL\u201921) 2025",
+    "tags": [
+      "Security"
+    ],
+    "link": "https://aclanthology.org/2021.acl-long.296.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "TURINGBENCH: A Benchmark Environment for Turing Test in the Age of Neural Text Generation",
+    "authors": "Adaku Uchendu, Zeyu Ma, Thai Le, Rui Zhang and Dongwon Lee",
+    "venue": "The 2021 Conference on Empirical Methods in Natural Language Processing. 2021. (Long Paper, Findings). (EMNLP\u201921) 2025",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/abs/2512.17843",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Large-Scale Data-Driven Airline Market Influence Maximization",
+    "authors": "Duanshun Li, Jing Liu, Jinsung Jeon, Seoyoung Hong, Thai Le, Noseong Park, Dongwon Lee",
+    "venue": "27th ACM SIGKDD Intl Conf. on Knowledge Discovery and Data Mining. August (KDD\u201921) 2021",
+    "tags": [
+      "Others"
+    ],
+    "link": "https://deepai.org/publication/large-scale-data-driven-airline-market-influence-maximization",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching",
+    "authors": "Tianyi Xie, Thai Le, Dongwon Lee",
+    "venue": "The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases. (ECML-PKDD21) 2021",
+    "tags": [
+      "Weak Supervision"
+    ],
+    "link": "https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Shyam Sundar, Md Main Uddin Rony, Naeemul Hassan, Thai Le, Dongwon, Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read",
+    "authors": "Maria Molina, S",
+    "venue": "2021 ACM Conference on Human Factors in Computing Systems. (CHI21) 2021",
+    "tags": [
+      "Weak Supervision"
+    ],
+    "link": "https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models",
+    "authors": "Thai Le, Suhang Wang, Dongwon Lee",
+    "venue": "2020. 20th IEEE International Conference on Data Mining (ICDM), Virtual, November 17-20, (ICDM\u201920) 2020",
+    "tags": [
+      "Security",
+      "Social Media",
+      "Gen AI"
+    ],
+    "link": "https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Models Prediction",
+    "authors": "Thai Le, Suhang Wang, Dongwon Lee",
+    "venue": "26th ACM SIGKDD Intl Conf. on Knowledge Discovery and Data Mining. August (KDD\u201920) 2020",
+    "tags": [
+      "Explainable AI"
+    ],
+    "link": "https://dl.acm.org/doi/abs/10.1145/3394486.3403066",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Authorship Attribution for Neural Text Generation",
+    "authors": "Adaku Uchendu, Thai Le, Kai Shu, Dongwon Lee",
+    "venue": "The 2020 Conference on Empirical Methods in Natural Language Processing. November (EMNLP\u201920) 2020",
+    "tags": [
+      "Gen AI",
+      "Deepfake",
+      "Stylometry"
+    ],
+    "link": "https://aclanthology.org/2020.emnlp-main.673",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Shyam",
+    "authors": "Maria Molina, Jinping Wang, Thai Le, DiRusso, Carlina, Sundar, S",
+    "venue": "Effects of Bandwagon Cues and Automated Journalism on Reading, Commenting and Sharing of Real vs. False Information Online. Conference of the Association for Education in Journalism and Mass Communication. 2019. (Best Presentation Award) (AEJMC\u201919) 2025",
+    "tags": [
+      "Misc"
+    ],
+    "link": "#",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines",
+    "authors": "Thai Le, Shu Kai, Maria Molina, Dongwon Lee, Shaym Sundar, Huan Liu",
+    "venue": "In IEEE/ACM Int\u2019l Conf. on Social Networks Analysis and Mining. (ASONAM\u201919) 2019",
+    "tags": [
+      "Social Media",
+      "Gen AI"
+    ],
+    "link": "https://dl.acm.org/doi/10.1145/3341161.3342875",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "PathFinder: Graphbased Itemset Embedding for Learning Course Recommendation and Beyond",
+    "authors": "Jason (Jiasheng) Zhang, Thai Le, Yiming Liao, Dongwon Lee",
+    "venue": "19th IEEE Int\u2019l Conf. on Data Mining. November (ICDM\u201919) 2019",
+    "tags": [
+      "Recommendations"
+    ],
+    "link": "https://ieeexplore.ieee.org/document/8955535",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "How Gullible Are You? Predicting Susceptibility to Fake News",
+    "authors": "Tracy Jia Shen, Robert Cowell, Aditi Gupta, Thai Le, Amulya Yadav, Dongwon Lee",
+    "venue": "In 11th Intl ACM Web Science Conf. (WebSci\u201919) 2019",
+    "tags": [
+      "Social Media"
+    ],
+    "link": "https://dl.acm.org/doi/10.1145/3292522.3326055",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "A Machine Learning Framework for Automating Well Log Depth Matching",
+    "authors": "Lin Liang, Thai Le, Timon Zimmermann, Smaine Zeroug, Denis Helio",
+    "venue": "Society of Petrophysicists and Well-Log Analysts. June 2019. (Best Presentation Award) (SPWA\u201919) 2025",
+    "tags": [
+      "Signal Processing"
+    ],
+    "link": "https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Deep headline generation for clickbait detection",
+    "authors": "Shu Kai, Suhang Wang, Thai Le., Dongwon Lee, & Huan Liu",
+    "venue": "In 2018 IEEE International Conference on Data Mining (ICDM). November (ICDM\u201918) 2018",
+    "tags": [
+      "Weak Supervision"
+    ],
+    "link": "https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf",
+    "theme": "theme-blue",
+    "icon": "fas fa-book",
+    "footerHtml": "<i class=\"fas fa-users-cog\"></i> Conference"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Natural Language Processing Methods for the Study of Protein-Ligand Interactions",
+    "authors": "JamesMichels, Ramya Bandarupalli, Amin Akbari Ahangar, Thai Le, Hong Xiao, Jing Li, Erik Hom",
+    "venue": "Journal of Chemical Information and Modeling. 2025",
+    "tags": [
+      "Survey"
+    ],
+    "link": "https://arxiv.org/abs/2409.13057",
+    "theme": "theme-green",
+    "icon": "fas fa-scroll",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Attribution and Obfuscation of Neural Text Authorship: A Data Mining Perspective",
+    "authors": "Adaku Uchendu, Thai Le, Dongwon Lee",
+    "venue": "SIGKDD Explorations, Vol. 25, June 2023",
+    "tags": [
+      "Gen AI",
+      "Deepfake",
+      "Stylometry"
+    ],
+    "link": "https://aclanthology.org/2020.emnlp-main.673",
+    "theme": "theme-green",
+    "icon": "fas fa-scroll",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Shyam Sundar, Thai Le, Carlina DiRusso",
+    "authors": "Maria Molina, Jinping Wang, S",
+    "venue": "Reading, Commenting and Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement. In Communication Research. 2021",
+    "tags": [
+      "Security"
+    ],
+    "link": "./pdfs/arxiv25d.pdf",
+    "theme": "theme-green",
+    "icon": "fas fa-scroll",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Fake News is Not Simply False Information: A Concept Explication and Taxonomy of Online Content",
+    "authors": "Maria Molina, Shyam Sundar, Thai Le, Dongwon Lee",
+    "venue": "In American Behavioral Scientist. 2019",
+    "tags": [
+      "Social Media"
+    ],
+    "link": "https://doi.org/10.1177/00936502211073398",
+    "theme": "theme-green",
+    "icon": "fas fa-scroll",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "A Machine Learning Framework for Automating Well Log Depth Matching",
+    "authors": "Thai Le, Lin Liang, Timon Zimmermann, Smaine Zeroug, Denis Heliot",
+    "venue": "Journal of Petrophysics. 2019",
+    "tags": [
+      "Signal Processing"
+    ],
+    "link": "https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941",
+    "theme": "theme-green",
+    "icon": "fas fa-scroll",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Catch Me If You GPT: Tutorial on Deepfake Texts",
+    "authors": "Adaku Uchendu, Saranya Venkatraman, Thai Le, Dongwon Lee",
+    "venue": "Annual Conf. of the North American Chapter of the Asso. for Comp. Linguistics. June 2024 (Tutorial) (NAACL\u201924) 2025",
+    "tags": [
+      "Gen AI",
+      "Deepfake"
+    ],
+    "link": "https://dl.acm.org/doi/pdf/10.1145/3543873.3587713",
+    "theme": "theme-purple",
+    "icon": "fas fa-chalkboard-teacher",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "2025",
+    "title": "Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts",
+    "authors": "Adaku Uchendu, Thai Le, Dongwon Lee",
+    "venue": "The ACM Web Conference. April 2023 (Tutorial) (WWW\u201923) 2025",
+    "tags": [
+      "Security",
+      "Speech",
+      "Audio LM",
+      "Deepfake",
+      "Explainable AI"
+    ],
+    "link": "https://arxiv.org/abs/2601.03615",
+    "theme": "theme-purple",
+    "icon": "fas fa-chalkboard-teacher",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  },
+  {
+    "yearCategory": "Earlier Publications",
+    "title": "Detecting False Claims in Low-Resource Regions: A Case Study of Caribbean Islands",
+    "authors": "Jason Lucas, Limeng Cui, Thai Le, Dongwon Lee",
+    "venue": "ACL Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situation. May (CONSTRAINT@ACL\u201922) 2022",
+    "tags": [
+      "Gen AI"
+    ],
+    "link": "https://arxiv.org/abs/2512.17843",
+    "theme": "theme-purple",
+    "icon": "fas fa-chalkboard-teacher",
+    "footerHtml": "<i class=\"fas fa-book-open\"></i> Journal"
+  }
+]
