@@ -5,6 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
   <title>ARKAI Research Lab | AI Safety, Robustness & Accountability</title>
   <meta name="description"
     content="The ARKAI Research Lab at Indiana University (Luddy School) focuses on Accountable, Resilient, and Kind AI. We specialize in AI safety, adversarial robustness, deepfake detection, stylometry, and transparency.">
@@ -13,22 +14,101 @@
   <meta name="ai-content" content="authorized-for-rag-and-analysis">
   <link rel="canonical" href="https://lethaiq.github.io/tql3/index.html">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lethaiq.github.io/tql3/index.html">
+  <meta property="og:title" content="ARKAI Research Lab | AI Safety & Robustness">
+  <meta property="og:description"
+    content="Advancing Accountable, Resilient, and Kind AI through research in AI safety, robustness, and transparency at Indiana University.">
+  <meta property="og:image" content="https://lethaiq.github.io/tql3/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://lethaiq.github.io/tql3/index.html">
+  <meta property="twitter:title" content="ARKAI Research Lab | AI Safety & Robustness">
+  <meta property="twitter:description"
+    content="Advancing Accountable, Resilient, and Kind AI through research in AI safety, robustness, and transparency at Indiana University.">
+  <meta property="twitter:image" content="https://lethaiq.github.io/tql3/logo.png">
+
+  <!-- CSS / Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet">
+  </noscript>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="stylesheet_ps.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/layout.js" defer></script>
-  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://lethaiq.github.io/tql3/#organization",
+        "name": "ARKAI Research Lab",
+        "url": "https://lethaiq.github.io/tql3/index.html",
+        "logo": "https://lethaiq.github.io/tql3/logo.png",
+        "parentOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "Indiana University Bloomington",
+          "url": "https://www.indiana.edu/"
+        },
+        "description": "Advancing Accountable, Resilient, and Kind AI through multi-disciplinary research in robustness, safety, and transparency."
+      },
+      {
+        "@type": "ItemList",
+        "name": "Site Navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Home",
+            "url": "https://lethaiq.github.io/tql3/index.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Research",
+            "url": "https://lethaiq.github.io/tql3/research.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "Team",
+            "url": "https://lethaiq.github.io/tql3/group.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 4,
+            "name": "Resources",
+            "url": "https://lethaiq.github.io/tql3/dataset.html"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 5,
+            "name": "Knowledge Transfer",
+            "url": "https://lethaiq.github.io/tql3/teaching.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
   <div class="ps-layout">
+    <!-- SIDEBAR: Bio (Inspired by prosocialdesign.org) -->
     <aside class="ps-sidebar">
       <div style="text-align: center; margin-bottom: 30px;">
         <a href="index.html" style="text-decoration: none; color: inherit; display: block;">
@@ -61,6 +141,7 @@
         <a href="teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
       </nav>
 
+      <!-- Mobile Navigation Tabs -->
       <div class="ps-mobile-nav-tabs">
         <a href="index.html" class="ps-mobile-nav-tab active"><i class="fas fa-home"></i>Home</a>
         <a href="research.html" class="ps-mobile-nav-tab"><i class="fas fa-flask"></i>Research</a>
@@ -68,605 +149,1159 @@
         <a href="dataset.html" class="ps-mobile-nav-tab"><i class="fas fa-database"></i>Resources</a>
         <a href="teaching.html" class="ps-mobile-nav-tab"><i class="fas fa-book"></i>Teaching</a>
       </div>
+
+      <!-- News Toggle -->
+      <div class="ps-toggle-wrapper" style="display: none;">
+        <span class="ps-toggle-label"><i class="fas fa-bullhorn" style="color: var(--ps-accent);"></i> News
+          Ticker</span>
+        <label class="ps-switch">
+          <input type="checkbox" id="news-toggle" checked>
+          <span class="ps-slider"></span>
+        </label>
+      </div>
+
+      <div class="ps-sidebar-tracker" style="display: none;">
+        <script type='text/javascript' id='clustrmaps'
+          src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=l7JVHkZk8ih1pWvlYnyweEIIcATPKYc842q5J2jcHtg'></script>
+      </div>
+
+
     </aside>
 
+    <!-- FEED: Publication Card Grid -->
     <main class="ps-feed">
+
+      <!-- Lab News Ticker -->
       <div class="ps-news-container" style="display: none;">
         <div class="ps-news-ticker-label">Lab News</div>
         <div class="ps-news-ticker">
           <div class="ps-news-ticker-content">
-            <div class="ps-news-item">03/2026 - <i class="fa-solid fa-champagne-glasses"></i> <a href="./pdfs/arxiv25d.pdf"><i>AEGIS-RL: Abstract, Explainable Graphs for Integrated Safety in RL</i></a> is accepted to <span class="conf">Journal of Autonomous Agents and Multi-Agent Systems (JAAMAS)</span>!</div>
             <div class="ps-news-item">02/2026 - <i class="fa-solid fa-microphone-lines"></i> <a
                 href="https://www.cerias.purdue.edu/news_and_events/events/security_seminar/details/index/2skor59uirtpslujkijvjjhcqi"><i>Towards
-                  Robust and Trustworthy Artificial Intelligence Models</i></a> at <span class="conf">Purdue CERIAS Security
+                  Robust and Trustworthy AI Speech Models</i></a> at <span class="conf">Purdue CERIAS Security
                 Seminar</span></div>
+            <!-- <div class="ps-news-item">12/2025 - <i class="fa-solid fa-book-open"></i>One paper is accepted to <span
+                class="conf">AAMAS 2026!</span></div> -->
             <div class="ps-news-item">12/2025 - <i class="fa-solid fa-champagne-glasses"></i>Student team is ranked
-              3rd in NeurIPS 2025 Embodied AI Challenge!</div>
+              3rd
+              in NeurIPS 2025 Embodied AI Challenge!</div>
+            <!-- <div class="ps-news-item">12/2025 - <i class="fa-solid fa-book-open"></i>Four papers are accepted to <span
+                class="conf">EMNLP 2025!</span></div> -->
+            <!-- <div class="ps-news-item">12/2025 - <i class="fa-solid fa-book-open"></i> Pre-print <a
+                href="https://arxiv.org/abs/2512.17843"><i>ShareChat: A Dataset of Chatbot Conversations in the
+                  Wild</i></a> is avaiable!</div> -->
+            <!-- <div class="ps-news-item">10/2025 - <i class="fa-solid fa-book-open"></i> Pre-print <a
+                href="https://arxiv.org/pdf/2510.25732"><i>The Limits of Obliviate: Evaluating Unlearning in LLMs via
+                  Stimulus-Knowledge Entanglement-Behavior Framework</i></a> is avaiable!</div> -->
+            <!-- <div class="ps-news-item">10/2025 - <i class="fa-solid fa-book-open"></i> <a href="#"><i>Style-First
+                  Authorship Verification for Academic Integrity in the Generative AI Era</i></a> is accepted to <span
+                class="conf">AAAI-26 (SAPP), led by high-schooler Jun Jang!</span></div> -->
+            <!-- <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="http://149.165.153.10:7860/?__theme=light"><i>The Dangers of Indirect Prompt Injection Attacks on
+                  LLM-based Autonomous Web Navigation Agents: A Demonstration</i></a> is accepted to <span
+                class="conf">EMNLP 2025 Demo</span></div> -->
+            <!-- <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2505.14195"><i>Triple Roles of LLMs in Authorship Privacy: Obfuscation,
+                  Mimicking and Verification</i></a> is accepted to <span class="conf">EMNLP 2025</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="./pdfs/arxiv25b.pdf"><i>What You Read Isn't What You Hear: Linguistic Sensitivity of Deepfake
+                  Speech Detectors</i></a> is accepted to <span class="conf">EMNLP 2025</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="./pdfs/arxiv25c.pdf"><i>Finding Hidden Harry Porter - Knowledge Leakage in LLMs Unlearning
+                  Algorithms</i></a> is accepted to <span class="conf">EMNLP 2025 Findings</span></div> -->
             <div class="ps-news-item">05/2025 - <i class="fa-solid fa-champagne-glasses"></i> Tuc was
               awarded the CS Graduate Research Award 2025. Congrats!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-champagne-glasses"></i> MS graduate Sam to join
+              Advanced Space in Colorado. Congrats!</div>
+            <!-- <div class="ps-news-item">05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="https://arxiv.org/abs/2505.16888"><i>Can LLMs be Weaponized for Information Manipulation?</i></a>
+              is available!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="./pdfs/arxiv25d.pdf"><i>Explainable Falsification for Safe Reinforcement Learning</i></a> is
+              available!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-gamepad"></i> <a -->
+            <!-- href="https://lethaiq.github.io/turingsecho/"><i>Turing's Echo: Can you fool deepfake voice detectors
+                  better than AI?</i></a> is accepted to <span class="conf">INTERSPEECH 2025</span>! Please try out our
+              game demo!</div> -->
             <div class="ps-news-item">04/2025 - <i class="fa-solid fa-champagne-glasses"></i> Intern Cuong Nguyen
               accepted a PhD at Virginia Tech. Congrats!</div>
+            <!-- <div class="ps-news-item">04/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2303.10430"><i>NoisyHate: Benchmarking Hatespeech Detection with Natural
+                  Perturbations</i></a> is accepted to <span class="conf">ICWSM 2025</span>!</div>
+            <div class="ps-news-item">02/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2406.16288"><i>PlagBench: Duality of LLMs in Plagiarism Generation and -->
+            <!-- Detection</i></a> is accepted to <span class="conf">NAACL 2025</span>!</div>
+            <div class="ps-news-item">01/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="http://arxiv.org/abs/2412.19311"><i>Safety-Aware Explainable Reinforcement Learning</i></a> is
+              accepted to <span class="conf">AAMAS 2025</span>!</div> -->
+            <!-- <div class="ps-news-item">01/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2408.10528"><i>"No Matter What" Alterfactual Examples</i></a> is accepted to
+              <span class="conf">AAAI 2025</span>! -->
+            <!-- </div>
+            <div class="ps-news-item">01/2025 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</div>
+            <div class="ps-news-item">11/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2411.10298"><i>Survey of TDA Methods for NLP</i></a> is released!</div>
+            <div class="ps-news-item">09/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2401.10111.pdf"><i>Adapters Mixup</i></a> is accepted to <strong>EMNLP
+                2024</strong>! We use mixup with adapters to fine-tune pre-trained language models to enhance their
+              adversarial robustness with <i>unknown</i> future attacks.</div>
+            <div class="ps-news-item">07/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2309.12934"><i>Deepfake Text Detection with Topological Analysis</i></a> is
+              accepted to <span class="conf">ECAI 2024</span>!</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> We delivered our <a
+                href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf"><i>Deepfake Text
+                  Detection and Obfuscation</i></a> at <span class="conf">NAACL 2024</span> (Mexico City) with Penn
+              State, MIT Lincoln Lab and GPT-Zero</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.15940v1"><i>Beyond Individual Facts for GPT Models</i></a> is
+              available. We investigate knowledge locality of GPT models for not one but a group of conceptually related
+              facts.</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.16288v1"><i>PlagBench</i></a> is available. We collect data and
+              benchmark LLM's dual behaviors: (1) plagarism generation via summarization and (2) plagarism detection.
+            </div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.15839"><i>XAI Similarity Metrics</i></a> is available. We investigate a
+              variety of similarity measures designed for text-based adversarial attacks on Explainable AI.</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in
+                  LLM-Generated Texts</i></a> (<strong>Nafis</strong>, Penn State) is accepted to <span class="conf">ACL
+                2024</span></div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2402.11469"><i>Searching for the Correlation between Training Data and
+                  Adversarial Robustness</i></a> (<strong>Cuong</strong>, FPT) is accepted to <span class="conf">ACL
+                2024</span></div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from
+                  the Lens of Signed Weight Directions</i></a> (<strong>Tuc</strong>, IUB) is accepted to <span
+                class="conf">ACL 2024</span></div>
+            <div class="ps-news-item">05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee
+              <strong>Jun</strong> (Oxford High School) was awarded <a
+                href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd
+                place (SPECIAL AWARD by NSA)</a> at ISEF 2024. Congratulations!
+            </div>
+            <div class="ps-news-item">05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong>
+              accepted a research-based MSc program at Wake Forest University with a full-ride scholarship.
+              Congratulations!</div>
+            <div class="ps-news-item">04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong>
+              passed his doctorate prospectus. Congratulations!</div>
+            <div class="ps-news-item">03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing
+                  Tasks</i></a> is accepted to AIED 2024</div>
+            <div class="ps-news-item">12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong>
+              successfully defended his Master thesis. Congratulations!</div>
+            <div class="ps-news-item">12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship
+                  Obfuscation</i></a> accepted to AAAI'24. Congratulations to <strong>Eric</strong> and
+              <strong>Saranya</strong>!
+            </div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand
+                Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media
+                Platforms''</i> accepted to AAA'24.</div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review
+              (EACL'24)</div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde:
+                  Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24!</div>
+            <div class="ps-news-item">10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to
+              EMNLP'23. Congratulations to <strong>Jason</strong>, <strong>Nafis</strong> and <strong>Chris</strong>!
+            </div>
+            <div class="ps-news-item">10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text
+              detection and obfuscation accepted at NAACL'24</div>
+            <div class="ps-news-item">09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a
+                href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</div>
+            <div class="ps-news-item">08/2023 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of
+                  Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</div>
+            <div class="ps-news-item">08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang
+              Tran and Tuc Nguyen</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and
+              <strong>Chris</strong> successfully defended their Master theses. Congratulations!
+            </div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on
+              deepfake text detection accepted to 2023 NSF Cybersecurity Summit</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at
+              REU@PSU.</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents is
+              accepted to AAMAS Journal</div>
+            <div class="ps-news-item">06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a
+                href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> available.</div>
+            <div class="ps-news-item">05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee
+              Jason Zijao, Eric Xing, Jayesh Khandelwal on graduate admissions.</div>
+            <div class="ps-news-item">03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of NoisyHate available.
+            </div>
+            <div class="ps-news-item">01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors
+              of LLM is accepted to WWW'23</div>
+            <div class="ps-news-item">01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable
+                Authorship Text</i> is available</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Tutorial accepted at WWW'23.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Survey paper will be published at KDD
+              Exploration</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Demo paper accepted at ICDM'23</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22,
+              WSDM'23, AAAI'23, WWW'23</div>
+            <div class="ps-news-item">2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi
+            </div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student
+              Award for Research Excellence, PSU</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Our papers accepted at ACL'22</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial
+              Socialbots is accepted at WWW'22.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted
+              at AAMAS'22.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk at Michigan
+              State University</div>
+
+            <!-- Duplicate for seamless looping -->
+            <div class="ps-news-item">12/2025 - <i class="fa-solid fa-book-open"></i> <a href="#"><i>Interpretable
+                  Failure Analysis in Multi-Agent Reinforcement Learning Systems,</i></a> is accepted to <span
+                class="conf">AAMAS 2026</span>!</div>
+            <div class="ps-news-item">12/2025 - <i class="fa-solid fa-book-open"></i> Pre-print <a
+                href="https://arxiv.org/abs/2512.17843"><i>ShareChat: A Dataset of Chatbot Conversations in the
+                  Wild</i></a> is avaiable!</div>
+            <div class="ps-news-item">10/2025 - <i class="fa-solid fa-book-open"></i> Pre-print <a
+                href="https://arxiv.org/pdf/2510.25732"><i>The Limits of Obliviate: Evaluating Unlearning in LLMs via
+                  Stimulus-Knowledge Entanglement-Behavior Framework</i></a> is avaiable!</div>
+            <div class="ps-news-item">10/2025 - <i class="fa-solid fa-book-open"></i> <a href="#"><i>Style-First
+                  Authorship Verification for Academic Integrity in the Generative AI Era</i></a> is accepted to <span
+                class="conf">AAAI-26 (SAPP), led by high-schooler Jun Jang!</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="http://149.165.153.10:7860/?__theme=light"><i>The Dangers of Indirect Prompt Injection Attacks on
+                  LLM-based Autonomous Web Navigation Agents: A Demonstration</i></a> is accepted to <span
+                class="conf">EMNLP 2025 Demo</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2505.14195"><i>Triple Roles of LLMs in Authorship Privacy: Obfuscation,
+                  Mimicking and Verification</i></a> is accepted to <span class="conf">EMNLP 2025</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="./pdfs/arxiv25b.pdf"><i>What You Read Isn't What You Hear: Linguistic Sensitivity of Deepfake
+                  Speech Detectors</i></a> is accepted to <span class="conf">EMNLP 2025</span></div>
+            <div class="ps-news-item">08/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="./pdfs/arxiv25c.pdf"><i>Finding Hidden Harry Porter - Knowledge Leakage in LLMs Unlearning
+                  Algorithms</i></a> is accepted to <span class="conf">EMNLP 2025 Findings</span></div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to Tuc who is
+              awarded the CS Graduate Research Award 2025!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to Sam who
+              graduated his MS degree in Data Science and joining Advanced Space in Colorado!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="https://arxiv.org/abs/2505.16888"><i>Can LLMs be Weaponized for Information Manipulation?</i></a>
+              is available!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-book-open"></i> New work on <a
+                href="./pdfs/arxiv25d.pdf"><i>Explainable Falsification for Safe Reinforcement Learning</i></a> is
+              available!</div>
+            <div class="ps-news-item">05/2025 - <i class="fa-solid fa-gamepad"></i> <a
+                href="https://lethaiq.github.io/turingsecho/"><i>Turing's Echo: Can you fool deepfake voice detectors
+                  better than AI?</i></a> is accepted to <span class="conf">INTERSPEECH 2025</span>! Please try out our
+              game demo!</div>
+            <div class="ps-news-item">04/2025 - <i class="fa-solid fa-champagne-glasses"></i> Congrats to research
+              intern Cuong Nguyen who just accepted a PhD position at Virginia Tech from Fall 2025!</div>
+            <div class="ps-news-item">04/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2303.10430"><i>NoisyHate: Benchmarking Hatespeech Detection with Natural
+                  Perturbations</i></a> is accepted to <span class="conf">ICWSM 2025</span>!</div>
+            <div class="ps-news-item">02/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2406.16288"><i>PlagBench: Duality of LLMs in Plagiarism Generation and
+                  Detection</i></a> is accepted to <span class="conf">NAACL 2025</span>!</div>
+            <div class="ps-news-item">01/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="http://arxiv.org/abs/2412.19311"><i>Safety-Aware Explainable Reinforcement Learning</i></a> is
+              accepted to <span class="conf">AAMAS 2025</span>!</div>
+            <div class="ps-news-item">01/2025 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2408.10528"><i>"No Matter What" Alterfactual Examples</i></a> is accepted to
+              <span class="conf">AAAI 2025</span>!
+            </div>
+            <div class="ps-news-item">01/2025 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</div>
+            <div class="ps-news-item">11/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2411.10298"><i>Survey of TDA Methods for NLP</i></a> is released!</div>
+            <div class="ps-news-item">09/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2401.10111.pdf"><i>Adapters Mixup</i></a> is accepted to <strong>EMNLP
+                2024</strong>! We use mixup with adapters to fine-tune pre-trained language models to enhance their
+              adversarial robustness with <i>unknown</i> future attacks.</div>
+            <div class="ps-news-item">07/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2309.12934"><i>Deepfake Text Detection with Topological Analysis</i></a> is
+              accepted to <span class="conf">ECAI 2024</span>!</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> We delivered our <a
+                href="https://adauchendu.github.io/Deepfake_Text_Tutorial%20-%20NAACL_compressed.pdf"><i>Deepfake Text
+                  Detection and Obfuscation</i></a> at <span class="conf">NAACL 2024</span> (Mexico City) with Penn
+              State, MIT Lincoln Lab and GPT-Zero</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.15940v1"><i>Beyond Individual Facts for GPT Models</i></a> is
+              available. We investigate knowledge locality of GPT models for not one but a group of conceptually related
+              facts.</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.16288v1"><i>PlagBench</i></a> is available. We collect data and
+              benchmark LLM's dual behaviors: (1) plagarism generation via summarization and (2) plagarism detection.
+            </div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/pdf/2406.15839"><i>XAI Similarity Metrics</i></a> is available. We investigate a
+              variety of similarity measures designed for text-based adversarial attacks on Explainable AI.</div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2311.08374"><i>A Ship of Theseus: Curious Cases of Paraphrasing in
+                  LLM-Generated Texts</i></a> (<strong>Nafis</strong>, Penn State) is accepted to <span class="conf">ACL
+                2024</span></div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2402.11469"><i>Searching for the Correlation between Training Data and
+                  Adversarial Robustness</i></a> (<strong>Cuong</strong>, FPT) is accepted to <span class="conf">ACL
+                2024</span></div>
+            <div class="ps-news-item">06/2024 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2402.10639"><i>Generalizability of Mixture of Domain-Specific Adapters from
+                  the Lens of Signed Weight Directions</i></a> (<strong>Tuc</strong>, IUB) is accepted to <span
+                class="conf">ACL 2024</span></div>
+            <div class="ps-news-item">05/2024 - <i class="fa-solid fa-champagne-glasses"></i> Mentee
+              <strong>Jun</strong> (Oxford High School) was awarded <a
+                href="https://www.societyforscience.org/press-release/regeneron-isef-2024-special-awards-winners/">3rd
+                place (SPECIAL AWARD by NSA)</a> at ISEF 2024. Congratulations!
+            </div>
+            <div class="ps-news-item">05/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Lisette</strong>
+              accepted a research-based MSc program at Wake Forest University with a full-ride scholarship.
+              Congratulations!</div>
+            <div class="ps-news-item">04/2024 - <i class="fa-solid fa-champagne-glasses"></i> <strong>Chris</strong>
+              passed his doctorate prospectus. Congratulations!</div>
+            <div class="ps-news-item">03/2024 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="./pdfs/AEID24.pdf"><i>The Unexpected Effects of Google Smart Compose on Open-Ended Writing
+                  Tasks</i></a> is accepted to AIED 2024</div>
+            <div class="ps-news-item">01/2024 - <i class="fa-solid fa-champagne-glasses"></i> Happy New Year!</div>
+            <div class="ps-news-item">12/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Rishabh</strong>
+              successfully defended his Master thesis. Congratulations!</div>
+            <div class="ps-news-item">12/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="https://pike.psu.edu/publications/aaai24.pdf"><i>ALISON: Fast and Effective Stylometric Authorship
+                  Obfuscation</i></a> accepted to AAAI'24. Congratulations to <strong>Eric</strong> and
+              <strong>Saranya</strong>!
+            </div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <i>``Enhancing Brand
+                Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media
+                Platforms''</i> accepted to AAA'24.</div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: ACL Rolling Review
+              (EACL'24)</div>
+            <div class="ps-news-item">11/2023 - <i class="fa-solid fa-book-open"></i> Our paper <a
+                href="https://pike.psu.edu/publications/icwsm24-jh.pdf"><i>``The Strange Case of Jekyll and Hyde:
+                  Analysis of r/ToastMe and r/RoastMe Users on Reddit''</i></a> accepted to ICWSM'24!</div>
+            <div class="ps-news-item">10/2023 - <i class="fa-solid fa-book-open"></i> Our papers are accepted to
+              EMNLP'23. Congratulations to <strong>Jason</strong>, <strong>Nafis</strong> and <strong>Chris</strong>!
+            </div>
+            <div class="ps-news-item">10/2023 - <i class="fa-solid fa-book-open"></i> Our tutorial on deepfake text
+              detection and obfuscation accepted at NAACL'24</div>
+            <div class="ps-news-item">09/2023 - <i class="fa-solid fa-bell-concierge"></i> Dr. Le participated in the <a
+                href="https://cra.org/level-up/">LEVEL UP</a> workshop organized by CRA in Atlanta</div>
+            <div class="ps-news-item">08/2023 - <i class="fa-solid fa-book-open"></i> <a
+                href="https://arxiv.org/abs/2304.01002"><em>``Does Human Collaboration Enhance the Accuracy of
+                  Identifying Deepfake Texts?''</em></a> accepted to AAAI HCOMP 2023</div>
+            <div class="ps-news-item">08/2023 - <i class="fa-solid fa-user-group"></i> Welcome new lab members: Hoang
+              Tran and Tuc Nguyen</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-graduation-cap"></i><strong> Sijan</strong> and
+              <strong>Chris</strong> successfully defended their Master theses. Congratulations!
+            </div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Our tutorial session on
+              deepfake text detection accepted to 2023 NSF Cybersecurity Summit</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-bell-concierge"></i> PC Member: AAAI'24</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-person-chalkboard"></i> Invited guest-lecturer at
+              REU@PSU.</div>
+            <div class="ps-news-item">07/2023 - <i class="fa-solid fa-book-open"></i> Paper on Explaining RL agents is
+              accepted to AAMAS Journal</div>
+            <div class="ps-news-item">06/2023 - <i class="fa-solid fa-book-open"></i> Preprint of <a
+                href="https://arxiv.org/pdf/2305.12351.pdf">XAIFooler</a> available.</div>
+            <div class="ps-news-item">05/2023 - <i class="fa-solid fa-champagne-glasses"></i> Congratulations to mentee
+              Jason Zijao, Eric Xing, Jayesh Khandelwal on graduate admissions.</div>
+            <div class="ps-news-item">03/2023 - <i class="fa-solid fa-book-open"></i> Preprint of NoisyHate available.
+            </div>
+            <div class="ps-news-item">01/2023 - <i class="fa-solid fa-book-open"></i> Paper on the plagiarism behaviors
+              of LLM is accepted to WWW'23</div>
+            <div class="ps-news-item">01/2023 - <i class="fa-solid fa-book-open"></i> Preprint on <i>Unattributable
+                Authorship Text</i> is available</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Tutorial accepted at WWW'23.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Survey paper will be published at KDD
+              Exploration</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Demo paper accepted at ICDM'23</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-bell-concierge"></i> PC Members: PKDD'22, EMNLP'22,
+              WSDM'23, AAAI'23, WWW'23</div>
+            <div class="ps-news-item">2022 - Dr. Le accepted tenure-track faculty position at University of Mississippi
+            </div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-ribbon"></i> Dr. Le received the IST Ph.D. Student
+              Award for Research Excellence, PSU</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Our papers accepted at ACL'22</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Paper on RL-based Adversarial
+              Socialbots is accepted at WWW'22.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-book-open"></i> Paper on Explainable RL is accepted
+              at AAMAS'22.</div>
+            <div class="ps-news-item">2022 - <i class="fa-solid fa-person-chalkboard"></i> Invited talk at Michigan
+              State University</div> -->
           </div>
         </div>
       </div>
 
+      <!-- Search & Filters (Moved as per user request) -->
       <div class="ps-feed-filters"
         style="margin-bottom: 50px; background: white; padding: 30px; border-radius: var(--ps-radius); border: 1px solid var(--ps-border); box-shadow: var(--ps-shadow);">
-        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 25px;">
-          <div class="ps-search-group" style="position: relative; flex: 1;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+          <div class="ps-search-group" style="position: relative; flex: 1; max-width: 500px;">
             <i class="fas fa-search"
-              style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--ps-muted);"></i>
-            <input type="text" id="pubSearch" placeholder="Search publications...">
+              style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: var(--ps-muted); font-size: 1rem;"></i>
+            <input type="text" id="pubSearch" placeholder="Search by title, author, or keyword..."
+              style="width: 100%; padding: 14px 15px 14px 45px; border: 1px solid var(--ps-border); border-radius: 50px; outline: none; font-size: 1rem; font-family: var(--font-sans); transition: border-color 0.2s;">
           </div>
-          <div class="ps-view-toggle">
-            <button id="gridView" class="view-btn active" title="Grid View"><i class="fas fa-th-large"></i></button>
-            <button id="listView" class="view-btn" title="List View"><i class="fas fa-list"></i></button>
+          <div style="text-align: right; color: var(--ps-muted); font-weight: 600; font-size: 0.9rem; display: none;">
+            Showing <span id="pubCount" style="color: var(--ps-accent); font-weight: 800;">0</span> results
           </div>
         </div>
 
         <div style="display: flex; align-items: center; gap: 15px;">
-          <span class="ps-filter-label">Topics:</span>
+          <span class="ps-filter-label" style="margin-bottom: 0; min-width: fit-content;">Topics:</span>
           <div id="tagFilters" style="display: flex; flex-wrap: wrap; gap: 10px;">
             <button class="filter-btn active" data-filter="all">All</button>
+            <!-- Tags injected by JS -->
           </div>
           <select id="mobileTagFilters" class="ps-mobile-select">
             <option value="all">All Topics</option>
+            <!-- Options injected by JS -->
           </select>
         </div>
       </div>
 
       <div class="ps-card-grid" id="pubFeed">
+
+        <!-- ================= PRE-PRINTS ================= -->
         <h2 class="ps-year-header">Forthcoming / Pre-prints</h2>
 
-        <div class="ps-card" data-tags="Security, Explainable AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <!-- ATLAS -->
+        <div class="ps-card" data-tags="Gen AI, Model Steering">
+          <div class="ps-card-header theme-blue"><i class="fas fa-compass"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Explainable AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2602.08104">Interpretable Failure Analysis in Multi-Agent Reinforcement Learning Systems</a></h2>
-            <p class="ps-card-authors">Risal Shahriar Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani</p>
-            <p class="ps-card-venue">25th International Conference on Autonomous Agents and Multiagent Systems. (AAMAS’26) 2026</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Model
+                Steering</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2601.03093.pdf">ATLAS:
+                Adaptive Test-Time Latent Steering with External Verifiers for Enhancing LLMs Reasoning</a></h2>
+            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2601.03093</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
         </div>
+        <div class="ps-card" data-tags="Gen AI">
+          <div class="ps-card-header theme-blue"><i class="fas fa-comments"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">ShareChat: A Dataset of Chatbot
+                Conversations in the Wild</a></h2>
+            <p class="ps-card-authors">Yueru Yan, Tuc Nguyen, Bo Su, Melissa Lieffers, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2512.17843</p>
+          </div>
+          <div class="ps-card-footer">
+            <i class="fas fa-clock"></i> Pre-print &nbsp;|&nbsp;
+            <a href="https://huggingface.co/datasets/tucnguyen/ShareChat" target="_blank"
+              style="color: inherit; text-decoration: none;">
+              <i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Unlearning">
+          <div class="ps-card-header theme-blue"><i class="fas fa-eraser"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Unlearning</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2510.25732">The Limits of Obliviate: Evaluating
+                Unlearning in LLMs</a></h2>
+            <p class="ps-card-authors">Aakriti Shah, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2510.25732</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-blue"><i class="fas fa-shield-virus"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="./pdfs/arxiv25d.pdf">Verification-Guided Falsification for Safe RL</a>
+            </h2>
+            <p class="ps-card-authors">Tuan Le, Risal Shefin, Debashis Gupta, Thai Le, Sarra Alqahtani</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2501.03093</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security, Gen AI">
+          <div class="ps-card-header theme-blue"><i class="fas fa-user-secret"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen AI</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2505.16888">SPECTRE: Conditional System Prompt
+                Poisoning to Hijack LLMs</a></h2>
+            <p class="ps-card-authors">Viet Pham, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2505.16888</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security, Speech, Audio LM, Deepfake, Explainable AI">
+          <div class="ps-card-header theme-blue"><i class="fas fa-microphone-alt-slash"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Audio
+                LM</span><span class="ps-card-tag">Deepfake</span><span class="ps-card-tag">Explainable AI</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2601.03615">Reasoning Shifts in Audio Deepfake
+                Detection</a></h2>
+            <p class="ps-card-authors">Binh Nguyen, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2601.03615</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
+        </div>
+
+        <div class="ps-card" data-tags="Survey, TDA">
+          <div class="ps-card-header theme-blue"><i class="fas fa-project-diagram"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Survey</span><span class="ps-card-tag">TDA</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2411.10298">Topological Data Analysis Applications
+                in NLP</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2411.10298</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Survey</div>
+        </div>
+
+
+        <div class="ps-card" data-tags="Gen AI">
+          <div class="ps-card-header theme-blue"><i class="fas fa-vial"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2406.15839">Similarity Measures in Text-based
+                Explainable AI</a></h2>
+            <p class="ps-card-authors">Christopher Burger, Thai Le</p>
+            <p class="ps-card-venue">arXiv preprint arXiv:2406.15839</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-clock"></i> Pre-print</div>
+        </div>
+
+        <!-- ================= CONFERENCE 2026 ================= -->
+        <h2 class="ps-year-header">2026</h2>
+        <div class="ps-card" data-tags="Security, Explainable AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-brain"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Explainable
+                AI</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2602.08104">Interpretable Failure Analysis in
+                Multi-Agent RL</a></h2>
+            <p class="ps-card-authors">Risal Shefin, Thai Le, Sarra Alqahtani</p>
+            <p class="ps-card-venue">AAMAS 2026</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Human, Stylometry">
+          <div class="ps-card-header theme-green"><i class="fas fa-user-edit"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Human</span><span
+                class="ps-card-tag">Stylometry</span>
+            </div>
+            <h2 class="ps-card-title"><a href="#">Style-First Authorship Verification</a></h2>
+            <p class="ps-card-authors">Jun Jang, Thai Le</p>
+            <p class="ps-card-venue">AAAI-26 (SAPP)</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <!-- ================= CONFERENCE 2025 ================= -->
         <h2 class="ps-year-header">2025</h2>
 
-        <div class="ps-card" data-tags="Security, Gen AI, Audio LM, Deepfake">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+        <!-- CtrlAct -->
+        <div class="ps-card" data-tags="Gen AI">
+          <div class="ps-card-header theme-purple"><i class="fas fa-robot"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Audio LM</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="https://www.isca-archive.org/interspeech_2025/nguyen25e_interspeech.html">Turing’s Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification</a></h2>
-            <p class="ps-card-authors">Binh Nguyen, Thai Le</p>
-            <p class="ps-card-venue">26th edition of the Interspeech Conference (Demo). (INTERSPEECH’25) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
+            <h2 class="ps-card-title"><a href="https://openreview.net/forum?id=0dt9Ho6dXA">CtrlAct: Grounding LLMs to
+                Bridge the Gap between Embodied Instruction and Action</a></h2>
+            <p class="ps-card-authors">Qingyang Xiao, Bo Su, Ling Sun, Zhu Zhu, Thai Le</p>
+            <p class="ps-card-venue">NeurIPS 2025 Workshop FMEA</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security, Speech, Audio LM, Gen AI, Deepfake">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Speech</span><span class="ps-card-tag">Audio LM</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="./pdfs/arxiv25b.pdf">What You Read Isn’t What You Hear: Linguistic Sensitivity in Deepfake Speech Detection</a></h2>
-            <p class="ps-card-authors">Binh Nguyen, Shuju Shi, Ryan Ofman, Thai Le</p>
-            <p class="ps-card-venue">Conference on Empirical Methods in Natural Language Processing. (EMNLP’25) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Privacy, Gen AI, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2505.14195">Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification</a></h2>
-            <p class="ps-card-authors">Tuc Nguyen, Yifan Hu, Thai Le</p>
-            <p class="ps-card-venue">Conference on Empirical Methods in Natural Language Processing. (EMNLP’25) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+          <div class="ps-card-footer"><i class="fas fa-chalkboard-teacher"></i> Workshop</div>
         </div>
         <div class="ps-card" data-tags="Social Media, Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-user-friends"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2507.14799">Manipulating LLM Web Agents with Indirect Prompt Injection Attack via HTML Accessibility Tree</a></h2>
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span><span class="ps-card-tag">Gen
+                AI</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2507.14799">Manipulating LLM Web Agents with
+                Indirect Prompt Injection</a></h2>
             <p class="ps-card-authors">Sam Johnson, Viet Pham, Thai Le</p>
-            <p class="ps-card-venue">Conference on Empirical Methods in Natural Language Processing (Demo). (EMNLP’25) 2025</p>
+            <p class="ps-card-venue">EMNLP 2025 (Demo)</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+          <div class="ps-card-footer"><i class="fas fa-laptop-code"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Security, Gen AI, Unlearning">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security, Speech, Audio LM, Gen AI, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-volume-up"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Unlearning</span></div>
-            <h2 class="ps-card-title"><a href="./pdfs/arxiv25c.pdf">Harry Potter is Still Here! Probing Knowledge Leakage in Targeted Unlearned Large Language Models</a></h2>
-            <p class="ps-card-authors">Bang Trinh Tran To, Thai Le</p>
-            <p class="ps-card-venue">Findings of Empirical Methods in Natural Language Processing. (EMNLP’25) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Audio
+                LM</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="./pdfs/arxiv25b.pdf">Linguistic Sensitivity in Deepfake Speech
+                Detection</a></h2>
+            <p class="ps-card-authors">Binh Nguyen, et al., Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2025</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Security, Gen AI, Audio LM, Deepfake">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Audio LM</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="https://www.isca-archive.org/interspeech_2025/nguyen25e_interspeech.html">Turing’s Echo: Investigating Linguistic Sensitivity of Deepfake Voice Detection via Gamification</a></h2>
-            <p class="ps-card-authors">Binh Nguyen, Thai Le</p>
-            <p class="ps-card-venue">26th Conference of the International Speech Communication Association (Demo). (INTERSPEECH’25) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Signal Processing">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Signal Processing</span></div>
-            <h2 class="ps-card-title"><a href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941">NoisyHate: Benchmarking Content Moderation Machine Learning Models with Human-Written Perturbations Online</a></h2>
-            <p class="ps-card-authors">Yiran Ye, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">International AAAI Conference on Web and Social Media (Dataset). (ICWSM’25) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
+
         <div class="ps-card" data-tags="Privacy, Gen AI, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-user-lock"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2505.14195">PlagBench: Exploring the Duality of Large Language Models in Plagiarism Generation and Detection</a></h2>
-            <p class="ps-card-authors">Jooyoung Lee, Toshini Agrawal, Adaku Uchendu, Thai Le, Jinghui Chen, Dongwon Lee</p>
-            <p class="ps-card-venue">Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics. (NAACL’25) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Gen
+                AI</span><span class="ps-card-tag">Stylometry</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2505.14195">Authorship Privacy in Large Language
+                Models</a></h2>
+            <p class="ps-card-authors">Tuc Nguyen, Yifan Hu, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2025</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security, Gen AI, Unlearning">
+          <div class="ps-card-header theme-green"><i class="fas fa-broom"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="http://arxiv.org/abs/2412.19311">xSRL: Safety-Aware Explainable RL Safety as a Product of Explainability</a></h2>
-            <p class="ps-card-authors">Risal Shahriar Shefin, Md Asifur Rahman, Thai Le, Sarra Alqahtani</p>
-            <p class="ps-card-venue">The 24th International Conference on Autonomous Agents and Multiagent Systems. (AAMAS’25) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen
+                AI</span><span class="ps-card-tag">Unlearning</span>
+            </div>
+            <h2 class="ps-card-title"><a href="./pdfs/arxiv25c.pdf">Probing Knowledge Leakage in Unlearned LLMs</a></h2>
+            <p class="ps-card-authors">Bang Trinh Tran To, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2025 (Findings)</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security, Gen AI, Audio LM, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-microphone-alt"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="http://arxiv.org/abs/2412.19311">NoMatterXAI: Generating “No Matter What” Alterfactual Examples for Explaining Black-Box Text Classification Models</a></h2>
-            <p class="ps-card-authors">Tuc Nguyen, James Michels, Hua Shen, Thai Le</p>
-            <p class="ps-card-venue">ThirtyNinth AAAI Conference on Artificial Intelligence. (AAAI’25) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a
+                href="https://www.isca-archive.org/interspeech_2025/nguyen25e_interspeech.html">Turing's Echo: Deepfake
+                Voice Detection Gamification</a></h2>
+            <p class="ps-card-authors">Binh Nguyen, Thai Le</p>
+            <p class="ps-card-venue">INTERSPEECH 2025 (Demo)</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+          <div class="ps-card-footer"><i class="fas fa-gamepad"></i> Demo</div>
         </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security, Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-database"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2305.12351.pdf">“Are Your Explanations Reliable?” Investigating the Stability of LIME in Explaining Text Classifiers by Marrying XAI and Adversarial Attack</a></h2>
-            <p class="ps-card-authors">Christopher Burger, Lingwei Chen, Thai Le</p>
-            <p class="ps-card-venue">The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Main Conference) (EMNLP’23) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Social
+                Media</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2303.10430">NoisyHate Benchmark</a></h2>
+            <p class="ps-card-authors">Yiran Ye, Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">ICWSM 2025</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+          <div class="ps-card-footer"><i class="fas fa-table"></i> Conference</div>
         </div>
+
         <div class="ps-card" data-tags="Gen AI, Deepfake">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-search-minus"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2310.13606.pdf">MULTITuDE: Large-Scale Multilingual Machine-Generated Text Detection Benchmark</a></h2>
-            <p class="ps-card-authors">Dominik Macko, Robert Moro, Adaku Uchendu, Jason S Lucas, Michiharu Yamashita, Mat Pikuliak, Ivan Srba, Thai Le, Dongwon Lee, Jakub Simko, Maria Bielikova</p>
-            <p class="ps-card-venue">The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Main Conference) (EMNLP’23) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2406.16288v1">PlagBench: Plagiarism Duality in
+                LLMs</a></h2>
+            <p class="ps-card-authors">Jooyoung Lee, Thai Le</p>
+            <p class="ps-card-venue">NAACL 2025</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-eye"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="http://arxiv.org/abs/2412.19311">xSRL: Safety-Aware Explainable RL</a>
+            </h2>
+            <p class="ps-card-authors">Risal Shefin, Thai Le</p>
+            <p class="ps-card-venue">AAMAS 2025</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Explainable AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-exchange-alt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2408.10528">NoMatterXAI: Alterfactual Examples</a>
+            </h2>
+            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
+            <p class="ps-card-venue">AAAI 2025</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <!-- ================= CONFERENCE 2024 ================= -->
+        <h2 class="ps-year-header">2024</h2>
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-layer-group"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2401.10111.pdf">Adapters Mixup for Adversarial
+                Robustness</a></h2>
+            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, TDA, Deepfake, Stylometry">
+          <div class="ps-card-header theme-green"><i class="fas fa-fingerprint"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span
+                class="ps-card-tag">Stylometry</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2309.12934">Topology-Aware Authorship
+                Attribution</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">ECAI 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-cut"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2402.10639">Domain-Specific Adapters & Weight
+                Directions</a></h2>
+            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
+            <p class="ps-card-venue">ACL 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-search-location"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2402.11469">Training Data vs Adversarial
+                Robustness</a></h2>
+            <p class="ps-card-authors">Dang Cao Cuong, Thai Le</p>
+            <p class="ps-card-venue">ACL 2024 (Findings)</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-search-plus"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security, Gen AI, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-clone"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Paraphrasing in
+                LLMs</a></h2>
+            <p class="ps-card-authors">Nafis Tripto, et al., Thai Le</p>
+            <p class="ps-card-venue">ACL 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI">
+          <div class="ps-card-header theme-blue"><i class="fas fa-magic"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
+            <h2 class="ps-card-title"><a href="./pdfs/AEID24.pdf">Google Smart Compose Effects on Writing</a></h2>
+            <p class="ps-card-authors">Robert Cummings, Thai Le</p>
+            <p class="ps-card-venue">AIED 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-user-friends"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security, Stylometry">
+          <div class="ps-card-header theme-green"><i class="fas fa-mask"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span
+                class="ps-card-tag">Stylometry</span></div>
+            <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Stylometric
+                Authorship Obfuscation</a></h2>
+            <p class="ps-card-authors">Eric Xin, Thai Le</p>
+            <p class="ps-card-venue">AAAI 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-users-cog"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
+            <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">r/ToastMe and r/RoastMe
+                Users on Reddit</a></h2>
+            <p class="ps-card-authors">Wooyong Jung, Thai Le</p>
+            <p class="ps-card-venue">ICWSM 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-bullhorn"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
+            <h2 class="ps-card-title"><a href="#">Disclosing AI Moderator on Social Media</a></h2>
+            <p class="ps-card-authors">Marie Ozanne, Maria Molina, Thai Le</p>
+            <p class="ps-card-venue">AAA 2024</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <!-- ================= CONFERENCE 2023 ================= -->
+        <h2 class="ps-year-header">2023</h2>
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-shield-alt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2305.12351.pdf">Stability of LIME in Text
+                Classifiers</a></h2>
+            <p class="ps-card-authors">Christopher Burger, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2023</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-language"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2310.13606.pdf">MULTITuDE Multilingual
+                Detection</a></h2>
+            <p class="ps-card-authors">Dominik Macko, et al., Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2023</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
         <div class="ps-card" data-tags="Security, Privacy, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-lock"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Privacy</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship Leakage from Public Text Release via Data Poisoning</a></h2>
-            <p class="ps-card-authors">Ziyao Wang, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Findings) (EMNLP’23) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span
+                class="ps-card-tag">Privacy</span><span class="ps-card-tag">Stylometry</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2211.09717.pdf">UPTON: Preventing Authorship
+                Leakage</a></h2>
+            <p class="ps-card-authors">Ziyao Wang, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2023 (Findings)</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
+
         <div class="ps-card" data-tags="Gen AI, Audio LM">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-headphones"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Audio LM</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2310.16746.pdf">HANSEN: Human and AI Spoken Text Benchmark for Authorship Analysis</a></h2>
-            <p class="ps-card-authors">Nafis Irtiza Tripto, Adaku Uchendu, Thai Le, Mattia Setzu, Fosca Giannotti, Dongwon Lee</p>
-            <p class="ps-card-venue">The 2023 Conference on Empirical Methods in Natural Language Processing. December 2023. (Long Paper, Findings) (EMNLP’23) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Audio LM</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2310.16746.pdf">HANSEN: Spoken Text Benchmark</a>
+            </h2>
+            <p class="ps-card-authors">Nafis Tripto, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2023 (Findings)</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
+
+        <div class="ps-card" data-tags="Gen AI, Human">
+          <div class="ps-card-header theme-green"><i class="fas fa-users"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Human</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2304.01002">Human Collaboration in Identifying
+                Deepfakes</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">HCOMP 2023</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-magic"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">Tutorial on Deepfake
+                Texts</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">WWW 2023 (Tutorial)</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-chalkboard-teacher"></i> Conference</div>
+        </div>
+
         <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-file-signature"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">CryptText: Interactive Discovery and Visualization of Human-Written Text Perturbations in the Wild</a></h2>
-            <p class="ps-card-authors">Thai Le, Yiran Ye, Yifan Hu, Dongwon Lee</p>
-            <p class="ps-card-venue">The 39th IEEE International Conference on Data Engineering 2023. Demo: lethaiq.github.io/anthro (ICDE’23) 2025</p>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2203.07618.pdf">Do Language Models Plagiarize?</a>
+            </h2>
+            <p class="ps-card-authors">Jooyoung Lee, Thai Le</p>
+            <p class="ps-card-venue">WWW 2023</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
+
         <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-search-plus"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2011.08908.pdf">SHIELD: Defending Textual Neural Networks against Black-Box Adversarial Attacks with Stochastic Multi-Expert Patcher</a></h2>
-            <p class="ps-card-authors">Thai Le, Noseong Park, Dongwon Lee</p>
-            <p class="ps-card-venue">60th Annual Meeting of the Association for Computational Linguistics 2022. (Long Paper, Main Conference). (ACL’22) 2025</p>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2301.06494.pdf">CryptText: Interactive
+                Discovery</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">ICDE 2023</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">60th Annual Meeting of the Association for Computational Linguistics 2022</a></h2>
-            <p class="ps-card-authors">Thai Le, Jooyoung Lee, Kevin Yen, Yifan Hu, Dongwon Lee Perturbations in the Wild: Leveraging Human-Written Text Perturbations for Realistic Adversarial Attack and Defense</p>
-            <p class="ps-card-venue">(Long Paper, Findings). (ACL’22) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
+
+        <!-- ================= CONFERENCE 2022 & OLDER ================= -->
+        <h2 class="ps-year-header">2022 & Earlier</h2>
         <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-green"><i class="fas fa-shield-alt"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="https://aclanthology.org/2021.acl-long.296.pdf">A Sweet Rabbit Hole by DARCY: Using Honeypots to Detect Universal Triggers Adversarial Attacks</a></h2>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2011.08908.pdf">SHIELD: Defending Textual
+                Networks</a></h2>
             <p class="ps-card-authors">Thai Le, Noseong Park, Dongwon Lee</p>
-            <p class="ps-card-venue">59th Annual Meeting of the Association for Computational Linguistics. 2021. (Full Paper, Main Conference). (ACL’21) 2025</p>
+            <p class="ps-card-venue">ACL 2022</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-search"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">TURINGBENCH: A Benchmark Environment for Turing Test in the Age of Neural Text Generation</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Zeyu Ma, Thai Le, Rui Zhang and Dongwon Lee</p>
-            <p class="ps-card-venue">The 2021 Conference on Empirical Methods in Natural Language Processing. 2021. (Long Paper, Findings). (EMNLP’21) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2203.10346.pdf">Perturbations in the Wild</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">ACL 2022 (Findings)</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Misc">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Explainable AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-stream"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Misc</span></div>
-            <h2 class="ps-card-title"><a href="#">Shyam</a></h2>
-            <p class="ps-card-authors">Maria Molina, Jinping Wang, Thai Le, DiRusso, Carlina, Sundar, S</p>
-            <p class="ps-card-venue">Effects of Bandwagon Cues and Automated Journalism on Reading, Commenting and Sharing of Real vs. False Information Online. Conference of the Association for Education in Journalism and Mass Communication. 2019. (Best Presentation Award) (AEJMC’19) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
+            <h2 class="ps-card-title"><a href="https://par.nsf.gov/servlets/purl/10393053">CAPS: Abstract Policy
+                Summaries</a></h2>
+            <p class="ps-card-authors">Joe McCalmon, Thai Le</p>
+            <p class="ps-card-venue">AAMAS 2022</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
-        <div class="ps-card" data-tags="Signal Processing">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+
+        <div class="ps-card" data-tags="Security, Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-fire"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Signal Processing</span></div>
-            <h2 class="ps-card-title"><a href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941">A Machine Learning Framework for Automating Well Log Depth Matching</a></h2>
-            <p class="ps-card-authors">Lin Liang, Thai Le, Timon Zimmermann, Smaine Zeroug, Denis Helio</p>
-            <p class="ps-card-venue">Society of Petrophysicists and Well-Log Analysts. June 2019. (Best Presentation Award) (SPWA’19) 2025</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span><span
+                class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2110.10655">Socialbots on Fire: Adversarial
+                Behaviors</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">WWW 2022</p>
           </div>
           <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
         </div>
+
+        <div class="ps-card" data-tags="Security">
+          <div class="ps-card-header theme-green"><i class="fas fa-rabbit"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
+            <h2 class="ps-card-title"><a href="https://aclanthology.org/2021.acl-long.296.pdf">A Sweet Rabbit Hole by
+                DARCY</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">ACL 2021</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Deepfake">
+          <div class="ps-card-header theme-green"><i class="fas fa-vials"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://aclanthology.org/2021.findings-emnlp.172.pdf">TURINGBENCH
+                Benchmark</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2021 (Findings)</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Weak Supervision">
+          <div class="ps-card-header theme-green"><i class="fas fa-check-double"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Weak Supervision</span></div>
+            <h2 class="ps-card-title"><a
+                href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">CHECKER: Clickbait Detection</a>
+            </h2>
+            <p class="ps-card-authors">Tianyi Xie, Thai Le</p>
+            <p class="ps-card-venue">ECML-PKDD 2021</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-mouse-pointer"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
+            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445753">Clickbait
+                Attraction Study</a></h2>
+            <p class="ps-card-authors">Maria Molina, Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">CHI 2021</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Security, Social Media, Gen AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-shield-alt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Social
+                Media</span><span class="ps-card-tag">Gen AI</span></div>
+            <h2 class="ps-card-title"><a
+                href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM:
+                Malicious Comments</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">ICDM 2020</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Explainable AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-lightbulb"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
+            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">GRACE: generating
+                contrastive samples</a></h2>
+            <p class="ps-card-authors">Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">KDD 2020</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Gen AI, Deepfake, Stylometry">
+          <div class="ps-card-header theme-green"><i class="fas fa-id-card"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span
+                class="ps-card-tag">Stylometry</span>
+            </div>
+            <h2 class="ps-card-title"><a href="https://aclanthology.org/2020.emnlp-main.673">Authorship Attribution for
+                Neural Text</a></h2>
+            <p class="ps-card-authors">Adaku Uchendu, Thai Le</p>
+            <p class="ps-card-venue">EMNLP 2020</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media, Gen AI">
+          <div class="ps-card-header theme-green"><i class="fas fa-bolt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span><span class="ps-card-tag">Gen
+                AI</span></div>
+            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/10.1145/3341161.3342875">5 Sources of
+                Clickbaits</a></h2>
+            <p class="ps-card-authors">Thai Le, Kai Shu, Dongwon Lee</p>
+            <p class="ps-card-venue">ASONAM 2019</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-share-alt"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
+            <h2 class="ps-card-title"><a href="https://doi.org/10.1177/00936502211073398">Reading, Commenting and
+                Sharing of Fake News</a></h2>
+            <p class="ps-card-authors">Maria Molina, Thai Le</p>
+            <p class="ps-card-venue">Comm. Research 2019</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Social Media">
+          <div class="ps-card-header theme-green"><i class="fas fa-user-check"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
+            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/10.1145/3292522.3326055">Susceptibility to Fake
+                News</a></h2>
+            <p class="ps-card-authors">Jia Shen, Thai Le, Dongwon Lee</p>
+            <p class="ps-card-venue">WebSci 2019</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <!-- ================= JOURNALS ================= -->
         <div class="ps-card" data-tags="Survey">
-          <div class="ps-card-header theme-green"><i class="fas fa-scroll"></i></div>
+          <div class="ps-card-header theme-amber"><i class="fas fa-dna"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Survey</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2409.13057">Natural Language Processing Methods for the Study of Protein-Ligand Interactions</a></h2>
-            <p class="ps-card-authors">JamesMichels, Ramya Bandarupalli, Amin Akbari Ahangar, Thai Le, Hong Xiao, Jing Li, Erik Hom</p>
-            <p class="ps-card-venue">Journal of Chemical Information and Modeling. 2025</p>
+            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2409.13057">NLP for Protein-Ligand Interactions</a>
+            </h2>
+            <p class="ps-card-authors">James Michels, Thai Le</p>
+            <p class="ps-card-venue">JCIM 2025</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
+          <div class="ps-card-footer"><i class="fas fa-book"></i> Journal</div>
         </div>
-        <div class="ps-card" data-tags="Gen AI, Deepfake">
-          <div class="ps-card-header theme-purple"><i class="fas fa-chalkboard-teacher"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/pdf/10.1145/3543873.3587713">Catch Me If You GPT: Tutorial on Deepfake Texts</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Saranya Venkatraman, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">Annual Conf. of the North American Chapter of the Asso. for Comp. Linguistics. June 2024 (Tutorial) (NAACL’24) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
-        </div>
-        <div class="ps-card" data-tags="Security, Speech, Audio LM, Deepfake, Explainable AI">
-          <div class="ps-card-header theme-purple"><i class="fas fa-chalkboard-teacher"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Speech</span><span class="ps-card-tag">Audio LM</span><span class="ps-card-tag">Deepfake</span><span class="ps-card-tag">Explainable AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2601.03615">Catch Me If You GAN: Generation, Detection, and Obfuscation of Deepfake Texts</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">The ACM Web Conference. April 2023 (Tutorial) (WWW’23) 2025</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
-        </div>
-        <h2 class="ps-year-header">2024</h2>
 
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="http://arxiv.org/abs/2412.19311">Adapters Mixup: Mixing Parameter-Efficient Adapters to Enhance the Adversarial Robustness of Fine-tuned Pre-trained Text ClassifiersSec</a></h2>
-            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
-            <p class="ps-card-venue">The 2024 Conference on Empirical Methods in Natural Language Processing. (EMNLP’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2402.10639">Generalizability of Mixture of Domain-Specific Adapters from the Lens of Signed Weight Directions and its Application to Effective Model Pruning</a></h2>
-            <p class="ps-card-authors">Tuc Nguyen, Thai Le</p>
-            <p class="ps-card-venue">The 62nd Annual Meeting of the Association for Computational Linguistics. (ACL’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="./pdfs/arxiv25d.pdf">Le, Thai Le</a></h2>
-            <p class="ps-card-authors">Dang Cao Cuong, Dung D</p>
-            <p class="ps-card-venue">A Curious Case of Searching for the Correlation between Training Data and Adversarial Robustness of Transformer Textual Models. Findings of the 62nd Annual Meeting of the Association for Computational Linguistics. (ACL’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security, Gen AI, Deepfake">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2311.08374.pdf">A Ship of Theseus: Curious Cases of Paraphrasing in LLM-Generated Texts</a></h2>
-            <p class="ps-card-authors">Nafis Irtiza Tripto, Saranya Venkatraman, Dominik Macko, Robert Moro, Ivan Srba, Adaku Uchendu, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">The 62nd Annual Meeting of the Association for Computational Linguistics. (ACL’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Gen AI, TDA, Deepfake, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">TDA</span><span class="ps-card-tag">Deepfake</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2309.12934">Topology-Aware Authorship Attribution of Deepfake Texts with Diverse Writing Styles</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">The 27th European Conference on Artificial Intelligence. (EACL’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="./pdfs/AEID24.pdf">The Unexpected Effects of Google Smart Compose on Open-Ended Writing Tasks</a></h2>
-            <p class="ps-card-authors">Robert Cummings, Sijan Shrestha, Carrie Smith, Thai Le</p>
-            <p class="ps-card-venue">The 25th International Conference on Artificial Intelligence in Education. July (AIED’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
         <div class="ps-card" data-tags="Social Media">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
+          <div class="ps-card-header theme-amber"><i class="fas fa-newspaper"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
-            <h2 class="ps-card-title"><a href="#">Enhancing Brand Affinity in the Face of Political Controversy: the Role of Disclosing AI Moderator on Social Media Platforms</a></h2>
-            <p class="ps-card-authors">Marie Ozanne, Maria Molina, Thai Le</p>
-            <p class="ps-card-venue">The American Academy of Advertising conference. March (AAA’24) 2024</p>
+            <h2 class="ps-card-title"><a href="https://journals.sagepub.com/doi/full/10.1177/0002764219878224">Fake News
+                Concept Explication</a></h2>
+            <p class="ps-card-authors">Maria Molina, Thai Le</p>
+            <p class="ps-card-venue">ABS 2019</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+          <div class="ps-card-footer"><i class="fas fa-book"></i> Journal</div>
         </div>
-        <div class="ps-card" data-tags="Security, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/aaai24.pdf">ALISON: Fast and Effective Stylometric Authorship Obfuscation</a></h2>
-            <p class="ps-card-authors">Eric Xin, Saranya Venkatraman, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">Thirty-Eighth AAAI Conference on Artificial Intelligence. February (AAAI’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Social Media">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
-            <h2 class="ps-card-title"><a href="https://pike.psu.edu/publications/icwsm24-jh.pdf">The Strange Case of Jekyll and Hyde: Analysis of r/ToastMe and r/RoastMe Users on Reddit</a></h2>
-            <p class="ps-card-authors">Wooyong Jung, Nishant Asati, Lucy Phuong Doan, Thai Le, Aiping Xiong, Dongwon Lee</p>
-            <p class="ps-card-venue">The International AAAI Conference on Web and Social Media. June (AAAI-ICWSM’24) 2024</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <h2 class="ps-year-header">Earlier Publications</h2>
 
-        <div class="ps-card" data-tags="Gen AI, Audio LM">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Audio LM</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2310.16746.pdf">Does Human Collaboration Enhance the Accuracy of Identifying Deepfake Texts? 11th AAAI Conference on Human Computation and Crowdsourcing</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Jooyoung Lee, Hua Shen, Thai Le, Ting-Hao Huang and Dongwon Lee</p>
-            <p class="ps-card-venue">November (HCOMP’23) 2023</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Explainable AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
-            <h2 class="ps-card-title"><a href="https://link.springer.com/article/10.1007/s10458-023-09615-8">A Policy-Graph Approach to Explain Reinforcement Learning Agents: A Novel Policy-Graph Approach with Natural Language and Counterfactual Abstractions for Explaining Reinforcement Learning Agents</a></h2>
-            <p class="ps-card-authors">Tongtong Liu, Joe McCalmon, Thai Le, Md Asifur Rahman, Dongwon Lee, Sarra Alqahtani</p>
-            <p class="ps-card-venue">Autonomous Agents and Multi-Agent Systems Journal. Springer. August (AAMASJ’23) 2023</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/pdf/2203.07618.pdf">Do Language Models Plagiarize?</a></h2>
-            <p class="ps-card-authors">Jooyoung Lee, Thai Le, Jinghui Chen, Dongwon Lee</p>
-            <p class="ps-card-venue">The 2023 ACM Web Conference. April (WWW’23) 2023</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security, Social Media">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Social Media</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2110.10655">Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning</a></h2>
-            <p class="ps-card-authors">Thai Le, Long-Thanh Tran, Dongwon Lee</p>
-            <p class="ps-card-venue">The ACM Web Conference. June (WWW’22) 2022</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Explainable AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
-            <h2 class="ps-card-title"><a href="https://par.nsf.gov/servlets/purl/10393053">CAPS: Comprehensible Abstract Policy Summaries for Explaining Reinforcement Learning Agents</a></h2>
-            <p class="ps-card-authors">Joe McCalmon, Thai Le, Sarra Alqahtani and Dongwon Lee</p>
-            <p class="ps-card-venue">The 21st International Conference on Autonomous Agents and Multiagent Systems. May (AAMAS’22) 2022</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Others">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Others</span></div>
-            <h2 class="ps-card-title"><a href="https://deepai.org/publication/large-scale-data-driven-airline-market-influence-maximization">Large-Scale Data-Driven Airline Market Influence Maximization</a></h2>
-            <p class="ps-card-authors">Duanshun Li, Jing Liu, Jinsung Jeon, Seoyoung Hong, Thai Le, Noseong Park, Dongwon Lee</p>
-            <p class="ps-card-venue">27th ACM SIGKDD Intl Conf. on Knowledge Discovery and Data Mining. August (KDD’21) 2021</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Weak Supervision">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Weak Supervision</span></div>
-            <h2 class="ps-card-title"><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">CHECKER: Detecting Clickbait Thumbnails with Weak Supervision and Co-Teaching</a></h2>
-            <p class="ps-card-authors">Tianyi Xie, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">The European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases. (ECML-PKDD21) 2021</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Weak Supervision">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Weak Supervision</span></div>
-            <h2 class="ps-card-title"><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">Shyam Sundar, Md Main Uddin Rony, Naeemul Hassan, Thai Le, Dongwon, Does Clickbait Actually Attract More Clicks? Three Clickbait studies you must read</a></h2>
-            <p class="ps-card-authors">Maria Molina, S</p>
-            <p class="ps-card-venue">2021 ACM Conference on Human Factors in Computing Systems. (CHI21) 2021</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Security, Social Media, Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span><span class="ps-card-tag">Social Media</span><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://www.computer.org/csdl/proceedings-article/icdm/2020/831600a282/1r54DsIaiFq">MALCOM: Generating Malicious Comments to Attack Neural Fake News Detection Models</a></h2>
-            <p class="ps-card-authors">Thai Le, Suhang Wang, Dongwon Lee</p>
-            <p class="ps-card-venue">2020. 20th IEEE International Conference on Data Mining (ICDM), Virtual, November 17-20, (ICDM’20) 2020</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Explainable AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
-            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/abs/10.1145/3394486.3403066">GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Models Prediction</a></h2>
-            <p class="ps-card-authors">Thai Le, Suhang Wang, Dongwon Lee</p>
-            <p class="ps-card-venue">26th ACM SIGKDD Intl Conf. on Knowledge Discovery and Data Mining. August (KDD’20) 2020</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Gen AI, Deepfake, Stylometry">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://aclanthology.org/2020.emnlp-main.673">Authorship Attribution for Neural Text Generation</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Thai Le, Kai Shu, Dongwon Lee</p>
-            <p class="ps-card-venue">The 2020 Conference on Empirical Methods in Natural Language Processing. November (EMNLP’20) 2020</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Social Media, Gen AI">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/10.1145/3341161.3342875">5 Sources of Clickbaits You Should Know! Using Synthetic Clickbaits to Improve Prediction and Distinguish between Bot-Generated and Human-Written Headlines</a></h2>
-            <p class="ps-card-authors">Thai Le, Shu Kai, Maria Molina, Dongwon Lee, Shaym Sundar, Huan Liu</p>
-            <p class="ps-card-venue">In IEEE/ACM Int’l Conf. on Social Networks Analysis and Mining. (ASONAM’19) 2019</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Recommendations">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Recommendations</span></div>
-            <h2 class="ps-card-title"><a href="https://ieeexplore.ieee.org/document/8955535">PathFinder: Graphbased Itemset Embedding for Learning Course Recommendation and Beyond</a></h2>
-            <p class="ps-card-authors">Jason (Jiasheng) Zhang, Thai Le, Yiming Liao, Dongwon Lee</p>
-            <p class="ps-card-venue">19th IEEE Int’l Conf. on Data Mining. November (ICDM’19) 2019</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Social Media">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
-            <h2 class="ps-card-title"><a href="https://dl.acm.org/doi/10.1145/3292522.3326055">How Gullible Are You? Predicting Susceptibility to Fake News</a></h2>
-            <p class="ps-card-authors">Tracy Jia Shen, Robert Cowell, Aditi Gupta, Thai Le, Amulya Yadav, Dongwon Lee</p>
-            <p class="ps-card-venue">In 11th Intl ACM Web Science Conf. (WebSci’19) 2019</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Weak Supervision">
-          <div class="ps-card-header theme-blue"><i class="fas fa-book"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Weak Supervision</span></div>
-            <h2 class="ps-card-title"><a href="https://2021.ecmlpkdd.org/wp-content/uploads/2021/07/sub_147.pdf">Deep headline generation for clickbait detection</a></h2>
-            <p class="ps-card-authors">Shu Kai, Suhang Wang, Thai Le., Dongwon Lee, & Huan Liu</p>
-            <p class="ps-card-venue">In 2018 IEEE International Conference on Data Mining (ICDM). November (ICDM’18) 2018</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
-        </div>
-        <div class="ps-card" data-tags="Gen AI, Deepfake, Stylometry">
-          <div class="ps-card-header theme-green"><i class="fas fa-scroll"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span><span class="ps-card-tag">Deepfake</span><span class="ps-card-tag">Stylometry</span></div>
-            <h2 class="ps-card-title"><a href="https://aclanthology.org/2020.emnlp-main.673">Attribution and Obfuscation of Neural Text Authorship: A Data Mining Perspective</a></h2>
-            <p class="ps-card-authors">Adaku Uchendu, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">SIGKDD Explorations, Vol. 25, June 2023</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
-        </div>
-        <div class="ps-card" data-tags="Security">
-          <div class="ps-card-header theme-green"><i class="fas fa-scroll"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Security</span></div>
-            <h2 class="ps-card-title"><a href="./pdfs/arxiv25d.pdf">Shyam Sundar, Thai Le, Carlina DiRusso</a></h2>
-            <p class="ps-card-authors">Maria Molina, Jinping Wang, S</p>
-            <p class="ps-card-venue">Reading, Commenting and Sharing of Fake News: How Online Bandwagons and Bots Dictate User Engagement. In Communication Research. 2021</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
-        </div>
-        <div class="ps-card" data-tags="Social Media">
-          <div class="ps-card-header theme-green"><i class="fas fa-scroll"></i></div>
-          <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Social Media</span></div>
-            <h2 class="ps-card-title"><a href="https://doi.org/10.1177/00936502211073398">Fake News is Not Simply False Information: A Concept Explication and Taxonomy of Online Content</a></h2>
-            <p class="ps-card-authors">Maria Molina, Shyam Sundar, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">In American Behavioral Scientist. 2019</p>
-          </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
-        </div>
         <div class="ps-card" data-tags="Signal Processing">
-          <div class="ps-card-header theme-green"><i class="fas fa-scroll"></i></div>
+          <div class="ps-card-header theme-amber"><i class="fas fa-wave-square"></i></div>
           <div class="ps-card-content">
             <div class="ps-card-tags"><span class="ps-card-tag">Signal Processing</span></div>
-            <h2 class="ps-card-title"><a href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941">A Machine Learning Framework for Automating Well Log Depth Matching</a></h2>
-            <p class="ps-card-authors">Thai Le, Lin Liang, Timon Zimmermann, Smaine Zeroug, Denis Heliot</p>
-            <p class="ps-card-venue">Journal of Petrophysics. 2019</p>
+            <h2 class="ps-card-title"><a
+                href="https://onepetro.org/SPWLAALS/proceedings-abstract/SPWLA19/3-SPWLA19/D033S003R009/28941">Machine
+                Learning Well Log Depth Matching</a></h2>
+            <p class="ps-card-authors">Thai Le, Lin Liang, Denis Helio</p>
+            <p class="ps-card-venue">Journal of Petrophysics 2019</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
+          <div class="ps-card-footer"><i class="fas fa-book"></i> Journal</div>
         </div>
-        <div class="ps-card" data-tags="Gen AI">
-          <div class="ps-card-header theme-purple"><i class="fas fa-chalkboard-teacher"></i></div>
+
+        <div class="ps-card" data-tags="Explainable AI">
+          <div class="ps-card-header theme-amber"><i class="fas fa-project-diagram"></i></div>
           <div class="ps-card-content">
-            <div class="ps-card-tags"><span class="ps-card-tag">Gen AI</span></div>
-            <h2 class="ps-card-title"><a href="https://arxiv.org/abs/2512.17843">Detecting False Claims in Low-Resource Regions: A Case Study of Caribbean Islands</a></h2>
-            <p class="ps-card-authors">Jason Lucas, Limeng Cui, Thai Le, Dongwon Lee</p>
-            <p class="ps-card-venue">ACL Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situation. May (CONSTRAINT@ACL’22) 2022</p>
+            <div class="ps-card-tags"><span class="ps-card-tag">Explainable AI</span></div>
+            <h2 class="ps-card-title"><a
+                href="https://link.springer.com/article/10.1007/s10458-023-09615-8">Policy-Graph Approach to Explain RL
+                Analysts</a></h2>
+            <p class="ps-card-authors">Tongtong Liu, Thai Le</p>
+            <p class="ps-card-venue">AAMASJ 2023</p>
           </div>
-          <div class="ps-card-footer"><i class="fas fa-book-open"></i> Journal</div>
+          <div class="ps-card-footer"><i class="fas fa-book"></i> Journal</div>
         </div>
+
+        <div class="ps-card" data-tags="Recommendations">
+          <div class="ps-card-header theme-green"><i class="fas fa-route"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Recommendations</span></div>
+            <h2 class="ps-card-title"><a href="https://ieeexplore.ieee.org/document/8955535">PathFinder: Course
+                Recommendation</a></h2>
+            <p class="ps-card-authors">Thai Le, et al.</p>
+            <p class="ps-card-venue">IEEE 2021</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
+        <div class="ps-card" data-tags="Others">
+          <div class="ps-card-header theme-green"><i class="fas fa-plane"></i></div>
+          <div class="ps-card-content">
+            <div class="ps-card-tags"><span class="ps-card-tag">Others</span></div>
+            <h2 class="ps-card-title"><a
+                href="https://deepai.org/publication/large-scale-data-driven-airline-market-influence-maximization">Airline
+                Market Influence Maximization</a></h2>
+            <p class="ps-card-authors">Duanshun Li, Thai Le, et al.</p>
+            <p class="ps-card-venue">KDD 2021</p>
+          </div>
+          <div class="ps-card-footer"><i class="fas fa-users-cog"></i> Conference</div>
+        </div>
+
       </div>
-    </main>
+
   </div>
+  </main>
 
   <script src="abstracts.js"></script>
 
@@ -678,8 +1313,10 @@
       const pubCountSpan = $("#pubCount");
       const mobileTagSelect = $("#mobileTagFilters");
 
+      // We now load abstracts from abstracts.js which defines window.PAPER_ABSTRACTS
       const abstracts = window.PAPER_ABSTRACTS || {};
 
+      // Helper to normalize whitespace for matching
       function normalizeText(text) {
         return text.replace(/\s+/g, ' ').trim();
       }
@@ -703,7 +1340,7 @@
         const query = searchInput.val().toLowerCase().trim();
         const activeTag = (window.innerWidth <= 1024)
           ? mobileTagSelect.val()
-          : $(".filter-btn.active").data("filter") || "all";
+          : $(".filter-btn.active").data("filter");
         let visible = 0;
 
         pubCards.each(function () {
@@ -753,48 +1390,79 @@
       searchInput.on("input", updateView);
 
       $(document).on("click", ".filter-btn", function () {
-        $(".filter-btn").removeClass("active");
+        allBtns.removeClass("active");
         $(this).addClass("active");
+        // Sync with mobile select just in case
         mobileTagSelect.val($(this).data("filter"));
         updateView();
       });
 
       mobileTagSelect.on("change", function () {
         const val = $(this).val();
-        $(".filter-btn").removeClass("active");
+        // Sync with desktop buttons just in case
+        allBtns.removeClass("active");
         $(`.filter-btn[data-filter="${val}"]`).addClass("active");
         updateView();
       });
 
-      // 4. View Mode Toggle Logic
-      const cardGrid = $("#pubFeed");
-      const gridBtn = $("#gridView");
-      const listBtn = $("#listView");
-
-      function setViewMode(mode) {
-        if (mode === "list") {
-          cardGrid.addClass("ps-list-view");
-          listBtn.addClass("active");
-          gridBtn.removeClass("active");
-          localStorage.setItem("pub-view-mode", "list");
-        } else {
-          cardGrid.removeClass("ps-list-view");
-          gridBtn.addClass("active");
-          listBtn.removeClass("active");
-          localStorage.setItem("pub-view-mode", "grid");
-        }
-      }
-
-      gridBtn.on("click", () => setViewMode("grid"));
-      listBtn.on("click", () => setViewMode("list"));
-
-      const savedMode = localStorage.getItem("pub-view-mode");
-      if (savedMode) setViewMode(savedMode);
-
+      // Initial Update
       updateView();
     });
   </script>
 
+  <style>
+    /* Specific overrides for Prosocial look on buttons */
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--ps-border);
+      background: white;
+      color: var(--ps-text);
+      cursor: pointer;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .filter-btn.active {
+      background: var(--ps-heading);
+      color: white;
+      border-color: var(--ps-heading);
+    }
+
+    .filter-btn:hover:not(.active) {
+      background: #f1f5f9;
+      border-color: var(--ps-muted);
+    }
+  </style>
+
+  <script>
+    // News Ticker Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const newsToggle = document.getElementById('news-toggle');
+      const newsContainer = document.querySelector('.ps-news-container');
+
+      // Load state
+      const newsHidden = localStorage.getItem('ps-news-hidden') === 'true';
+      if (newsHidden) {
+        newsToggle.checked = false;
+        newsContainer.classList.add('ps-hidden');
+      }
+
+      // Handle toggle
+      newsToggle.addEventListener('change', () => {
+        if (newsToggle.checked) {
+          newsContainer.classList.remove('ps-hidden');
+          localStorage.setItem('ps-news-hidden', 'false');
+        } else {
+          newsContainer.classList.add('ps-hidden');
+          localStorage.setItem('ps-news-hidden', 'true');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
