@@ -628,6 +628,14 @@ tag.tda {
   background-color: rgba(155, 89, 182, 0.75);
 }
 
+tag.unlearning {
+  background-color: rgba(142, 68, 173, 0.75);
+}
+
+tag.steering {
+  background-color: rgba(22, 160, 133, 0.75);
+}
+
 /* Amethyst faded */
 
 /* Filter Controls for Publications */
