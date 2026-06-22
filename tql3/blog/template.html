@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- UPDATE: Post Title -->
+  <title>Post Title - ARKAI Lab Blog</title>
+  
+  <!-- UPDATE: Post Description (SEO) -->
+  <meta name="description" content="Brief summary of the blog post for SEO and search snippet.">
+  <meta name="keywords" content="Keywords, Related, To, Post, Separated, By, Commas">
+  <link rel="canonical" href="https://lethaiq.github.io/tql3/blog/your-post-filename.html">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://lethaiq.github.io/tql3/blog/your-post-filename.html">
+  <meta property="og:title" content="Post Title">
+  <meta property="og:description" content="Brief summary of the blog post.">
+  <meta property="og:image" content="https://lethaiq.github.io/tql3/images/your-post-image.png">
+
+  <!-- CSS / Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="../stylesheet_ps.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/layout.js" defer></script>
+
+  <!-- JSON-LD Structured Data (Used by compile_posts.py to generate posts.js) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Post Title",
+    "description": "Brief summary of the blog post. This description is used in the main blog feed list card.",
+    "image": "https://lethaiq.github.io/tql3/images/your-post-image.png",
+    "author": {
+      "@type": "Person",
+      "name": "Thai Le",
+      "url": "https://lethaiq.github.io/tql3/group.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ARKAI Research Lab",
+      "logo": "https://lethaiq.github.io/tql3/logo.png"
+    },
+    "datePublished": "YYYY-MM-DD",
+    "keywords": ["Research", "CategoryTag"],
+    "articleSection": ["Research"]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="ps-layout">
+    <!-- SIDEBAR: Bio (Left Nav) -->
+    <aside class="ps-sidebar">
+      <div style="text-align: center; margin-bottom: 30px;">
+        <a href="../index.html" style="text-decoration: none; color: inherit; display: block;">
+          <div class="ps-sidebar-brand" style="margin-bottom: 0; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 3px;">
+            <span style="color: var(--ps-accent);">ARKAI</span> Lab
+          </div>
+        </a>
+      </div>
+
+      <div class="ps-sidebar-bio" data-nosnippet>
+        The <strong>ARKAI Research Lab</strong> at <a href="https://luddy.indiana.edu/" class="ps-link-red">School of Luddy</a>, <a href="https://www.indiana.edu/" class="ps-link-red">Indiana University</a> aims to advance <strong>Accountable, Resilient, and Kind AI</strong> through multi-disciplinary research in robustness, safety, and transparency.
+      </div>
+
+      <div class="ps-sidebar-links">
+        <a href="mailto:tle@iu.edu"><i class="fas fa-envelope"></i> <span>Email</span></a>
+        <a href="https://scholar.google.com/citations?user=Fd8K7kAAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i> <span>Scholar</span></a>
+        <a href="https://github.com/lethaiq" target="_blank"><i class="fab fa-github"></i> <span>GitHub</span></a>
+      </div>
+
+      <nav class="ps-sidebar-nav">
+        <a href="../index.html" class="ps-nav-item"><i class="fas fa-flask"></i>Research Projects</a>
+        <a href="../publications.html" class="ps-nav-item"><i class="fas fa-graduation-cap"></i>Publications</a>
+        <a href="../blog.html" class="ps-nav-item active"><i class="fas fa-blog"></i>Blog</a>
+        <a href="../group.html" class="ps-nav-item"><i class="fas fa-users"></i>Meet the Team</a>
+        <a href="../dataset.html" class="ps-nav-item"><i class="fas fa-database"></i>Resources</a>
+        <a href="../teaching.html" class="ps-nav-item"><i class="fas fa-book"></i>Knowledge Transfer</a>
+      </nav>
+
+      <!-- Mobile Navigation Tabs -->
+      <div class="ps-mobile-nav-tabs">
+        <a href="../index.html" class="ps-mobile-nav-tab"><i class="fas fa-home"></i>Home</a>
+        <a href="../publications.html" class="ps-mobile-nav-tab"><i class="fas fa-graduation-cap"></i>Publications</a>
+        <a href="../blog.html" class="ps-mobile-nav-tab active"><i class="fas fa-blog"></i>Blog</a>
+        <a href="../group.html" class="ps-mobile-nav-tab"><i class="fas fa-users"></i>Team</a>
+        <a href="../dataset.html" class="ps-mobile-nav-tab"><i class="fas fa-database"></i>Resources</a>
+        <a href="../teaching.html" class="ps-mobile-nav-tab"><i class="fas fa-book"></i>Teaching</a>
+      </div>
+    </aside>
+
+    <!-- FEED: Blog Post Content -->
+    <main class="ps-feed">
+      <div style="margin-bottom: 25px;">
+        <a href="../blog.html" style="text-decoration: none; color: var(--ps-accent); font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+          <i class="fas fa-arrow-left"></i> Back to Blog
+        </a>
+      </div>
+
+      <article class="ps-blog-post" style="background: var(--ps-surface); border: 1px solid var(--ps-border); border-radius: var(--ps-radius); padding: 40px; box-shadow: var(--ps-shadow);">
+        <div style="margin-bottom: 25px;">
+          <!-- UPDATE: Tags/Categories (Match those in JSON-LD keywords) -->
+          <span class="ps-card-tag" style="background: var(--ps-heading); color: white; border: none; padding: 5px 12px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase;">Research</span>
+          
+          <h1 style="font-size: 2.2rem; font-weight: 800; color: var(--ps-heading); margin-top: 15px; margin-bottom: 10px; line-height: 1.25;">
+            Post Title Goes Here
+          </h1>
+          <!-- UPDATE: Date & Author -->
+          <p style="font-size: 0.95rem; color: var(--ps-muted); font-weight: 600; margin-bottom: 0;">Published Month DD, YYYY • By Thai Le</p>
+        </div>
+
+        <!-- UPDATE: Hero Image -->
+        <div style="margin-bottom: 35px; border-radius: var(--ps-radius); overflow: hidden; border: 1px solid var(--ps-border); max-width: 600px; margin-left: auto; margin-right: auto;">
+          <img src="../images/your-post-image.png" alt="Alt description of image" style="width: 100%; height: auto; display: block;">
+        </div>
+
+        <div class="ps-blog-post-content">
+          <!-- UPDATE: Article Body Content -->
+          <p>
+            Start your blog post content here. Use paragraphs, headings, bullet lists, and blockquotes for styling.
+          </p>
+
+          <blockquote>
+            "Use blockquotes for highlighting key takeaways, quotes, or important summaries."
+          </blockquote>
+
+          <h2>Adding Sections</h2>
+          <p>
+            You can use standard HTML markup. The layout automatically inherits beautiful typography rules.
+          </p>
+        </div>
+      </article>
+    </main>
+  </div>
+</body>
+
+</html>

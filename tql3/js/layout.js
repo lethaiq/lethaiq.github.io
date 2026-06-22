@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <ul style="display: flex; list-style: none; gap: 25px; margin: 0; padding: 0;">
                     <li><a href="index.html" title="Go to Home" style="text-decoration: none; font-weight: 600; color: ${page === 'index.html' || page === '' ? 'var(--accent-red)' : 'var(--primary-color)'};">Research Projects</a></li>
                     <li><a href="publications.html" title="View Publications" style="text-decoration: none; font-weight: 600; color: ${page === 'publications.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Publications</a></li>
+                    <li><a href="blog.html" title="Read our Blog" style="text-decoration: none; font-weight: 600; color: ${page === 'blog.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Blog</a></li>
                     <li><a href="dataset.html" title="Access Datasets & Software" style="text-decoration: none; font-weight: 600; color: ${page === 'dataset.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Datasets & Software</a></li>
                     <li><a href="group.html" title="Meet the ARKAI Lab Team" style="text-decoration: none; font-weight: 600; color: ${page === 'group.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Team</a></li>
                     <li><a href="teaching.html" title="Knowledge Transfer & Teaching" style="text-decoration: none; font-weight: 600; color: ${page === 'teaching.html' ? 'var(--accent-red)' : 'var(--primary-color)'};">Knowledge Transfer</a></li>
