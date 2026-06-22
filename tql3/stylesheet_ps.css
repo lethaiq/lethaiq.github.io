@@ -957,3 +957,18 @@ input:checked+.ps-slider:before {
         font-size: 1.5rem;
     }
 }
+
+.ps-card-horizontal a.ps-card-tag {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.ps-card-horizontal a.ps-card-tag:hover {
+    background: var(--ps-heading);
+    color: white;
+    border-color: var(--ps-heading);
+}
+
+.ps-card-horizontal .ps-card-footer a.ps-card-tag {
+    margin-left: 2px;
+}

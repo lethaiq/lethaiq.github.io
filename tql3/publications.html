@@ -1289,6 +1289,27 @@
 
       const allBtns = $(".filter-btn");
 
+      // 1.5 Handle URL query parameter for active tag
+      const urlParams = new URLSearchParams(window.location.search);
+      const tagParam = urlParams.get('tag');
+      if (tagParam) {
+        let matchedTag = null;
+        for (let t of tags) {
+          if (t.toLowerCase() === tagParam.toLowerCase()) {
+            matchedTag = t;
+            break;
+          }
+        }
+        if (matchedTag) {
+          $(`.filter-btn[data-filter="all"]`).removeClass("active");
+          const targetBtn = $(`.filter-btn[data-filter="${matchedTag}"]`);
+          if (targetBtn.length) {
+            targetBtn.addClass("active");
+          }
+          mobileTagSelect.val(matchedTag);
+        }
+      }
+
       // 2. Global Filter Function
       function updateView() {
         const query = searchInput.val().toLowerCase().trim();
