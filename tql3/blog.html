@@ -165,25 +165,19 @@
       <!-- Blog Filters -->
       <div class="ps-feed-filters"
         style="margin-bottom: 50px; background: white; padding: 25px 30px; border-radius: var(--ps-radius); border: 1px solid var(--ps-border); box-shadow: var(--ps-shadow);">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
-          <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-            <span class="ps-filter-label" style="margin-bottom: 0; min-width: fit-content; font-weight: 700;">Categories:</span>
-            <div id="blogFilters" style="display: flex; flex-wrap: wrap; gap: 10px;">
-              <button class="filter-btn active" data-filter="all">All</button>
-              <button class="filter-btn" data-filter="Research">Research</button>
-              <button class="filter-btn" data-filter="News">News</button>
-              <button class="filter-btn" data-filter="Events">Events</button>
-            </div>
-          </div>
-          <div class="ps-view-toggle">
-            <button id="gridView" class="view-btn active" title="Grid View"><i class="fas fa-th-large"></i></button>
-            <button id="listView" class="view-btn" title="List View"><i class="fas fa-list"></i></button>
+        <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 15px;">
+          <span class="ps-filter-label" style="margin-bottom: 0; min-width: fit-content; font-weight: 700;">Categories:</span>
+          <div id="blogFilters" style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Research">Research</button>
+            <button class="filter-btn" data-filter="News">News</button>
+            <button class="filter-btn" data-filter="Events">Events</button>
           </div>
         </div>
       </div>
 
-      <!-- Blog List Container -->
-      <div id="blogFeed" class="ps-card-horizontal-list">
+      <!-- Blog Feed List Container -->
+      <div id="blogFeed" class="ps-blog-feed-list">
         <!-- Dynamically populated from posts.js -->
       </div>
 
@@ -193,57 +187,99 @@
   <script>
     $(document).ready(function () {
       const blogFeed = $("#blogFeed");
-      
-      // Clear any static content and render dynamically
-      blogFeed.empty();
-      
-      if (window.BLOG_POSTS && window.BLOG_POSTS.length > 0) {
-        window.BLOG_POSTS.forEach(function (post) {
+      const filterBtns = $(".filter-btn");
+
+      let filteredPosts = [];
+      let currentIndex = 0;
+      const PAGE_SIZE = 2; // load 2 posts at a time to showcase infinite scroll clearly
+
+      // 1. Filter and Load Posts function
+      function initFeed() {
+        const activeFilter = $(".filter-btn.active").data("filter");
+        
+        // Filter the full posts list based on active category
+        if (window.BLOG_POSTS) {
+          filteredPosts = window.BLOG_POSTS.filter(function (post) {
+            const cardCategories = (post.categories || []).map(c => c.trim().toLowerCase());
+            return activeFilter === "all" || cardCategories.includes(activeFilter.toLowerCase());
+          });
+        } else {
+          filteredPosts = [];
+        }
+
+        // Clear feed & reset pagination indices
+        blogFeed.empty();
+        currentIndex = 0;
+        
+        // Load the initial batch
+        loadMorePosts();
+      }
+
+      // 2. Load More Posts function
+      function loadMorePosts() {
+        if (currentIndex >= filteredPosts.length) {
+          return; // No more posts to load
+        }
+
+        const nextBatch = filteredPosts.slice(currentIndex, currentIndex + PAGE_SIZE);
+        nextBatch.forEach(function (post) {
           let tagsHtml = "";
           if (post.tags && post.tags.length > 0) {
             post.tags.forEach(function (tag) {
               tagsHtml += `<span class="ps-card-tag">${tag}</span>\n`;
             });
           }
-          
-          const cardHtml = `
-            <div class="ps-card-horizontal ps-blog-card" data-categories="${post.categories.join(', ')}">
-              <div class="ps-blog-image-wrapper">
-                <img src="${post.image}" alt="${post.title}" class="ps-blog-image">
-              </div>
-              <div class="ps-card-body-wrapper">
-                <div class="ps-card-content">
-                  <div class="ps-card-tags">
-                    ${tagsHtml}
-                  </div>
-                  <h2 class="ps-card-title">
-                    <a href="${post.url}" style="color: inherit; text-decoration: none;">
-                      ${post.title}
-                    </a>
-                  </h2>
-                  <p class="ps-card-authors">${post.date} • By ${post.author || 'Thai Le'}</p>
-                  <div class="ps-card-description">
-                    ${post.description}
-                  </div>
+
+          const itemHtml = `
+            <article class="ps-blog-feed-item">
+              <div class="ps-blog-feed-content">
+                <div class="ps-blog-feed-meta">
+                  ${post.date} • By ${post.author || 'Thai Le'}
                 </div>
-                <div class="ps-card-footer">
+                <h2 class="ps-blog-feed-title">
+                  <a href="${post.url}">${post.title}</a>
+                </h2>
+                <div class="ps-blog-feed-tags">
+                  ${tagsHtml}
+                </div>
+                <div class="ps-blog-feed-description">
+                  ${post.description}
+                </div>
+                <div>
                   <a href="${post.url}" class="ps-read-more">
                     Read Full Post <i class="fas fa-arrow-right"></i>
                   </a>
                 </div>
               </div>
-            </div>
+              <div class="ps-blog-feed-image-wrapper">
+                <img src="${post.image}" alt="${post.title}" class="ps-blog-feed-image">
+              </div>
+            </article>
           `;
-          blogFeed.append(cardHtml);
+          blogFeed.append(itemHtml);
         });
-      } else {
-        blogFeed.html('<div style="text-align: center; padding: 50px; color: var(--ps-muted); font-weight: 600;">No blog posts found.</div>');
+
+        currentIndex += PAGE_SIZE;
+
+        // If we loaded everything, show a subtle end of feed message
+        if (currentIndex >= filteredPosts.length && filteredPosts.length > 0) {
+          if ($("#endOfFeed").length === 0) {
+            blogFeed.append('<div id="endOfFeed" style="text-align: center; padding: 30px 0; color: var(--ps-muted); font-size: 0.9rem; font-weight: 600;">You have reached the end of the feed.</div>');
+          }
+        } else if (filteredPosts.length === 0) {
+          blogFeed.html('<div style="text-align: center; padding: 50px 0; color: var(--ps-muted); font-weight: 600;">No blog posts found in this category.</div>');
+        }
       }
 
-      const blogCards = $(".ps-blog-card");
-      const filterBtns = $(".filter-btn");
+      // 3. Scroll Listener for Infinite Scroll
+      $(window).off("scroll.infinitescroll").on("scroll.infinitescroll", function () {
+        // Trigger loading when user is within 150px of the bottom
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 150) {
+          loadMorePosts();
+        }
+      });
 
-      // 1. URL Query Parameter Filtering
+      // 4. URL Query Parameter Filtering
       const urlParams = new URLSearchParams(window.location.search);
       const categoryParam = urlParams.get('label') || urlParams.get('category');
 
@@ -261,21 +297,8 @@
         }
       }
 
-      // 2. Filter Function
-      function filterPosts() {
-        const activeFilter = $(".filter-btn.active").data("filter");
-        blogCards.each(function () {
-          const cardCategories = ($(this).data("categories") || "").split(",").map(c => c.trim().toLowerCase());
-          if (activeFilter === "all" || cardCategories.includes(activeFilter.toLowerCase())) {
-            $(this).show();
-          } else {
-            $(this).hide();
-          }
-        });
-      }
-
-      // Initial filter on load
-      filterPosts();
+      // Run initial feed loading
+      initFeed();
 
       // Click event for filter buttons
       filterBtns.on("click", function () {
@@ -287,33 +310,8 @@
         const newUrl = window.location.pathname + (filterVal === "all" ? "" : `?label=${filterVal.toLowerCase()}`);
         window.history.pushState({ path: newUrl }, '', newUrl);
 
-        filterPosts();
+        initFeed();
       });
-
-      // 3. Grid / List View Toggle
-      const cardGrid = $("#blogFeed");
-      const gridBtn = $("#gridView");
-      const listBtn = $("#listView");
-
-      function setViewMode(mode) {
-        if (mode === "list") {
-          cardGrid.addClass("ps-list-view");
-          listBtn.addClass("active");
-          gridBtn.removeClass("active");
-          localStorage.setItem("blog-view-mode", "list");
-        } else {
-          cardGrid.removeClass("ps-list-view");
-          gridBtn.addClass("active");
-          listBtn.removeClass("active");
-          localStorage.setItem("blog-view-mode", "grid");
-        }
-      }
-
-      gridBtn.on("click", () => setViewMode("grid"));
-      listBtn.on("click", () => setViewMode("list"));
-
-      const savedMode = localStorage.getItem("blog-view-mode");
-      if (savedMode) setViewMode(savedMode);
     });
   </script>
 
