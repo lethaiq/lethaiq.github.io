@@ -230,6 +230,15 @@
             });
           }
 
+          let imageHtml = "";
+          if (post.image) {
+            imageHtml = `
+              <div class="ps-blog-feed-image-wrapper">
+                <img src="${post.image}" alt="${post.title}" class="ps-blog-feed-image">
+              </div>
+            `;
+          }
+
           const itemHtml = `
             <article class="ps-blog-feed-item">
               <div class="ps-blog-feed-content">
@@ -251,9 +260,7 @@
                   </a>
                 </div>
               </div>
-              <div class="ps-blog-feed-image-wrapper">
-                <img src="${post.image}" alt="${post.title}" class="ps-blog-feed-image">
-              </div>
+              ${imageHtml}
             </article>
           `;
           blogFeed.append(itemHtml);

@@ -11,7 +11,7 @@ window.BLOG_POSTS = [
       "News",
       "Welcome"
     ],
-    "image": "lab_logo_divine_concepts.svg",
+    "image": "",
     "description": "Welcome to the first post of the ARKAI Research Lab blog! We share our latest research insights and news.",
     "url": "blog/welcome.html",
     "timestamp": 1782100800000,
