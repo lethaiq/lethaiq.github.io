@@ -1378,8 +1378,13 @@
       const tagParam = urlParams.get('tag');
       if (tagParam) {
         let matchedTag = null;
+        const normParam = tagParam.toLowerCase().replace(/[^a-z0-9]/g, '');
         for (let t of tags) {
-          if (t.toLowerCase() === tagParam.toLowerCase()) {
+          const normT = t.toLowerCase().replace(/[^a-z0-9]/g, '');
+          if (t.toLowerCase() === tagParam.toLowerCase() ||
+              normT === normParam ||
+              (normParam === 'audiollm' && normT === 'audiolm') ||
+              (normParam === 'audiolm' && normT === 'audiollm')) {
             matchedTag = t;
             break;
           }

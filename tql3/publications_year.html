@@ -1140,6 +1140,32 @@
                     updateFilters();
                 });
             });
+
+            // 5. Handle URL query parameter for active tag
+            const urlParams = new URLSearchParams(window.location.search);
+            const tagParam = urlParams.get('tag');
+            if (tagParam) {
+                let matchedTag = null;
+                const normParam = tagParam.toLowerCase().replace(/[^a-z0-9]/g, '');
+                for (let t of tags) {
+                    const normT = t.toLowerCase().replace(/[^a-z0-9]/g, '');
+                    if (t.toLowerCase() === tagParam.toLowerCase() ||
+                        normT === normParam ||
+                        (normParam === 'audiollm' && normT === 'audiolm') ||
+                        (normParam === 'audiolm' && normT === 'audiollm')) {
+                        matchedTag = t;
+                        break;
+                    }
+                }
+                if (matchedTag) {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    const targetBtn = document.querySelector(`.filter-btn[data-filter="${matchedTag}"]`);
+                    if (targetBtn) {
+                        targetBtn.classList.add('active');
+                    }
+                    updateFilters();
+                }
+            }
         });
     </script>
 </body>
